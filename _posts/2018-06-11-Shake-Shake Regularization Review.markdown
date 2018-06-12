@@ -3,6 +3,7 @@ layout: post
 title:  "Shake-Shake Regularization Review"
 date:   2018-06-11
 description: This is a review and tensorflow code implementation of 'shake-shake regularization' paper.
+comments: true
 ---
 
 
