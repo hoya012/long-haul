@@ -676,7 +676,7 @@ html {
   box-sizing: inherit; }
 
 body {
-  font-family: "PT Serif", Georgia, Times, serif;
+  //font-family: "PT Serif", Georgia, Times, serif;
   line-height: 1.75;
   font-size: 112.5%;
   color: #111;
@@ -832,6 +832,7 @@ POST STYLING
   margin-bottom: 1rem; }
 
 .post blockquote {
+  text-align: center;
   clear: both;
   margin: 2.5em 0;
   padding: 0;
