@@ -680,6 +680,7 @@ html {
   box-sizing: inherit; }
 
 body {
+  font-family: 'Jeju Gothic', sans-serif;
   /*font-family: "PT Serif", Georgia, Times, serif;*/
   line-height: 1.75;
   font-size: 112.5%;
@@ -864,7 +865,8 @@ POST STYLING
 .post .meta {
   text-align: center;
   color: gray;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  /*font-family: "Open Sans", Helvetica, Arial, sans-serif;*/
+  font-family: 'Jeju Gothic', sans-serif;
   font-weight: 300; }
 
 .post figure {
@@ -908,7 +910,8 @@ POST NAV STYLING
     height: 5rem;
     overflow: hidden;
     position: relative;
-    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    /*font-family: "Open Sans", Helvetica, Arial, sans-serif;*/
+    font-family: 'Jeju Gothic', sans-serif;
     font-weight: 800;
     font-size: .9em;
     text-transform: uppercase;
