@@ -54,7 +54,7 @@ b,strong{
 code,kbd,samp{
   font-family:monospace,monospace;
   font-size:0.7em; 
-  line-height: 1.0;
+  /*line-height: 1.0;*/
 }
 dfn{
   font-style:italic;
