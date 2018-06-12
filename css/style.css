@@ -123,6 +123,7 @@ code,
 kbd,
 samp {
   font-family: monospace, monospace;
+  line-height: 1;
   /* 1 */
   font-size: 0.6em;
   /* 2 */ }
