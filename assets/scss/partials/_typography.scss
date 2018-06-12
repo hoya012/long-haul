@@ -85,6 +85,7 @@ h4, .h4 {
 }
 
 blockquote {
+  text-align: center;
   font-size: 1.25em; // 20px / 16px
   line-height: 1.25; // 25px / 20px
   padding: 0;  
@@ -92,6 +93,7 @@ blockquote {
 
 @media (min-width: 43.75em) {
   blockquote {
+    text-align: center;
     font-size: 1.5em; // 24px / 16px
     line-height: 1.45833333; // 35px / 24px
   }
