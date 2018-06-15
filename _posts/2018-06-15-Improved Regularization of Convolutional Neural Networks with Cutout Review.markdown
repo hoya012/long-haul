@@ -187,7 +187,7 @@ Asirra 데이터셋의 12,500장의 테스트셋에 대해 성능을 평가한 �
 
 <blockquote> Reference </blockquote>
 - Cutout 논문
-  - <a href="https://arxiv.org/abs/1708.04552" target="_blank">	Terrance DeVries, Graham W. Taylor, “Shake-Shake regularization”, Arxiv, 2017. </a>
+  - <a href="https://arxiv.org/abs/1708.04552" target="_blank"> Terrance DeVries, Graham W. Taylor, “Shake-Shake regularization”, Arxiv, 2017. </a>
 - 수아랩 기술 블로그 포스팅
   - <a href="http://research.sualab.com/machine-learning/computer-vision/2018/01/17/image-classification-deep-learning.html" target="_blank"> 김길호, "이미지 Classification 문제와 딥러닝: AlexNet으로 개vs고양이 분류하기
 " </a>
