@@ -929,11 +929,11 @@ print('Test accuracy: {}'.format(test_score))
 #### 테스트 결과   
 모델을 학습 시킨 후 테스트 결과 측정된 정확도는 **0.9633**로 확인되었습니다. 본 논문에서 제시하고 있는 수치인 0.9645보다 낮게 측정이 되었는데 이는 지극히 정상적인 현상입니다. 같은 모델에 대해 학습을 진행하여도 Random seed를 고정하지 않는 이상 weight를 초기화할 때, mini-batch를 구성할때 등에 randomness가 개입하기 때문에 매번 약간의 성능 차이는 존재할 수 있습니다.  
 
-## 결론   
+<blockquote> 결론 </blockquote>
 이번 포스팅에서는 최근 주목받고 있는 Shake-Shake regularization 논문에 대해 소개를 드리고, 분석한 내용과 코드 구현체, 그에 대한 설명들을 긴 글로 작성을 하였습니다. CIFAR-10 데이터셋에서는 좋은 성능을 보임을 확인할 수 있었고, 실제 구현을 하였을 때도 비슷한 성능을 보임을 확인할 수 있었습니다. 다른 데이터셋들에 대해서는 아직 검증이 필요하지만 구현체가 같이 있으니 일부만 수정하시면 쉽게 사용 가능하리라 판단됩니다. 
 *추후 글에서는 Shake-Shake 이후에 제안된 Cutout augmentation 기법에 대해서 소개를 드리고자 합니다. 혹시 이번 포스팅에서 이해가 잘 되시지 않는 부분은 언제든 편하게 피드백 주시면 감사하겠습니다.
 
-## Reference   
+<blockquote> Reference </blockquote>
 - Data augmentation 예시 그림
   - <a href="http://cs231n.stanford.edu/slides/2016/winter1516_lecture11.pdf" target="_blank">Fei-Fei Li & Andrej Karpathy & Justin Johnson, “cs231n, Lecture11". </a>
 - Shake-Shake regularization 논문
