@@ -2,7 +2,7 @@
 layout: post
 title:  “Learning From Noisy Large-Scale Datasets With Minimal Supervision” Review
 date:   2018-07-14
-description: This is a review and tensorflow code implementation of 'shake-shake regularization' paper.
+description: This is a review of 'Learning From Noisy Large-Scale Datasets With minimal Supervision' paper.
 comments: true
 ---
 
