@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Improved Regularization of Convolutional Neural Networks with Cutout Review"
+title:  "Improved Regularization of Convolutional Neural Networks with Cutout"
 date:   2018-06-15
 description: This is a review and simple code implementation of 'Improved Regularization of Convolutional Neural Networks with Cutout' paper.
 comments: true
