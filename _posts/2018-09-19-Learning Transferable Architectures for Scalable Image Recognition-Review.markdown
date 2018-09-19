@@ -166,8 +166,8 @@ Architecture를 자세히 들여다보면 저희가 주로 사용하는 3x3 conv
 이 Cell들을 적절히 조합하여 architecture를 설계하면 되기 때문에 전체 architecture를 한번에 설계하는 NAS와 그림이 다소 모양이 다릅니다.   
 
 우선 본 논문에서 제안한 3가지 version(NASNet-A, B, C) 중 가장 성능이 좋은 NASNet-A의 Normal cell과 Reduction cell의 구조를 관찰해보면, 신기하게도 초록색 박스로 되어있는 부분인 combine operation이 전부 add operation이 선택된 것을 확인할 수 있습니다. 
-또한 노란색 박스에는 13가지 operation이 선택될 수 있는데, 그림 1에 나와있듯이 operation 중 convolution 연산은 총 8가지인데 막상 찾은 Convolution Cell은 depthwise-separable convolution(`sep`) 연산만 선택된 것이 흥미로운 점입니다. 
-이는 NASNet-B, C에서도 비슷한 경향을 보이며 대부분 `sep` 연산이 선택되었습니다. 
+또한 노란색 박스에는 13가지 operation이 선택될 수 있는데, 그림 1에 나와있듯이 operation 중 convolution 연산은 총 8가지인데 막상 찾은 Convolution Cell은 depthwise-separable convolution(**sep**) 연산만 선택된 것이 흥미로운 점입니다. 
+이는 NASNet-B, C에서도 비슷한 경향을 보이며 대부분 **sep** 연산이 선택되었습니다. 
 또한 pooling 연산의 경우 대부분 3x3 pooling이 선택된 것도 흥미로운 점입니다.   
 
 이 논문이 생성한 architecture를 보면서, 바둑에서 사람을 압도한 알파고의 기보를 보며 사람이 바둑을 배우는 것처럼, 딥러닝을 통해 찾은 architecture로부터 사람이 무언가를 배울 수 있지 않을까 생각해봅니다.
