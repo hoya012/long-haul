@@ -105,7 +105,7 @@ Operation의 종류는 위의 그림에 나와있으며 identity, pooling, conv�
 이렇게 순차적으로 B개의 block을 만들어내면 하나의 Convolution Cell을 구성하게 됩니다. 
 
 <figure>
-	<img src="{{ '/assets/img/NASNet/fig2_block_to_cell_example.PNG' | prepend: site.baseurl }}" alt=""> 
+	<img src="{{ '/assets/img/NASNet/fig2_block_to_cell_example.png' | prepend: site.baseurl }}" alt=""> 
 	<figcaption> [그림 2. Block으로부터 Convolution Cell이 생성되는 과정] </figcaption>
 </figure>  
 
@@ -201,7 +201,7 @@ Architecture를 자세히 들여다보면 저희가 주로 사용하는 3x3 conv
 이렇게 CIFAR-10에서 찾은 Convolution Cell을 토대로 ImageNet을 위한 architecture를 구성해서 학습을 시켰을 때 성능이 어느 정도가 나올지 궁금할 수 있는데, 그 결과가 다음 단락에 제시되어 있습니다. 
 
 <figure>
-	<img src="{{ '/assets/img/NASNet/fig8_imagenet_sota.PNG' | prepend: site.baseurl }}" alt=""> 
+	<img src="{{ '/assets/img/NASNet/fig8_imagenet_sota.png' | prepend: site.baseurl }}" alt=""> 
 	<figcaption> [그림 8. ImageNet challenge top-5 error 그래프] </figcaption>
 </figure>  
 
