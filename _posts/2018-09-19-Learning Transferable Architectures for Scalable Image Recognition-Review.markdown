@@ -129,7 +129,7 @@ Reduction Cell의 stride가 1인 경우는 해당 block의 input으로 같은 Ce
 위의 그림은 Block에서 Convolution Cell을 거쳐 전체 architecture를 구성하는 과정을 보여주고 있습니다. 
 과정을 순차적으로 정리하면 다음과 같습니다.  
 
-1.	RNN controller부터 Normal Cell을 위한 block B개, Reduction Cell을 위한 block B개를 생성한다.
+1.	RNN controller로부터 Normal Cell을 위한 block B개, Reduction Cell을 위한 block B개를 생성한다.
 2.	생성된 2xB개의 block을 이용하여 Normal Cell과 Reduction Cell 두 가지의 Cell을 구성한다. (그림 3의 좌측 하단 부분)
 3.	두 가지의 Convolution Cell을 정해진 순서에 맞게 배치하여 network를 구성한다.
 4.	구성된 network를 토대로 training data로 학습을 시킨 뒤 validation accuracy를 측정하여 reward로 사용하여 강화학습을 수행한다.
