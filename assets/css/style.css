@@ -519,7 +519,8 @@ body{
   /*font-family: 'Nanum Gothic', sans-serif;*/
   /*font-family: "PT Serif", Georgia, Times, serif;*/
   line-height:1.75;
-  font-size:112.5%;
+  /*font-size:112.5%;*/
+  font-size:100%;
   color:#111;
   overflow-x:hidden;
   margin:0;
