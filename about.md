@@ -5,9 +5,14 @@ title: About me
 
 <div class="post">
 	<h1 class="pageTitle">About Ho Seong Lee</h1>
-		<li>Hoseong Lee received the B.S., M.S.  degrees in Electrical and Computer Engineering from Seoul National University, Seoul, Korea, in 2016, 2018.</li>
-  		<li>In 2018, he joined the SUALAB., Seoul, Korea, as a Machine Learning Engineer.</li>
-  		<li>His research interests include algorithm and architecture for image classification, image segmentation and machine learning.</li>
+		<li>Hoseong Lee received the B.S., M.S.  degrees in 
+			<li><a href="http://capp.snu.ac.kr/" target="_blank"> Electrical and Computer Engineering from Seoul National University, </a></li>
+			Seoul, Korea, in 2016, 2018.</li>
+  		<li>In 2018, he joined the 
+	<li><a href="http://sualab.com/" target="_blank"> SUALAB. </a></li>
+	
+	, Seoul, Korea, as a Machine Learning Engineer.</li>
+  		<li>His research interests include algorithm and architecture for image recognition, image processing using deep learning.</li>
 	<h1 class="pageTitle">Publications</h1>
 		<li><a href="http://s-space.snu.ac.kr/handle/10371/141510" target="_blank"> <b>이호성</b>, "CNN 및 Edge detection 기반
 고속 손 동작 인식", 서울대학교 전기정보공학부 석사학위논문(Thesis), Feb. 2018 </a></li>
