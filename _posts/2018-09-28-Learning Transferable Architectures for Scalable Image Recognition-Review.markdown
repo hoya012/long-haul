@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  “Learning Transferable Architectures for Scalable Image Recognition”
-date:   2018-09-19
+date:   2018-09-28
 description: This is a review of 'Learning Transferable Architectures for Scalable Image Recognition' paper.
 comments: true
 ---
@@ -178,7 +178,7 @@ Architecture를 자세히 들여다보면 저희가 주로 사용하는 3x3 conv
 우선 목표로 삼았던 CIFAR-10 데이터셋에 대한 실험 결과를 설명 드리고, NASNet의 가장 큰 장점인 transferable한 특징을 잘 보여주는 여러 실험 결과를 설명 드리겠습니다.  
 
 <figure>
-	<img src="{{ '/assets/img/NASNet/fig6_cifar_10_result.PNG' | prepend: site.baseurl }}" alt=""> 
+	<img src="{{ '/assets/img/NASNet/fig6_cifar_10_result_table.PNG' | prepend: site.baseurl }}" alt=""> 
 	<figcaption> [그림 6. CIFAR-10 실험 결과] </figcaption>
 </figure>  
 
@@ -214,7 +214,7 @@ CIFAR-10과 같이 작은 이미지에 대해서도 수백개의 GPU로 몇 달�
 이 어려운 일을 NASNet에서 해냈습니다. 물론 결과도 가히 충격적이라 할 수 있습니다.
 
 <figure>
-	<img src="{{ '/assets/img/NASNet/fig9_imagenet_result.PNG' | prepend: site.baseurl }}" alt=""> 
+	<img src="{{ '/assets/img/NASNet/fig9_imagenet_result_table.PNG' | prepend: site.baseurl }}" alt=""> 
 	<figcaption> [그림 9. ImageNet 실험 결과] </figcaption>
 </figure>  
 
@@ -225,14 +225,14 @@ NASNet의 결과는 앞서 여러 번 말씀드렸듯이, ImageNet 데이터셋�
 저는 이 실험 결과를 보고 이제 image classification 분야에서는 사람이 network를 design할 필요가 없을 수도 있겠다고 느꼈습니다.  
 
 <figure>
-	<img src="{{ '/assets/img/NASNet/fig10_mobile_imagenet_result.PNG' | prepend: site.baseurl }}" alt=""> 
+	<img src="{{ '/assets/img/NASNet/fig10_mobile_imagenet_result_table.PNG' | prepend: site.baseurl }}" alt=""> 
 	<figcaption> [그림 10. Mobile device 타겟 ImageNet 실험 결과] </figcaption>
 </figure>  
 
 또한 mobile device를 target으로 한 여러 모델들과 비슷한 parameter 수를 사용하였을 때 ImageNet에 대해서 훨씬 높은 정확도를 보이는 것을 확인할 수 있습니다. 이 논문에서 주장하고 있는 Transferability를 잘 보여주고 있다고 생각합니다.  
 
 <figure>
-	<img src="{{ '/assets/img/NASNet/fig11_detection_result.PNG' | prepend: site.baseurl }}" alt=""> 
+	<img src="{{ '/assets/img/NASNet/fig11_detection_result_table.PNG' | prepend: site.baseurl }}" alt=""> 
 	<figcaption> [그림 11. COCO object detection 실험 결과] </figcaption>
 </figure>  
 
@@ -272,7 +272,6 @@ Architecture Search 뿐만 아니라 비슷한 아이디어를 다양한 곳에 
 혹시 이 글을 보시다가 궁금한 점이 생기시거나 이해가 잘 되지 않는 부분이 있으면 댓글 남겨 주시면 감사하겠습니다! 정독해주셔서 감사합니다.
 
 <blockquote> 참고 문헌 </blockquote>  
-
 - <a href="https://github.com/titu1994/Keras-NASNet" target="_blank"> Keras-NASNet </a>
 - <a href="https://arxiv.org/abs/1611.01578" target="_blank"> Neural Architecture Search with Reinforcement Learning 논문 </a>
 - <a href="https://arxiv.org/abs/1707.07012" target="_blank"> Learning Transferable Architectures for Scalable Image Recognition 논문 </a>
