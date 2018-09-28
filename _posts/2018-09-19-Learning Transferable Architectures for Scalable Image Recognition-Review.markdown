@@ -186,7 +186,9 @@ Architecture를 자세히 들여다보면 저희가 주로 사용하는 3x3 conv
 우선 SOTA로 알려진 방법론들과, 선행 연구인 NAS의 결과가 제시되어 있고, 그 아래에는 NASNet parameter 수를 조절하고 구조에 변형을 주었을 때의 실험 결과가 제시되어 있습니다. 
 표의 결과는 정확도를 5번 측정하여서 평균을 낸 결과입니다.   
 
-앞서 리뷰했던 논문인 shake-shake regularization에 cutout을 적용하였을 때의 2.56% error rate이 현존하는 방법론 중에 가장 낮은 error rate였는데 NASNet을 사용하면 거의 비슷한 수의 parameter로 더 낮은 2.40%의 error rate를 달성할 수 있는 것을 확인할 수 있습니다. 
+앞서 리뷰했던 논문인 
+<a href="http://research.sualab.com/machine-learning/computer-vision/2018/06/28/shake-shake-regularization-review.html" target="_blank"><b>shake-shake regularization</b></a>
+에 cutout을 적용하였을 때의 2.56% error rate이 현존하는 방법론 중에 가장 낮은 error rate였는데 NASNet을 사용하면 거의 비슷한 수의 parameter로 더 낮은 2.40%의 error rate를 달성할 수 있는 것을 확인할 수 있습니다. 
 또한 가장 성능이 좋았던 경우는 2.19%의 error rate를 달성하였다고 합니다. 
 물론 cutout을 적용하지 않은 경우에는 shake shake의 결과가 더 좋긴 하지만, 강화학습으로 찾은 network가 사람이 공을 들여서 design한 network에 버금가는 성능을 보이는 것 만으로도 큰 의미를 가질 수 있다고 생각합니다.  
 
