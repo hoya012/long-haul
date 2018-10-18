@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  “Tutorials of Object Detection using Deep Learning: [1] What is object detection?”
+title:  “Tutorials of Object Detection using Deep Learning [1] What is object detection?”
 date:   2018-10-18
 description: Deep Learning을 이용한 Object detection Tutorial - [1] What is object detection?
 comments: true
