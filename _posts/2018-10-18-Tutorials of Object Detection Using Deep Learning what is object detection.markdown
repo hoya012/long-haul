@@ -51,7 +51,7 @@ Object Detection은 Image Classification task에 사물의 위치를 Bounding Bo
 </figure> 
 
 반면 Object Detection 분야는 마치 Image Classification이 굉장히 경쟁적으로 논문이 쏟아지던 2010년 중반처럼 현재도 굉장히 많은 논문이 쏟아져 나오고 있으며, 아직까지 굉장히 높은 성능을 달성하지는 않았습니다. 
-그림 4의 해당하는 각 논문들에 대한 정리는  
+그림 4의 해당하는 각 논문들에 대한 정리는
 <a href="https://github.com/hoya012/deep_learning_object_detection" target="_blank"><b> 제 github repository</b></a>
 에서 확인이 가능합니다.
 
