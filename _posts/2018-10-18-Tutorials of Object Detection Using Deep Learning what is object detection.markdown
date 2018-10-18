@@ -41,7 +41,7 @@ Object Detection은 Image Classification task에 사물의 위치를 Bounding Bo
 즉, **multi-labeled classification** (한 이미지에 여러 class 존재)과 **bounding box regression** (box의 좌표 값을 예측) 두 문제가 합쳐져 있다고 생각하시면 됩니다. 
 그림 3의 예시는 하나의 이미지에 하나의 object가 존재하는 경우를 보여주지만 그림 1과 같이 하나의 이미지에 여러 객체가 존재하여도 검출이 가능하여야 합니다.  
 
-`Object Detection = Multi-labeled Classification + Bounding Box Regression`
+<blockquote> Object Detection = Multi-labeled Classification + Bounding Box Regression </blockquote>
 
 앞서 제가 게시한 포스팅에서도 나와있듯이 Image Classification 분야는 최근에는 AutoML로 얻은 architecture가 사람이 고안한 architecture의 정확도를 넘어서기도 하였으며, 굉장히 많은 연구가 진행이 되어있는 분야입니다. 
 
