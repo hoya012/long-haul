@@ -103,7 +103,7 @@ Selective Search는 비교적 최근(2011년)에 나온 방법론이며 마찬�
 
 이번 포스팅에서는 object detection에 대해 설명을 드렸습니다. 
 Deep learning을 적용하기 이전에 어떤 방법론들이 주를 이루었는지 간단하게 설명 드렸는데요, 
-다음 포스팅에서는 Deep learning을 적용한 최초의 object detection 방법론과 성장 과정들에 대해 간단하게 다루고, object detection과 관련된 기초 개념들(metric, dataset 등)에 대해 설명 드리겠습니다. 
+다음 포스팅에서는 Deep learning을 적용한 최초의 object detection 방법론과 성장 과정들에 대해 간단하게 다루고, object detection의 대표적인  대해 설명 드리겠습니다. 
 혹시 글을 읽으시다가 잘 이해가 되지 않는 부분은 편하게 댓글에 질문을 주시면 답변 드리겠습니다. 
 
 
