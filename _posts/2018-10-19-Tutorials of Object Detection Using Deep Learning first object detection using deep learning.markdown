@@ -76,7 +76,7 @@ Deep Learning을 이용한 Object detection은 크게 2가지 방향으로 나�
 - 1-Stage Object Detector
 - 2-Stage Object Detector
 
-R-CNN과 같이 탐색 영역을 찾는 **Region Proposal** 과 해당 영역을 분류하는 **Detection** 두 가지 과정이 순차적으로 수행되는 방법론을 `2-stage object detector` 라 부르며, 두 가지 과정을 한번에 처리하는 방법론을 `1-stage object detector` 라 부릅니다.   
+R-CNN과 같이 탐색 영역을 찾는 **Region Proposal** 과 해당 영역을 분류하는 **Detection** 두 가지 과정이 순차적으로 수행되는 방법론을 *2-stage object detector* 라 부르며, 두 가지 과정을 한번에 처리하는 방법론을 *1-stage object detector* 라 부릅니다.   
 
 우선 2-stage object detector는 다음 그림과 같이 나타낼 수 있습니다.
 
