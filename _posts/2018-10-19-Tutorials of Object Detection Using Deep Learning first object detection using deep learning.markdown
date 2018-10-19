@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  “Tutorials of Object Detection using Deep Learning [2] First Object Detection using Deep Learning?”
+title:  “Tutorials of Object Detection using Deep Learning [2] First Object Detection using Deep Learning”
 date:   2018-10-19
-description: Deep Learning을 이용한 Object detection Tutorial - [2] First Object Detection using Deep Learning?
+description: Deep Learning을 이용한 Object detection Tutorial - [2] First Object Detection using Deep Learning
 comments: true
 ---
 
