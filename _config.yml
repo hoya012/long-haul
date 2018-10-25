@@ -21,8 +21,8 @@ navigation:
  - title: About
    url: /about
  - title: Archives
-   url: /archives
-   #url: /contact
+   #url: /archives
+   url: /contact
 
 social:
    github: hoya012
