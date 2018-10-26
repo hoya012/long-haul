@@ -17,4 +17,17 @@ title: About me
 		<li><a href="https://www.dbpia.co.kr/Journal/ArticleDetail/NODE07219575" target="_blank">  <b>이호성</b>, 이동현, 이규중, 이혁재, “CNN 알고리즘의 하드웨어 구현을 위한 고정 소수점 모델 구현 및 성능 분석,” 2017년도 대한전자공학회 하계종합학술대회, June. 2017</a></li>
 		<li>Donghyeon Lee, <b>Ho Seong Lee</b>, Hyun Kim, Jin-Sung Kim, and Hyuk-Jae Lee, “An Evenly Distributed Points based Hand Tracking Method,” International Technical Conference on Circuits/Systems, Computers and Communications, July. 2017</li>
 		<li> <b>이호성</b>, 이동현, 김진성, 이혁재, "Markov Model 기반 손 제스처 인식 알고리즘", SoC 학술대회, May, 2017</li>
+	<h1 class="pageTitle">Contact Me</h1>
+	<div class="contactContent">
+	    <p>If you have questions about the post, feel free to <a href="mailto:lee.hoseong@sualab.com">email me</a> or create an issue on <a href="https://github.com/hoya012">GitHub</a>. Enjoy!</p>
+	</div>
+	  <form action="http://formspree.io/your@mail.com" method="POST">
+	  	<label for="name">Name</label>	
+    		<input type="text" id="name" name="name" class="full-width"><br>	
+		<label for="email">Email Address</label>	
+		<input type="email" id="email" name="_replyto" class="full-width"><br>	
+		<label for="message">Message</label>	
+		<textarea name="message" id="message" cols="30" rows="10" class="full-width"></textarea><br>	
+		<input type="submit" value="Send" class="button">	
+  	  </form>
 </div>
