@@ -1050,7 +1050,8 @@ dd{
   }
   
   .post .pageTitle{
-    margin:2rem auto 1em;
+    /*margin:2rem auto 1em;*/
+    margin:5rem auto 1em;
   }
   
   .post .featuredImage{
