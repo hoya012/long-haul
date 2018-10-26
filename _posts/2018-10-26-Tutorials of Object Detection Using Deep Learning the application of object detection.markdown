@@ -15,7 +15,6 @@ comments: true
 이전 포스팅들은 다음과 같습니다.  
 
 <a href="https://hoya012.github.io/blog/Tutorials-of-Object-Detection-Using-Deep-Learning-what-is-object-detection/" target="_blank"><b> Tutorials of Object Detection using Deep Learning: [1] What is object detection </b></a>  
-
 <a href="https://hoya012.github.io/blog/Tutorials-of-Object-Detection-Using-Deep-Learning-first-object-detection-using-deep-learning/" target="_blank"><b> Tutorials of Object Detection using Deep Learning: [2] First Object Detection using Deep Learning </b></a>
 
 <blockquote> 대표적인 Object detection 적용 사례 </blockquote>
