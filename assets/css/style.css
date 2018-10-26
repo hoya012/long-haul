@@ -908,7 +908,8 @@ dd{
 }
 
 .posts li a:hover{
-  text-decoration:underline;
+  /*text-decoration:underline;*/
+  text-decoration:none;
 }
 
 .posts li .date{
