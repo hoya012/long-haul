@@ -210,7 +210,8 @@ body .intro{
 
 @media (min-width:56.25em){
   .h1,h1{
-    font-size:3em;
+    /*font-size:3em;*/
+    font-size:2.5em;
     line-height:1.05;
   }
 }
