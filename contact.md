@@ -5,6 +5,7 @@ title: Archives
 
 <div class="post">
 	<h1 class="pageTitle"> Object Detection </h1>
+		<li><a href="https://hoya012.github.io/blog/Tutorials-of-Object-Detection-Using-Deep-Learning-how-to-measure-performance-of-object-detection/" target="_blank"> <b> “Tutorials of Object Detection using Deep Learning [4] How to measure performance of object detection” </b></a>, 18/11/03 .</li>
 		<li><a href="https://hoya012.github.io/blog/Tutorials-of-Object-Detection-Using-Deep-Learning-the-application-of-object-detection/" target="_blank"> <b> “Tutorials of Object Detection using Deep Learning [3] The application of Object Detection” </b></a>, 18/10/26 .</li>
   		<li><a href="https://hoya012.github.io/blog/Tutorials-of-Object-Detection-Using-Deep-Learning-first-object-detection-using-deep-learning/" target="_blank"> <b> “Tutorials of Object Detection using Deep Learning [2] First Object Detection using Deep Learning” </b></a>, 18/10/19 .</li>
 	<li><a href="https://hoya012.github.io/blog/Tutorials-of-Object-Detection-Using-Deep-Learning-what-is-object-detection/" target="_blank"> <b> “Tutorials of Object Detection using Deep Learning [1] What is object detection?” </b></a>, 18/10/18 .</li>
