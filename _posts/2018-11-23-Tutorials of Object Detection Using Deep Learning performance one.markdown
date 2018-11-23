@@ -2,7 +2,7 @@
 layout: post
 title:  “Tutorials of Object Detection using Deep Learning [5] Training Deep Networks with Synthetic Data Bridging the Reality Gap by Domain Randomization Review”
 date:   2018-11-23
-description: Deep Learning을 이용한 Object detection Tutorial - [5] Training Deep Networks with Synthetic Data: Bridging the Reality Gap by Domain Randomization Review
+description: Deep Learning을 이용한 Object detection Tutorial - [5] Training Deep Networks with Synthetic Data Bridging the Reality Gap by Domain Randomization Review
 comments: true
 ---
 
