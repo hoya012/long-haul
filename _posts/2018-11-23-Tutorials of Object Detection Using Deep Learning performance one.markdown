@@ -111,7 +111,7 @@ VKITTI 데이터셋은 약 2500장인 반면 Domain Randomization으로 생성�
 이 점에 대해서는 논문에서도 언급을 하고 있습니다.
 
 ```
-Although our approach uses more images, these images come essentially for free since they are generated automatically. Note that this VKITTI dataset was specif- ically rendered with the intention of recreating as closely as possible the original real-world KITTI dataset (used for testing).
+Although our approach uses more images, these images come essentially for free since they are generated automatically. Note that this VKITTI dataset was specifically rendered with the intention of recreating as closely as possible the original real-world KITTI dataset (used for testing).
 ```
 
 동등한 비교는 아니지만, 본 논문의 요지를 생각해볼 때, VKITTI보다 나은 성능을 보이는 것이 목적이 아니라, **데이터가 부족해서 생성을 해야 하는 상황에서 VKITTI와 같이 세세하고 복잡하고 느린 과정을 거치지 않아도 손쉽게 VKITTI와 거의 유사한 성능을 내는 것을 목적** 으로 하고 있기 때문에 큰 문제는 없을 것 같다고 생각합니다. 
