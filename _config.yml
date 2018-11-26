@@ -13,6 +13,7 @@ highlighter: rouge
 gems:
  - jekyll-paginate
  - jekyll-archives
+ - jekyll-time-to-read
 paginate: 10
 
 navigation:
