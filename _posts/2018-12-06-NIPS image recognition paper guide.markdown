@@ -249,5 +249,12 @@ comments: true
 	<figcaption> [본 논문의 성능 표] </figcaption>
 </figure> 
 
+<blockquote> 결론 </blockquote>
+이번 포스팅에서는 올해 NeurIPS 2018에 accept된 논문 중에 이미지 인식 분야와 관련있는 24편에 대해 정리를 해보았습니다. 
+제가 정리한 논문 외에도 양질의 논문들이 많이 있으니 관심있으신 분들은 다른 논문들도 읽어보시고, 추천을 해주시면 감사하겠습니다!
+
+앞으로도 관심있는 학회에 대해서 이렇게 논문 리스트를 정리할 예정이며 피드백을 주시면 반영을 하도록 하겠습니다.
+또한 다녀온 학회에 대한 리뷰도 시간이 되는대로 작성을 하도록 하겠습니다. 감사합니다.
+
 <blockquote> 참고 문헌 </blockquote>  
 - <a href="https://github.com/lixin4ever/Conference-Acceptance-Rate" target="_blank"> Statistics of acceptance rate for the main AI conferences </a>
