@@ -32,53 +32,53 @@ comments: true
 앞서 말씀드렸듯이 1011편을 다 확인하기엔 시간과 체력이 부족하여서, 간단하게 제목만 보면서 제가 느끼기에 재미가 있을 것 같은 논문들을 추려보았습니다.
 총 24편의 논문이며, 1편의 oral paper, 6편의 spotlight paper, 17편의 poster paper로 준비를 해보았습니다. 또한 각 논문마다 abstract를 읽고 논문을 간단히 정리해보았습니다.
 
-###  <a href="http://papers.nips.cc/paper/7515-how-does-batch-normalization-help-optimization.pdf" target="_blank"><b> 1.	How Does Batch Normalization Help Optimization? (Oral)  </b></a>  
+##  <a href="http://papers.nips.cc/paper/7515-how-does-batch-normalization-help-optimization.pdf" target="_blank"><b> 1.	How Does Batch Normalization Help Optimization? (Oral)  </b></a>  
 
-###  <a href="http://papers.nips.cc/paper/8160-sanity-checks-for-saliency-maps.pdf" target="_blank"><b> 2.	Sanity Checks for Saliency Maps (Spotlight)  </b></a>  
+##  <a href="http://papers.nips.cc/paper/8160-sanity-checks-for-saliency-maps.pdf" target="_blank"><b> 2.	Sanity Checks for Saliency Maps (Spotlight)  </b></a>  
 
-###  <a href="http://papers.nips.cc/paper/7928-a-probabilistic-u-net-for-segmentation-of-ambiguous-images.pdf" target="_blank"><b> 3.	A Probabilistic U-Net for Segmentation of Ambiguous Images (Spotlight)  </b></a>  
+##  <a href="http://papers.nips.cc/paper/7928-a-probabilistic-u-net-for-segmentation-of-ambiguous-images.pdf" target="_blank"><b> 3.	A Probabilistic U-Net for Segmentation of Ambiguous Images (Spotlight)  </b></a>  
 
-###  <a href="http://papers.nips.cc/paper/8277-bias-and-generalization-in-deep-generative-models-an-empirical-study.pdf" target="_blank"><b> 4.	Bias and Generalization in Deep Generative Models: An Empirical Study (Spotlight) </b></a>  
+##  <a href="http://papers.nips.cc/paper/8277-bias-and-generalization-in-deep-generative-models-an-empirical-study.pdf" target="_blank"><b> 4.	Bias and Generalization in Deep Generative Models: An Empirical Study (Spotlight) </b></a>  
 
-###  <a href="http://papers.nips.cc/paper/7485-norm-matters-efficient-and-accurate-normalization-schemes-in-deep-networks.pdf" target="_blank"><b> 5.	Norm matters: efficient and accurate normalization schemes in deep network (Spotlight)  </b></a>  
+##  <a href="http://papers.nips.cc/paper/7485-norm-matters-efficient-and-accurate-normalization-schemes-in-deep-networks.pdf" target="_blank"><b> 5.	Norm matters: efficient and accurate normalization schemes in deep network (Spotlight)  </b></a>  
 
-###  <a href="http://papers.nips.cc/paper/7935-gilbo-one-metric-to-measure-them-all.pdf" target="_blank"><b> 6.	GILBO: One Metric to Measure Them All (Spotlight)  </b></a>  
+##  <a href="http://papers.nips.cc/paper/7935-gilbo-one-metric-to-measure-them-all.pdf" target="_blank"><b> 6.	GILBO: One Metric to Measure Them All (Spotlight)  </b></a>  
 
-###  <a href="http://papers.nips.cc/paper/7947-a-simple-unified-framework-for-detecting-out-of-distribution-samples-and-adversarial-attacks.pdf" target="_blank"><b> 7.	A Simple Unified Framework for Detecting Out-of-Distribution Samples and Adversarial Attacks (Spotlight)  </b></a>  
+##  <a href="http://papers.nips.cc/paper/7947-a-simple-unified-framework-for-detecting-out-of-distribution-samples-and-adversarial-attacks.pdf" target="_blank"><b> 7.	A Simple Unified Framework for Detecting Out-of-Distribution Samples and Adversarial Attacks (Spotlight)  </b></a>  
 
-###  <a href="http://papers.nips.cc/paper/7766-channelnets-compact-and-efficient-convolutional-neural-networks-via-channel-wise-convolutions.pdf" target="_blank"><b> 8.	ChannelNets: Compact and Efficient Convolutional Neural Networks via Channel-Wise Convolutions </b></a>  
+##  <a href="http://papers.nips.cc/paper/7766-channelnets-compact-and-efficient-convolutional-neural-networks-via-channel-wise-convolutions.pdf" target="_blank"><b> 8.	ChannelNets: Compact and Efficient Convolutional Neural Networks via Channel-Wise Convolutions </b></a>  
 
-###  <a href="http://papers.nips.cc/paper/7454-collaborative-learning-for-deep-neural-networks.pdf" target="_blank"><b> 9.	Collaborative Learning for Deep Neural Networks  </b></a>  
+##  <a href="http://papers.nips.cc/paper/7454-collaborative-learning-for-deep-neural-networks.pdf" target="_blank"><b> 9.	Collaborative Learning for Deep Neural Networks  </b></a>  
 
-###  <a href="http://papers.nips.cc/paper/7879-l4-practical-loss-based-stepsize-adaptation-for-deep-learning.pdf" target="_blank"><b> 10.	L4: Practical loss-based stepsize adaptation for deep learning  </b></a>  
+##  <a href="http://papers.nips.cc/paper/7879-l4-practical-loss-based-stepsize-adaptation-for-deep-learning.pdf" target="_blank"><b> 10.	L4: Practical loss-based stepsize adaptation for deep learning  </b></a>  
 
-###  <a href="http://papers.nips.cc/paper/7761-scalable-methods-for-8-bit-training-of-neural-networks.pdf" target="_blank"><b> 11.	Scalable Methods for 8-bit Training of Neural Networks  </b></a>  
+##  <a href="http://papers.nips.cc/paper/7761-scalable-methods-for-8-bit-training-of-neural-networks.pdf" target="_blank"><b> 11.	Scalable Methods for 8-bit Training of Neural Networks  </b></a>  
 
-###  <a href="http://papers.nips.cc/paper/7647-adversarial-examples-that-fool-both-computer-vision-and-time-limited-humans.pdf" target="_blank"><b> 12.	Adversarial Examples that Fool both Computer Vision and Time-Limited Humans  </b></a>  
+##  <a href="http://papers.nips.cc/paper/7647-adversarial-examples-that-fool-both-computer-vision-and-time-limited-humans.pdf" target="_blank"><b> 12.	Adversarial Examples that Fool both Computer Vision and Time-Limited Humans  </b></a>  
 
-###  <a href="http://papers.nips.cc/paper/8072-co-teaching-robust-training-of-deep-neural-networks-with-extremely-noisy-labels.pdf" target="_blank"><b> 13.	Co-teaching: Robust Training of Deep Neural Networks with Extremely Noisy Labels   </b></a>  
+##  <a href="http://papers.nips.cc/paper/8072-co-teaching-robust-training-of-deep-neural-networks-with-extremely-noisy-labels.pdf" target="_blank"><b> 13.	Co-teaching: Robust Training of Deep Neural Networks with Extremely Noisy Labels   </b></a>  
 
-###  <a href="http://papers.nips.cc/paper/8183-deep-anomaly-detection-using-geometric-transformations.pdf" target="_blank"><b> 14.	Deep Anomaly Detection Using Geometric Transformations  </b></a>  
+##  <a href="http://papers.nips.cc/paper/8183-deep-anomaly-detection-using-geometric-transformations.pdf" target="_blank"><b> 14.	Deep Anomaly Detection Using Geometric Transformations  </b></a>  
 
-###  <a href="http://papers.nips.cc/paper/7828-practical-deep-stereo-pds-toward-applications-friendly-deep-stereo-matching.pdf" target="_blank"><b> 15.	Practical Deep Stereo (PDS): Toward applications-friendly deep stereo matching.  </b></a>  
+##  <a href="http://papers.nips.cc/paper/7828-practical-deep-stereo-pds-toward-applications-friendly-deep-stereo-matching.pdf" target="_blank"><b> 15.	Practical Deep Stereo (PDS): Toward applications-friendly deep stereo matching.  </b></a>  
 
-###  <a href="http://papers.nips.cc/paper/7921-bayesian-adversarial-learning.pdf" target="_blank"><b> 16.	Bayesian Adversarial Learning  </b></a>  
+##  <a href="http://papers.nips.cc/paper/7921-bayesian-adversarial-learning.pdf" target="_blank"><b> 16.	Bayesian Adversarial Learning  </b></a>  
 
-###  <a href="http://papers.nips.cc/paper/7429-bilinear-attention-networks.pdf" target="_blank"><b> 17.	Bilinear Attention Networks  </b></a>  
+##  <a href="http://papers.nips.cc/paper/7429-bilinear-attention-networks.pdf" target="_blank"><b> 17.	Bilinear Attention Networks  </b></a>  
 
-###  <a href="http://papers.nips.cc/paper/7915-generative-probabilistic-novelty-detection-with-adversarial-autoencoders.pdf" target="_blank"><b> 18.	Generative Probabilistic Novelty Detection with Adversarial Autoencoders   </b></a>  
+##  <a href="http://papers.nips.cc/paper/7915-generative-probabilistic-novelty-detection-with-adversarial-autoencoders.pdf" target="_blank"><b> 18.	Generative Probabilistic Novelty Detection with Adversarial Autoencoders   </b></a>  
 
-###  <a href="http://papers.nips.cc/paper/8143-sniper-efficient-multi-scale-training.pdf" target="_blank"><b> 19.	SNIPER: Efficient Multi-Scale Training  </b></a>  
+##  <a href="http://papers.nips.cc/paper/8143-sniper-efficient-multi-scale-training.pdf" target="_blank"><b> 19.	SNIPER: Efficient Multi-Scale Training  </b></a>  
 
-###  <a href="http://papers.nips.cc/paper/7798-to-trust-or-not-to-trust-a-classifier.pdf" target="_blank"><b> 20.	To Trust Or Not To Trust A Classifier  </b></a>  
+##  <a href="http://papers.nips.cc/paper/7798-to-trust-or-not-to-trust-a-classifier.pdf" target="_blank"><b> 20.	To Trust Or Not To Trust A Classifier  </b></a>  
 
-###  <a href="http://papers.nips.cc/paper/7448-enhancing-the-accuracy-and-fairness-of-human-decision-making.pdf" target="_blank"><b> 21.	Enhancing the Accuracy and Fairness of Human Decision Making  </b></a>  
+##  <a href="http://papers.nips.cc/paper/7448-enhancing-the-accuracy-and-fairness-of-human-decision-making.pdf" target="_blank"><b> 21.	Enhancing the Accuracy and Fairness of Human Decision Making  </b></a>  
 
-###  <a href="http://papers.nips.cc/paper/7394-adversarial-vulnerability-for-any-classifier.pdf" target="_blank"><b> 22.	Adversarial vulnerability for any classifier  </b></a>  
+##  <a href="http://papers.nips.cc/paper/7394-adversarial-vulnerability-for-any-classifier.pdf" target="_blank"><b> 22.	Adversarial vulnerability for any classifier  </b></a>  
 
-###  <a href="http://papers.nips.cc/paper/7338-how-to-start-training-the-effect-of-initialization-and-architecture.pdf" target="_blank"><b> 23.	How to Start Training: The Effect of Initialization and Architecture  </b></a>  
+##  <a href="http://papers.nips.cc/paper/7338-how-to-start-training-the-effect-of-initialization-and-architecture.pdf" target="_blank"><b> 23.	How to Start Training: The Effect of Initialization and Architecture  </b></a>  
 
-###  <a href="http://papers.nips.cc/paper/8007-neural-architecture-optimization.pdf" target="_blank"><b> 24.	Neural Architecture Optimization  </b></a>  
+##  <a href="http://papers.nips.cc/paper/8007-neural-architecture-optimization.pdf" target="_blank"><b> 24.	Neural Architecture Optimization  </b></a>  
 
 
 <blockquote> 참고 문헌 </blockquote>  
