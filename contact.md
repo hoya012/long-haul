@@ -22,5 +22,9 @@ title: Archives
 	<h1 class="pageTitle">  </h1>
 	<h1 class="pageTitle"> AutoML </h1>
 		<li><a href="https://hoya012.github.io/blog/Learning-Transferable-Architectures-for-Scalable-Image-Recognition-Review/" target="_blank"> <b> “Learning Transferable Architectures for Scalable Image Recognition” </b></a>, 18/09/28 .</li>
-
+	<h1 class="pageTitle">  </h1>
+	<h1 class="pageTitle">  </h1>
+	<h1 class="pageTitle">  </h1>
+	<h1 class="pageTitle"> ETC. </h1>
+		<li><a href="https://hoya012.github.io/blog/NIPS-image-recognition-paper-guide/" target="_blank"> <b> “NeurIPS 2018 image recognition paper list guide” </b></a>, 18/12/06 .</li>
 </div>
