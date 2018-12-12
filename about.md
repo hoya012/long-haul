@@ -8,6 +8,8 @@ title: About me
 		<li>Hoseong Lee received the B.S., <a href="http://capp.snu.ac.kr/" target="_blank"> <b>M.S. degrees</b>, </a> in Electrical and Computer Engineering from Seoul National University, Seoul, Korea, in 2016, 2018.</li>
   		<li>In 2018, he joined the <a href="http://sualab.com/" target="_blank"> <b>SUALAB.</b></a>,Seoul, Korea, as a Machine Learning Engineer.</li>
   		<li>His research interests include algorithm and architecture for image recognition, image processing using deep learning.</li>
+	<h1 class="pageTitle">Teaching Experience</h1>
+		<li><a href="https://www.fastcampus.co.kr/data_workshop_obj/" target="_blank"> <b>Object Detection Workshop</b>, </a> in Fastcampus, 2018.10 ~ 2019.1 </li>
 	<h1 class="pageTitle">Publications</h1>
 		<li><a href="http://s-space.snu.ac.kr/handle/10371/141510" target="_blank"> <b>이호성</b>, "CNN 및 Edge detection 기반
 고속 손 동작 인식", 서울대학교 전기정보공학부 석사학위논문(Thesis), Feb. 2018 </a></li>
