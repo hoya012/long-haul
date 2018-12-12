@@ -10,8 +10,8 @@ title: About me
   		<li>His research interests include algorithm and architecture for image recognition, image processing using deep learning.</li>
 	<h1 class="pageTitle">Teaching Experience</h1>
 		<li><a href="https://www.fastcampus.co.kr/data_workshop_obj/" target="_blank"> <b>Object Detection Workshop</b>, </a> in Fastcampus, 2018.10 ~ 2019.1 </li>
-		<li> TA of <b> Digital System Design and Experiments class </b>, </a> in SNU, 2017.9 ~ 2017.12 </li>
-		<li> TA of <b> Digital System Design and Experiments class </b>, </a> in SNU, 2016.9 ~ 2016.12 </li>
+		<li> TA of <b> Digital System Design and Experiments(디지털 시스템 설계 및 실습) </b>, </a> in SNUECE(서울대학교 전기정보공학부), 2017.9 ~ 2017.12 </li>
+		<li> TA of <b> Digital System Design and Experiments(디지털 시스템 설계 및 실습) </b>, </a> in SNUECE(서울대학교 전기정보공학부), 2016.9 ~ 2016.12 </li>
 	<h1 class="pageTitle">Publications</h1>
 		<li><a href="http://s-space.snu.ac.kr/handle/10371/141510" target="_blank"> <b>이호성</b>, "CNN 및 Edge detection 기반
 고속 손 동작 인식", 서울대학교 전기정보공학부 석사학위논문(Thesis), Feb. 2018 </a></li>
