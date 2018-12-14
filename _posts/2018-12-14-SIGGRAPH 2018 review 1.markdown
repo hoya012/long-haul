@@ -42,7 +42,7 @@ SIGGRAPH 2018에 발표된 논문의 리스트는
 
 <blockquote> 주요 프로그램 소개 </blockquote>  
 
-## Exhibition
+## - Exhibition
 SIGGRAPH는 논문 발표 외에도 각종 그래픽스 관련 다양한 주제의 데모와 포스터, 전시 등이 활발하여 단순히 논문 발표만 듣는 것이 아니라, 데모와 전시 등의 “보는 재미”도 느낄 수 있는 학회였습니다. 
 
 <figure>
@@ -61,7 +61,7 @@ SIGGRAPH는 논문 발표 외에도 각종 그래픽스 관련 다양한 주제�
 <a href="https://www.youtube.com/watch?v=Kq1sOZChpwI" target="_blank"><b> 해당 링크 </b></a>
 에서 확인이 가능합니다. 
 
-## Training Session
+## - Training Session
 다음으로 설명드릴 프로그램은 Training Session입니다. 
 다양한 기업에서 여러 주제로 Course를 진행하는 프로그램으로, 저는 주로 NVIDIA에서 진행한 “Hands-on training session”에 참여를 하였습니다. 
 각 강의 당 1시간 30분 ~ 2시간 정도 진행이 되며 딥러닝을 이용하여 이미지를 다루는 여러 주제들의 튜토리얼로 진행이 되었습니다. 
@@ -78,7 +78,7 @@ SIGGRAPH는 논문 발표 외에도 각종 그래픽스 관련 다양한 주제�
 저는 주로 TensorFlow를 사용하지만 최근 PyTorch도 공부를 하고 있어서 코드를 이해하며 공부를 할 수 있었습니다. 
 이 외에도 Unity 등 다른 기업에서도 다양한 주제로 Training Session을 열고 있으므로, 학회장에서 직접 코드를 돌려보고 현업 기술자들과 소통을 할 수 있는 좋은 기회라고 생각합니다.
 
-## Technical Paper Fast Forward
+## - Technical Paper Fast Forward
 다음 설명드릴 프로그램은 학회의 꽃인 논문과 관련된 프로그램입니다. 
 100 ~ 200편의 논문이 매년 accept되기도 하고 무엇보다 다양한 주제로 논문이 발표가 되니까 어떤 논문을 읽고 발표를 들을 지 굉장히 감을 잡기가 어려웠습니다. 
 그런데 마침 **“Fast Forward”** 라는 프로그램이 이 고민을 해결해주었습니다. 
@@ -97,7 +97,7 @@ SIGGRAPH는 논문 발표 외에도 각종 그래픽스 관련 다양한 주제�
 실제로도 이 프로그램에서 인상깊게 들은 논문을 호텔에서 읽어보고, 발표장에서도 듣기도 하였습니다. 
 이 논문은 다음 포스팅에서 자세히 다루도록 하겠습니다.
 
-## NVIDIA Turing Architecture 공개
+## - NVIDIA Turing Architecture 공개
 SIGGRAPH 2018의 화두는 단언컨대 NVIDIA turing 아키텍처의 공개라고 할 수 있을 것 같습니다. 
 NVIDIA의 젠슨황 CEO가 SIGGRAPH 2018에서 최초로 turing 아키텍처 기반의 GPU를 공개하였고, 굉장히 주목을 받게 되었습니다. 
 사실 하드웨어에 관심이 없는 분들은 이게 뭔데? 하실 수 있는데 저처럼 하드웨어에 관심이 많은 사람들에겐 중요한 자리였습니다. 
@@ -135,7 +135,7 @@ SIGGRAPH 2018에서 발표된 영상은
 <a href="https://www.youtube.com/watch?v=jY28N0kv7Pk" target="_blank"><b> 해당 링크 </b></a>
 에서 확인하실 수 있습니다.
 
-## 그 외..
+## - 그 외..
 이 외에도 다양한 프로그램들이 진행이 되었습니다. 
 같은 시간대에 두 건물에서 동시에 여러 프로그램이 진행이 되다 보니 못 가본 프로그램들이 많습니다. 
 대표적으로 Art 관련 프로그램들이 못 가본 프로그램들이고, 이 외에도 여러 기업을 초청해서 진행하는 Job Fair, 여러 제품들을 전시하고 설명하는 production gallery, 논문으로 발표한 기술들을 실시간으로 데모로 보여주는 Real-time live 등 다양한 프로그램들이 있었습니다. 
