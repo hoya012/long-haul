@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  “SIGGRAPH 2018 review [1] 참석 후기 및 프로그램 소개”
-date:   2018-12-06
-description: SIGGRAPH 2018 학회 참석 후기 및 프로그램 소개
+date:   2018-12-14
+description: SIGGRAPH 2018 학회에 참석하여 느낀 점들과 후기, 대표적인 프로그램 소개 등을 정리하였습니다.
 comments: true
 ---
 
@@ -108,20 +108,20 @@ NVIDIA의 젠슨황 CEO가 SIGGRAPH 2018에서 최초로 turing 아키텍처 기
 최근 세대별 대표적인 GPU를 정리하면 다음과 같습니다.
 
 -	9세대(Kepler)
-   - GeForce 600 series (ex, GT 640, GTX 650 Ti, etc)
-   - GeForce 700 series (ex, GT 740, GTX 750 Ti, etc)
-   - GeForce TITAN (ex, GTX TITAN, TEX TITAN Z, etc)
+     - GeForce 600 series (ex, GT 640, GTX 650 Ti, etc)
+     - GeForce 700 series (ex, GT 740, GTX 750 Ti, etc)
+     - GeForce TITAN (ex, GTX TITAN, TEX TITAN Z, etc)
 -	10세대(Maxwell)
-   - GeForce 900 series (ex, GTX 980, GTX 980 Ti, etc)
-   - GeForce TITAN X (ex, GTX TITAN X)
+     - GeForce 900 series (ex, GTX 980, GTX 980 Ti, etc)
+     - GeForce TITAN X (ex, GTX TITAN X)
 -	11세대(Pascal)
-   - GeForce 10 series (ex, GTX 1060, GTX 1080 Ti, etc)
-   - TITAN X/Xp (ex, TITAN X/Xp)
+     - GeForce 10 series (ex, GTX 1060, GTX 1080 Ti, etc)
+     - TITAN X/Xp (ex, TITAN X/Xp)
 -	12세대(Volta)
-   - TITAN V (ex, TITAN V)
+     - TITAN V (ex, TITAN V)
 -	13세대(Turing)
-   - GeForce 20 series (ex, RTX 2070, RTX 2080 Ti, etc)
-   - TITAN RTX (ex, TITAN RTX)
+     - GeForce 20 series (ex, RTX 2070, RTX 2080 Ti, etc)
+     - TITAN RTX (ex, TITAN RTX)
 
 저희가 알 만한, 저희 주변에서 흔히 볼 수 있는 GPU들은 대부분 9세대 ~ 12세대에 속해 있으며 13세대인 **Turing** 이 바로 이번 SIGGRAPH 2018에서 최초로 공개된 아키텍처라 할 수 있습니다. 
 
