@@ -92,13 +92,16 @@ comments: true
 은 제가 학회에서 제일 흥미롭게 들었던 논문이며 앞서 소개 드린 연구들과 마찬가지로 딥러닝을 이용하였고, 이미지와 관련이 있는 논문입니다. 
 논문을 요약하면 다음과 같습니다. 
 
+-	두 이미지 간의 차이를 나타내는 metric은 크게 Quality metric과 Visibility metric으로 나눌 수 있다.
+-	Quality metric은 두 이미지 간의 차이를 계산을 통해 구할 수 있으며 PSNR, SSIM 등이 있다. 하지만 두 지표는 사람이 실제로 느끼는 차이를 잘 반영하지 못한다.
+-	사람이 두 이미지를 봤을 때 느끼는 차이를 나타내는 Visibility metric을 예측하는 딥러닝 모델을 제안한다.
+
 <figure>
 	<img src="{{ '/assets/img/siggraph_2018/demo.gif' | prepend: site.baseurl }}" alt=""> 
 </figure> 
 
--	두 이미지 간의 차이를 나타내는 metric은 크게 Quality metric과 Visibility metric으로 나눌 수 있다.
--	Quality metric은 두 이미지 간의 차이를 계산을 통해 구할 수 있으며 PSNR, SSIM 등이 있다. 하지만 두 지표는 사람이 실제로 느끼는 차이를 잘 반영하지 못한다.
--	사람이 두 이미지를 봤을 때 느끼는 차이를 나타내는 Visibility metric을 예측하는 딥러닝 모델을 제안한다.
+위 그림은 아래의 배심원들은 기존의 컴퓨터로 계산한 Quality metric들을 의미하고 각 테스트 샘플마다 quality metric을 이용하여 점수를 매기는 과정을 보여주고 있습니다. 
+이렇게 약간의 차이를 사람은 잘 느낄 수 있지만 기존의 Quality metric으로는 구분할 수 없기 때문에 Visibility metric이 필요하며 이 Visibility metric을 CNN을 통해 예측하는 과정을 논문에서 설명하고 있습니다.
 
 ## - 논문의 Contribution
 본 논문은 **“사람이 인식하는 두 이미지 간의 시각적 차이”** 를 CNN을 이용하여 예측하는 방법을 다루고 있습니다. 
