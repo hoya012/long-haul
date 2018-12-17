@@ -21,7 +21,7 @@ comments: true
 <a href="http://kesen.realtimerendering.com/sig2018.html" target="_blank"><b> 해당 링크 </b></a>
 를 참고하시면 좋을 것 같습니다. 
 
-## <a href="http://www.cs.cityu.edu.hk/~rynson/papers/sig18.pdf" target="_blank"> What Characterizes Personalities of Graphic Designs?  </a>
+## <a href="http://www.cs.cityu.edu.hk/~rynson/papers/sig18.pdf" target="_blank"> 1. What Characterizes Personalities of Graphic Designs?  </a>
 
 이 논문은 아래의 그림에서 알 수 있듯이 그래픽 디자인 이미지가 있으면 해당 이미지의 personality(성격)을 예측하는 딥러닝 모델을 제안하고 있습니다. 
 또한 이미지의 어떤 부분이 해당 성격에 긍정적인, 혹은 부정적인 영향을 주고 있는지를 나타내는 sensitive map까지 얻을 수 있습니다. 
@@ -34,7 +34,7 @@ comments: true
 개인적으로 Image Super-Resolution을 할 때 직접 데이터셋을 취득할 때 포스터 이미지들, 책 표지 이미지들을 활용하였었는데 비슷한 관점에서 다룬 논문이라 흥미로웠습니다. 
 또한 sensitive map도 비교적 정교하게 얻을 수 있어서 이를 활용할 수 있는 여러 방식이 있을 것 같습니다. 
 
-## <a href="http://cfg.mit.edu/sites/cfg.mit.edu/files/sss_3.pdf" target="_blank"> Semantic Soft Segmentation  </a>
+## <a href="http://cfg.mit.edu/sites/cfg.mit.edu/files/sss_3.pdf" target="_blank"> 2. Semantic Soft Segmentation  </a>
 <figure>
 	<img src="{{ '/assets/img/siggraph_2018/fig6.PNG' | prepend: site.baseurl }}" alt=""> 
 </figure> 
@@ -50,7 +50,7 @@ comments: true
 이 논문의 방식을 통해 위의 그림처럼 관심있는 object만 남기고 배경을 제거하는데 사용할 수도 있고 혹은 기존의 배경을 다른 배경으로 바꾸는 데도 활용이 가능합니다. 
 이를 통해 여러 재미있는 응용 사례들이 나오지 않을까 기대해봅니다.  
 
-## <a href="https://arxiv.org/pdf/1805.04140.pdf" target="_blank"> Neural Best-Buddies: Sparse Cross-Domain Correspondence  </a>
+## <a href="https://arxiv.org/pdf/1805.04140.pdf" target="_blank"> 3. Neural Best-Buddies: Sparse Cross-Domain Correspondence  </a>
 <figure>
 	<img src="{{ '/assets/img/siggraph_2018/fig8.PNG' | prepend: site.baseurl }}" alt=""> 
 </figure> 
@@ -68,7 +68,7 @@ comments: true
 서로 다른 도메인의 이미지이지만 Keypoint matching을 통해 비교적 정확하게 이미지 합성을 하는 것을 확인할 수 있습니다. 
 이 연구 또한 실제 application에 잘 접목을 시키면 재미있는 결과들이 나올 것으로 기대가 됩니다. 
 
-## <a href="https://arxiv.org/pdf/1610.03151v1.pdf" target="_blank"> FaceVR: Real-Time Facial Reenactment and Eye Gaze Control in Virtual Reality  </a>
+## <a href="https://arxiv.org/pdf/1610.03151v1.pdf" target="_blank"> 4. FaceVR: Real-Time Facial Reenactment and Eye Gaze Control in Virtual Reality  </a>
 <figure>
 	<img src="{{ '/assets/img/siggraph_2018/fig10.PNG' | prepend: site.baseurl }}" alt=""> 
 </figure> 
