@@ -31,7 +31,7 @@ comments: true
 </figure> 
 
 포스터 데이터셋을 이용하였으며 총 15가지의 Personality에 대해 분류를 하는 문제를 해결하였고, 선행 연구들에 비해 높은 정확도를 달성한 논문입니다. 
-개인적으로 Image Super-Resolution을 할 때 직접 데이터셋을 취득할 때 포스터 이미지들, 책 표지 이미지들을 활용하였었는데 비슷한 관점에서 다룬 논문이라 흥미로웠습니다. 
+개인적으로 연구를 하다가 직접 데이터셋을 취득해야 할 때 포스터 이미지들, 책 표지 이미지들을 활용하였었는데 비슷한 관점에서 다룬 논문이라 흥미로웠습니다. 
 또한 sensitive map도 비교적 정교하게 얻을 수 있어서 이를 활용할 수 있는 여러 방식이 있을 것 같습니다. 
 
 ## <a href="http://cfg.mit.edu/sites/cfg.mit.edu/files/sss_3.pdf" target="_blank"> 2. Semantic Soft Segmentation  </a>
