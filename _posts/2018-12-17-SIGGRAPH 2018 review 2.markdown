@@ -9,81 +9,18 @@ comments: true
 안녕하세요, 지난 편에 이어서 이번 포스팅에서는 SIGGRAPH 2018 학회에서 흥미로웠던 논문 여러 편에 대해 간단히 소개를 드리고, 그 중 가장 재미있게 들었던 논문 한편에 대한 리뷰를 다룰 예정입니다. 
 주로 이미지 인식 분야 관련 논문을 소개해드릴 예정이며, 제 관심 분야가 아닌 논문들은 제가 배경지식이 없어서 소개를 드리지 못하는 점 양해 부탁드리며 글을 시작하겠습니다.
 
-<blockquote> 주요 논문 간단 소개 </blockquote>
+<blockquote> 논문 소개 및 리뷰 </blockquote>
 
 올해 SIGGRAPH 2018에 accept된 논문은 총 167편으로 최근 5년간 약 120편 전후로 accept이 되었는데 올해 약 40편정도가 증가하였습니다. 
 최근 10년간 SIGGRAPH의 논문 acceptance rate는 
 <a href="http://kesen.realtimerendering.com/" target="_blank"><b> 해당 링크 </b></a>
 에서 참고를 하였고, 2018년의 통계 자료는 아직 제공이 되지 않아서 제가 직접 accepted paper list에서 편수를 세서 계산을 하여 작성을 하였습니다. 
 
-총 167편 중에 이미지 인식 분야와 관련이 있고 딥러닝을 이용한 5편의 논문을 짧게 소개 드리고, 그 중 제가 관심있게 들었던 1편은 좀 더 자세하게 리뷰를 진행할 예정입니다. 
+총 167편 중에 이미지 인식 분야와 관련이 있고 딥러닝을 이용한 5편의 논문을 준비해보았습니다. 그 중 제가 관심있게 들었던 1편은 좀 더 자세하게 리뷰를 진행하고, 나머지 4편은 짧게 소개 드릴 예정입니다. 
+
 분량 상 5편만 선정하게 되었지만 다른 논문들도 재미있는 주제들이 많이 있으니 관심 있으신 분들은 
 <a href="http://kesen.realtimerendering.com/sig2018.html" target="_blank"><b> 해당 링크 </b></a>
 를 참고하시면 좋을 것 같습니다. 
-
-## <a href="http://www.cs.cityu.edu.hk/~rynson/papers/sig18.pdf" target="_blank"> 1. What Characterizes Personalities of Graphic Designs?  </a>
-
-이 논문은 아래의 그림에서 알 수 있듯이 그래픽 디자인 이미지가 있으면 해당 이미지의 personality(성격)을 예측하는 딥러닝 모델을 제안하고 있습니다. 
-또한 이미지의 어떤 부분이 해당 성격에 긍정적인, 혹은 부정적인 영향을 주고 있는지를 나타내는 sensitive map까지 얻을 수 있습니다. 
-
-<figure>
-	<img src="{{ '/assets/img/siggraph_2018/fig5.PNG' | prepend: site.baseurl }}" alt=""> 
-</figure> 
-
-포스터 데이터셋을 이용하였으며 총 15가지의 Personality에 대해 분류를 하는 문제를 해결하였고, 선행 연구들에 비해 높은 정확도를 달성한 논문입니다. 
-개인적으로 연구를 하다가 직접 데이터셋을 취득해야 할 때 포스터 이미지들, 책 표지 이미지들을 활용하였었는데 비슷한 관점에서 다룬 논문이라 흥미로웠습니다. 
-또한 sensitive map도 비교적 정교하게 얻을 수 있어서 이를 활용할 수 있는 여러 방식이 있을 것 같습니다. 
-
-## <a href="http://cfg.mit.edu/sites/cfg.mit.edu/files/sss_3.pdf" target="_blank"> 2. Semantic Soft Segmentation  </a>
-<figure>
-	<img src="{{ '/assets/img/siggraph_2018/fig6.PNG' | prepend: site.baseurl }}" alt=""> 
-</figure> 
-
-이 논문은 제목에서 잘 나와있듯이 semantically meaningful region들을 soft하게 segmentation하는 연구를 다루고 있습니다. 
-기존 semantic segmentation, instance segmentation에 대해서만 논문을 읽었었는데 semantic soft segmentation 이라는 분야에 대해 처음 접할 수 있었던 논문이었습니다. 
-기술적인 자세한 내용은 본 논문을 참고하시면 좋을 것 같습니다.
-
-<figure>
-	<img src="{{ '/assets/img/siggraph_2018/fig7.PNG' | prepend: site.baseurl }}" alt=""> 
-</figure> 
-
-이 논문의 방식을 통해 위의 그림처럼 관심있는 object만 남기고 배경을 제거하는데 사용할 수도 있고 혹은 기존의 배경을 다른 배경으로 바꾸는 데도 활용이 가능합니다. 
-이를 통해 여러 재미있는 응용 사례들이 나오지 않을까 기대해봅니다.  
-
-## <a href="https://arxiv.org/pdf/1805.04140.pdf" target="_blank"> 3. Neural Best-Buddies: Sparse Cross-Domain Correspondence  </a>
-<figure>
-	<img src="{{ '/assets/img/siggraph_2018/fig8.PNG' | prepend: site.baseurl }}" alt=""> 
-</figure> 
-
-이 논문은 원본 이미지에 해당하는 특징점들(원)을 다른 도메인의 이미지에 대해서 찾는 연구를 진행하였습니다. 
-예를 들면 고양이와 사자 이미지를 준비하고 고양이의 코 영역을 선택하면 사자의 코 영역을 얻을 수 있게 됩니다. 
-이러한 연구를 Pairwise Keypoint Matching라 부르는데 주로 같은 도메인에 대해서 연구를 진행한 반면 본 연구는 다른 도메인에 대해서 접근을 한 점이 특징이라 할 수 있습니다. 
-즉 훨씬 어려운 문제에 대해 접근을 하였습니다. 
-
-<figure>
-	<img src="{{ '/assets/img/siggraph_2018/fig9.PNG' | prepend: site.baseurl }}" alt=""> 
-</figure> 
-
-이 연구를 이용한 사례를 예로 들면 위의 그림과 같이 1번째 column과 5번째 column이 모델에 pair로 들어가는 이미지이고 가운데 2, 3, 4번째 column은 두 이미지를 이용하여 가중치를 둬서 합성한 이미지입니다. 
-서로 다른 도메인의 이미지이지만 Keypoint matching을 통해 비교적 정확하게 이미지 합성을 하는 것을 확인할 수 있습니다. 
-이 연구 또한 실제 application에 잘 접목을 시키면 재미있는 결과들이 나올 것으로 기대가 됩니다. 
-
-## <a href="https://arxiv.org/pdf/1610.03151v1.pdf" target="_blank"> 4. FaceVR: Real-Time Facial Reenactment and Eye Gaze Control in Virtual Reality  </a>
-<figure>
-	<img src="{{ '/assets/img/siggraph_2018/fig10.PNG' | prepend: site.baseurl }}" alt=""> 
-</figure> 
-
-이 논문은 제목에서 알 수 있듯이 Virtual Reality와 관련이 있는 연구입니다. 
-입력으로 VR 고글을 통해 취득한 RGB-D input과 IR camera를 이용해 찍은 동공의 이미지를 이용하여 두 눈이 바라보고 있는 방향을 고려하여 고글을 쓰지 않았을 때의 얼굴을 합성해내는 연구를 진행하였습니다. 
-또한 이 모든 과정이 제목에 나와있듯이 실시간으로 처리가 가능합니다. 
-
-<figure>
-	<img src="{{ '/assets/img/siggraph_2018/fig11.PNG' | prepend: site.baseurl }}" alt=""> 
-</figure> 
-
-위의 그림은 input에 따른 output 얼굴 합성 결과를 보여주고 있으며, 아래 그림은 시선에 따라 얼굴의 변화를 합성하는 것을 보여주고 있습니다. 
-위의 row가 input이고 아래 row가 output인데 합성된 output 이미지지만 꽤 그럴싸한 것을 확인할 수 있습니다. 
-이를 통해 여러 application에 접목이 가능할 것으로 보여집니다. 
 
 <blockquote> Dataset and metrics for predicting local visible differences 논문 리뷰 </blockquote>  
 
@@ -211,6 +148,72 @@ comments: true
 흰색일수록 진하게 삽입을 한 것이며 육안으로 보기에 워터마크가 삽입된 이미지에서 워터마크를 찾기가 굉장히 어렵습니다. 
 
 3가지 사례 모두 본 논문의 연구를 실용적으로 사용하는 방법에 대해 다루고 있으며, 3가지 사례뿐만 아니라 이미지를 처리하는 모든 그래픽스 application 연구의 성능 조절에 본 연구를 활용할 수 있을 것으로 기대가 됩니다.
+
+<blockquote> 이미지 인식 분야 관련 논문 간단 리뷰 </blockquote>  
+
+## <a href="http://www.cs.cityu.edu.hk/~rynson/papers/sig18.pdf" target="_blank"> 1. What Characterizes Personalities of Graphic Designs?  </a>
+
+이 논문은 아래의 그림에서 알 수 있듯이 그래픽 디자인 이미지가 있으면 해당 이미지의 personality(성격)을 예측하는 딥러닝 모델을 제안하고 있습니다. 
+또한 이미지의 어떤 부분이 해당 성격에 긍정적인, 혹은 부정적인 영향을 주고 있는지를 나타내는 sensitive map까지 얻을 수 있습니다. 
+
+<figure>
+	<img src="{{ '/assets/img/siggraph_2018/fig5.PNG' | prepend: site.baseurl }}" alt=""> 
+</figure> 
+
+포스터 데이터셋을 이용하였으며 총 15가지의 Personality에 대해 분류를 하는 문제를 해결하였고, 선행 연구들에 비해 높은 정확도를 달성한 논문입니다. 
+개인적으로 연구를 하다가 직접 데이터셋을 취득해야 할 때 포스터 이미지들, 책 표지 이미지들을 활용하였었는데 비슷한 관점에서 다룬 논문이라 흥미로웠습니다. 
+또한 sensitive map도 비교적 정교하게 얻을 수 있어서 이를 활용할 수 있는 여러 방식이 있을 것 같습니다. 
+
+## <a href="http://cfg.mit.edu/sites/cfg.mit.edu/files/sss_3.pdf" target="_blank"> 2. Semantic Soft Segmentation  </a>
+<figure>
+	<img src="{{ '/assets/img/siggraph_2018/fig6.PNG' | prepend: site.baseurl }}" alt=""> 
+</figure> 
+
+이 논문은 제목에서 잘 나와있듯이 semantically meaningful region들을 soft하게 segmentation하는 연구를 다루고 있습니다. 
+기존 semantic segmentation, instance segmentation에 대해서만 논문을 읽었었는데 semantic soft segmentation 이라는 분야에 대해 처음 접할 수 있었던 논문이었습니다. 
+기술적인 자세한 내용은 본 논문을 참고하시면 좋을 것 같습니다.
+
+<figure>
+	<img src="{{ '/assets/img/siggraph_2018/fig7.PNG' | prepend: site.baseurl }}" alt=""> 
+</figure> 
+
+이 논문의 방식을 통해 위의 그림처럼 관심있는 object만 남기고 배경을 제거하는데 사용할 수도 있고 혹은 기존의 배경을 다른 배경으로 바꾸는 데도 활용이 가능합니다. 
+이를 통해 여러 재미있는 응용 사례들이 나오지 않을까 기대해봅니다.  
+
+## <a href="https://arxiv.org/pdf/1805.04140.pdf" target="_blank"> 3. Neural Best-Buddies: Sparse Cross-Domain Correspondence  </a>
+<figure>
+	<img src="{{ '/assets/img/siggraph_2018/fig8.PNG' | prepend: site.baseurl }}" alt=""> 
+</figure> 
+
+이 논문은 원본 이미지에 해당하는 특징점들(원)을 다른 도메인의 이미지에 대해서 찾는 연구를 진행하였습니다. 
+예를 들면 고양이와 사자 이미지를 준비하고 고양이의 코 영역을 선택하면 사자의 코 영역을 얻을 수 있게 됩니다. 
+이러한 연구를 Pairwise Keypoint Matching라 부르는데 주로 같은 도메인에 대해서 연구를 진행한 반면 본 연구는 다른 도메인에 대해서 접근을 한 점이 특징이라 할 수 있습니다. 
+즉 훨씬 어려운 문제에 대해 접근을 하였습니다. 
+
+<figure>
+	<img src="{{ '/assets/img/siggraph_2018/fig9.PNG' | prepend: site.baseurl }}" alt=""> 
+</figure> 
+
+이 연구를 이용한 사례를 예로 들면 위의 그림과 같이 1번째 column과 5번째 column이 모델에 pair로 들어가는 이미지이고 가운데 2, 3, 4번째 column은 두 이미지를 이용하여 가중치를 둬서 합성한 이미지입니다. 
+서로 다른 도메인의 이미지이지만 Keypoint matching을 통해 비교적 정확하게 이미지 합성을 하는 것을 확인할 수 있습니다. 
+이 연구 또한 실제 application에 잘 접목을 시키면 재미있는 결과들이 나올 것으로 기대가 됩니다. 
+
+## <a href="https://arxiv.org/pdf/1610.03151v1.pdf" target="_blank"> 4. FaceVR: Real-Time Facial Reenactment and Eye Gaze Control in Virtual Reality  </a>
+<figure>
+	<img src="{{ '/assets/img/siggraph_2018/fig10.PNG' | prepend: site.baseurl }}" alt=""> 
+</figure> 
+
+이 논문은 제목에서 알 수 있듯이 Virtual Reality와 관련이 있는 연구입니다. 
+입력으로 VR 고글을 통해 취득한 RGB-D input과 IR camera를 이용해 찍은 동공의 이미지를 이용하여 두 눈이 바라보고 있는 방향을 고려하여 고글을 쓰지 않았을 때의 얼굴을 합성해내는 연구를 진행하였습니다. 
+또한 이 모든 과정이 제목에 나와있듯이 실시간으로 처리가 가능합니다. 
+
+<figure>
+	<img src="{{ '/assets/img/siggraph_2018/fig11.PNG' | prepend: site.baseurl }}" alt=""> 
+</figure> 
+
+위의 그림은 input에 따른 output 얼굴 합성 결과를 보여주고 있으며, 아래 그림은 시선에 따라 얼굴의 변화를 합성하는 것을 보여주고 있습니다. 
+위의 row가 input이고 아래 row가 output인데 합성된 output 이미지지만 꽤 그럴싸한 것을 확인할 수 있습니다. 
+이를 통해 여러 application에 접목이 가능할 것으로 보여집니다. 
 
 <blockquote> 결론 </blockquote>
 이번 포스팅에서는 SIGGRAPH 학회에서 재미있게 들었던 논문에 대해 리뷰를 진행하였습니다. 
