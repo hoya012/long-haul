@@ -59,7 +59,8 @@ comments: true
 
 ### "데이터셋 제작"
 우선 “데이터셋을 제작하는 부분”에 대해 설명을 드리면 우선 Visible distortion 관련 소규모의 데이터셋들을 하나로 모아서 **Stimuli** 라는 본인들이 제작한 데이터셋을 구축을 하였습니다. 
-그 뒤에는 직접 사람에게 labeling을 시켜서 Ground Truth를 취득해야 하는데, 이 과정은 다음과 같이 구성이 되어있습니다.
+그 뒤에는 **직접 사람에게 labeling을 시켜서 Ground Truth를 취득** 하는 과정으로 진행이 되고 있습니다.
+이 때 labeling이란 원본 이미지와 distortion이 존재하는 이미지를 동시에 보여주었을 때, **distortion이 존재하는 이미지에서 어느 부분에서 distortion을 느끼는지를 pixel 단위로 marking** 하는 것을 의미합니다. 저자들은 이 과정을 편하고 정확하게 수행하기 위하 아래와 같은 조건에서 실험을 진행하였습니다.
 
 <figure>
 	<img src="{{ '/assets/img/siggraph_2018/fig12.PNG' | prepend: site.baseurl }}" alt=""> 
