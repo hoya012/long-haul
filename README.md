@@ -1,8 +1,5 @@
 I wrote some post about deep-learning paper review. 
 
-## [Blog Homepage](https://hoya012.github.io/)
-
-## Posting
 <div class="post">
 	<h1 class="pageTitle"> Object Detection </h1>
 		<li><a href="https://hoya012.github.io/blog/Tutorials-of-Object-Detection-Using-Deep-Learning-performance-one/" target="_blank"> <b> “Tutorials of Object Detection using Deep Learning [5] Training Deep Networks with Synthetic Data Bridging the Reality Gap by Domain Randomization Review” </b></a>, 18/11/23 .</li>
