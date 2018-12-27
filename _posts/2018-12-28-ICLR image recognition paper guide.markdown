@@ -30,7 +30,7 @@ comments: true
 <a href="https://github.com/shaohua0116/ICLR2019-OpenReviewData" target="_blank"><b> 이 자료  </b></a> 
 를 토대로 ICLR 2019를 분석하였습니다. 
 
-우선 10점 만점의 점수 중에 accepted paper는 평균 6.6점 정도의 rating을, rejected paper는 평균 4.7점 정도의 rating을 보이고 있으며, 오늘 소개드릴 논문마다 평균 점수도 같이 기재할 예정입니다.
+우선 10점 만점의 점수 중에 accepted paper는 **평균 6.6점** 정도의 rating을, rejected paper는 **평균 4.7점** 정도의 rating을 보이고 있으며, 오늘 소개드릴 논문마다 평균 점수도 같이 기재할 예정입니다.
 또한 **theory**, **robustness**, **graph neural network** 등의 키워드를 가진 논문들이 평균적으로 점수가 높았다고 합니다. 
 
 참고로 올해는 총 24편의 oral paper와 476편의 poster 총 500편 논문이 accept되었으며, 저는 오늘 그 중 28편의 논문을 소개드리고자 합니다.
