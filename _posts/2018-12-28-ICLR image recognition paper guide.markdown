@@ -100,5 +100,6 @@ comments: true
 제가 정리한 논문 외에도 양질의 논문들이 많이 있으니 관심있으신 분들은 다른 논문들도 읽어보시고, 추천을 해주시면 감사하겠습니다!
 
 <blockquote> 참고 문헌 </blockquote>  
-- <a href="https://github.com/lixin4ever/Conference-Acceptance-Rate" target="_blank"> Statistics of acceptance rate for the main AI conferences </a>
+- <a href="https://github.com/lixin4ever/Conference-Acceptance-Rate" target="_blank"> Statistics of acceptance rate for the main AI conferences </a>  
+
 - <a href="https://github.com/shaohua0116/ICLR2019-OpenReviewData" target="_blank"> Statistics of ICLR 2019 </a>
