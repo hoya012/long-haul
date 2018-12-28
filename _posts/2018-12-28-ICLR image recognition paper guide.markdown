@@ -8,7 +8,9 @@ comments: true
 
 안녕하세요, 이번 포스팅에서는 2019년 5월 6일 ~ 9일 미국 뉴올리언스에서 개최될
  <a href="https://iclr.cc/Conferences/2019/" target="_blank"><b> ICLR 2019 </b></a> 
-학회의 논문 중에 이미지 인식과 관련이 있는 논문 28편에 대해 제 주관적으로 리스트를 정리해보았습니다. 
+학회의 논문 중에 이미지 인식, 영상 처리와 관련이 있는 논문 28편에 대해 제 주관적으로 리스트를 정리해보았습니다. 
+오늘 다루지 않을 주제들은 자연어 처리(NLP), 강화학습(RL), 음성 관련 연구 등이며 이러한 주제들은 제가 배경지식이 많이 없어서 정리를 하지 못한 점 양해 부탁드립니다!
+
 아직 학회가 많이 남았지만 미리 읽어 보기 좋도록 리스트를 추리는 것을 목표로 글을 작성하였으며,
 전체 accepted paper가 500편이다보니 하나하나 읽어보는 것은 불가능하여서, 제가 제목만 보고 재미있을 것 같은 논문 위주로 정리를 해보았습니다. 
 
@@ -30,8 +32,9 @@ comments: true
 <a href="https://github.com/shaohua0116/ICLR2019-OpenReviewData" target="_blank"><b> 이 자료  </b></a> 
 를 토대로 ICLR 2019를 분석하였습니다. 
 
-우선 10점 만점의 점수 중에 accepted paper는 **평균 6.6점** 정도의 rating을, rejected paper는 **평균 4.7점** 정도의 rating을 보이고 있으며, 오늘 소개드릴 논문마다 평균 점수도 같이 기재할 예정입니다.
+우선 10점 만점의 점수 중에 accepted paper는 **평균 6.6점** 정도의 rating을, rejected paper는 **평균 4.7점** 정도의 rating을 보이고 있으며, 오늘 소개드릴 논문마다 평균 점수도 같이 기재할 예정입니다. 
 또한 **theory**, **robustness**, **graph neural network** 등의 키워드를 가진 논문들이 평균적으로 점수가 높았다고 합니다. 
+이러한 키워드 정보를 참고하면 최근 트렌드를 파악하는데 도움이 될 수 있습니다.
 
 참고로 올해는 총 24편의 oral paper와 476편의 poster 총 500편 논문이 accept되었으며, 저는 오늘 그 중 28편의 논문을 소개드리고자 합니다.
 
@@ -42,7 +45,7 @@ comments: true
 
 ###  <a href="https://openreview.net/pdf?id=B1xsqj09Fm" target="_blank"><b> 1.	Large Scale GAN Training for High Fidelity Natural Image Synthesis (Oral)  </b></a>  
 - Rating: 7 / 10 / 9 , avg. 8.67
-- 512x512 크기의 이미지와 같이 high resolution 이미지를 생성하는 generative model **BigGAN** 제안. 
+- 512x512 크기의 이미지와 같이 high resolution 이미지를 생성하는 generative model **BigGAN** 제안. ICLR paper중 가장 높은 rating을 받았으며 실제로 결과 이미지들을 보면 해상도가 큰 이미지인데도 그럴싸하게 생성해내는 것을 확인할 수 있음.
 
 <figure>
 	<img src="{{ '/assets/img/iclr_2019/1_1.PNG' | prepend: site.baseurl }}" alt=""> 
@@ -51,7 +54,9 @@ comments: true
 
 ###  <a href="https://openreview.net/pdf?id=Bygh9j09KX" target="_blank"><b> 2.	ImageNet-trained CNNs are biased towards texture; increasing shape bias improves accuracy and robustness (Oral)  </b></a>  
 - Rating: 7 / 8 / 8 , avg. 7.67
-- ImageNet으로 pretrain된 CNN은 object의 texture에 bias되어있음을 보이며, global object shape 정보를 이용하면 robust한 CNN을 만들 수 있음을 보임.
+- ImageNet으로 pretrain된 CNN은 object의 texture에 bias되어있음을 보이며, global object shape 정보를 이용하면 robust한 CNN을 만들 수 있음을 보임. 또한 실험을 위해 Style Transfer 알고리즘을 이용하여 ImageNet으로부터 Stylized-ImageNet 이라는 데이터셋을 생성한 점이 인상 깊음. 해당 데이터셋은 
+ <a href="https://github.com/rgeirhos/Stylized-ImageNet" target="_blank"><b> 해당 링크 </b></a> 
+에서 확인할 수 있음.
 
 <figure>
 	<img src="{{ '/assets/img/iclr_2019/2_1.PNG' | prepend: site.baseurl }}" alt=""> 
@@ -65,7 +70,7 @@ comments: true
 
 ###  <a href="https://openreview.net/pdf?id=HkNDsiC9KQ" target="_blank"><b> 3.	Learning Unsupervised Learning Rules (Oral)  </b></a>  
 - Rating: 8 / 8 / 8 , avg. 8.00
-- Meta-learning 관련 논문이며 unsupervised representation learning update rule을 다룬 논문. 
+- Meta-learning 관련 논문이며 unsupervised representation learning update rule을 다룬 논문. Unsupervised learning에 관심이 있다면 꼭 읽어보면 좋을 논문이며 실제로도 리뷰어들로부터 높은 평점을 받은 논문임.
 
 <figure>
 	<img src="{{ '/assets/img/iclr_2019/3_1.PNG' | prepend: site.baseurl }}" alt=""> 
@@ -74,7 +79,7 @@ comments: true
 
 ###  <a href="https://openreview.net/pdf?id=HygBZnRctX" target="_blank"><b> 4.	Transferring Knowledge across Learning Processes (Oral)  </b></a>  
 - Rating: 6 / 8 / 8 , avg. 7.33
-- Transfer learning에 대한 논문이며 meta learning 관점에서 학습을 통해 knowledge를 잘 transfer하도록 하는 **Leap** 라는 방법론 제안. 
+- Transfer learning에 대한 논문이며 meta learning 관점에서 학습을 통해 knowledge를 잘 transfer하도록 하는 **Leap** 라는 방법론 제안. Omniglot 데이터셋, Multi-CV benchmark 에 대해 실험을 수행하였고 선행 연구들에 비해 좋은 성능을 달성함.
 
 <figure>
 	<img src="{{ '/assets/img/iclr_2019/4_1.PNG' | prepend: site.baseurl }}" alt=""> 
@@ -101,7 +106,7 @@ comments: true
 
 ###  <a href="https://openreview.net/pdf?id=B1lz-3Rct7" target="_blank"><b> 7.	Three Mechanisms of Weight Decay Regularization (Poster)  </b></a>  
 - Rating: 6 / 7 / 7 , avg. 6.67
-- Weight decay는 최근 neural network를 구성할 때 흔히 사용하는 방법임. 이 방법들의 효과를 분석한 논문. Weight decay의 regularization 효과를 크게 3가지 mechanism으로 나눌 수 있으며 이에 대한 분석을 세세히 수행함. 
+- Weight decay는 최근 neural network를 구성할 때 흔히 사용하는 방법임. 이 방법들의 효과를 분석한 논문. Weight decay의 regularization 효과를 크게 3가지 mechanism으로 나눌 수 있으며 이에 대한 분석을 세세히 수행함. 3가지 mechanism은 아래 그림과 같음.
 
 <figure>
 	<img src="{{ '/assets/img/iclr_2019/7_1.PNG' | prepend: site.baseurl }}" alt=""> 
@@ -119,7 +124,7 @@ comments: true
 
 ###  <a href="https://openreview.net/pdf?id=BJxvEh0cFQ" target="_blank"><b> 9.	K For The Price Of 1: Parameter Efficient Multi-task And Transfer Learning (Poster)  </b></a>  
 - Rating: 7 / 6 / 8 , avg. 7.00
-- Transfer learning과 multi-task learning 관련 논문이며 모델의 parameter의 일부분(model patch)이 각 task에 특화되도록 학습을 시키는 방법을 제안함. 
+- Transfer learning과 multi-task learning 관련 논문이며 모델의 parameter의 일부분(model patch)이 각 task에 특화되도록 학습을 시키는 방법을 제안함. 즉 모든 parameter들을 재학습 시키지 않고 일부의 특화된 parameter들만 학습시켜도 비슷한 효과를 볼 수 있는 효율적인 학습 방법을 제안함.
 
 <figure>
 	<img src="{{ '/assets/img/iclr_2019/9_1.PNG' | prepend: site.baseurl }}" alt=""> 
@@ -128,7 +133,7 @@ comments: true
 
 ###  <a href="https://openreview.net/pdf?id=Bkg3g2R9FX" target="_blank"><b> 10.	Adaptive Gradient Methods with Dynamic Bound of Learning Rate (Poster)  </b></a>  
 - Rating: 7 / 4 / 6 , avg. 5.67
-- Optimizer 관련 논문이며 기존의 AdaGrad, Adam, RMSProp 등보다 안정적인 **AdaBound, AMSBound optimizer** 를 제안함. Adaptive gradient 방식이면서 dynamic하게 learning rate를 clipping하여 안정성을 높임.
+- Optimizer 관련 논문이며 기존의 AdaGrad, Adam, RMSProp 등보다 안정적인 **AdaBound, AMSBound optimizer** 를 제안함. Adaptive gradient 방식이면서 dynamic하게 learning rate를 clipping하여 안정성을 높임. 다만 성능 측면에서 크게 좋아지는 점은 없어서 개인적으로도, 리뷰어들의 평점으로도 큰 점수를 주지는 않은 것으로 보임.
 
 <figure>
 	<img src="{{ '/assets/img/iclr_2019/10_1.PNG' | prepend: site.baseurl }}" alt=""> 
@@ -137,7 +142,7 @@ comments: true
 
 ###  <a href="https://openreview.net/pdf?id=BklhAj09K7" target="_blank"><b> 11.	Unsupervised Domain Adaptation for Distance Metric Learning (Poster)  </b></a>  
 - Rating: 8 / 5 / 8 , avg. 7.00
-- Unsupervised domain adaptation 관련 논문이며 **Feature Transfer Network(FTN)** 이라는 방법을 제안함. 기존의 Domain Adversarial Neural Network(DANN) 대비 좋은 성능을 보임.
+- Unsupervised domain adaptation 관련 논문이며 주로 선행연구에서 풀지 못했던 문제인 source domain과 target domain이 서로 다른 label space를 가지는 경우에 대해 연구를 수행함. **Feature Transfer Network(FTN)** 이라는 방법을 제안하였으며 기존의 Domain Adversarial Neural Network(DANN) 대비 좋은 성능을 보임. 또한 non-parametric multi-class entropy minimization loss를 제안하고 target domain에서 FTN의 구분 성능을 끌어올림. 
 
 <figure>
 	<img src="{{ '/assets/img/iclr_2019/11_1.PNG' | prepend: site.baseurl }}" alt=""> 
@@ -146,7 +151,7 @@ comments: true
 
 ###  <a href="https://openreview.net/pdf?id=Byxpfh0cFm" target="_blank"><b> 12.	Efficient Augmentation via Data Subsampling (Poster)  </b></a>  
 - Rating: 6 / 7 / 6 , avg. 6.33
-- Dataset augmentation에 대한 논문이며 model influence 와 loss를 기반으로 한 data subsampling 방식으로 효율적으로 augmentation을 하는 방법을 제안함. 
+- Dataset augmentation에 대한 논문이며 model influence 와 loss를 기반으로 한 data subsampling 방식으로 효율적으로 augmentation을 하는 방법을 제안함. 효율적으로 augmentation을 수행하면 훨씬 적은 augmentation budget으로 full augmentation과 유사한 성능을 달성할 수 있음을 확인함. 또한 model influence와 loss를 계산하는 데에는 original dataset 기준 one-time cost of training이 소요되어 time issue도 존재하지 않음. 
 
 <figure>
 	<img src="{{ '/assets/img/iclr_2019/12_1.PNG' | prepend: site.baseurl }}" alt=""> 
@@ -155,7 +160,7 @@ comments: true
 
 ###  <a href="https://openreview.net/pdf?id=H1gMCsAqY7" target="_blank"><b> 13.	Slimmable Neural Networks (Poster)  </b></a>  
 - Rating: 8 / 9 / 7 , avg. 8.00
-- 하나의 모델에서 연산 복잡도를 조절할 수 있도록 **switchable batch normalization** 이란 방법을 제안한 논문. 즉 각각 연산 복잡도마다 새로운 모델을 학습시킬 필요 없이 하나의 모델을 통해 accuracy-efficiency trade-off를 조절할 수 있다는 장점이 있음. 왜 Poster paper인지 개인적으로 궁금한 논문.
+- 하나의 모델에서 연산 복잡도를 조절할 수 있도록 **switchable batch normalization** 이란 방법을 제안한 논문. 즉 각각 연산 복잡도마다 새로운 모델을 학습시킬 필요 없이 하나의 모델을 통해 accuracy-efficiency trade-off를 조절할 수 있다는 장점이 있음. 실용적으로 많이 사용될 수 있을 것으로 보임. 개인적으로 굉장히 인상 깊었으며 왜 Poster paper인지 개인적으로 궁금한 논문.
 
 <figure>
 	<img src="{{ '/assets/img/iclr_2019/13_1.PNG' | prepend: site.baseurl }}" alt=""> 
@@ -192,7 +197,7 @@ comments: true
 
 ###  <a href="https://openreview.net/pdf?id=HkeGhoA5FX" target="_blank"><b> 16.	Residual Non-local Attention Networks for Image Restoration (Poster)  </b></a>  
 - Rating: 7 / 7 / 6 , avg. 6.67
-- 이미지 복원 관련 residual non-local attention network 구조를 제안함. Denoising, demosaicing, compression artifact reduction, super resolution 등 다양한 image restoration에 대해 실험을 진행하였고 좋은 성능을 보임. 
+- 이미지 복원 관련 residual non-local attention network 구조를 제안함. Denoising, demosaicing, compression artifact reduction, super resolution 등 다양한 image restoration에 대해 실험을 진행하였고 좋은 성능을 보임. Image Restoration 연구에 관심이 있으면 참고하면 좋을 논문.
 
 <figure>
 	<img src="{{ '/assets/img/iclr_2019/16_1.PNG' | prepend: site.baseurl }}" alt=""> 
@@ -201,7 +206,7 @@ comments: true
 
 ###  <a href="https://openreview.net/pdf?id=HyxCxhRcY7" target="_blank"><b> 17.	Deep Anomaly Detection with Outlier Exposure (Poster)  </b></a>  
 - Rating: 6 / 6 / 8 , avg. 6.67
-- auxiliary dataset을 이용한 **Outlier Exposure(OE)** 접근법을 통해 anomaly detection(out-of-distribution detection) 문제를 해결하는 방법론을 제안함. 
+- auxiliary dataset을 이용한 **Outlier Exposure(OE)** 접근법을 통해 anomaly detection(out-of-distribution detection) 문제를 해결하는 방법론을 제안함. 외부 데이터셋을 활용해야 한다는 단점이 있지만 상황만 잘 맞으면 좋은 성능을 낼 수 있음을 보임.
 
 <figure>
 	<img src="{{ '/assets/img/iclr_2019/17_1.PNG' | prepend: site.baseurl }}" alt=""> 
@@ -210,7 +215,7 @@ comments: true
 
 ###  <a href="https://openreview.net/pdf?id=ByME42AqK7" target="_blank"><b> 18.	Efficient Multi-Objective Neural Architecture Search via Lamarckian Evolution  (Poster)  </b></a>  
 - Rating: 6 / 6 / 6 , avg. 6.00
-- Neural Architecture Search 관련 논문이며 진화알고리즘 방식을 사용한 **LEMONADE** 라는 이름의 방법론을 제안함. 
+- Neural Architecture Search 관련 논문이며 진화알고리즘 방식을 사용한 **LEMONADE** 라는 이름의 방법론을 제안함. 다만 최근 NAS 관련 다양한 논문들이 나오고 있어서 특별한 장점을 보이는 것 같지는 않음.
 
 <figure>
 	<img src="{{ '/assets/img/iclr_2019/18_1.PNG' | prepend: site.baseurl }}" alt=""> 
@@ -228,7 +233,7 @@ comments: true
 
 ###  <a href="https://openreview.net/pdf?id=rylqooRqK7" target="_blank"><b> 20.	SNAS: stochastic neural architecture search (Poster)  </b></a>  
 - Rating: 6 / 7 / 7 , avg. 6.67
-- 마찬가지로 Neural Architecture Search 관련 논문이며, 위의 DARTS와 거의 유사한 gradient-based differentiable NAS 방법론임. 둘의 차이점은 아래 그림과 논문에서 자세히 확인할 수 있음. 
+- 마찬가지로 Neural Architecture Search 관련 논문이며, 위의 DARTS와 거의 유사한 gradient-based differentiable NAS 방법론임. 둘의 차이점은 아래 그림과 논문에서 자세히 확인할 수 있음. 다만 성능 측면에서 큰 이점을 보이진 않음.
 
 <figure>
 	<img src="{{ '/assets/img/iclr_2019/20_1.PNG' | prepend: site.baseurl }}" alt=""> 
@@ -237,7 +242,7 @@ comments: true
 
 ###  <a href="https://openreview.net/pdf?id=HylVB3AqYm" target="_blank"><b> 21.	ProxylessNAS: Direct Neural Architecture Search on Target Task and Hardware  (Poster)  </b></a>  
 - Rating: 6 / 6 / 7 , avg. 6.67
-- 마찬가지로 Neural Architecture Search 관련 논문이며 기존 논문들과는 다르게 타겟 task와 hardware를 고려하여 directly architecture를 찾는 방법이며 gradient-based 방식을 적용함.
+- 마찬가지로 Neural Architecture Search 관련 논문이며 기존 논문들(ex, CIFAR-10에서 찾은 구조를 기반으로 ImageNet에 transfer 시키는 방식) 과는 다르게 타겟 task와 hardware를 고려하여 directly architecture를 찾는 방법이며 gradient-based 방식을 적용함. CIFAR-10 데이터셋에 대해서는 기존 사람이 design한 network, Neural Architecture Search를 통해 design한 network를 통틀어서 가장 높은 정확도(97.92%)를 달성함.
 
 <figure>
 	<img src="{{ '/assets/img/iclr_2019/21_1.PNG' | prepend: site.baseurl }}" alt=""> 
@@ -282,7 +287,7 @@ comments: true
 
 ###  <a href="https://openreview.net/pdf?id=ryE98iR5tm" target="_blank"><b> 26.	Practical lossless compression with latent variables using bits back coding (Poster)  </b></a>  
 - Rating: 6 / 6 / 8 , avg. 6.67
-- 딥러닝을 이용한 무손실 압축 방식 **Bits Back with ANS(BB-ANS)** 을 제안함. 
+- 딥러닝을 이용한 무손실 압축 방식 **Bits Back with ANS(BB-ANS)** 을 제안함. MNIST dataset에 대해 실험을 진행하였으며 선행 연구 대비 가장 좋은 성능을 달성함. 
 
 <figure>
 	<img src="{{ '/assets/img/iclr_2019/26_1.PNG' | prepend: site.baseurl }}" alt=""> 
