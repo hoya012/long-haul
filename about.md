@@ -5,7 +5,8 @@ title: About me
 
 <div class="post">
 	<h1 class="pageTitle">About Ho Seong Lee</h1>
-		<li>Hoseong Lee received the B.S., <a href="http://capp.snu.ac.kr/" target="_blank"> <b>M.S. degrees</b>, </a> in Electrical and Computer Engineering from Seoul National University, Seoul, Korea, in 2016, 2018.</li>
+		<li>Hoseong Lee received the B.S. degrees, </a> in Electrical and Computer Engineering from Seoul National University, Seoul, Korea, in 2016.</li>
+		<li>Hoseong Lee received the <a href="http://capp.snu.ac.kr/" target="_blank"> <b>M.S. degrees</b>, </a> in Electrical and Computer Engineering from Seoul National University, Seoul, Korea, in 2018.</li>
   		<li>In 2018, he joined the <a href="http://sualab.com/" target="_blank"> <b>SUALAB.</b></a>,Seoul, Korea, as a Machine Learning Engineer.</li>
   		<li>His research interests include algorithm and architecture for image recognition, image processing using deep learning.</li>
 	<h1 class="pageTitle">Teaching Experience</h1>
