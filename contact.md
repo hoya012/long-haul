@@ -25,7 +25,7 @@ title: Archives
 	<h1 class="pageTitle">  </h1>
 	<h1 class="pageTitle">  </h1>
 	<h1 class="pageTitle">  </h1>
-	<h1 class="pageTitle"> ETC. </h1>
+	<h1 class="pageTitle"> Conference </h1>
 		<li><a href="https://hoya012.github.io/blog/ICLR-image-recognition-paper-guide/" target="_blank"> <b> “ICLR 2019 image recognition paper list guide” </b></a>, 18/12/28 .</li>
 		<li><a href="https://hoya012.github.io/blog/SIGGRAPH-2018-review-2/" target="_blank"> <b> “SIGGRAPH 2018 review [2] 사람의 지각을 반영한 visibility metric 및 논문 4편 소개” </b></a>, 18/12/17 .</li>
 		<li><a href="https://hoya012.github.io/blog/SIGGRAPH-2018-review-1/" target="_blank"> <b> “SIGGRAPH 2018 review [1] 참석 후기 및 프로그램 소개” </b></a>, 18/12/14 .</li>
