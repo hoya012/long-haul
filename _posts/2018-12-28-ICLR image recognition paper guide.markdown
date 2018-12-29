@@ -133,7 +133,7 @@ comments: true
 
 ###  <a href="https://openreview.net/pdf?id=Bkg3g2R9FX" target="_blank"><b> 10.	Adaptive Gradient Methods with Dynamic Bound of Learning Rate (Poster)  </b></a>  
 - Rating: 7 / 4 / 6 , avg. 5.67
-- Optimizer 관련 논문이며 기존의 AdaGrad, Adam, RMSProp 등보다 안정적인 **AdaBound, AMSBound optimizer** 를 제안함. Adaptive gradient 방식이면서 dynamic하게 learning rate를 clipping하여 안정성을 높임. 다만 성능 측면에서 크게 좋아지는 점은 없어서 개인적으로도, 리뷰어들의 평점으로도 큰 점수를 주지는 않은 것으로 보임.
+- Optimizer 관련 논문이며 기존의 AdaGrad, Adam, RMSProp 등보다 안정적인 **AdaBound, AMSBound optimizer** 를 제안함. Adaptive gradient 방식이면서 dynamic하게 learning rate를 clipping하여 안정성을 높임. 다만 성능 측면에서 크게 좋아지는 점은 없어서 리뷰어들의 평점으로도 큰 점수를 주지는 않은 것으로 보임.
 
 <figure>
 	<img src="{{ '/assets/img/iclr_2019/10_1.PNG' | prepend: site.baseurl }}" alt=""> 
