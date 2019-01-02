@@ -84,7 +84,7 @@ RefineDet 논문을 통해 Multi-Scale Testing을 이용하면 정확도를 크�
 적용하는 방식은 정해져 있지 않고 용도에 맞게 조절할 수 있으며, 설명의 편의를 위해 Official Code의 방식 그대로 설명을 하도록 하겠습니다.
 저자의 코드 중 Multi-Scale Testing 관련 코드는 다음과 같습니다.
 
-```
+```python
 for i in xrange(num_images):
         im = cv2.imread(imdb.image_path_at(i))
 
