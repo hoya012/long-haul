@@ -46,7 +46,7 @@ Object Detection은 Image Classification task에 사물의 위치를 Bounding Bo
 앞서 제가 게시한 포스팅에서도 나와있듯이 Image Classification 분야는 최근에는 AutoML로 얻은 architecture가 사람이 고안한 architecture의 정확도를 넘어서기도 하였으며, 굉장히 많은 연구가 진행이 되어있는 분야입니다. 
 
 <figure>
-	<img src="{{ '/assets/img/object_detection_first/fig4_paper_trend.PNG' | prepend: site.baseurl }}" alt=""> 
+	<img src="{{ '/assets/img/object_detection_first/fig4_paper_trend_2019.PNG' | prepend: site.baseurl }}" alt=""> 
 	<figcaption> [그림 4. Object Detection 논문 흐름도] </figcaption>
 </figure> 
 
