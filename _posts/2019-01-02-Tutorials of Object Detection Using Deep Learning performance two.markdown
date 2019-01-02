@@ -8,9 +8,9 @@ comments: true
 
 안녕하세요, Tutorials of Object Detection using Deep Learning 여섯 번째 포스팅입니다. 
 이번 포스팅에서는 Object Detection의 성능 중 정확도를 개선하는 방법 중 Multi-Scale Testing기법에 대해 설명을 드릴 예정입니다. 
-간단한 아이디어이지만 mAP 성능을 크게 높일 수 있는 방법이며, 올해 CVPR에서 발표된
+간단한 아이디어이지만 mAP 성능을 크게 높일 수 있는 방법이며, 2018년 CVPR에서 발표된
 <a href="https://arxiv.org/pdf/1711.06897.pdf" target="_blank"><b> “Single-Shot Refinement Neural Network for Object Detection”, RefineDet </b></a>
-방법론을 다룬 논문 등에서 이 방식을 통해 State-of-the-art 성능을 달성하였습니다. 
+방법론을 다룬 논문 등에서 이 방식을 통해 State-of-the-art 성능을 달성하였습니다. (물론 2019년에 State-of-the-art는 다른 논문에게 자리를 넘겨주게 됩니다..)
 다만 아직까지 이 방법을 다룬 포스팅을 본 적이 없어서 제가 직접 자료를 만들어서 글을 작성하게 되었습니다. 
 본 포스팅에서는 Multi-Scale Testing이 무엇인지 설명드릴 예정이며 실제로 어떻게 코드를 구현하면 되는지에 대해 다루도록 하겠습니다.
 
