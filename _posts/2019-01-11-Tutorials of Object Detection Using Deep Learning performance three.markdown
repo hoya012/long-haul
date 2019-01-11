@@ -20,7 +20,7 @@ comments: true
 - <a href="http://openaccess.thecvf.com/content_cvpr_2018/papers/Peng_MegDet_A_Large_CVPR_2018_paper.pdf" target="_blank"> "MegDet: A Large Mini-Batch Object Detector”, 2018 CVPR </a>  
 - <a href="http://openaccess.thecvf.com/content_cvpr_2018/papers/Chen_Domain_Adaptive_Faster_CVPR_2018_paper.pdf" target="_blank"> "Domain Adaptive Faster R-CNN for Object Detection in the Wild”, 2018 CVPR </a>  
 
-<blockquote> How to train from scratch well?  </blockquote>
+<blockquote> 1. How to train from scratch well?  </blockquote>
 
 일반적으로 Object Detection은 **ImageNet** 으로 pretraining된 backbone을 사용합니다. 
 하지만 ImageNet과 같은 자연계 이미지 domain과 성질이 크게 다른 경우(ex, depth image, synthetic image, etc.)에는 오히려 역효과를 불러일으킬 수 있습니다. 
@@ -43,9 +43,9 @@ DenseNet의 Dense Block과 Inception의 Stem Block을 활용하는 것이 핵심
 	<figcaption> [그림 2. Rethinking ImageNet Pre-training 실험 결과 그래프] </figcaption>
 </figure> 
 
-굳이 ImageNet pretrained weight을 사용하지 않아도, 학습만 잘 시키면 비슷한 효과를 볼 수 있음을 실험적으로 보인 technical report이며 관심있으신 분들은 참고하시면 좋을 것 같습니다.
+굳이 ImageNet pretrained weight을 사용하지 않아도, 학습만 잘 시키면 비슷한 효과를 볼 수 있음을 실험적으로 보인 technical report이며 관심있으신 분들은 참고하시면 좋을 것 같습니다. 
 
-<blockquote> 다양한 Scale의 Object에 강인한 Network 구조를 다룬 연구 </blockquote>  
+<blockquote> 2. 다양한 Scale의 Object에 강인한 Network 구조를 다룬 연구 </blockquote>  
 
 현실 세계에는 다양한 scale의 object가 존재하며, 실제로 Object Detection의 주요 데이터셋에서 모델의 성능을 저하시키는 대표적인 원인 중 하나가 바로 object의 다양한 scale입니다. 
 그 중에서도 small object의 경우 검출하기가 어려운데, 이러한 문제를 해결하기 위해 나온 논문들이 있습니다. 
@@ -69,7 +69,7 @@ DenseNet의 Dense Block과 Inception의 Stem Block을 활용하는 것이 핵심
 	<figcaption> [그림 4. STDnet 방법론 Diagram] </figcaption>
 </figure> 
 
-<blockquote> 작은 Batch size로 인해 생기는 BatchNorm의 성능 저하를 막기 위한 연구 </blockquote>  
+<blockquote> 3. 작은 Batch size로 인해 생기는 BatchNorm의 성능 저하를 막기 위한 연구 </blockquote>  
 
 최근에는 거의 보편적으로 사용되는 Batch Normalization은 16, 64 등 적당히 큰 batch size에서는 잘 동작하지만 batch size가 작은 경우 성능 저하가 크다고 알려져 있습니다. 
 하지만 대부분의 Object Detection 모델은 학습 시 작은 batch size를 사용하기 때문에 Batch Normalization에서 성능 저하가 발생할 수 있습니다. 
@@ -81,7 +81,7 @@ DenseNet의 Dense Block과 Inception의 Stem Block을 활용하는 것이 핵심
 	<figcaption> [그림 5. Group Normalization 설명] </figcaption>
 </figure> 
 
-<blockquote> GPU 리소스가 많을 때 빠르게 학습시키기 위한 연구 </blockquote>  
+<blockquote> 4. GPU 리소스가 많을 때 빠르게 학습시키기 위한 연구 </blockquote>  
 
 이번에 소개드릴 논문은 GPU 리소스가 많아서 Batch Size를 크게 가져갈 수 있을 때 효율적으로 학습을 시키는 방법을 다룬 “MegDet: A Large Mini-Batch Object Detector” 논문입니다. 
 위에서 말씀드린 것처럼 대부분의 Detection 모델은 작은 batch size를 가져가는데, 큰 batch size에서도 잘 학습을 시킬 수 있는 방법을 제안하였으며, **“Cross-GPU Batch Normalization”** 기법과 **“Linear Gradual Warmup Learning rate scheduling”** 기법을 이용하였습니다. 
@@ -93,7 +93,7 @@ DenseNet의 Dense Block과 Inception의 Stem Block을 활용하는 것이 핵심
 	<figcaption> [그림 6. MegDet 설명] </figcaption>
 </figure> 
 
-<blockquote> Domain Adaptation 기법을 Object Detection에 적용한 연구 </blockquote>  
+<blockquote> 5. Domain Adaptation 기법을 Object Detection에 적용한 연구 </blockquote>  
 
 마지막으로 소개드릴 논문은 “Domain Adaptive Faster R-CNN for Object Detection in the Wild” 이며 실제 현업에서 적용할 때의 상황을 다루고 있다는 점이 흥미롭습니다. 
 현업에서 직접 데이터셋을 구축해야 할 때 기존 보유하고 있던 비슷한 데이터셋의 정보를 활용하여 Domain Adaptation을 하는 방법을 다루고 있으며 두 데이터셋 간의 분포의 차이를 H-divergence로 정의하고 이를 최소화하는 방향으로 학습하는 방법을 제안합니다. 
