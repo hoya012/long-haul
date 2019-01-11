@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  “Tutorials of Object Detection using Deep Learning [7] Object Detection 최신 논문 소개 Review”
+title:  “Tutorials of Object Detection using Deep Learning [7] Object Detection 최신 논문 Review”
 date:   2019-01-11
 description: Deep Learning을 이용한 Object detection Tutorial - [7] Object Detection 최신 논문들을 간단하게 Review하였습니다.
 comments: true
