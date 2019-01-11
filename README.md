@@ -2,6 +2,8 @@ I wrote some post about deep-learning paper review.
 
 <div class="post">
 	<h1 class="pageTitle"> Object Detection </h1>
+		<li><a href="https://hoya012.github.io/blog/Tutorials-of-Object-Detection-Using-Deep-Learning-performance-three/" target="_blank"> <b> “Tutorials of Object Detection using Deep Learning [7] Object Detection 최신 논문 Review”
+ </b></a>, 19/01/11 .</li>
 		<li><a href="https://hoya012.github.io/blog/Tutorials-of-Object-Detection-Using-Deep-Learning-performance-two/" target="_blank"> <b> “Tutorials of Object Detection using Deep Learning [6] Object Detection Multi Scale Testing Method Review”
  </b></a>, 19/01/02 .</li>
 		<li><a href="https://hoya012.github.io/blog/Tutorials-of-Object-Detection-Using-Deep-Learning-performance-one/" target="_blank"> <b> “Tutorials of Object Detection using Deep Learning [5] Training Deep Networks with Synthetic Data Bridging the Reality Gap by Domain Randomization Review” </b></a>, 18/11/23 .</li>
