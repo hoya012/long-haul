@@ -45,9 +45,6 @@ DenseNet의 Dense Block과 Inception의 Stem Block을 활용하는 것이 핵심
 
 굳이 ImageNet pretrained weight을 사용하지 않아도, 학습만 잘 시키면 비슷한 효과를 볼 수 있음을 실험적으로 보인 technical report이며 관심있으신 분들은 참고하시면 좋을 것 같습니다.
 
-<blockquote> How to train from scratch well?  </blockquote>
-
-
 <blockquote> 다양한 Scale의 Object에 강인한 Network 구조를 다룬 연구 </blockquote>  
 
 현실 세계에는 다양한 scale의 object가 존재하며, 실제로 Object Detection의 주요 데이터셋에서 모델의 성능을 저하시키는 대표적인 원인 중 하나가 바로 object의 다양한 scale입니다. 
