@@ -50,7 +50,7 @@ BBox-Label-Tool (Multi Class): https://github.com/jxgu1016/BBox-Label-Tool-Multi
 그래서 저는 오늘 **multi class를 기준으로** 사용법을 설명드릴 예정입니다.
 
 ### 사용법
-1. Github repository에서 clone 받은 뒤 프로젝트 폴더의 **class.txt** 를 열고 labeling 하고자 하는 class 정보를 차례로 입력한다.
+#### 1. Github repository에서 clone 받은 뒤 프로젝트 폴더의 **class.txt** 를 열고 labeling 하고자 하는 class 정보를 차례로 입력한다.
 
 <figure>
 	<img src="{{ '/assets/img/object_detection_eighth/3.PNG' | prepend: site.baseurl }}" alt=""> 
@@ -58,19 +58,19 @@ BBox-Label-Tool (Multi Class): https://github.com/jxgu1016/BBox-Label-Tool-Multi
 
 저는 얼굴(face), 글러브(glove) 2가지 class를 labeling 한다고 가정하여 **class.txt** 파일에 face, glove 2가지를 입력하였습니다.
 
-2. 프로그램을 실행한 뒤 Image directory를 입력하고 **Load** 버튼을 클릭한다.
+#### 2. 프로그램을 실행한 뒤 Image directory를 입력하고 **Load** 버튼을 클릭한다.
  
 <figure>
 	<img src="{{ '/assets/img/object_detection_eighth/4.PNG' | prepend: site.baseurl }}" alt=""> 
 </figure> 
  
-3. 우측 상단에서 원하는 Class를 고르고 **Confirm Class** 를 클릭한 뒤 해당 class에 해당하는 object들을 **마우스로 드래그하여** labeling 한다.
+#### 3. 우측 상단에서 원하는 Class를 고르고 **Confirm Class** 를 클릭한 뒤 해당 class에 해당하는 object들을 **마우스로 드래그하여** labeling 한다.
  
 <figure>
 	<img src="{{ '/assets/img/object_detection_eighth/5.PNG' | prepend: site.baseurl }}" alt=""> 
 </figure>  
 
-4. 하나의 이미지에 모든 object를 labeling 한 경우 **Next** 버튼을 눌러준다. 이 경우 해당 이미지의 labeling 결과가 txt 파일로 저장된다.
+#### 4. 하나의 이미지에 모든 object를 labeling 한 경우 **Next** 버튼을 눌러준다. 이 경우 해당 이미지의 labeling 결과가 txt 파일로 저장된다.
  
 <figure>
 	<img src="{{ '/assets/img/object_detection_eighth/6.PNG' | prepend: site.baseurl }}" alt=""> 
