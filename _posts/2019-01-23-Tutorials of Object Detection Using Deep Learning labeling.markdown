@@ -79,7 +79,7 @@ BBox-Label-Tool (Multi Class): https://github.com/jxgu1016/BBox-Label-Tool-Multi
 설치와 실행 방법이 간단하다는 장점이 있으며 필요한 기능은 다 갖추고 있으므로 Object Detection Task만 하시는 경우에는 이 프로그램을 추천 드립니다!
 
 <blockquote> LabelMe </blockquote>  
-Labelme: https://github.com/wkentaro/labelme
+Labelme: https://github.com/wkentaro/labelme  
 
 이 프로그램도 open source이며 github에서 쉽게 clone하여 다운로드를 받으실 수 있습니다. 
 
@@ -96,7 +96,9 @@ Labelme: https://github.com/wkentaro/labelme
 
 <blockquote> Labelbox </blockquote>  
 
-Labelbox: https://www.labelbox.com/
+Labelbox: https://www.labelbox.com/  
+
+
 다음 소개드릴 프로그램은 마찬가지로 다양한 형태의 도형을 지원하고 segmentation labeling 또한 지원을 하고 있습니다. 
 
 <figure>
