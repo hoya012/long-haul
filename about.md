@@ -9,7 +9,16 @@ title: About me
 		<li>Hoseong Lee received the <a href="http://capp.snu.ac.kr/" target="_blank"> <b>M.S. degrees</b>, </a> in Electrical and Computer Engineering from Seoul National University, Seoul, Korea, in 2018.</li>
   		<li>In 2018, he joined the <a href="http://sualab.com/" target="_blank"> <b>SUALAB.</b></a>,Seoul, Korea, as a Machine Learning Engineer.</li>
   		<li>His research interests include algorithm and architecture for image recognition, image processing using deep learning.</li>
-	<h1 class="pageTitle">Teaching Experience</h1>
+	<h1 class="pageTitle">Slides </h1>
+		<li> <a href="https://www.slideshare.net/HoseongLee6/pelee-a-real-time-object-detection-system-on-mobile-devices-paper-review" target="_blank"> "Pelee: a real time object detection system on mobile devices" Paper Review </li>
+		<li> <a href="https://www.slideshare.net/HoseongLee6/how-does-batch-normalization-help-optimization-paper-review" target="_blank"> "How does batch normalization help optimization" Paper Review </li>
+		<li> <a href="https://www.slideshare.net/HoseongLee6/simple-does-it-weakly-supervised-instance-and-semantic-segmentation-paper-review" target="_blank"> "simple does it weakly supervised instance and semantic segmentation" Paper Review </li>
+		<li> <a href="https://www.slideshare.net/HoseongLee6/from-image-level-to-pixellevel-labeling-with-convolutional-networks-paper-review-129173293" target="_blank"> "From image level to pixel-level labeling with convolutional networks" Paper Review </li>
+		<li> <a href="https://www.slideshare.net/HoseongLee6/dataset-and-metrics-for-predicting-local-visible-differences-paper-review" target="_blank"> "Dataset and metrics for predicting local visible differences" Paper Review </li>
+		<li> <a href="https://www.slideshare.net/HoseongLee6/learning-from-noisy-largescale-datasets-with-minimal-supervision-paper-review" target="_blank"> "Learning From Noisy Large-Scale Datasets With Minimal Supervision" Paper Review </li>
+		<li> <a href="https://www.slideshare.net/HoseongLee6/learning-transferable-architectures-for-scalable-image-recognition-paper-review" target="_blank"> "Learning transferable architectures for scalable image recognition" Paper Review </li>
+		<li> <a href="https://www.slideshare.net/HoseongLee6/searching-for-activation-functions-paper-review" target="_blank"> "Searching for Activation Functions" Paper Review </li>
+		<li> <a href="https://www.slideshare.net/HoseongLee6/google-vizier-a-service-for-blackbox-optimization-paper-review" target="_blank"> "Google Vizier: A Service for Black-Box Optimization" Paper Review </li>
 		<li> Lecturer of <a href="https://www.fastcampus.co.kr/data_workshop_obj/" target="_blank"> <b>Object Detection Workshop</b>, </a> in FastCampus, 2018.10 ~ 2019.3 </li>
 		<li> TA of <b> Digital System Design and Experiments(디지털 시스템 설계 및 실습) </b>, in SNUECE(서울대학교 전기정보공학부), 2017.9 ~ 2017.12 </li>
 		<li> TA of <b> Digital System Design and Experiments(디지털 시스템 설계 및 실습) </b>,  in SNUECE(서울대학교 전기정보공학부), 2016.9 ~ 2016.12 </li>
