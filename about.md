@@ -19,6 +19,7 @@ title: About me
 		<li> <a href="https://www.slideshare.net/HoseongLee6/learning-transferable-architectures-for-scalable-image-recognition-paper-review" target="_blank"> "Learning transferable architectures for scalable image recognition" Paper Review </li>
 		<li> <a href="https://www.slideshare.net/HoseongLee6/searching-for-activation-functions-paper-review" target="_blank"> "Searching for Activation Functions" Paper Review </li>
 		<li> <a href="https://www.slideshare.net/HoseongLee6/google-vizier-a-service-for-blackbox-optimization-paper-review" target="_blank"> "Google Vizier: A Service for Black-Box Optimization" Paper Review </li>
+	<h1 class="pageTitle">Teaching Experience </h1>
 		<li> Lecturer of <a href="https://www.fastcampus.co.kr/data_workshop_obj/" target="_blank"> <b>Object Detection Workshop</b>, </a> in FastCampus, 2018.10 ~ 2019.3 </li>
 		<li> TA of <b> Digital System Design and Experiments(디지털 시스템 설계 및 실습) </b>, in SNUECE(서울대학교 전기정보공학부), 2017.9 ~ 2017.12 </li>
 		<li> TA of <b> Digital System Design and Experiments(디지털 시스템 설계 및 실습) </b>,  in SNUECE(서울대학교 전기정보공학부), 2016.9 ~ 2016.12 </li>
