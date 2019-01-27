@@ -106,7 +106,7 @@ architecture에서 차이는 존재하지만 핵심 내용은 같으므로 CIFAR
 개인적으로는 DenseNet 논문을 읽고 아이디어는 참신하지만 일부 아이디어들(bottleneck layer의 4*growth rate, transition layer의 0.5배 압축 등)이 다소 설명이 부족한 점이 아쉬웠습니다. 
 이러한 점들은 저만 느낀 것이 아니었는지 추후에 다른 논문에서 이 점들에 대한 문제 제기를 하게 됩니다. 
 그 논문도 추후에 포스팅으로 다룰 예정입니다. (스포를 하자면.. Pelee 라는 논문이며 해당 링크에 제가 작성한 
-<a href="https://www.slideshare.net/HoseongLee6/pelee-a-real-time-object-detection-system-on-mobile-devices-paper-review" target="_blank"> ppt </a>  
+<a href="https://www.slideshare.net/HoseongLee6/pelee-a-real-time-object-detection-system-on-mobile-devices-paper-review" target="_blank"> ppt </a>
 를 통해 미리 보실 수 있습니다.)
 
 다음 포스팅에서는 DenseNet을 PyTorch로 구현하고 각 부분에 대해 설명을 드릴 예정입니다. 읽어주셔서 감사합니다!
@@ -114,5 +114,4 @@ architecture에서 차이는 존재하지만 핵심 내용은 같으므로 CIFAR
 <blockquote> 참고 문헌 </blockquote>  
 - <a href="https://arxiv.org/pdf/1608.06993.pdf" target="_blank"> "Densely Connected Convolutional Networks” </a>  
 - <a href="https://arxiv.org/pdf/1603.05027.pdf" target="_blank"> “Identity mappings in deep residual networks, 2016 ECCV” </a>  
-- <a href="https://www.slideshare.net/HoseongLee6/pelee-a-real-time-object-detection-system-on-mobile-devices-paper-review" target="_blank"> ppt </a>  
-
+- <a href="https://www.slideshare.net/HoseongLee6/pelee-a-real-time-object-detection-system-on-mobile-devices-paper-review" target="_blank"> pelee:a real time object detection system on mobile devices paper review </a>  
