@@ -20,6 +20,7 @@ title: Archives
 	<h1 class="pageTitle">  </h1>
 	<h1 class="pageTitle">  </h1>
 	<h1 class="pageTitle"> Classification </h1>
+		<li><a href="https://hoya012.github.io/blog/DenseNet-Tutorial-1/" target="_blank"> <b> “DenseNet Tutorial [1] Paper Review & Implementation details” </b></a>, 19/01/27 .</li>
 		<li><a href="https://hoya012.github.io/blog/Learning-From-Noisy-Large-Scale-Datasets-With-minimal-Supervision-Review/" target="_blank"> <b> “Learning From Noisy Large-Scale Datasets With Minimal Supervision” </b></a>, 18/07/14 .</li>
 		<li><a href="https://hoya012.github.io/blog/Improved-Regularization-of-Convolutional-Neural-Networks-with-Cutout-Review/" target="_blank"> <b> “Improved Regularization of Convolutional Neural Networks with Cutout” </b></a>, 18/06/15 .</li>
 		<li><a href="https://hoya012.github.io/blog/Shake-Shake-Regularization-Review/" target="_blank"> <b> “Shake-Shake Regularization” </b></a>, 18/06/11 .</li>
