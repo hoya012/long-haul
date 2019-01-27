@@ -53,7 +53,7 @@ ResNet과 Inception 등에서 사용되는 bottleneck layer의 아이디어는 D
 
 ### Transition Layer
 다음으로 설명드릴 부분은 Transition layer이며 feature map의 가로, 세로 사이즈를 줄여주고 feature map의 개수를 줄여주는 역할을 담당하고 있습니다. 
-마지막 Dense Block을 제외한 나머지 Dense Block 뒤에 연결이 되며 batch normalization, relu, 1x1 convolution, 2x2 average pooling 으로 구성이 되어있습니다. 
+마지막 Dense Block을 제외한 나머지 Dense Block 뒤에 연결이 되며 Batch Normalization, relu, 1x1 convolution, 2x2 average pooling 으로 구성이 되어있습니다. 
 1x1 convolution을 통해 feature map의 개수를 줄여주며 이 때 줄여주는 정도를 나타내는 **theta** 를 논문에서는 0.5를 사용하였으며 마찬가지로 이 값도 hyper-parameter입니다. 
 이 과정을 Compression이라 논문에서 표현하고 있습니다. 
 즉 논문에서 제시하고 있는 transition layer를 통과하면 feature map의 개수(channel)이 절반으로 줄어들고, 2x2 average pooling layer를 통해 feature map의 가로 세로 크기 또한 절반으로 줄어듭니다. 
@@ -61,7 +61,7 @@ ResNet과 Inception 등에서 사용되는 bottleneck layer의 아이디어는 D
 ### Composite function
 DenseNet은 ResNet의 구조에 대해 분석한 
 <a href="https://arxiv.org/pdf/1603.05027.pdf" target="_blank"> “Identity mappings in deep residual networks, 2016 ECCV” </a>
-논문에서 실험을 통해 제안한 BN-ReLU-Conv 순서의 pre-activation 구조를 사용하였습니다. 
+논문에서 실험을 통해 제안한 **BatchNorm-ReLU-Conv** 순서의 pre-activation 구조를 사용하였습니다. 
 
 <figure>
 	<img src="{{ '/assets/img/densenet/3.png' | prepend: site.baseurl }}" alt=""> 
@@ -71,6 +71,7 @@ DenseNet은 ResNet의 구조에 대해 분석한
 <blockquote> DenseNet implementation details </blockquote>
 앞선 핵심 아이디어들을 이해하시면 DenseNet의 구현에 대해 쉽게 이해가 가능하실 것입니다. 
 본 논문에서는 ImageNet, CIFAR-10, SVHN 3가지 데이터셋에 대해 실험을 하였으며, ImageNet은 다른 두가지 데이터셋에 비해 이미지 사이즈가 크기 때문에 ImageNet과 나머지 두 데이터셋이 다른 architecture를 가지는 것이 특징입니다.
+
 논문에서는 ImageNet에 대한 architecture는 표로 제시를 하고 있으나 CIFAR-10, SVHN에 대한 architecture는 표가 존재하지 않아서 표를 그려보았습니다.
 각 Dense Block 마다 같은 개수의 convolution 연산을 사용하는 점을 이해하면 쉽게 작성이 가능합니다. 
 
