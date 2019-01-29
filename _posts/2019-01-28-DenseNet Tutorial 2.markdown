@@ -15,7 +15,9 @@ google colab은
 <a href="https://colab.research.google.com/drive/1cIOnl5Y3LLK1KrpySokVYJmYLVrkrrW7" target="_blank"> 해당 링크</a>
 를 통해 이용하실 수 있습니다.
 
-Python Script는 현재 정리 중이며 완성이 되는대로 본 포스팅에 링크를 첨부하도록 하겠습니다.
+또한 ipynb 코드는 
+<a href="https://github.com/hoya012/pytorch-densenet" target="_blank"> 해당 링크</a>
+에서 확인하실 수 있습니다.
 
 <blockquote> Requirements </blockquote>
 우선 google colab을 이용하여 실습을 진행할 예정이며, 최근 PyTorch도 official하게 지원이 되기 시작하면서 별도의 설치 과정 필요 없이 바로 PyTorch 이용이 가능합니다. 
