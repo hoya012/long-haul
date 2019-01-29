@@ -11,7 +11,9 @@ Deep Neural Network의 Architecture를 다루는 논문들은 논문을 읽어�
 
 빠른 실습을 위해 오늘 포스팅은 **ipynb** 구현체를 통해 진행할 예정이며 **google colab** 을 이용할 예정입니다. 
 
-google colab 실행 파일은 학습이 마무리되는 대로 업로드를 할 예정입니다.
+google colab은 
+<a href="https://colab.research.google.com/drive/1cIOnl5Y3LLK1KrpySokVYJmYLVrkrrW7" target="_blank"> 해당 링크</a>
+를 통해 이용하실 수 있습니다.
 
 Python Script는 현재 정리 중이며 완성이 되는대로 본 포스팅에 링크를 첨부하도록 하겠습니다.
 
