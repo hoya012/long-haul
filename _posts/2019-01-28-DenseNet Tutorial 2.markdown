@@ -282,6 +282,13 @@ torchsummary.summary(net, (3, 32, 32))
 
 이 한 줄만 추가해주면 각 연산마다 output shape이 어떻게 변하는지 확인하실 수 있습니다. 특히 DenseNet의 경우 코드를 구현하면서 densely connectivity가 잘 구현되고 있는지 확인할 필요가 있는데 torch summary를 이용하시면 쉽게 디버깅이 가능합니다. 
 
+<figure>
+	<img src="{{ '/assets/img/densenet/6.PNG' | prepend: site.baseurl }}" alt=""> 
+</figure> 
+
+위 그림은 toch summary를 통해 DenseNet의 Model Summary를 수행하고, 그 중 첫번째 DenseBlock의 feature map shape을 요약하고 있습니다. 
+Input feature map이 bn_relu_conv block을 거쳐서 channel이 어떻게 변하는지를 한눈에 볼 수 있으며, bottleneck layer에서 48채널로 변환이 되었다가 이전 feature map과 concat이 되어서 feature map 개수가 증가하는 과정을 확인하실 수 있습니다. 
+
 
 ### Training
 ```python
