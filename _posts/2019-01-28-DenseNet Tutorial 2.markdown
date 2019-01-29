@@ -16,7 +16,7 @@ ipynb 코드는
 
 google colab은 ipynb 코드를 다운로드 받으신 후,
 <a href="https://colab.research.google.com" target="_blank"> 해당 링크</a>
-에 접속하셔서 본인의 구글 드라이브에 업로드하셔서 용하실 수 있습니다.
+에 접속하셔서 본인의 구글 드라이브에 업로드하셔서 사용하실 수 있습니다.
 
 
 <blockquote> Requirements </blockquote>
