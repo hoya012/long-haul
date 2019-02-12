@@ -26,7 +26,7 @@ comments: true
  
 
 <figure>
-	<img src="{{ '/assets/img/pelee/1.png' | prepend: site.baseurl }}" alt=""> 
+	<img src="{{ '/assets/img/pelee/1.png' | prepend: site.baseurl }}" alt="" width="500"> 
 </figure>
 
 새로 생긴 1x1 conv + 3x3 conv + 3x3 conv는 큰 object들의 pattern을 위해 추가가 되었으며, 비슷한 연산량과 parameter 수를 가지기 위해 각 feature map의 개수를 조절하고 있는 것을 그림에서 확인하실 수 있습니다.
