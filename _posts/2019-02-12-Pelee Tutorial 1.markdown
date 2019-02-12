@@ -19,7 +19,7 @@ comments: true
 <blockquote> PeleeNet: An Efficient Feature Extraction Network</blockquote>
 이 논문의 출발점은 지난 번 리뷰하였던 DenseNet입니다. 논문에서는 DenseNet을 기반으로 여러 tuning을 통해 DenseNet보다 더 정확하고 빠른 architecture인 PeleeNet을 제안하고 있습니다. 바뀐 점은 크게 5가지이며 한 가지씩 설명을 드리도록 하겠습니다.
 
-## 1. Two-way Dense Layer
+### 1. Two-way Dense Layer
 기존 DenseNet에서 사용된 BottleNeck Layer는 1x1 conv + 3x3 conv의 조합으로 이루어져 있었는데, PeleeNet에서는 다양한 scale의 receptive field를 갖기 위해 2방향의 Dense Layer를 사용하였습니다.
 
 이러한 접근 방법은 GoogLeNet(2015)에서 영감을 받았다고 합니다.
@@ -31,26 +31,26 @@ comments: true
 
 새로 생긴 1x1 conv + 3x3 conv + 3x3 conv는 큰 object들의 pattern을 위해 추가가 되었으며, 비슷한 연산량과 parameter 수를 가지기 위해 각 feature map의 개수를 조절하고 있는 것을 그림에서 확인하실 수 있습니다.
 
-## 2. Stem Block
+### 2. Stem Block
 다음 설명드릴 Stem Block은 Inception-v4(2017)과, 
 <a href="https://hoya012.github.io/blog/Tutorials-of-Object-Detection-Using-Deep-Learning-performance-three/" target="_blank"> 지난 Object Detection 최신 논문 리뷰 포스팅 </a>
 에서 다뤘던 DSOD(2017) 논문에서 영감을 받았으며, 첫번째 Dense Block 이전에 위치합니다.
  
 
 <figure>
-	<img src="{{ '/assets/img/pelee/2.png' | prepend: site.baseurl }}" alt=""> 
+	<img src="{{ '/assets/img/pelee/2.png' | prepend: site.baseurl }}" alt="" width="500"> 
 </figure>
 
 Input image의 크기를 가로, 세로 4배 줄여주어 전체 architecture가 cost-efficient 해지게 하는 역할을 합니다. 또한 적은 연산량으로 feature expression ability를 높여줄 수 있다고 논문에서 주장하고 있습니다.
 
-## 3. Dynamic Number of Channels in Dense Layer
+### 3. Dynamic Number of Channels in Dense Layer
 지난 DenseNet 리뷰를 보셨다면 DenseNet의 bottleneck layer 구조를 떠올리실 수 있을 것입니다. 1x1 convolution을 통해 growth rate의 4배에 해당하는 feature map을 만들었다가 3x3 convolution을 통해 다시 줄이는 방식이 사용이 되었습니다. 
 
 이러한 bottleneck 구조는 연산량을 줄이기 위해 사용이 되는데, 아직 feature map이 많이 쌓이지 않은(feature map의 개수가 적은) 초기의 Dense Layer에서는 4 * growth rate보다 input feature map의 개수가 적게 됩니다. 이러한 경우에 오히려 연산량을 늘리게 되는 문제가 발생합니다. 이를 개선하기 위해 Stem Block과 Two-way Dense Layer 등을 사용을 하였고, 또한 각 Stage마다 Dense Layer의 개수를 가변적으로 가져가는 구조를 취했습니다.
  
 
 <figure>
-	<img src="{{ '/assets/img/pelee/3.png' | prepend: site.baseurl }}" alt=""> 
+	<img src="{{ '/assets/img/pelee/3.png' | prepend: site.baseurl }}" alt="" width="500"> 
 </figure>
 
 PeleeNet의 전체 architecture는 위의 표와 같고 이 때 growth rate(=k)는 32를 사용하였습니다. 
@@ -64,13 +64,13 @@ PeleeNet의 전체 architecture는 위의 표와 같고 이 때 growth rate(=k)�
 
 이러한 방식을 가져감으로써 초기의 dense layer에서 연산량을 크게 절약할 수 있습니다.
 
-## 4. Transition Layer without Compression
+### 4. Transition Layer without Compression
 기존의 DenseNet에서는 Transition Layer에서 feature map의 개수가 줄어드는 compression이 수행이 되었습니다. 하지만 저자가 실험을 한 결과 transition layer에서의 compression이 feature expression 성능을 저하시키는 것을 확인하였고, 결국 compression을 사용하지 않았습니다.
 
-## 5. Composite Function
+### 5. Composite Function
 PeleeNet에서는 기존 DenseNet에서 사용되었던 pre-activation 구조(BN-ReLU-Conv) 대신 저희가 일반적으로 사용하는 post-activation 구조(Conv-BN-ReLU)를 사용하였습니다. 이렇게 하면 Infernece 단계에서 Batch Normalization이 Convolution 연산과 합쳐질 수 있어서 연산 가속이 가능하다는 장점이 있으며 정확도 감소를 막기 위해 마지막 Dense Block(Stage 4) 이후 1x1 convolution을 추가하여 feature의 표현력을 증가시켰습니다.
 
-## 실험 결과
+### 실험 결과
 본 논문에서는 PeleeNet의 성능을 분석하기 위해 여러 실험들을 수행하였습니다. 우선 DenseNet과 비교하기 위해 baseline으로 DenseNet-41을 만들고 이를 customized Stnaford Dogs 데이터셋을 이용하여 성능을 측정하였습니다. 데이터셋에 대한 디테일은 논문에 나와있습니다.
  
 <figure>
@@ -94,21 +94,21 @@ FLOPs가 비슷한데 속도 차이가 나는 이유는 MobileNet, ShuffleNet에
 <blockquote> Pelee: A Real-Time Object Detection System</blockquote>
 다음 설명드릴 부분은 Object Detection의 대표적인 모델인 SSD를 optimize시키고, Feature Extractor 역할을 하는 Backbone CNN으로 **PeleeNet**을 사용한 **Pelee** 입니다. 사실 논문 제목에서도 Object Detection을 언급하고 있지만, 정작 논문에서는 Classification에 대한 내용이 주를 이루고, Object Detection은 거창한 연구를 수행하지는 않았습니다. Pelee의 주요 특징은 다음과 같습니다.
 
-## 1. Feature Map Selection
+### 1. Feature Map Selection
 Original SSD는 6가지의 scale의 feature map에 대해 detection을 수행합니다. SSD 기반의 SSD + MobileNet 방식도 6가지의 scale을 사용하였는데, Pelee는 연산량을 줄이기 위해 38x38 feature map은 사용하지 않고 5가지의 scale만 사용하였습니다. 
  
 <figure>
 	<img src="{{ '/assets/img/pelee/7.PNG' | prepend: site.baseurl }}" alt=""> 
 </figure>
 
-## 2. Residual Prediction Block
+### 2. Residual Prediction Block
 SSD 구조의 Prediction Block을 Residual Block으로 사용한 것도 Pelee의 특징이며 아래 그림과 같은 ResBlock을 사용하였습니다.
  
 <figure>
 	<img src="{{ '/assets/img/pelee/8.PNG' | prepend: site.baseurl }}" alt=""> 
 </figure>
 
-## 3. Small Convolutional Kernel for Prediction
+### 3. Small Convolutional Kernel for Prediction
 마지막으로 바로 위의 그림에 있는 Residual Prediction Block에 1x1 convolution kernel을 사용하여 연산량을 줄이는 방식을 제안하였습니다. 굉장히 단순한 아이디어들로 구성이 되어있습니다.
 
  
@@ -118,7 +118,7 @@ SSD 구조의 Prediction Block을 Residual Block으로 사용한 것도 Pelee의
 
 위의 3가지 특징을 순차적으로 적용함에 따라 Detector의 연산량과 정확도(mAP)가 어떻게 변하는지에 대해 ablation study를 한 결과는 위의 표에 나와있습니다. 
 
-## 실험 결과
+### 실험 결과
 Pelee의 성능을 검증하기 위해 속도를 타겟으로 한 다른 Object Detection 모델들과 성능을 비교하였으며, 대표적인 데이터셋인 PASCAL VOC 2007, COCO 데이터셋에 대해 검증을 진행하였습니다. 
  
 <figure>
