@@ -298,16 +298,10 @@ Input feature map이 bn_relu_conv block을 거쳐서 channel이 어떻게 변하
 ```python
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.SGD(net.parameters(), lr=initial_lr, momentum=0.9)
+lr_scheduler = optim.lr_scheduler.MultiStepLR(optimizer=optimizer, milestones=[int(num_epoch * 0.5), int(num_epoch * 0.75)], gamma=0.1, last_epoch=-1)
 
 for epoch in range(num_epoch):  
-    if epoch == 0:
-        lr = initial_lr
-    elif epoch == int(num_epoch * 0.5):
-        lr *= 0.1
-        optimizer = optim.SGD(net.parameters(), lr=lr, momentum=0.9)
-    elif epoch == int(num_epoch * 0.75):
-        lr *= 0.1
-        optimizer = optim.SGD(net.parameters(), lr=lr, momentum=0.9)
+    lr_scheduler.step()
     
     running_loss = 0.0
     for i, data in enumerate(train_loader, 0):
@@ -349,7 +343,7 @@ for epoch in range(num_epoch):
 print('Finished Training')
 ```
 
-다음 설명드릴 부분은 학습을 시키는 부분이며 마찬가지로 간단히 구현이 가능합니다. SGD optimizer에 momentum은 0.9를 사용하였고 learning rate도 별도의 scheduling 대신 새로 optimizer를 선언해주며 learning rate를 바꿔주는 방식으로 간단히 구현을 하였습니다. 만약 learning rate를 continuous하게 변화를 시켜야 하는 경우(ex, cosine annealing)에는 위와 같은 방법 대신 다른 방법으로 구현을 하는 것이 좋습니다. 
+다음 설명드릴 부분은 학습을 시키는 부분이며 마찬가지로 간단히 구현이 가능합니다. SGD optimizer에 momentum은 0.9를 사용하였고 learning rate는 pytorch의 learning rate scheduling을 이용하여 구현을 하였습니다. 전체 epoch의 50%인 지점과 75%인 지점에서 각각 0.1배씩 곱해주는 방식이므로 **lr_scheduler.MultiStepLR** 을 이용하여 구현을 하였습니다.
 
 그리고 1 epoch이 끝날 때 마다 validation set으로 accuracy를 측정하고 있으며 이 예제에서는 model selection, learning curve plotting은 구현하지 않았습니다. 필요하신 경우 추가하셔서 사용하시면 됩니다. 
 
