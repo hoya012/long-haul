@@ -2,7 +2,7 @@
 layout: post
 title:  “Pelee Tutorial [1] Paper Review & Implementation details”
 date:   2019-02-12
-description: Pelee(NeurIPS 2018) 논문을 리뷰하였습니다.
+description: Mobile Device에 CNN을 적용하기 위한 최신 연구인 Pelee(NeurIPS 2018) 논문을 리뷰하였습니다.
 comments: true
 ---
 
