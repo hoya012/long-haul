@@ -182,7 +182,8 @@ class DenseBlock(nn.Sequential):
           nin_dense_layer = nin + growth_rate * i
           self.add_module('dense_layer_%d' % i, dense_layer(nin=nin_dense_layer, growth_rate=growth_rate, drop_rate=drop_rate))
 ```
-마지막으로 설명드릴 DenseBlock은 위에서 생성한 dense layer를 각 DenseBlock의 dense layer 개수를 나타내는 **num_dense_layers** parameter에 맞게 차례대로 이어주는 방식으로 구현이 가능하며 for 문을 통해 간단히 구현할 수 있습니다. 
+마지막으로 설명드릴 DenseBlock은 위에서 생성한 dense layer를 각 DenseBlock의 dense layer 개수에 맞게 이어주는 방식으로 구현이 가능합니다.
+이 때 각 Dense Block에서 사용되는 dense layer의 개수는 **num_dense_layers** parameter 이며, 이 parameter와 for 문을 이용하면 DenseBlock을 간단히 구현할 수 있습니다. 
 
 ### PeleeNet 구성
 다음 설명드릴 부분은 위에서 생성한 module을 기반으로 PeleeNet을 구성하는 부분입니다. 
