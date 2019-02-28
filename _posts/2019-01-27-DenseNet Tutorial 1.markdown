@@ -36,21 +36,21 @@ DenseNet은 논문의 제목에서 알 수 있듯이 Densely Connected 된 CNN �
 ### Growth Rate
 
 각 feature map끼리 densely 연결이 되는 구조이다 보니 자칫 feature map의 channel 개수가 많은 경우 계속해서 channel-wise로 concat이 되면서 channel이 많아 질 수 있습니다. 
-그래서 DenseNet에서는 각 layer의 feature map의 channel 개수를 굉장히 작은 값을 사용하며, 이 때 각 layer의 feature map의 channel 개수를 **growth rate** 이라 부릅니다.
+그래서 DenseNet에서는 각 layer의 feature map의 channel 개수를 굉장히 작은 값을 사용하며, 이 때 각 layer의 feature map의 channel 개수를 **growth rate(k)** 이라 부릅니다.
 
-위의 그림 1은 growth rate=4 인 경우를 의미하며 그림 1의 경우로 설명하면 6 channel feature map 입력이 dense block의 4번의 convolution block을 통해 (6 + 4 + 4 + 4 + 4 = 22) 개의 channel을 갖는 feature map output으로 계산이 되는 과정을 보여주고 있습니다. 위의 그림의 경우를 이해하실 수 있으면 실제 논문에서 구현한 DenseNet의 각 DenseBlock의 각 layer마다 feature map의 channel 개수 또한 간단한 등차수열로 나타낼 수 있습니다. 
+위의 그림 1은 k(growth rate) = 4 인 경우를 의미하며 그림 1의 경우로 설명하면 6 channel feature map 입력이 dense block의 4번의 convolution block을 통해 (6 + 4 + 4 + 4 + 4 = 22) 개의 channel을 갖는 feature map output으로 계산이 되는 과정을 보여주고 있습니다. 위의 그림의 경우를 이해하실 수 있으면 실제 논문에서 구현한 DenseNet의 각 DenseBlock의 각 layer마다 feature map의 channel 개수 또한 간단한 등차수열로 나타낼 수 있습니다. 
 
 ### Bottleneck Layer
 ResNet과 Inception 등에서 사용되는 bottleneck layer의 아이디어는 DenseNet에서도 찾아볼 수 있습니다. 
 
 <figure>
-	<img src="{{ '/assets/img/densenet/2.png' | prepend: site.baseurl }}" alt=""> 
+	<img src="{{ '/assets/img/densenet/2_new.PNG' | prepend: site.baseurl }}" alt=""> 
 	<figcaption> [DenseNet bottleneck layer] </figcaption>
 </figure> 
 
-3x3 convolution 전에 1x1 convolution을  거쳐서 입력 feature map의 channel 개수를 줄이는 것 까지는 같은데, 그 뒤로 다시 입력 feature map의 channel 개수 만큼을 생성하는 대신 growth rate 만큼의  feature map을 생성하는 것이 차이점이며 이를 통해 computational cost를 줄일 수 있다고 합니다. 
+3x3 convolution 전에 1x1 convolution을  거쳐서 입력 feature map의 channel 개수를 줄이는 것 까지는 같은데, 그 뒤로 다시 입력 feature map의 channel 개수 만큼을 생성하는 대신 growth rate 만큼의  feature map을 생성하는 것이 차이 점이며 이를 통해 computational cost를 줄일 수 있다고 합니다. 
 
-구현상의 약간의 차이가 있는데, 1x1 convolution 연산을 통해 4*growth rate 개의 feature map을 만들고 그 뒤에 3x3 convolution을 통해 growth rate 개의 feature map으로 줄여주는 점이 특이합니다. Bottleneck layer를 사용하면, 사용하지 않을 때 보다 비슷한 parameter 개수로 더 좋은 성능을 보임을 논문에서 제시하고 있습니다. 
+또한 구현할 때 약간 특이한 점이 존재합니다. DenseNet의 Bottleneck Layer는 1x1 convolution 연산을 통해 4*growth rate 개의 feature map을 만들고 그 뒤에 3x3 convolution을 통해 growth rate 개의 feature map으로 줄여주는 점이 특이합니다. Bottleneck layer를 사용하면, 사용하지 않을 때 보다 비슷한 parameter 개수로 더 좋은 성능을 보임을 논문에서 제시하고 있습니다. 
 
 다만 4 * growth rate의 **4배** 라는 수치는 hyper-parameter이고 이에 대한 자세한 설명은 하고 있지 않습니다. 
 
