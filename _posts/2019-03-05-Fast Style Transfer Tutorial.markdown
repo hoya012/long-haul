@@ -454,7 +454,7 @@ if running_option == "training":
 학습을 돌리시면 일정 주기(**log_interval**)마다 학습 loss를 출력하고, 매 epoch마다 checkpoint를 저장하는 방식으로 구현을 하였습니다.
 또한 checkpoint에는 transformation network의 state와 optimizer의 state, epoch, loss 등을 저장합니다. 
 
-### 9. test(inference) phase
+### 9. Test(Inference) Phase
 
 다음 설명드릴 부분은 학습된 transformation network에 content image로 style transfer를 하는 과정을 보여주고 있습니다.
 제가 올려놓은 ipynb에는 이미지 한장을 입력으로 하여 test를 하는 코드와, video를 입력으로 하여 test를 하는 코드를 둘다 만들어두었습니다. 
