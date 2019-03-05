@@ -514,7 +514,11 @@ if running_option == "test_video":
         cv2.destroyAllWindows()
 ```
 
-inference는 학습이 다 끝난 후 저장된 checkpoint를 불러와서 model을 구성한 뒤 시작합니다.
+inference는 학습이 다 끝난 후 저장된 checkpoint를 불러와서 model을 구성한 뒤 시작합니다. 
+저장된 checkpoint는 앞서 설명드린 
+<a href="https://github.com/hoya012/fast-style-transfer-tutorial-pytorch/blob/master/ckpt_epoch_63_batch_id_500.pth" target="_blank"> github reopository </a>
+에 업로드를 해두었으니, 해당 file을 download 받으시면 별도의 학습 없이 바로 test를 하실 수 있습니다.
+
 Test에 사용할 video sample도 google drive에 업로드를 한 뒤에, opencv의 VideoCapture를 통해 불러와줍니다.
 
 style transfer를 적용할 video의 경로, 결과물 video가 저장될 경로를 알맞게 설정해주시고 해당 code block을 실행하시면 매 frame마다 inference를 한 뒤에 video 형태로 저장이 되는 것을 확인하실 수 있습니다.
@@ -522,6 +526,7 @@ style transfer를 적용할 video의 경로, 결과물 video가 저장될 경로
 <blockquote> 결론 </blockquote>
 이번 포스팅에서는 실시간으로 동작이 가능한 Fast Style Transfer를 직접 구현해보고 cumstom dataset으로 test를 하는 과정을 설명드렸습니다.
 코드는 길지만 어렵게 짜여져있지 않아서 쉽게 이해하실 수 있고, 직접 본인의 dataset으로 training과 test를 해보실 수 있도록 ipynb 스크립트로 정리를 하여 공유를 드렸습니다. 
+
 또한 비디오로 입출력을 하는 과정, colab에서 학습을 이어하기 위한 transfer learning, google drive 연동 등 다양한 컨텐츠를 다루고 있어서 꼭 이번 실습 뿐만 아니라 여러분이 pytorch를 사용하실 때도 요긴하게 쓰일 수 있는 방법이니 잘 익혀두시는 것을 권장드립니다.
 혹시 코드를 보시고 이해가 안되시는 부분이나 막히는 부분이 있으면 편하게 댓글 남겨 주시면 감사하겠습니다. 읽어주셔서 감사합니다.
 
