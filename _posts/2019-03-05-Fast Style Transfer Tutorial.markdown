@@ -37,6 +37,16 @@ comments: true
 이러한 배경의 style을 전혀 다른 테마인 미라마(사막), 사녹(열대우림)에 입혔을 때의 모습은 다음과 같습니다.
 아래의 데모 영상 2개는 제가 직접 플레이한 영상을 가져온 것이며, 왼쪽이 원본, 오른쪽이 설원의 style을 입혔을 때의 결과를 보여주고 있습니다.
 
+<figure>
+	<img src="{{ '/assets/img/fast_style_transfer/mirama_demo.gif' | prepend: site.baseurl }}" alt="" width="500"> 
+</figure>
+
+<figure>
+	<img src="{{ '/assets/img/fast_style_transfer/sanok_demo.gif' | prepend: site.baseurl }}" alt="" width="500"> 
+</figure>
+
+이제 어떻게 이러한 결과를 얻으실 수 있는지 차근차근 설명을 드리도록 하겠습니다. 
+
 <blockquote> 논문 간단 소개 </blockquote>
 오늘 다룰 논문은 
 <a href="https://arxiv.org/pdf/1603.08155.pdf" target="_blank"> Perceptual Losses for Real-Time Style Transfer and Super-Resolution (2016, ECCV)</a>
@@ -509,3 +519,13 @@ Test에 사용할 video sample도 google drive에 업로드를 한 뒤에, openc
 
 style transfer를 적용할 video의 경로, 결과물 video가 저장될 경로를 알맞게 설정해주시고 해당 code block을 실행하시면 매 frame마다 inference를 한 뒤에 video 형태로 저장이 되는 것을 확인하실 수 있습니다.
 
+<blockquote> 결론 </blockquote>
+이번 포스팅에서는 실시간으로 동작이 가능한 Fast Style Transfer를 직접 구현해보고 cumstom dataset으로 test를 하는 과정을 설명드렸습니다.
+코드는 길지만 어렵게 짜여져있지 않아서 쉽게 이해하실 수 있고, 직접 본인의 dataset으로 training과 test를 해보실 수 있도록 ipynb 스크립트로 정리를 하여 공유를 드렸습니다. 
+또한 비디오로 입출력을 하는 과정, colab에서 학습을 이어하기 위한 transfer learning, google drive 연동 등 다양한 컨텐츠를 다루고 있어서 꼭 이번 실습 뿐만 아니라 여러분이 pytorch를 사용하실 때도 요긴하게 쓰일 수 있는 방법이니 잘 익혀두시는 것을 권장드립니다.
+혹시 코드를 보시고 이해가 안되시는 부분이나 막히는 부분이 있으면 편하게 댓글 남겨 주시면 감사하겠습니다. 읽어주셔서 감사합니다.
+
+<blockquote> Reference </blockquote>
+- <a href="https://github.com/pytorch/examples/tree/master/fast_neural_style" target="_blank"> pytorch example code </a>
+- <a href="https://ezgif.com/video-to-gif" target="_blank"> demo 용 gif 생성 사이트 </a>
+- <a href="https://colab.research.google.com/" target="_blank"> google colaboratory </a>
