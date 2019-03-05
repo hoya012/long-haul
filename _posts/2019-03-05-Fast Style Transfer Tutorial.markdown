@@ -2,7 +2,7 @@
 layout: post
 title:  “Fast Style Transfer PyTorch Tutorial”
 date:   2019-03-05
-description: Fast Style Transfer를 PyTorch로 쉽게 돌려볼 수 있는 tutorial 입니다. 
+description: Fast Style Transfer를 PyTorch로 구현하고, Cumstom dataset으로 실습해볼 수 있는 tutorial 입니다. 예제로 배틀그라운드 게임의 영상을 활용하였으며 누구나 쉽게 실행해볼 수 있습니다. 
 comments: true
 ---
 
