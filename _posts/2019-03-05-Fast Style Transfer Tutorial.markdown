@@ -16,6 +16,27 @@ comments: true
 <a href="https://github.com/hoya012/fast-style-transfer-tutorial-pytorch" target="_blank"> 해당 github repository </a>
 에 업로드 해두었으니 다운 받으셔서 사용하시면 됩니다.
 
+<blockquote> Battle Ground Video Demo using fast-style-transfer </blockquote>
+
+이번 실습에는 제가 즐겨하는 게임인 배틀그라운드의 플레이 영상을 이용할 예정입니다.
+사실 이 포스팅을 작성해야겠다고 생각한 계기도 게임을 하다가 문득 떠오른 아이디어에서 출발하였으며, 혹시 이 게임을 잘 모르시는 분들을 위해 간략하게 소개를 드리면 다음과 같습니다.
+
+<figure>
+	<img src="{{ '/assets/img/fast_style_transfer/2.PNG' | prepend: site.baseurl }}" alt="" width="500"> 
+</figure>
+
+100인의 플레이어가 전투에 필요한 물자들을 얻고 최종 1인을 향해 플레이하는 생존 게임이며 에란겔(도심, 산), 미라마(사막), 사녹(열대우림), 비켄디(설원) 크게 4가지 테마의 맵이 존재합니다.
+그래서 저는 각 맵 간의 style transfer를 해보면 재미있겠다는 호기심 하나로 이번 실습 코드를 준비해보았으며, 결과를 미리 보여드리면 다음과 같습니다.
+
+<figure>
+	<img src="{{ '/assets/img/fast_style_transfer/3.PNG' | prepend: site.baseurl }}" alt="" width="500"> 
+</figure>
+
+우선 Style Transfer의 Style이 되는 이미지는 위의 그림과 같이 설원을 배경으로 플레이한 이미지를 준비해보았습니다.
+
+이러한 배경의 style을 전혀 다른 테마인 미라마(사막), 사녹(열대우림)에 입혔을 때의 모습은 다음과 같습니다.
+아래의 데모 영상 2개는 제가 직접 플레이한 영상을 가져온 것이며, 왼쪽이 원본, 오른쪽이 설원의 style을 입혔을 때의 결과를 보여주고 있습니다.
+
 <blockquote> 논문 간단 소개 </blockquote>
 오늘 다룰 논문은 
 <a href="https://arxiv.org/pdf/1603.08155.pdf" target="_blank"> Perceptual Losses for Real-Time Style Transfer and Super-Resolution (2016, ECCV)</a>
@@ -50,16 +71,6 @@ Style Transfer의 초기 논문이라 부를 수 있는
 - Transfer Learning을 위한 checkpoint 저장
 - Style Transfer 결과를 이미지 혹은 동영상으로 저장
 
-이번 실습에는 제가 즐겨하는 게임인 배틀그라운드의 플레이 영상을 이용할 예정입니다.
-사실 이 포스팅을 작성해야겠다고 생각한 계기도 게임을 하다가 문득 떠오른 아이디어에서 출발하였으며, 혹시 이 게임을 잘 모르시는 분들을 위해 간략하게 소개를 드리면 다음과 같습니다.
-
-<figure>
-	<img src="{{ '/assets/img/fast_style_transfer/2.PNG' | prepend: site.baseurl }}" alt="" width="500"> 
-</figure>
-
-100인의 플레이어가 전투에 필요한 물자들을 얻고 최종 1인을 향해 플레이하는 생존 게임이며 에란겔(도심, 산), 미라마(사막), 사녹(열대우림), 비켄디(설원) 크게 4가지 테마의 맵이 존재합니다.
-그래서 저는 각 맵 간의 style transfer를 해보면 재미있겠다는 호기심 하나로 이번 실습 코드를 준비해보았으며, 말미에 데모를 통해 얼마나 style이 잘 transfer 되는지 보여드릴 예정입니다.
-
 <blockquote> Code Implementation </blockquote>
 pytorch example 코드를 기반으로 여러분들이 쉽게 실습을 해보실 수 있도록 정리한 **ipynb** 코드를 하나하나 설명드리도록 하겠습니다.
 
@@ -85,12 +96,7 @@ COCO 2017 validation set은
 혹은 압축파일 자체를 업로드하시고 google drive 내에서 압축 해제를 하셔도 무방합니다.
 
 학습에 필요한 COCO dataset이 준비가 되셨다면, 이제는 style image를 준비하시면 됩니다.
-저는 배틀그라운드의 4가지 테마의 맵 중에 설원 테마인 비켄디의 플레이 이미지 1장을 준비하였습니다. 
-
-<figure>
-	<img src="{{ '/assets/img/fast_style_transfer/3.PNG' | prepend: site.baseurl }}" alt="" width="500"> 
-</figure>
-
+저는 위에서 보여드린 것 처럼 배틀그라운드의 4가지 테마의 맵 중에 설원 테마인 비켄디의 플레이 이미지 1장을 준비하였습니다. 
 마찬가지로 style image도 google drive에 업로드를 하신 뒤에 잘 업로드가 되었는지 확인하실 수 있습니다.
 
 ```python
@@ -346,4 +352,160 @@ features_style = vgg(normalize_batch(style))
 gram_style = [gram_matrix(y) for y in features_style]
 ```
 
-데이터셋은 **torchvision.datasets.ImageFolder** 라는 편리한 기능을 이용하여 loadinㅎ을 하였고, resize와 centor crop등의 전처리를 거치게됩니다.
+데이터셋은 **torchvision.datasets.ImageFolder** 라는 편리한 기능을 이용하여 loading을 하였고, resize와 centor crop등의 전처리를 거치게됩니다.
+
+또한 위에서 정의한 Module Class들을 이용하여 network를 구성한 뒤 adam optimizer, loss function 등을 정의하게 됩니다.
+
+### 7. Transfer Learning, Inference 를 위한 checkpoint loading 
+```python
+transfer_learning = False
+ckpt_model_path = os.path.join(checkpoint_dir, "ckpt_epoch_63_batch_id_500.pth")
+
+if transfer_learning:
+  checkpoint = torch.load(ckpt_model_path, map_location=device)
+  transformer.load_state_dict(checkpoint['model_state_dict'])
+  transformer.to(device)
+```
+
+이 부분은 colab을 이용하신다면 필수로 거쳐야 하는 부분입니다. 
+colab은 **GPU를 연속으로 8시간 사용** 이 가능하기 때문에, 학습이 8시간보다 오래 소요되는 경우에는 8시간마다 다시 colab의 런타임을 초기화해줘야하는 문제가 발생합니다. 그러므로 8시간동안 학습된 모델을 저장하고 있어야 8시간 뒤에 이어서 학습을 할 수 있습니다.
+
+**transfer_learning** option이 True인 경우 google drive에 저장된 checkpoint에서 학습을 이어서 시작하실 수 있으며, 새로 학습을 시작하거나, 학습이 끝나서 inference를 하는 경우에는 해당 옵션을 False로 설정하시면 됩니다.
+
+### 8. Training Phase
+다음 설명드릴 부분은 training 부분이며 위에서 설명드린 transfer_learning을 하는 경우에는 저장된 checkpoint에서 진행 중인 epoch를 받아와서 그 지점부터 이어서 학습하고, 그렇지 않은 경우에는 첫 epoch부터 학습을 시작하게 됩니다.
+
+```python
+if running_option == "training":
+  if transfer_learning:
+      transfer_learning_epoch = checkpoint['epoch'] 
+  else:
+      transfer_learning_epoch = 0
+
+  for epoch in range(transfer_learning_epoch, num_epochs):
+        transformer.train()
+        agg_content_loss = 0.
+        agg_style_loss = 0.
+        count = 0
+
+        for batch_id, (x, _) in enumerate(train_loader):
+            n_batch = len(x)
+            count += n_batch
+            optimizer.zero_grad()
+
+            x = x.to(device)
+            y = transformer(x)
+
+            y = normalize_batch(y)
+            x = normalize_batch(x)
+
+            features_y = vgg(y)
+            features_x = vgg(x)
+
+            content_loss = content_weight * mse_loss(features_y.relu2_2, features_x.relu2_2)
+
+            style_loss = 0.
+            for ft_y, gm_s in zip(features_y, gram_style):
+                gm_y = gram_matrix(ft_y)
+                style_loss += mse_loss(gm_y, gm_s[:n_batch, :, :])
+            style_loss *= style_weight
+
+            total_loss = content_loss + style_loss
+            total_loss.backward()
+            optimizer.step()
+
+            agg_content_loss += content_loss.item()
+            agg_style_loss += style_loss.item()
+
+            if (batch_id + 1) % log_interval == 0:
+                mesg = "{}\tEpoch {}:\t[{}/{}]\tcontent: {:.6f}\tstyle: {:.6f}\ttotal: {:.6f}".format(
+                    time.ctime(), epoch + 1, count, len(train_dataset),
+                                  agg_content_loss / (batch_id + 1),
+                                  agg_style_loss / (batch_id + 1),
+                                  (agg_content_loss + agg_style_loss) / (batch_id + 1)
+                )
+                print(mesg)
+
+            if checkpoint_dir is not None and (batch_id + 1) % checkpoint_interval == 0:
+                transformer.eval().cpu()
+                ckpt_model_filename = "ckpt_epoch_" + str(epoch) + "_batch_id_" + str(batch_id + 1) + ".pth"
+                print(str(epoch), "th checkpoint is saved!")
+                ckpt_model_path = os.path.join(checkpoint_dir, ckpt_model_filename)
+                torch.save({
+                'epoch': epoch,
+                'model_state_dict': transformer.state_dict(),
+                'optimizer_state_dict': optimizer.state_dict(),
+                'loss': total_loss
+                }, ckpt_model_path)
+
+                transformer.to(device).train()  
+```
+
+학습을 돌리시면 일정 주기(**log_interval**)마다 학습 loss를 출력하고, 매 epoch마다 checkpoint를 저장하는 방식으로 구현을 하였습니다.
+또한 checkpoint에는 transformation network의 state와 optimizer의 state, epoch, loss 등을 저장합니다. 
+
+### 9. test(inference) phase
+
+다음 설명드릴 부분은 학습된 transformation network에 content image로 style transfer를 하는 과정을 보여주고 있습니다.
+제가 올려놓은 ipynb에는 이미지 한장을 입력으로 하여 test를 하는 코드와, video를 입력으로 하여 test를 하는 코드를 둘다 만들어두었습니다. 
+이 글에서는 video를 입력으로 하는 부분을 설명드리도록 하겠습니다.
+
+```python
+if running_option == "test_video":
+    
+    with torch.no_grad():
+        style_model = TransformerNet()
+
+        ckpt_model_path = os.path.join(checkpoint_dir, "ckpt_epoch_63_batch_id_500.pth")
+        checkpoint = torch.load(ckpt_model_path, map_location=device)
+
+        # remove saved deprecated running_* keys in InstanceNorm from the checkpoint
+        for k in list(checkpoint.keys()):
+            if re.search(r'in\d+\.running_(mean|var)$', k):
+                del checkpoint[k]
+
+        style_model.load_state_dict(checkpoint['model_state_dict'])
+        style_model.to(device)
+
+        cap = cv2.VideoCapture("/content/gdrive/My Drive/Colab_Notebooks/data/mirama_demo.mp4")
+
+        frame_cnt = 0
+        
+        fourcc = cv2.VideoWriter_fourcc(*'XVID') #cv2.VideoWriter_fourcc(*'MP42')
+        out = cv2.VideoWriter('/content/gdrive/My Drive/Colab_Notebooks/data/mirama_demo_result.avi', fourcc, 60.0, (1920,1080))
+
+        
+        while(cap.isOpened()):
+            ret, frame = cap.read()
+            
+            try:
+              frame = frame[:,:,::-1] - np.zeros_like(frame)
+            except:
+              break
+              
+            print(frame_cnt, "th frame is loaded!")
+
+            content_image = frame
+            content_transform = transforms.Compose([
+                transforms.ToTensor(),
+                transforms.Lambda(lambda x: x.mul(255))
+            ])
+            content_image = content_transform(content_image)
+            content_image = content_image.unsqueeze(0).to(device)
+
+            output = style_model(content_image).cpu()
+            #save_image("/content/gdrive/My Drive/Colab_Notebooks/data/vikendi_video_result/" + str(frame_cnt) +".png", output[0])
+            out.write(post_process_image(output[0]))
+            frame_cnt += 1
+            
+
+        cap.release()
+        out.release()
+        cv2.destroyAllWindows()
+```
+
+inference는 학습이 다 끝난 후 저장된 checkpoint를 불러와서 model을 구성한 뒤 시작합니다.
+Test에 사용할 video sample도 google drive에 업로드를 한 뒤에, opencv의 VideoCapture를 통해 불러와줍니다.
+
+style transfer를 적용할 video의 경로, 결과물 video가 저장될 경로를 알맞게 설정해주시고 해당 code block을 실행하시면 매 frame마다 inference를 한 뒤에 video 형태로 저장이 되는 것을 확인하실 수 있습니다.
+
