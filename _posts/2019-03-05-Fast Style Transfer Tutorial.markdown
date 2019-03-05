@@ -102,5 +102,248 @@ display(style_image_sample)
 
 style image가 제대로 출력이 되지 않으면 아마 경로가 잘못되었을 가능성이 높으므로 경로를 잘 확인해주시면 됩니다.
 
+### 3. 학습 parameter 설정 
+다음 설명드릴 부분은 학습 parameter들과 network를 구성하는 module class를 생성하는 부분입니다.
+
+```python
+batch_size = 8
+random_seed = 10
+num_epochs = 64 
+initial_lr = 1e-3
+checkpoint_dir = "/content/gdrive/My Drive/Colab_Notebooks/data/"
+
+content_weight = 1e5
+style_weight = 1e10
+log_interval = 50
+checkpoint_interval = 500
+
+#running_option = "test"
+running_option = "test_video"
+#running_option = "training"
+```
+
+우선 batch size는 원 논문에서는 4를 사용하였지만 저는 빠른 학습을 위해 8을 사용하였습니다. 
+또한 전체 학습 epoch는 원 논문에서는 2 epoch을 사용하였지만 저는 batch size와 dataset의 개수가 다르기 때문에 iteration 수를 맞춰주기 위해 64를 사용하였습니다. batch size와 training epoch는 본인이 구성하신 데이터셋과 GPU 환경에 맞게 조절하셔서 사용하시면 됩니다.
+
+**running_option**은 뒤에 설명드릴 training과 test 중 어떤 task를 수행할지를 나타내며 처음에는 training으로 설정하시고, 학습이 끝난 뒤에는 test 혹은 test_video로 설정하시면 됩니다.
+
+### 4. Module Class 생성
+Module Class는 기존 코드의 구조를 거의 그대로 사용하였으며 이해하시는데 큰 무리가 없으실 것으로 생각합니다.
+
+```python
+class VGG16(torch.nn.Module):
+    def __init__(self, requires_grad=False):
+        super(VGG16, self).__init__()
+        vgg_pretrained_features = models.vgg16(pretrained=True).features
+        self.slice1 = torch.nn.Sequential()
+        self.slice2 = torch.nn.Sequential()
+        self.slice3 = torch.nn.Sequential()
+        self.slice4 = torch.nn.Sequential()
+        for x in range(4):
+            self.slice1.add_module(str(x), vgg_pretrained_features[x])
+        for x in range(4, 9):
+            self.slice2.add_module(str(x), vgg_pretrained_features[x])
+        for x in range(9, 16):
+            self.slice3.add_module(str(x), vgg_pretrained_features[x])
+        for x in range(16, 23):
+            self.slice4.add_module(str(x), vgg_pretrained_features[x])
+        if not requires_grad:
+            for param in self.parameters():
+                param.requires_grad = False
+
+    def forward(self, X):
+        h = self.slice1(X)
+        h_relu1_2 = h
+        h = self.slice2(h)
+        h_relu2_2 = h
+        h = self.slice3(h)
+        h_relu3_3 = h
+        h = self.slice4(h)
+        h_relu4_3 = h
+        vgg_outputs = namedtuple("VggOutputs", ['relu1_2', 'relu2_2', 'relu3_3', 'relu4_3'])
+        out = vgg_outputs(h_relu1_2, h_relu2_2, h_relu3_3, h_relu4_3)
+        return out
+
+class ConvLayer(nn.Module):
+    def __init__(self, in_channels, out_channels, kernel_size, stride):
+        super(ConvLayer, self).__init__()
+        reflection_padding = kernel_size // 2
+        self.reflection_pad = nn.ReflectionPad2d(reflection_padding)
+        self.conv2d = nn.Conv2d(in_channels, out_channels, kernel_size, stride)
+
+    def forward(self, x):
+        out = self.reflection_pad(x)
+        out = self.conv2d(out)
+        return out
+
+class ResidualBlock(nn.Module):
+    """ResidualBlock
+    introduced in: https://arxiv.org/abs/1512.03385
+    recommended architecture: http://torch.ch/blog/2016/02/04/resnets.html
+    """
+
+    def __init__(self, channels):
+        super(ResidualBlock, self).__init__()
+        self.conv1 = ConvLayer(channels, channels, kernel_size=3, stride=1)
+        self.in1 = nn.InstanceNorm2d(channels, affine=True)
+        self.conv2 = ConvLayer(channels, channels, kernel_size=3, stride=1)
+        self.in2 = nn.InstanceNorm2d(channels, affine=True)
+        self.relu = nn.ReLU()
+
+    def forward(self, x):
+        residual = x
+        out = self.relu(self.in1(self.conv1(x)))
+        out = self.in2(self.conv2(out))
+        out = out + residual
+        return out
+	
+class UpsampleConvLayer(nn.Module):
+    """UpsampleConvLayer
+    Upsamples the input and then does a convolution. This method gives better results
+    compared to ConvTranspose2d.
+    ref: http://distill.pub/2016/deconv-checkerboard/
+    """
+
+    def __init__(self, in_channels, out_channels, kernel_size, stride, upsample=None):
+        super(UpsampleConvLayer, self).__init__()
+        self.upsample = upsample
+        reflection_padding = kernel_size // 2
+        self.reflection_pad = nn.ReflectionPad2d(reflection_padding)
+        self.conv2d = nn.Conv2d(in_channels, out_channels, kernel_size, stride)
+
+    def forward(self, x):
+        x_in = x
+        if self.upsample:
+            x_in = nn.functional.interpolate(x_in, mode='nearest', scale_factor=self.upsample)
+        out = self.reflection_pad(x_in)
+        out = self.conv2d(out)
+        return out
+	
+class TransformerNet(nn.Module):
+    def __init__(self):
+        super(TransformerNet, self).__init__()
+        # Initial convolution layers
+        self.encoder = nn.Sequential()
+        
+        self.encoder.add_module('conv1', ConvLayer(3, 32, kernel_size=9, stride=1))
+        self.encoder.add_module('in1', nn.InstanceNorm2d(32, affine=True))
+        self.encoder.add_module('relu1', nn.ReLU())
+        
+        self.encoder.add_module('conv2', ConvLayer(32, 64, kernel_size=3, stride=2))
+        self.encoder.add_module('in2', nn.InstanceNorm2d(64, affine=True))
+        self.encoder.add_module('relu2', nn.ReLU())
+        
+        self.encoder.add_module('conv3', ConvLayer(64, 128, kernel_size=3, stride=2))
+        self.encoder.add_module('in3', nn.InstanceNorm2d(128, affine=True))
+        self.encoder.add_module('relu3', nn.ReLU())
+
+        # Residual layers
+        self.residual = nn.Sequential()
+        
+        for i in range(5):
+          self.residual.add_module('resblock_%d' %(i+1), ResidualBlock(128))
+        
+        # Upsampling Layers
+        self.decoder = nn.Sequential()
+        self.decoder.add_module('deconv1', UpsampleConvLayer(128, 64, kernel_size=3, stride=1, upsample=2))
+        self.decoder.add_module('in4', nn.InstanceNorm2d(64, affine=True))
+        self.encoder.add_module('relu4', nn.ReLU())
+
+        self.decoder.add_module('deconv2', UpsampleConvLayer(64, 32, kernel_size=3, stride=1, upsample=2))
+        self.decoder.add_module('in5', nn.InstanceNorm2d(32, affine=True))
+        self.encoder.add_module('relu5', nn.ReLU())
+
+        self.decoder.add_module('deconv3', ConvLayer(32, 3, kernel_size=9, stride=1))
 
 
+    def forward(self, x):
+        encoder_output = self.encoder(x)
+        residual_output = self.residual(encoder_output)
+        decoder_output = self.decoder(residual_output)
+        
+        return decoder_output	
+```
+
+단순한 구조로 이루어져있으므로 별다른 설명은 하지 않도록 하겠습니다.
+
+### 5. Util Function 정의
+이미지를 처리하거나, loss 계산에 사용되는 gram matrix 등 여러 util function들을 정의한 부분입니다.
+
+```python
+""" Util Functions """
+def load_image(filename, size=None, scale=None):
+    img = Image.open(filename)
+    if size is not None:
+        img = img.resize((size, size), Image.ANTIALIAS)
+    elif scale is not None:
+        img = img.resize((int(img.size[0] / scale), int(img.size[1] / scale)), Image.ANTIALIAS)
+    return img
+    
+def save_image(filename, data):
+    img = data.clone().clamp(0, 255).numpy()
+    img = img.transpose(1, 2, 0).astype("uint8")
+    img = Image.fromarray(img)
+    display(img)
+    img.save(filename)
+
+def post_process_image(data):
+    img = data.clone().clamp(0, 255).numpy()
+    img = img.transpose(1, 2, 0).astype("uint8")
+    #img = Image.fromarray(img)
+    
+    return img
+    
+def gram_matrix(y):
+    (b, ch, h, w) = y.size()
+    features = y.view(b, ch, w * h)
+    features_t = features.transpose(1, 2)
+    gram = features.bmm(features_t) / (ch * h * w)
+    return gram
+
+def normalize_batch(batch):
+    # normalize using imagenet mean and std
+    mean = batch.new_tensor([0.485, 0.456, 0.406]).view(-1, 1, 1)
+    std = batch.new_tensor([0.229, 0.224, 0.225]).view(-1, 1, 1)
+    batch = batch.div_(255.0)
+    return (batch - mean) / std
+```
+
+### 6. 데이터셋 로딩, 주요 기능 정의
+다음 설명드릴 부분은 위에서 다운로드받은 COCO dataset을 loading하고, training과 test에 필요한 주요 기능들을 정의하는 부분입니다.
+
+```python
+np.random.seed(random_seed)
+torch.manual_seed(random_seed)
+
+transform = transforms.Compose([
+    transforms.Resize(256),
+    transforms.CenterCrop(256),
+    transforms.ToTensor(),
+    transforms.Lambda(lambda x: x.mul(255))
+])
+
+style_transform = transforms.Compose([
+        transforms.ToTensor(),
+        transforms.Lambda(lambda x: x.mul(255))
+])
+
+print(glob.glob("/content/gdrive/My Drive/Colab_Notebooks/data/COCO/val2017/*"))
+
+train_dataset = datasets.ImageFolder("/content/gdrive/My Drive/Colab_Notebooks/data/COCO", transform)
+train_loader = torch.utils.data.DataLoader(train_dataset, batch_size=batch_size)
+
+transformer = TransformerNet()
+vgg = VGG16(requires_grad=False).to(device)
+
+optimizer = torch.optim.Adam(transformer.parameters(), initial_lr)
+mse_loss = nn.MSELoss()
+
+style = load_image(filename=style_image_location, size=None, scale=None)
+style = style_transform(style)
+style = style.repeat(batch_size, 1, 1, 1).to(device)
+
+features_style = vgg(normalize_batch(style))
+gram_style = [gram_matrix(y) for y in features_style]
+```
+
+데이터셋은 **torchvision.datasets.ImageFolder** 라는 편리한 기능을 이용하여 loadinㅎ을 하였고, resize와 centor crop등의 전처리를 거치게됩니다.
