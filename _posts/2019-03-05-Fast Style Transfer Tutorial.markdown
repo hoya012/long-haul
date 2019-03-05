@@ -55,7 +55,7 @@ comments: true
 ### 기존 방법과 차이점
 Style Transfer의 초기 논문이라 부를 수 있는 
 <a href="https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf" target="_blank"> Image Style Transfer Using Convolutional Neural Networks (2016, CVPR) </a>
-은 pretrained된 network에 content image와 style image를 쌍으로 넣어줘서 style transfer를 하는 방식이다보니 매번 content image가 바뀔 때 마다 많은 연산을 수행하여야 하는 단점이 있습니다.
+은 pretrained된 network에 content image와 style image를 쌍으로 넣어줘서 매번 학습을 통해 style transfer를 하는 방식이다보니, content image가 바뀔 때 마다 다시 학습을 시켜야 하므로 많은 연산을 수행하여야 하는 단점이 있습니다.
 
 본 논문은 이러한 문제를 해결하기 위해 network에 style image 1장을 학습시키고 그 network를 그대로 이용하는 방법을 제안하였습니다.
 즉 여러 장의 content image로 style transfer(inference)를 할 때 기존 방법처럼 매번 재학습을 시키지 않고 단순히 inference만 하면 되기 때문에 Real-Time으로 동작이 가능하다는 장점이 있습니다.
