@@ -6,7 +6,7 @@ description: Fast Style Transfer를 PyTorch로 구현하고, Cumstom dataset으�
 comments: true
 ---
 
-안녕하세요, 오늘은 Style Transfer을 PyTorch로 실습하는 과정을 설명드릴 예정입니다. 
+안녕하세요, 오늘은 Style Transfer를 PyTorch로 실습하는 과정을 설명드릴 예정입니다. 
 고흐풍을 다른 그림에 입히는 예제는 다들 인터넷에서 한번쯤은 보셨을 것입니다. 
 저 또한 인터넷으로만 보다가 직접 학습시키고 test를 해보고 싶어서 코드를 찾다가 
 <a href="https://github.com/pytorch/examples" target="_blank"> pytorch의 example repository </a>
