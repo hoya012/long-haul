@@ -173,7 +173,7 @@ comments: true
 </figure> 
 
 ###  <a href="https://openreview.net/pdf?id=HJE6X305Fm" target="_blank"><b> 14.	Don't let your Discriminator be fooled (Poster)  </b></a>  
-- Rating: 7 / 7 /68 , avg. 6.67
+- Rating: 7 / 7 /6 , avg. 6.67
 - GAN의 discriminator를 robust 하게 학습시키기 위한 방법을 제안함. 기존의 standard gradient penalty 방식들보다 안정적인 결과를 내는 학습 방법인 **Robust Feature Matching(RFM)** 을 제안함. 
 
 <figure>
