@@ -10,6 +10,7 @@ title: About me
   		<li>In 2018, he joined the <a href="http://sualab.com/" target="_blank"> <b>SUALAB.</b></a>,Seoul, Korea, as a Machine Learning Engineer.</li>
   		<li>His research interests include algorithm and architecture for image recognition, image processing using deep learning.</li>
 	<h1 class="pageTitle">Slides </h1>
+		<li> <a href="https://www.slideshare.net/HoseongLee6/2019-cvpr-paperoverview" target="_blank"> "2019 CVPR Paper Statistics & Paper Review"</a></li>
 		<li> <a href="https://www.slideshare.net/HoseongLee6/pelee-a-real-time-object-detection-system-on-mobile-devices-paper-review" target="_blank"> "Pelee: a real time object detection system on mobile devices, 2018 NeurIPS" Paper Review</a></li>
 		<li> <a href="https://www.slideshare.net/HoseongLee6/how-does-batch-normalization-help-optimization-paper-review" target="_blank"> "How does batch normalization help optimization, 2018 NeurIPS" Paper Review</a></li>
 		<li> <a href="https://www.slideshare.net/HoseongLee6/simple-does-it-weakly-supervised-instance-and-semantic-segmentation-paper-review" target="_blank"> "Simple Does It: weakly supervised instance and semantic segmentation, 2017 CVPR" Paper Review</a></li>
