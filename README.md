@@ -1,36 +1,3 @@
 I wrote some post about deep-learning paper review. 
 
-<div class="post">
-	<h1 class="pageTitle"> Object Detection </h1>
-		<li><a href="https://hoya012.github.io/blog/Tutorials-of-Object-Detection-Using-Deep-Learning-labeling/" target="_blank"> <b> “Tutorials of Object Detection using Deep Learning [8] Object Detection Labeling Guide”
- </b></a>, 19/01/23 .</li>
-		<li><a href="https://hoya012.github.io/blog/Tutorials-of-Object-Detection-Using-Deep-Learning-performance-three/" target="_blank"> <b> “Tutorials of Object Detection using Deep Learning [7] Object Detection 최신 논문 Review”
- </b></a>, 19/01/11 .</li>
-		<li><a href="https://hoya012.github.io/blog/Tutorials-of-Object-Detection-Using-Deep-Learning-performance-two/" target="_blank"> <b> “Tutorials of Object Detection using Deep Learning [6] Object Detection Multi Scale Testing Method Review”
- </b></a>, 19/01/02 .</li>
-		<li><a href="https://hoya012.github.io/blog/Tutorials-of-Object-Detection-Using-Deep-Learning-performance-one/" target="_blank"> <b> “Tutorials of Object Detection using Deep Learning [5] Training Deep Networks with Synthetic Data Bridging the Reality Gap by Domain Randomization Review” </b></a>, 18/11/23 .</li>
-		<li><a href="https://hoya012.github.io/blog/Tutorials-of-Object-Detection-Using-Deep-Learning-how-to-measure-performance-of-object-detection/" target="_blank"> <b> “Tutorials of Object Detection using Deep Learning [4] How to measure performance of object detection” </b></a>, 18/11/03 .</li>
-		<li><a href="https://hoya012.github.io/blog/Tutorials-of-Object-Detection-Using-Deep-Learning-the-application-of-object-detection/" target="_blank"> <b> “Tutorials of Object Detection using Deep Learning [3] The application of Object Detection” </b></a>, 18/10/26 .</li>
-  		<li><a href="https://hoya012.github.io/blog/Tutorials-of-Object-Detection-Using-Deep-Learning-first-object-detection-using-deep-learning/" target="_blank"> <b> “Tutorials of Object Detection using Deep Learning [2] First Object Detection using Deep Learning” </b></a>, 18/10/19 .</li>
-	<li><a href="https://hoya012.github.io/blog/Tutorials-of-Object-Detection-Using-Deep-Learning-what-is-object-detection/" target="_blank"> <b> “Tutorials of Object Detection using Deep Learning [1] What is object detection?” </b></a>, 18/10/18 .</li>
-	<h1 class="pageTitle">  </h1>
-	<h1 class="pageTitle">  </h1>
-	<h1 class="pageTitle">  </h1>
-	<h1 class="pageTitle"> Classification </h1>
-		<li><a href="https://hoya012.github.io/blog/Learning-From-Noisy-Large-Scale-Datasets-With-minimal-Supervision-Review/" target="_blank"> <b> “Learning From Noisy Large-Scale Datasets With Minimal Supervision” </b></a>, 18/07/14 .</li>
-		<li><a href="https://hoya012.github.io/blog/Improved-Regularization-of-Convolutional-Neural-Networks-with-Cutout-Review/" target="_blank"> <b> “Improved Regularization of Convolutional Neural Networks with Cutout” </b></a>, 18/06/15 .</li>
-		<li><a href="https://hoya012.github.io/blog/Shake-Shake-Regularization-Review/" target="_blank"> <b> “Shake-Shake Regularization” </b></a>, 18/06/11 .</li>
-	<h1 class="pageTitle">  </h1>
-	<h1 class="pageTitle">  </h1>
-	<h1 class="pageTitle">  </h1>
-	<h1 class="pageTitle"> AutoML </h1>
-		<li><a href="https://hoya012.github.io/blog/Learning-Transferable-Architectures-for-Scalable-Image-Recognition-Review/" target="_blank"> <b> “Learning Transferable Architectures for Scalable Image Recognition” </b></a>, 18/09/28 .</li>
-	<h1 class="pageTitle">  </h1>
-	<h1 class="pageTitle">  </h1>
-	<h1 class="pageTitle">  </h1>
-	<h1 class="pageTitle"> Conference </h1>
-		<li><a href="https://hoya012.github.io/blog/ICLR-image-recognition-paper-guide/" target="_blank"> <b> “ICLR 2019 image recognition paper list guide” </b></a>, 18/12/28 .</li>
-		<li><a href="https://hoya012.github.io/blog/SIGGRAPH-2018-review-2/" target="_blank"> <b> “SIGGRAPH 2018 review [2] 사람의 지각을 반영한 visibility metric 및 논문 4편 소개” </b></a>, 18/12/17 .</li>
-		<li><a href="https://hoya012.github.io/blog/SIGGRAPH-2018-review-1/" target="_blank"> <b> “SIGGRAPH 2018 review [1] 참석 후기 및 프로그램 소개” </b></a>, 18/12/14 .</li>
-		<li><a href="https://hoya012.github.io/blog/NIPS-image-recognition-paper-guide/" target="_blank"> <b> “NeurIPS 2018 image recognition paper list guide” </b></a>, 18/12/06 .</li>
-</div>
+[hoya012.github.io](hoya012.github.io)
