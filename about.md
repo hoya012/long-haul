@@ -9,6 +9,17 @@ title: About me
 		<li>Hoseong Lee received the <a href="http://capp.snu.ac.kr/" target="_blank"> <b>M.S. degrees</b>, </a> in Electrical and Computer Engineering from Seoul National University, Seoul, Korea, in 2018.</li>
   		<li>In 2018, he joined the <a href="http://sualab.com/" target="_blank"> <b>SUALAB.</b></a>,Seoul, Korea, as a Machine Learning Engineer.</li>
   		<li>His research interests include algorithm and architecture for image recognition, image processing using deep learning.</li>
+	<h1 class="pageTitle"> Repository </h1>
+		<li> <a href="https://github.com/hoya012/CVPR-2019-Paper-Statistics" target="_blank"> https://github.com/hoya012/CVPR-2019-Paper-Statistics </a></li>
+		<li> <a href="https://github.com/hoya012/deep_learning_object_detection" target="_blank"> https://github.com/hoya012/deep_learning_object_detection </a></li>
+		<li> <a href="https://github.com/hoya012/awesome-anomaly-detection" target="_blank"> https://github.com/hoya012/awesome-anomaly-detection </a></li>
+		<li> <a href="https://github.com/hoya012/fast-style-transfer-tutorial-pytorch" target="_blank"> https://github.com/hoya012/fast-style-transfer-tutorial-pytorch </a></li>
+		<li> <a href="https://github.com/hoya012/shake-shake-tensorflow" target="_blank"> https://github.com/hoya012/shake-shake-tensorflow </a></li>
+		<li> <a href="https://github.com/hoya012/pytorch-densenet" target="_blank"> https://github.com/hoya012/pytorch-densenet </a></li>
+		<li> <a href="https://github.com/hoya012/pytorch-peleenet" target="_blank"> https://github.com/hoya012/pytorch-peleenet </a></li>
+		<li> <a href="https://github.com/hoya012/pytorch-Xception" target="_blank"> https://github.com/hoya012/pytorch-Xception </a></li>
+		<li> <a href="https://github.com/hoya012/pytorch-MobileNet" target="_blank"> https://github.com/hoya012/pytorch-MobileNet </a></li>
+		<li> <a href="https://github.com/hoya012/pytorch-partial-conv-based-padding" target="_blank"> https://github.com/hoya012/pytorch-partial-conv-based-padding </a></li>
 	<h1 class="pageTitle">Slides </h1>
 		<li> <a href="https://www.slideshare.net/HoseongLee6/2019-cvpr-paperoverview" target="_blank"> "2019 CVPR Paper Statistics & Paper Review"</a></li>
 		<li> <a href="https://www.slideshare.net/HoseongLee6/pelee-a-real-time-object-detection-system-on-mobile-devices-paper-review" target="_blank"> "Pelee: a real time object detection system on mobile devices, 2018 NeurIPS" Paper Review</a></li>
