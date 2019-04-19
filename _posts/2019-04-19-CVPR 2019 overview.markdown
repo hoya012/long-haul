@@ -52,7 +52,6 @@ Computer Vision 학회이다 보니 image, video, object 등 general한 키워�
 ###  <a href="https://arxiv.org/pdf/1811.11745.pdf" target="_blank"><b> 1.	Learning to Synthesize Motion Blur (Oral)  </b></a>  
 - Motion Blur를 제거하는 연구가 아닌, Cinematography, artful photo 등에 활용하기 위한 Motion Blur를 그럴싸하게 합성하는 연구이며, **연속된 unblurred image pair를 이용하여 blur image를 합성하는 CNN 구조** 를 제안함.
 - Motion Blur 생성을 위한 Large-scale synthetic training dataset을 생성하는 과정도 논문에서 다루고 있음.
-
 - <a href="https://www.youtube.com/watch?v=8T1jjSz-2V8" target="_blank"><b> Demo Video  </b></a>
 <figure>
 	<img src="{{ '/assets/img/cvpr_2019/1.PNG' | prepend: site.baseurl }}" alt=""> 
