@@ -52,7 +52,8 @@ Computer Vision 학회이다 보니 image, video, object 등 general한 키워�
 ###  <a href="https://arxiv.org/pdf/1811.11745.pdf" target="_blank"><b> 1.	Learning to Synthesize Motion Blur (Oral)  </b></a>  
 - Motion Blur를 제거하는 연구가 아닌, Cinematography, artful photo 등에 활용하기 위한 Motion Blur를 그럴싸하게 합성하는 연구이며, **연속된 unblurred image pair를 이용하여 blur image를 합성하는 CNN 구조** 를 제안함.
 - Motion Blur 생성을 위한 Large-scale synthetic training dataset을 생성하는 과정도 논문에서 다루고 있음.
-<a href="https://www.youtube.com/watch?v=8T1jjSz-2V8" target="_blank"><b> - Demo Video  </b></a>
+
+- <a href="https://www.youtube.com/watch?v=8T1jjSz-2V8" target="_blank"><b> Demo Video  </b></a>
 <figure>
 	<img src="{{ '/assets/img/cvpr_2019/1.PNG' | prepend: site.baseurl }}" alt=""> 
 	<figcaption> [본 논문의 Main Idea, Architecture] </figcaption>
@@ -60,7 +61,7 @@ Computer Vision 학회이다 보니 image, video, object 등 general한 키워�
 
 ###  <a href="https://arxiv.org/pdf/1903.07291" target="_blank"><b> 2.	Semantic Image Synthesis with Spatially-Adaptive Normalization (Oral)  </b></a>  
 - Input semantic layout(segmentation map)을 이용하여 photorealistic image를 생성하는 방법을 다루고 있으며, Spatially-adaptive normalization 방법을 제안함.
-<a href="https://github.com/NVlabs/SPADE" target="_blank"><b> - Demo Code </b></a>
+- <a href="https://github.com/NVlabs/SPADE" target="_blank"><b> Demo Code </b></a>
 <figure>
 	<img src="{{ '/assets/img/cvpr_2019/2.PNG' | prepend: site.baseurl }}" alt=""> 
 	<figcaption> [본 논문의 결과, Architecture] </figcaption>
@@ -78,7 +79,7 @@ Computer Vision 학회이다 보니 image, video, object 등 general한 키워�
 ###  <a href="http://arxiv.org/pdf/1903.08682" target="_blank"><b> 4.	Im2Pencil: Controllable Pencil Illustration from Photographs </b></a>  
 - **Controllable한** photo-to-pencil image translation 방법을 제안함. 
 - Pencil outline(rough, clean)과 Pencil shading(4가지)를 변화시키며 pencil image를 생성해낼 수 있는 것이 장점이며, 이를 학습시키기 위한 training data pair를 생성하는 과정도 논문에서 다루고 있음.
-<a href="https://github.com/Yijunmaverick/Im2Pencil" target="_blank"><b> - Demo Code </b></a>
+- <a href="https://github.com/Yijunmaverick/Im2Pencil" target="_blank"><b> Demo Code </b></a>
 
 <figure>
 	<img src="{{ '/assets/img/cvpr_2019/4_1.PNG' | prepend: site.baseurl }}" alt=""> 
@@ -111,7 +112,7 @@ Computer Vision 학회이다 보니 image, video, object 등 general한 키워�
 ###  <a href="https://arxiv.org/pdf/1903.00834" target="_blank"><b> 7. Image Super-Resolution by Neural Texture Transfer  </b></a>  
 - Reference-based Super-Resolution 방법을 제안하였으며, 기존 CrossNet은 input image와 유사한 High Resolution image를 reference로 사용하면(아래 그림의 U) 성능이 잘 나오지만 그렇지 않은 이미지(아래 그림의 L)를 reference로 사용하면 artifact가 발생하는 문제가 있음.
 - 이를 해결하기 위해 **유사하지 않은 high-resolution reference image를 사용해도 adaptively texture를 transferring하는 방법** 을 제안함.
-<a href="https://github.com/ZZUTK/SRNTT" target="_blank"><b> - Demo Code </b></a>
+- <a href="https://github.com/ZZUTK/SRNTT" target="_blank"><b> Demo Code </b></a>
 
 <figure>
 	<img src="{{ '/assets/img/cvpr_2019/7.PNG' | prepend: site.baseurl }}" alt=""> 
@@ -224,7 +225,7 @@ Computer Vision 학회이다 보니 image, video, object 등 general한 키워�
 ###  <a href="https://arxiv.org/pdf/1903.06874.pdf" target="_blank"><b> 19. Fast Interactive Object Annotation with Curve-GCN </b></a>  
 - Graph Convolutional Network 기반 **빠르고 interactive한 object annotation tool** 을 제안함.
 - Human annotator가 잘못 예측된 지점을 수정할 수 있고, 이러한 수정이 근처의 point들에만 반영이 되므로 효율적임. 
-<a href="https://github.com/fidler-lab/curve-gcn" target="_blank"><b> - Demo Code </b></a>
+- <a href="https://github.com/fidler-lab/curve-gcn" target="_blank"><b> Demo Code </b></a>
 
 <figure>
 	<img src="{{ '/assets/img/cvpr_2019/19.PNG' | prepend: site.baseurl }}" alt=""> 
