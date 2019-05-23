@@ -166,9 +166,9 @@ Simple ConvNet의 실험 결과도 앞서 설명한 LeNet의 실험 결과와 �
 위의 실험 결과를 보시면 아시겠지만 굉장히 heuristic이 많이 개입되어있지만, 실험 결과가 좋은 것을 느끼실 수 있을 것입니다. 실제로 이 논문의 리뷰어들도 이러한 점을 지적하였고, 논문 저자들도 이를 인정하고 있습니다. 논문에서 언급하고 있는 이 논문의 한계점과 future work들은 다음과 같습니다.
 -	Only consider vision-centric classification task on smaller datasets (MNIST, CIFAR10)
     -	Iterative pruning is computationally intensive.. To do list!
--	2. Resulting architectures are not optimized for modern libraries or hardware
+-	Resulting architectures are not optimized for modern libraries or hardware
     -	Will study such as structured pruning and non-magnitude pruning method.. To do list!
--	3. Deeper networks are unable to find winning tickets without learning rate warmup
+-	Deeper networks are unable to find winning tickets without learning rate warmup
     -	Will study why warmup is necessary and whether other improvements to this scheme.. To do list!
 
 우선은 MNIST, CIFAR10 과 같은 작은 데이터셋에 대해서만 검증을 한 점을 한계로 말하고 있고, 또한 본 논문에서 사용한 pruning 방식은 단순히 magnitude에 따라 pruning을 하는 방식인데 이러한 방식은 저희가 주로 사용하는 library나 hardware 단계에서 속도 적인 이점을 얻을 수 없다는 한계를 가지고 있습니다. 이를 개선하기 위해 structured pruning과 같은 다른 pruning technique에도 winning ticket 방식을 적용해볼 것이라고 언급을 하고 있습니다. 마지막으로는 각 실험마다 굉장히 다양한 heuristic이 적용이 되었는데, 이에 대한 명확한 reasoning이 부족한 것을 한계로 삼고 있습니다. 
