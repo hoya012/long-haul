@@ -107,7 +107,7 @@ Workshop에는 아직 publish되지 않은 연구들을 소개하는 것이 주�
 	<figcaption> [Identifying winning ticket] </figcaption>
 </figure> 
 
-본 논문에서 발견한 winning ticket을 찾는 방법은 다음과 같습니다. 우선 여기 나와있는 1~4번의 방법 중 3번까지는 기존에 진행하는 Network Pruning과 동일하며 4번의 방법만 추가된 것입니다. 여기서 주목할 것은 1번 방법에 빨간 네모로 강조해둔 \theta 입니다. 처음 Neural Network를 initialization 하였을 때의 그 초기 weight들을 저장하고 있다가, 학습시키고 pruning을 한 뒤에 subnetwork의 weight에 다시 넣어주는 굉장히 간단한 방식을 제안하고 있습니다. 이 과정을 그림으로 나타내면 다음과 같습니다.
+본 논문에서 발견한 winning ticket을 찾는 방법은 다음과 같습니다. 우선 여기 나와있는 1~4번의 방법 중 3번까지는 기존에 진행하는 Network Pruning과 동일하며 4번의 방법만 추가된 것입니다. 여기서 주목할 것은 1번 방법에 빨간 네모로 강조해둔  & \theta & 입니다. 처음 Neural Network를 initialization 하였을 때의 그 초기 weight들을 저장하고 있다가, 학습시키고 pruning을 한 뒤에 subnetwork의 weight에 다시 넣어주는 굉장히 간단한 방식을 제안하고 있습니다. 이 과정을 그림으로 나타내면 다음과 같습니다.
 <figure>
 	<img src="{{ '/assets/img/iclr_2019_review/4.PNG' | prepend: site.baseurl }}" alt=""> 
 	<figcaption> [Example of method] </figcaption>
