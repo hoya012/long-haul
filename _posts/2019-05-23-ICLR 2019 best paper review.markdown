@@ -20,7 +20,7 @@ comments: true
 
 이 글에서 말씀드린 것처럼 매년 학회의 규모가 커지면서 2019년 올해에는 약 1600편 정도가 제출이 되었고, 그 중 500편이 accept이 되었습니다. 이 중 23편이 Oral Paper로 선정이 되었으며 이 중 2편의 논문이 Best Paper에 선정이 되었습니다. 
 
-### 5/6(월) Workshop
+### [5/6(월) Workshop]
 ICLR 학회는 4일간 진행이 되었고, 그 중 첫날 Workshop이 진행이 되었습니다. 총 9가지 주제로 개최가 되었고 각 주제마다 벽에 포스터가 붙어있고, 관련 연사들이 발표를 하는 방식으로 진행이 되었습니다. Workshop의 주제들은 다음과 같습니다.
 -	The 2nd Learning from Limited Labeled Data (LLD) Workshop: Representation Learning for Weak Supervision and Beyond
 -	Deep Reinforcement Learning Meets Structured Prediction
@@ -37,7 +37,7 @@ Workshop에는 아직 publish되지 않은 연구들을 소개하는 것이 주�
 <a href="https://slideslive.com/iclr" target="_blank"><b> 해당 링크 </b></a> 
 에서 확인하실 수 있습니다. 
 
-### 5/7(화) – Expo
+### [5/7(화) – Expo]
 학회의 둘째 날에는 주요 기업에서 AI를 적용하고 있는 사례를 소개하는 Expo가 열렸습니다. 5개의 기업이 참여를 하였으며 각각 기업별 주제는 다음과 같습니다.
 -	AI Research using PyTorch: Bayesian Optimization, Billion Edge Graphs and Private Deep Learning (Facebook)
 -	Computational Problems in Travel Marketing (Expedia)
@@ -50,7 +50,7 @@ Workshop에는 아직 publish되지 않은 연구들을 소개하는 것이 주�
 <a href="https://iclr.cc/Expo/Conferences/2019/Schedule_overview?presentation_type=Talks" target="_blank"><b> 해당 링크 </b></a> 
 에서 확인하실 수 있습니다.
 
-### 5/7 – 9 (화-목) – Poster Session
+### [5/7 – 9 (화-목) – Poster Session]
 이번 ICLR에는 총 500편의 논문이 발표가 되었으며 모든 논문들은 화요일부터 목요일동안 포스터 발표를 진행하였습니다. 하루에 오전(11:00 ~ 13:00) 타임과 오후(16:30 ~ 18:30) 타임으로 나뉘어서 진행이 되었으며, 각 타임마다 약 80~90편 정도의 포스터가 발표되었습니다. 
 각 타임마다 주제가 나뉘어져 있진 않았지만 제가 개인적으로 돌아다니면서 분류를 해보았습니다.  
 
@@ -67,7 +67,7 @@ Workshop에는 아직 publish되지 않은 연구들을 소개하는 것이 주�
 <a href="https://iclr.cc/Conferences/2019/Schedule" target="_blank"><b> 해당 링크 </b></a> 
 에서 확인하실 수 있으며, 실제로도 비슷한 요일에 비슷한 주제들이 모여 있는 것을 확인하실 수 있습니다.
 
-### 5/6 – 9 (월-목) Oral Presentation
+### [5/6 – 9 (월-목) Oral Presentation]
 마지막으로 소개드릴 Oral Presentation은 총 23편의 논문이 발표되었고, 각 발표는 15분으로 시간이 정해져 있었습니다. 15분이 길면 길수도 있지만 논문 한 편을 소개하기에는 굉장히 짧은 시간이라 다들 본인의 논문의 핵심만 설명하는 방식으로 발표를 진행하였습니다. 
 모든 구두 발표는 facebook ICLR 페이지를 통해서 실시간으로 생중계가 되었으며, 비디오로 남아있어서 발표 영상이 궁금하신 분들은 
 <a href="https://www.facebook.com/pg/iclr.cc/videos/?ref=page_internal" target="_blank"><b> 해당 링크 </b></a> 
@@ -128,7 +128,7 @@ Workshop에는 아직 publish되지 않은 연구들을 소개하는 것이 주�
 	<figcaption> [Architectures test in this paper] </figcaption>
 </figure> 
 
-#### Result - Fully-connected architecture(LeNet) for MNIST   
+#### 3-1. Result - Fully-connected architecture(LeNet) for MNIST   
 
 우선 LeNet에 대한 실험은 layer-wise pruning을 적용하였으며 단순하게 각 layer마다 weight의 magnitude가 작은 순서대로 pruning을 하는 방식을 사용했습니다. 
 <figure>
@@ -143,7 +143,7 @@ Workshop에는 아직 publish되지 않은 연구들을 소개하는 것이 주�
 	<figcaption> [one-shot pruning vs iterative pruning] </figcaption>
 </figure> 
 
-#### Result - Simple ConvNet for CIFAR10   
+#### 3-2. Result - Simple ConvNet for CIFAR10   
 
 Simple ConvNet의 실험 결과도 앞서 설명한 LeNet의 실험 결과와 거의 유사한 양상을 보입니다. 마찬가지로 reinit을 하였을 때 보다 winning ticket 방식을 적용하였을 때 더 좋은 성능을 보였으며, 이번에는 heuristic으로 **dropout** 을 같이 사용하였더니 더 성능이 좋아졌다는 결과를 제시하고 있습니다. 
 <figure>
@@ -152,7 +152,7 @@ Simple ConvNet의 실험 결과도 앞서 설명한 LeNet의 실험 결과와 �
 </figure> 
 결과 그래프를 보시면 대부분 reinit을 사용하였을 때 보다 winning ticket을 사용하였을 때 수렴도 빨리하고 test accuracy도 높은 것을 확인할 수 있습니다. 또한 90% 이상 pruning을 하였을 때에도 비교적 정확도가 잘 유지가 되는 것을 확인할 수 있으며, dropout까지 섞어 쓰면 수렴은 다소 늦게 하지만 더 높은 test accuracy를 얻을 수 있음을 보여주고 있습니다.
 
-#### Result - Deep ConvNet(VGG-19, ResNet-18) for CIFAR10   
+#### 3-3. Result - Deep ConvNet(VGG-19, ResNet-18) for CIFAR10   
 
 마지막으로 소개드릴 실험 결과에서는 앞선 두개의 실험과는 다르게 **layer-wise pruning** 대신 **global pruning** 을 사용하였습니다. 즉, 각 layer 마다 pruning을 하는 대신 모든 layer의 weight에 대해 한번에 pruning을 하는 방식을 사용하였습니다. 이렇게 한 이유는 VGG-19의 경우 첫 번째 layer와 두 번째 layer, 마지막 layer의 parameter수를 비교하면 각각 1.7K개, 37K개, 2.4M개로 굉장히 많이 차이가 나는데, 만약 각 layer마다 pruning을 적용한다면 parameter 수가 적은 layer가 bottleneck이 될 수 있습니다. 90% pruning을 예로 들면 마지막 layer는 240만개에서 24만개로 parameter 수가 줄어들어도 24만개면 충분하다고 생각할 수 있는데, 첫번째 layer의 경우 1700개에서 170개로 줄어들게 되고, 170개는 굉장히 적은 숫자의 parameter이기 때문에 제대로 학습이 되기 어렵게 됩니다. 이러한 이유로 **global pruning** 을 사용하였고, 실제로도 **global pruning**을 사용할 때가 성능이 더 좋은 것을 확인할 수 있습니다. 
 <figure>
