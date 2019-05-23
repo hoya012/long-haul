@@ -176,11 +176,15 @@ Simple ConvNet의 실험 결과도 앞서 설명한 LeNet의 실험 결과와 �
 마지막으로는 이 논문이 리뷰어 들로부터 어떠한 리뷰를 받았는지 확인해보기 위해
 <a href=": https://openreview.net/forum?id=rJl-b3RcF7" target="_blank"><b> ICLR Open Review </b></a> 
 에서 진행된 리뷰 내용들을 읽고 요약을 해보았습니다. 
+
+
 -	Comparing to “SNIP: Single-shot Network Pruning based on Connection Sensitivity, 2019 ICLR”
 -	Comparing to “Rethinking the Value of Network Pruning, 2019 ICLR”
 -	Need experiments on larger datasets and better explanation about the result
--	If BatchNorm interfere in any way with the existence of winning tickets or not?
-우선 ICLR 2019에 제출된 다른 pruning 논문 2편과 비교를 해봤으면 좋겠다는 리뷰가 있었고, 위에 한계로 언급하였던 내용들도 리뷰에 포함이 되어있습니다. 또한 실험에 사용한 Batch Normalization으로 인해 winning ticket을 heuristic 없이 찾기 힘든 것이 아니냐는 질문도 있었습니다. 
+-	If BatchNorm interfere in any way with the existence of winning tickets or not?   
+
+
+우선 ICLR 2019에 제출된 다른 pruning 논문 2편과 비교를 해봤으면 좋겠다는 리뷰가 있었고, 위에 한계로 언급하였던 내용들도 리뷰에 포함이 되어있습니다. 또한 실험에 사용한 Batch Normalization으로 인해 winning ticket을 heuristic 없이 찾기 힘든 것이 아니냐는 질문도 있었습니다.  
 
 이러한 리뷰를 바탕으로 지금의 논문이 완성이 되었고, 단순한 방식이고 다소 heuristic이 많이 개입이 되었지만 굉장히 직관적이고 좋은 성능을 보이고 있어서 ICLR 2019의 best paper로 선정이 된 것이 아닌가 개인적으로 생각해봅니다. 
 
@@ -188,7 +192,8 @@ Simple ConvNet의 실험 결과도 앞서 설명한 LeNet의 실험 결과와 �
 
 앞서 설명드린 리뷰어들의 리뷰를 바탕으로 어떠한 후속 연구가 진행되고 있는지 찾아보던 중에 위의 제목을 가진 논문을 찾아서 간단히 읽고 정리를 하였습니다. 
 
-우선 제목에서 알 수 있듯이 MNIST, CIFAR10 보다 큰 데이터셋인 ImageNet에 대해 lottery ticket hypothesis를 검증하였으며, SNIP, “Rethinking the Value of Network Pruning” 논문과도 성능을 비교하는 내용을 논문에서 확인할 수 있습니다. 
+우선 제목에서 알 수 있듯이 MNIST, CIFAR10 보다 큰 데이터셋인 ImageNet에 대해 lottery ticket hypothesis를 검증하였으며, SNIP, “Rethinking the Value of Network Pruning” 논문과도 성능을 비교하는 내용을 논문에서 확인할 수 있습니다.  
+
 <figure>
 	<img src="{{ '/assets/img/iclr_2019_review/10.PNG' | prepend: site.baseurl }}" alt=""> 
 	<figcaption> [Result of New Paper] </figcaption>
