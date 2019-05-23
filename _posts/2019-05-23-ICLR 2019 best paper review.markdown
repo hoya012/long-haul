@@ -203,4 +203,10 @@ Simple ConvNet의 실험 결과도 앞서 설명한 LeNet의 실험 결과와 �
 실험 결과 본인들의 방법이 두 논문의 방법보다 성능이 좋은 것을 실험적으로 보이고 있습니다. 다만 ImageNet에 대해서는 위에서 설명 드린 weight initialization 방식을 사용하면 성능이 잘 나오지 않아서 초기의 initialization weight 대신 약간의 학습이 진행된 뒤의 weight를 가져오는 **late resetting** 방식을 제안합니다. 이번에도 heuristic이 굉장히 많이 적용되었지만 마찬가지로 실험 결과가 좋아서 흥미로운 논문인 것 같습니다. 관심 있으신 분들은 이 논문도 읽어 보시는 것을 권장 드립니다. 
 
 <blockquote> 결론 </blockquote>
-이번에는 ICLR 2019에 직접 다녀온 뒤 블로그 글을 작성을 하였습니다. ICLR 학회의 각 요일마다 어떠한 프로그램들이 진행되는지 소개 드렸고, 각 프로그램마다 참고할 수 있는 자료를 같이 소개 드렸습니다. 또한 각 프로그램마다 느낀 점들을 간략하게 소개 드렸고, 2편의 Best Paper 중 Network Pruning과 관련 있는 “The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks”에 대해 리뷰를 해보았습니다. 최근 학계에서 굉장히 핫한 학회에 참석하다 보니 자극도 많이 받을 수 있었고, 최신 연구들의 흐름도 느낄 수 있어서 보람이 있었습니다. 마지막으로 ICLR 2019가 열렸던 도시 뉴올리언스의 Ernest N. Morial Convention Center 앞에서 찍은 사진을 보여드리면서 글을 마치도록 하겠습니다! 읽어주셔서 감사합니다!
+이번에는 ICLR 2019에 직접 다녀온 뒤 블로그 글을 작성을 하였습니다. ICLR 학회의 각 요일마다 어떠한 프로그램들이 진행되는지 소개 드렸고, 각 프로그램마다 참고할 수 있는 자료를 같이 소개 드렸습니다. 또한 각 프로그램마다 느낀 점들을 간략하게 소개 드렸고, 2편의 Best Paper 중 Network Pruning과 관련 있는 “The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks”에 대해 리뷰를 해보았습니다. 최근 학계에서 굉장히 핫한 학회에 참석하다 보니 자극도 많이 받을 수 있었고, 최신 연구들의 흐름도 느낄 수 있어서 보람이 있었습니다. 
+
+<figure>
+	<img src="{{ '/assets/img/iclr_2019_review/11.PNG' | prepend: site.baseurl }}" alt=""> 
+</figure> 
+
+마지막으로 ICLR 2019가 열렸던 도시 뉴올리언스의 Ernest N. Morial Convention Center 앞에서 찍은 사진을 보여드리면서 글을 마치도록 하겠습니다! 읽어주셔서 감사합니다!
