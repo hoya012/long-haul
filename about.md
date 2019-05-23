@@ -21,7 +21,7 @@ title: About me
 		<li> <a href="https://github.com/hoya012/pytorch-MobileNet" target="_blank"> https://github.com/hoya012/pytorch-MobileNet </a></li>
 		<li> <a href="https://github.com/hoya012/pytorch-partial-conv-based-padding" target="_blank"> https://github.com/hoya012/pytorch-partial-conv-based-padding </a></li>
 	<h1 class="pageTitle">Slides </h1>
-		<li> <a href="https://www.slideshare.net/HoseongLee6/2019-iclr-best-paper-review" target="_blank"> "2019 ICLR Best Paper "The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks" Review"</a></li>
+		<li> <a href="https://www.slideshare.net/HoseongLee6/2019-iclr-best-paper-review-147216667" target="_blank"> "2019 ICLR Best Paper "The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks" Review"</a></li>
 		<li> <a href="https://www.slideshare.net/HoseongLee6/2019-cvpr-paperoverview" target="_blank"> "2019 CVPR Paper Statistics & Paper Review"</a></li>
 		<li> <a href="https://www.slideshare.net/HoseongLee6/pelee-a-real-time-object-detection-system-on-mobile-devices-paper-review" target="_blank"> "Pelee: a real time object detection system on mobile devices, 2018 NeurIPS" Paper Review</a></li>
 		<li> <a href="https://www.slideshare.net/HoseongLee6/how-does-batch-normalization-help-optimization-paper-review" target="_blank"> "How does batch normalization help optimization, 2018 NeurIPS" Paper Review</a></li>
