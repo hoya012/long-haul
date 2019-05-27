@@ -167,6 +167,8 @@ Simple ConvNet의 실험 결과도 앞서 설명한 LeNet의 실험 결과와 �
 
 ### 4. Discussion & Future Work   
 
+#### 4-1. Discussion  
+
 위의 실험 결과를 보시면 아시겠지만 굉장히 heuristic이 많이 개입되어있지만, 실험 결과가 좋은 것을 느끼실 수 있을 것입니다. 실제로 이 논문의 리뷰어들도 이러한 점을 지적하였고, 논문 저자들도 이를 인정하고 있습니다. 논문에서 언급하고 있는 이 논문의 한계점과 future work들은 다음과 같습니다.
 
 우선은 MNIST, CIFAR10 과 같은 작은 데이터셋에 대해서만 검증을 한 점을 한계로 말하고 있습니다. 추후 더 큰 데이터셋(ex, ImageNet) 등에 대해 검증을 할 예정이라 언급하고 있습니다. 
@@ -175,7 +177,9 @@ Simple ConvNet의 실험 결과도 앞서 설명한 LeNet의 실험 결과와 �
 
 마지막으로는 각 실험마다 굉장히 다양한 heuristic이 적용이 되었는데, 이에 대한 명확한 reasoning이 부족한 것을 한계로 삼고 있습니다. 
 
-마지막으로는 이 논문이 리뷰어 들로부터 어떠한 리뷰를 받았는지 확인해보기 위해
+#### 4-2. Future Work
+
+이 논문이 제출되었을 때, 리뷰어 들로부터 어떠한 리뷰를 받았는지 확인해보기 위해
 <a href="https://openreview.net/forum?id=rJl-b3RcF7" target="_blank"><b> ICLR Open Review </b></a> 
 에서 진행된 리뷰 내용들을 읽고 요약을 해보았습니다. 
 
