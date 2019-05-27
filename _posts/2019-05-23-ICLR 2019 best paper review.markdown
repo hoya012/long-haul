@@ -88,7 +88,7 @@ Workshop에는 아직 publish되지 않은 연구들을 소개하는 것이 주�
 </figure> 
 위의 그림은 Network Pruning하면 가장 많이 인용되는 그림이며, 그림에 나와있는 것처럼 Neural Network를 학습시킨 뒤 불필요한 connection들을 제거를 합니다. 이렇게 가지치기를 해준 뒤에는 남아있는 Network를 재 학습시키며 성능을 Pruning하기 전과 비슷하게 유지하는 것을 목표로 하게 됩니다. 
 
-다만 Pruning을 통해 찾은 network를 random weight로 initialization시키면, 즉 scratch로부터 학습을 시키면 pruning해서 얻은 accuracy에 크게 못 미치는 정확도를 보이는 것이 고질적인 문제였습니다. 이에 대한 여러 추측이 있었는데 그 중 가장 그럴싸한 주장은 pruning을 통해 찾은 network는 parameter 수가 작아져서 small capacity를 가지고 있기 때문에 parameter 수가 많은 기존 network 보다 학습시키기 어렵다는 주장이며, 최근 나온 network pruning 관련 논문들도 이 문제를 해결하는데 초점을 두고 있습니다. 
+다만 Pruning을 통해 찾은 network를 random weight로 initialization시키는 방식(from scratch)을 이용하여 학습을 시키면 pruning해서 얻은 accuracy에 크게 못 미치는 정확도를 보이는 것이 고질적인 문제였습니다. 이에 대한 여러 추측이 있었는데 그 중 가장 그럴싸한 주장은 pruning을 통해 찾은 network는 parameter 수가 작아져서 small capacity를 가지고 있기 때문에 parameter 수가 많은 기존 network 보다 학습시키기 어렵다는 주장이며, 최근 나온 network pruning 관련 논문들도 이 문제를 해결하는데 초점을 두고 있습니다. 
 
 이 논문 저자는 pruning된 network를 잘 학습시키기 위한 방법을 제안하였으며, 이를 복권에 당첨된다고 표현을 하였습니다. 본 논문에서는 lottery ticket 혹은 winning ticket이라는 용어를 많이 사용하며, 본 논문에 제목에 나와있는 lottery ticket hypothesis에 대해 설명을 드리도록 하겠습니다. 
  
@@ -99,7 +99,10 @@ Workshop에는 아직 publish되지 않은 연구들을 소개하는 것이 주�
 	<img src="{{ '/assets/img/iclr_2019_review/2.png' | prepend: site.baseurl }}" alt=""> 
 	<figcaption> [The Lottery Ticket Hypothesis] </figcaption>
 </figure> 
-즉, 저희가 자주 사용하는 deep neural network는 본인보다 성능이 좋으면서, 학습도 잘 되는 subnetwork(lottery ticket)을 가지고 있지만, 이를 발견하는 것이 어렵다는 것을 의미합니다. 이 논문에서는 어떻게 성능도 좋고 학습도 잘되는 lottery ticket을 찾을 수 있는지 실험을 통해 발견을 하였고, 이에 대한 방법론과 실험 결과를 나열하는 방식으로 논문을 구성하고 있습니다. 
+
+위의 그림에서 첫번째 줄의 **f(x; W)** 는 기존의 neural network를 의미하고, 기존 neural network를 **t** iteration 만큼 학습을 시켜서 test accuracy **a** 를 얻음을 의미합니다. 두번째 줄도 비슷한 의미를 가집니다. **f(x; m*W)** 는 기존 neural network f를 pruning하여 얻은 subnetwork를 의미하고, 마찬가지로 **t'** iteration 만큼 학습을 시켜서 test accuracy a' 를 얻는 다는 상황을 의미합니다. 이 때 이 논문에서 말하는 **lottery ticket**은 3번째 줄의 조건(모델의 parameter 수도 적으면서 test accuracy도 높고, 학습에 필요한 iteration 수까지 적은 )을 만족하는 subnetwork를 의미합니다. 
+
+저희가 자주 사용하는 deep neural network는 본인보다 성능이 좋으면서, 학습도 잘 되는 subnetwork(lottery ticket)을 가지고 있다는 가설을 세우고 연구를 수행하고 있습니다. 이 논문에서는 기존 neural network보다 성능이 좋은 lottery ticket을 어떻게 찾을 수 있는지 실험을 통해 발견을 하였고, 이에 대한 방법론과 실험 결과를 나열하는 방식으로 논문을 구성하고 있습니다. 
 
 서론의 이야기만 들으면, 굉장히 어려운 방법을 통해 lottery ticket을 찾을 것 같은데, 방법론은 실제로 매우 간단합니다. 
 <figure>
@@ -107,7 +110,8 @@ Workshop에는 아직 publish되지 않은 연구들을 소개하는 것이 주�
 	<figcaption> [Identifying winning ticket] </figcaption>
 </figure> 
 
-본 논문에서 발견한 winning ticket을 찾는 방법은 다음과 같습니다. 우선 여기 나와있는 1~4번의 방법 중 3번까지는 기존에 진행하는 Network Pruning과 동일하며 4번의 방법만 추가된 것입니다. 여기서 주목할 것은 1번 방법에 빨간 네모로 강조해둔 **weight initialization** 입니다. 처음 Neural Network를 initialization 하였을 때의 그 초기 weight들을 저장하고 있다가, 학습시키고 pruning을 한 뒤에 subnetwork의 weight에 다시 넣어주는 굉장히 간단한 방식을 제안하고 있습니다. 이 과정을 그림으로 나타내면 다음과 같습니다.
+본 논문에서 발견한 winning ticket을 찾는 방법은 다음과 같습니다. 우선 여기 나와있는 1~4번의 방법 중 3번까지는 기존에 진행하는 Network Pruning과 동일하며 4번의 방법만 추가된 것입니다. 여기서 주목할 것은 1번 방법에 빨간 네모로 강조해둔 **weight initialization** 입니다. 처음 neural network를 initialization 하였을 때의 그 초기 weight들을 저장하고 있다가, 학습시키고 pruning을 한 뒤에 subnetwork의 weight에 다시 넣어주는 굉장히 간단한 방식을 제안하고 있습니다. 이 과정을 그림으로 나타내면 다음과 같습니다.
+
 <figure>
 	<img src="{{ '/assets/img/iclr_2019_review/4.PNG' | prepend: site.baseurl }}" alt=""> 
 	<figcaption> [Example of method] </figcaption>
