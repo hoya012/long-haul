@@ -84,7 +84,7 @@ Workshop에는 아직 publish되지 않은 연구들을 소개하는 것이 주�
 
 <figure>
 	<img src="{{ '/assets/img/iclr_2019_review/1.png' | prepend: site.baseurl }}" alt=""> 
-	<figcaption> [Network Pruning] </figcaption>
+	<figcaption> [Network Pruning ] </figcaption>
 </figure> 
 위의 그림은 Network Pruning하면 가장 많이 인용되는 그림이며, 그림에 나와있는 것처럼 Neural Network를 학습시킨 뒤 불필요한 connection들을 제거를 합니다. 이렇게 가지치기를 해준 뒤에는 남아있는 Network를 재 학습시키며 성능을 Pruning하기 전과 비슷하게 유지하는 것을 목표로 하게 됩니다. 
 
@@ -107,88 +107,79 @@ Workshop에는 아직 publish되지 않은 연구들을 소개하는 것이 주�
 서론의 이야기만 들으면, 굉장히 어려운 방법을 통해 lottery ticket을 찾을 것 같은데, 방법론은 실제로 매우 간단합니다. 
 <figure>
 	<img src="{{ '/assets/img/iclr_2019_review/3.PNG' | prepend: site.baseurl }}" alt=""> 
-	<figcaption> [Identifying winning ticket] </figcaption>
+	<figcaption> [논문에 서술된 lottery ticket을 찾는 방법론] </figcaption>
 </figure> 
 
-본 논문에서 발견한 winning ticket을 찾는 방법은 다음과 같습니다. 우선 여기 나와있는 1~4번의 방법 중 3번까지는 기존에 진행하는 Network Pruning과 동일하며 4번의 방법만 추가된 것입니다. 여기서 주목할 것은 1번 방법에 빨간 네모로 강조해둔 **weight initialization** 입니다. 처음 neural network를 initialization 하였을 때의 그 초기 weight들을 저장하고 있다가, 학습시키고 pruning을 한 뒤에 subnetwork의 weight에 다시 넣어주는 굉장히 간단한 방식을 제안하고 있습니다. 이 과정을 그림으로 나타내면 다음과 같습니다.
+본 논문에서 발견한 winning ticket을 찾는 방법은 다음과 같습니다. 우선 여기 나와있는 1~4번의 방법 중 3번까지는 기존에 진행하는 network pruning과 동일하며 4번의 방법만 추가된 것입니다. 여기서 주목할 것은 1번 방법에 빨간 네모로 강조해둔 **weight initialization** 입니다. 처음 neural network를 initialization 하였을 때의 그 초기 weight들을 저장하고 있다가, 학습시키고 pruning을 한 뒤에 subnetwork의 weight에 다시 넣어주는 굉장히 간단한 방식을 제안하고 있습니다. 이 과정을 그림으로 나타내면 다음과 같습니다.
 
 <figure>
 	<img src="{{ '/assets/img/iclr_2019_review/4.PNG' | prepend: site.baseurl }}" alt=""> 
-	<figcaption> [Example of method] </figcaption>
+	<figcaption> [방법론 도식도] </figcaption>
 </figure> 
 구분이 쉽게 그림에서 weight 값을 neuron의 색을 바꿔서 표현하였으며, 그림의 1번에서 초기화한 weight 값을 그대로 4번 그림에서 사용한다고 이해하시면 됩니다. 정말 간단한 방식인데 좋은 성능을 보일 수 있다는 것이 신기하면서도 대단한 발견이라고 생각이 됩니다. 
 
 ### 3. Experiment & Result   
 
 본 논문에서는 총 3가지의 실험 셋팅에 대해 실험을 진행하여 알고리즘의 성능을 검증하였습니다. 
--	Fully-connected architecture(LeNet) for MNIST
--	Simple ConvNet for CIFAR10
--	Deep ConvNet(VGG-19, ResNet-18) for CIFAR10
 
-우선 MNIST 데이터셋에 대해 Convolution 연산 없이 Fully-connected layer로만 구성이 되어있는 LeNet 구조로 실험을 하였고, CIFAR10 데이터셋에 대해서는 간단한 Conv, Pooling layer로 만든 ConvNet 구조에 대해 실험을 하였습니다. 마지막으로 CIFAR10 데이터셋에 대해 비교적 큰 모델인 VGG-19, ResNet-18을 이용하여 실험을 진행하였습니다. 
+첫번째 실험은 **MNIST 데이터셋에 대해 Convolution 연산 없이 Fully-connected layer로만 구성이 되어있는 LeNet 구조** 로 실험을 하였고, 두번째 실험은 **CIFAR10 데이터셋에 대해서는 간단한 Conv, Pooling layer로 만든 ConvNet 구조** 에 대해 실험을 하였습니다. 마지막으로 **CIFAR10 데이터셋에 대해 비교적 큰 모델인 VGG-19, ResNet-18** 을 이용하여 실험을 진행하였습니다. 
+
 각 실험에서 사용한 network와 hyper-parameter 셋팅은 다음 표에서 확인하실 수 있습니다.
 <figure>
 	<img src="{{ '/assets/img/iclr_2019_review/5.png' | prepend: site.baseurl }}" alt=""> 
-	<figcaption> [Architectures test in this paper] </figcaption>
+	<figcaption> [각 실험에 사용한 네트워크와 하이퍼 파라미터 설정] </figcaption>
 </figure> 
 
 #### 3-1. Result - Fully-connected architecture(LeNet) for MNIST   
 
-우선 LeNet에 대한 실험은 layer-wise pruning을 적용하였으며 단순하게 각 layer마다 weight의 magnitude가 작은 순서대로 pruning을 하는 방식을 사용했습니다. 
+우선 LeNet에 대한 실험은 layer-wise pruning을 적용하였으며 단순하게 각 layer마다 weight의 magnitude가 작은 순서대로 pruning을 하는 방식을 사용했습니다. 또한 모든 weight를 한번에 pruning 하는 **one-shot pruning** 대신 여러번에 걸쳐서 pruning하는 **iterative pruning** 방식을 사용하였습니다.
+
 <figure>
 	<img src="{{ '/assets/img/iclr_2019_review/6.png' | prepend: site.baseurl }}" alt=""> 
-	<figcaption> [Result of LeNet] </figcaption>
+	<figcaption> [LeNet 실험 결과] </figcaption>
 </figure> 
-실험 결과는 다음과 같으며 winning ticket 방식을 적용하지 않았을 때(reinit)에 비해 월등한 성능을 보이는 것을 확인할 수 있습니다. 또한 Pruning을 하기 전(100.0)에 비해 test accuracy도 조금씩 증가하는 양상을 보이고 있습니다.
 
-추가로 본 논문에서는 대다수의 heuristic을 적용하여 성능을 향상시켰는데 pruning technique에도 heuristic이 적용이 되었습니다. weight들을 한번에 제거하는 **one-shot pruning** 방식과 조금씩 나눠서 itreative하게 제거하는 **iterative pruning** 에 대해 실험을 하였고 실험 결과 **iterative pruning** 이 더 좋은 성능을 보여서 이 방식을 사용하였습니다. 
-<figure>
-	<img src="{{ '/assets/img/iclr_2019_review/7.png' | prepend: site.baseurl }}" alt=""> 
-	<figcaption> [one-shot pruning vs iterative pruning] </figcaption>
-</figure> 
+실험 결과는 위의 그림과 같으며 winning ticket 방식을 적용하면, 적용하지 않았을 때(**reinit**)에 비해 월등한 성능을 보이는 것을 확인할 수 있습니다. 또한 pruning을 하기 전(100.0)에 비해 test accuracy도 조금씩 증가하는 양상을 보이고 있습니다.
 
 #### 3-2. Result - Simple ConvNet for CIFAR10   
 
 Simple ConvNet의 실험 결과도 앞서 설명한 LeNet의 실험 결과와 거의 유사한 양상을 보입니다. 마찬가지로 reinit을 하였을 때 보다 winning ticket 방식을 적용하였을 때 더 좋은 성능을 보였으며, 이번에는 heuristic으로 **dropout** 을 같이 사용하였더니 더 성능이 좋아졌다는 결과를 제시하고 있습니다. 
 <figure>
 	<img src="{{ '/assets/img/iclr_2019_review/8.png' | prepend: site.baseurl }}" alt=""> 
-	<figcaption> [Result of Simple ConvNet] </figcaption>
+	<figcaption> [Simple ConvNet 실험 결과] </figcaption>
 </figure> 
-결과 그래프를 보시면 대부분 reinit을 사용하였을 때 보다 winning ticket을 사용하였을 때 수렴도 빨리하고 test accuracy도 높은 것을 확인할 수 있습니다. 또한 90% 이상 pruning을 하였을 때에도 비교적 정확도가 잘 유지가 되는 것을 확인할 수 있으며, dropout까지 섞어 쓰면 수렴은 다소 늦게 하지만 더 높은 test accuracy를 얻을 수 있음을 보여주고 있습니다.
+
+결과 그래프를 보시면 대부분 reinit을 사용하였을 때 보다 winning ticket을 사용하였을 때 early stop iteration가 작은 것을 확인하실 수 있습니다. 이는 network의 수렴이 빨리 된다는 것을 의미하며, test accuracy 도 높은 것을 확인할 수 있습니다. 또한 90% 이상 pruning을 하였을 때에도 pruning을 하기 전과 비슷한 정확도가 유지가 되는 것을 확인할 수 있으며, dropout까지 섞어 쓰면 수렴은 다소 늦게 하지만 더 높은 test accuracy를 얻을 수 있음을 보여주고 있습니다.
 
 #### 3-3. Result - Deep ConvNet(VGG-19, ResNet-18) for CIFAR10   
 
-마지막으로 소개드릴 실험 결과에서는 앞선 두개의 실험과는 다르게 **layer-wise pruning** 대신 **global pruning** 을 사용하였습니다. 즉, 각 layer 마다 pruning을 하는 대신 모든 layer의 weight에 대해 한번에 pruning을 하는 방식을 사용하였습니다. 이렇게 한 이유는 VGG-19의 경우 첫 번째 layer와 두 번째 layer, 마지막 layer의 parameter수를 비교하면 각각 1.7K개, 37K개, 2.4M개로 굉장히 많이 차이가 나는데, 만약 각 layer마다 pruning을 적용한다면 parameter 수가 적은 layer가 bottleneck이 될 수 있습니다. 90% pruning을 예로 들면 마지막 layer는 240만개에서 24만개로 parameter 수가 줄어들어도 24만개면 충분하다고 생각할 수 있는데, 첫번째 layer의 경우 1700개에서 170개로 줄어들게 되고, 170개는 굉장히 적은 숫자의 parameter이기 때문에 제대로 학습이 되기 어렵게 됩니다. 이러한 이유로 **global pruning** 을 사용하였고, 실제로도 **global pruning**을 사용할 때가 성능이 더 좋은 것을 확인할 수 있습니다. 
+마지막으로 소개드릴 실험 결과에서는 앞선 실험과 동일하게 **iterative pruning** 을 사용하였지만 앞선 두개의 실험과는 다르게 **layer-wise pruning** 대신 **global pruning** 을 사용하였습니다. 즉, 각 layer 마다 pruning을 하는 대신 모든 layer의 weight에 대해 한번에 pruning을 하는 방식을 사용하였습니다. 이렇게 한 이유는 VGG-19의 경우 첫 번째 layer와 두 번째 layer, 마지막 layer의 parameter수를 비교하면 각각 1.7K개, 37K개, 2.4M개로 굉장히 많이 차이가 나는데, 만약 각 layer마다 pruning을 적용한다면 parameter 수가 적은 layer가 bottleneck이 될 수 있습니다. 90% pruning을 예로 들면 마지막 layer는 240만개에서 24만개로 parameter 수가 줄어들어도 24만개면 충분하다고 생각할 수 있는데, 첫번째 layer의 경우 1700개에서 170개로 줄어들게 되고, 170개는 굉장히 적은 숫자의 parameter이기 때문에 제대로 학습이 되기 어렵게 됩니다. 이러한 이유로 **global pruning** 을 사용하였고, 실제로도 **global pruning**을 사용할 때가 성능이 더 좋은 것을 확인할 수 있습니다. 
+
+또한 이 실험에서도 heuristic이 들어가는데 이번에는 **learning rate warmup** 을 사용하였습니다. Learning rate warmup 이란 초기의 learning rate를 초반 iteration 동안 linear하게 증가시키는 방법을 의미합니다. 우선 0.1의 initial learning rate를 사용하면 network가 학습이 잘 되지만 pruning을 할 시 winning ticket을 찾지 못하고, 0.01의 learning rate를 사용하면 winning ticket은 찾지만 높은 정확도를 얻을 수 없는 문제가 발생합니다. 이를 해결하기 위해 learning rate warmup을 사용하였으며 그 결과 winning ticket도 찾고, 높은 정확도도 얻을 수 있었다고 합니다. 
+
 <figure>
 	<img src="{{ '/assets/img/iclr_2019_review/9.png' | prepend: site.baseurl }}" alt=""> 
-	<figcaption> [Result of Deep ConvNet] </figcaption>
+	<figcaption> [Deep ConvNet 실험 결과] </figcaption>
 </figure> 
-또한 이 실험에서도 heuristic이 들어가는데 이번에는 **learning rate warmup** 을 사용하였습니다. Learning rate warmup 이란 초기의 learning rate를 초반 iteration 동안 linear하게 증가시키는 방법을 의미합니다. 우선 0.1의 initial learning rate를 사용하면 network가 학습이 잘 되지만 pruning을 할 시 winning ticket을 찾지 못하고, 0.01의 learning rate를 사용하면 winning ticket은 찾지만 높은 정확도를 얻을 수 없는 문제가 발생합니다. 이를 해결하기 위해 learning rate warmup을 사용하였으며 그 결과 winning ticket도 찾고, 높은 정확도도 얻을 수 있었다고 합니다. 
+
+위의 그림은 앞서 소개드린 2가지 기법인 **global pruning** 과 **learning rate warmup** 의 효용을 보여주고 있습니다. 위의 그림에서 실선은 **global pruning** 방식을, 점선은 **layer-wise pruning** 방식을 의미하며 대부분의 경우에서 점선보다 실선이 test accuracy가 높은 것을 확인하실 수 있습니다. 또한 주황색 선은 **learning rate warmup** 을 사용하기 전의 결과를, 초록색 선은 **learning rate warmup** 을 사용한 후의 결과를 보여주고 있으며 초록샌 선이 대부분 주황색 선보다 test accuracy가 높은 것을 확인하실 수 있습니다. 즉 논문에서 사용한 2가지 기법이 모두 좋은 성능을 보임을 확인하실 수 있습니다. 
+
 
 ### 4. Discussion & Future Work   
 
 위의 실험 결과를 보시면 아시겠지만 굉장히 heuristic이 많이 개입되어있지만, 실험 결과가 좋은 것을 느끼실 수 있을 것입니다. 실제로 이 논문의 리뷰어들도 이러한 점을 지적하였고, 논문 저자들도 이를 인정하고 있습니다. 논문에서 언급하고 있는 이 논문의 한계점과 future work들은 다음과 같습니다.
--	Only consider vision-centric classification task on smaller datasets (MNIST, CIFAR10)
-    -	Iterative pruning is computationally intensive.. To do list!
--	Resulting architectures are not optimized for modern libraries or hardware
-    -	Will study such as structured pruning and non-magnitude pruning method.. To do list!
--	Deeper networks are unable to find winning tickets without learning rate warmup
-    -	Will study why warmup is necessary and whether other improvements to this scheme.. To do list!
 
-우선은 MNIST, CIFAR10 과 같은 작은 데이터셋에 대해서만 검증을 한 점을 한계로 말하고 있고, 또한 본 논문에서 사용한 pruning 방식은 단순히 magnitude에 따라 pruning을 하는 방식인데 이러한 방식은 저희가 주로 사용하는 library나 hardware 단계에서 속도 적인 이점을 얻을 수 없다는 한계를 가지고 있습니다. 이를 개선하기 위해 structured pruning과 같은 다른 pruning technique에도 winning ticket 방식을 적용해볼 것이라고 언급을 하고 있습니다. 마지막으로는 각 실험마다 굉장히 다양한 heuristic이 적용이 되었는데, 이에 대한 명확한 reasoning이 부족한 것을 한계로 삼고 있습니다. 
+우선은 MNIST, CIFAR10 과 같은 작은 데이터셋에 대해서만 검증을 한 점을 한계로 말하고 있습니다. 추후 더 큰 데이터셋(ex, ImageNet) 등에 대해 검증을 할 예정이라 언급하고 있습니다. 
+
+또한 본 논문에서 사용한 pruning 방식은 단순히 magnitude에 따라 pruning을 하는 방식인데 이러한 방식은 저희가 주로 사용하는 library나 hardware 단계에서 속도 적인 이점을 얻을 수 없다는 한계를 가지고 있습니다. 이를 개선하기 위해 structured pruning과 같은 다른 pruning technique에도 winning ticket 방식을 적용해볼 것이라고 언급을 하고 있습니다. 
+
+마지막으로는 각 실험마다 굉장히 다양한 heuristic이 적용이 되었는데, 이에 대한 명확한 reasoning이 부족한 것을 한계로 삼고 있습니다. 
 
 마지막으로는 이 논문이 리뷰어 들로부터 어떠한 리뷰를 받았는지 확인해보기 위해
 <a href="https://openreview.net/forum?id=rJl-b3RcF7" target="_blank"><b> ICLR Open Review </b></a> 
 에서 진행된 리뷰 내용들을 읽고 요약을 해보았습니다. 
 
-
--	Comparing to “SNIP: Single-shot Network Pruning based on Connection Sensitivity, 2019 ICLR”
--	Comparing to “Rethinking the Value of Network Pruning, 2019 ICLR”
--	Need experiments on larger datasets and better explanation about the result
--	If BatchNorm interfere in any way with the existence of winning tickets or not?   
-
-
-우선 ICLR 2019에 제출된 다른 pruning 논문 2편과 비교를 해봤으면 좋겠다는 리뷰가 있었고, 위에 한계로 언급하였던 내용들도 리뷰에 포함이 되어있습니다. 또한 실험에 사용한 Batch Normalization으로 인해 winning ticket을 heuristic 없이 찾기 힘든 것이 아니냐는 질문도 있었습니다.  
+우선 ICLR 2019에 제출된 다른 pruning 논문 2편 ( **“SNIP: Single-shot Network Pruning based on Connection Sensitivity"** , **“Rethinking the Value of Network Pruning"**) 과 비교를 해봤으면 좋겠다는 리뷰가 있었고, 위에 한계로 언급하였던 내용인 더 큰 데이터셋에 대한 검증도 리뷰에 포함이 되어있습니다. 또한 실험에 사용한 Batch Normalization으로 인해 winning ticket을 heuristic 없이 찾기 힘든 것이 아니냐는 질문도 있었습니다.  
 
 이러한 리뷰를 바탕으로 지금의 논문이 완성이 되었고, 단순한 방식이고 다소 heuristic이 많이 개입이 되었지만 굉장히 직관적이고 좋은 성능을 보이고 있어서 ICLR 2019의 best paper로 선정이 된 것이 아닌가 개인적으로 생각해봅니다. 
 
@@ -200,9 +191,8 @@ Simple ConvNet의 실험 결과도 앞서 설명한 LeNet의 실험 결과와 �
 
 <figure>
 	<img src="{{ '/assets/img/iclr_2019_review/10.PNG' | prepend: site.baseurl }}" alt=""> 
-	<figcaption> [Result of New Paper] </figcaption>
+	<figcaption> ["The Lottery Ticket Hypothsis at Scale" 논문의 실험 결과] </figcaption>
 </figure> 
-
 
 실험 결과 본인들의 방법이 두 논문의 방법보다 성능이 좋은 것을 실험적으로 보이고 있습니다. 다만 ImageNet에 대해서는 위에서 설명 드린 weight initialization 방식을 사용하면 성능이 잘 나오지 않아서 초기의 initialization weight 대신 약간의 학습이 진행된 뒤의 weight를 가져오는 **late resetting** 방식을 제안합니다. 이번에도 heuristic이 굉장히 많이 적용되었지만 마찬가지로 실험 결과가 좋아서 흥미로운 논문인 것 같습니다. 관심 있으신 분들은 이 논문도 읽어 보시는 것을 권장 드립니다. 
 
