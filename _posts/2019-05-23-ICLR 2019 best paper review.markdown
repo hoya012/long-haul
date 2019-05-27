@@ -187,7 +187,7 @@ Simple ConvNet의 실험 결과도 앞서 설명한 LeNet의 실험 결과와 �
 <a href="https://openreview.net/pdf?id=B1VZqjAcYX" target="_blank"><b> “SNIP: Single-shot Network Pruning based on Connection Sensitivity" </b></a> 
 , 
 <a href="https://openreview.net/pdf?id=rJlnB3C5Ym" target="_blank"><b> “Rethinking the Value of Network Pruning" </b></a> 
-) 과 비교를 해봤으면 좋겠다는 리뷰가 있었고, 위에 한계로 언급하였던 내용인 더 큰 데이터셋에 대한 검증도 리뷰에 포함이 되어있습니다. 또한 실험에 사용한 Batch Normalization으로 인해 winning ticket을 heuristic 없이 찾기 힘든 것이 아니냐는 질문도 있었습니다.  
+) 과 비교를 해봤으면 좋겠다는 리뷰가 있었고, 위에 한계로 언급하였던 내용인 더 큰 데이터셋에 대한 검증 여부도 리뷰에 포함이 되어있습니다. 또한 실험에 ConvNet 구조에 사용한 Batch Normalization으로 인해 winning ticket을 heuristic 없이 찾기 힘든 것이 아니냐는 질문도 있었습니다.  
 
 이러한 리뷰를 바탕으로 지금의 논문이 완성이 되었고, 단순한 방식이고 다소 heuristic이 많이 개입이 되었지만 굉장히 직관적이고 좋은 성능을 보이고 있어서 ICLR 2019의 best paper로 선정이 된 것이 아닌가 개인적으로 생각해봅니다. 
 
