@@ -84,7 +84,7 @@ Workshop에는 아직 publish되지 않은 연구들을 소개하는 것이 주�
 
 <figure>
 	<img src="{{ '/assets/img/iclr_2019_review/1.png' | prepend: site.baseurl }}" alt=""> 
-	<figcaption> [Network Pruning ] </figcaption>
+	<figcaption> [Network Pruning 예시] </figcaption>
 </figure> 
 위의 그림은 Network Pruning하면 가장 많이 인용되는 그림이며, 그림에 나와있는 것처럼 Neural Network를 학습시킨 뒤 불필요한 connection들을 제거를 합니다. 이렇게 가지치기를 해준 뒤에는 남아있는 Network를 재 학습시키며 성능을 Pruning하기 전과 비슷하게 유지하는 것을 목표로 하게 됩니다. 
 
