@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  “ICLR 2019 참석 후기 및 Best Paper Review”
+title:  “ICLR 2019 참석 후기 및 단순하고 효과적인 Network Pruning 방법론을 다룬 Best Paper 리뷰”
 date:   2019-05-23
 description: ICLR 2019 학회에 다녀온 후기와 학회에 대한 소개, Best Paper에 대한 리뷰를 글로 작성하였습니다.
 comments: true
