@@ -24,15 +24,15 @@ title: Archives
 		<li><a href="https://hoya012.github.io/blog/Pelee-Tutorial-1/" target="_blank"> <b> “Pelee Tutorial [1] Paper Review & Implementation details” </b></a>, 19/02/12 .</li>
 		<li><a href="https://hoya012.github.io/blog/DenseNet-Tutorial-2/" target="_blank"> <b> “DenseNet Tutorial [2] PyTorch Code Implementation” </b></a>, 19/01/28 .</li>
 		<li><a href="https://hoya012.github.io/blog/DenseNet-Tutorial-1/" target="_blank"> <b> “DenseNet Tutorial [1] Paper Review & Implementation details” </b></a>, 19/01/27 .</li>
-		<li><a href="https://hoya012.github.io/blog/Learning-From-Noisy-Large-Scale-Datasets-With-minimal-Supervision-Review/" target="_blank"> <b> “Learning From Noisy Large-Scale Datasets With Minimal Supervision” </b></a>, 18/07/14 .</li>
-		<li><a href="https://hoya012.github.io/blog/Improved-Regularization-of-Convolutional-Neural-Networks-with-Cutout-Review/" target="_blank"> <b> “Improved Regularization of Convolutional Neural Networks with Cutout” </b></a>, 18/06/15 .</li>
+		<li><a href="https://hoya012.github.io/blog/Learning-From-Noisy-Large-Scale-Datasets-With-minimal-Supervision-Review/" target="_blank"> <b> “Learning From Noisy Large-Scale Datasets With Minimal Supervision 리뷰” </b></a>, 18/07/14 .</li>
+		<li><a href="https://hoya012.github.io/blog/Improved-Regularization-of-Convolutional-Neural-Networks-with-Cutout-Review/" target="_blank"> <b> “Improved Regularization of Convolutional Neural Networks with Cutout 리뷰” </b></a>, 18/06/15 .</li>
 		<li><a href="https://hoya012.github.io/blog/Shake-Shake-Regularization-Review/" target="_blank"> <b> "Shake-Shake Regularization Review & TensorFlow code implementation" </b></a>, 18/06/11 .</li>
 	<h1 class="pageTitle">  </h1>
 	<h1 class="pageTitle">  </h1>
 	<h1 class="pageTitle">  </h1>
 	<h1 class="pageTitle"> AutoML </h1>
 		<li><a href="https://hoya012.github.io/blog/EfficientNet-review/" target="_blank"> <b> “EfficientNet: Improving Accuracy and Efficiency through AutoML and Model Scaling 리뷰” </b></a>, 19/05/31 .</li>
-		<li><a href="https://hoya012.github.io/blog/Learning-Transferable-Architectures-for-Scalable-Image-Recognition-Review/" target="_blank"> <b> “Learning Transferable Architectures for Scalable Image Recognition” </b></a>, 18/09/28 .</li>
+		<li><a href="https://hoya012.github.io/blog/Learning-Transferable-Architectures-for-Scalable-Image-Recognition-Review/" target="_blank"> <b> “Learning Transferable Architectures for Scalable Image Recognition ” </b></a>, 18/09/28 .</li>
 	<h1 class="pageTitle">  </h1>
 	<h1 class="pageTitle">  </h1>
 	<h1 class="pageTitle">  </h1>
