@@ -59,11 +59,19 @@ ImageNet 데이터셋에 대해 정확도를 초점으로 한 모델과 Efficien
 EfficientNet의 알파, 베타, 감마 값은 간단한 grid search를 통해 구하는 방식을 제안하고 있으며, 처음 단계에서는 파이를 1로 고정한 뒤, 타겟 데이터셋에서 좋은 성능을 보이는 알파, 베타, 감마 값을 찾아냅니다. 본 논문에서는 알파 값은 1.2, 베타 값은 1.1, 감마 값은 1.15를 사용하였으며, 방금 구한 3개의 scaling factor는 고정한 뒤 파이를 키워주며 모델의 사이즈를 키워주고 있습니다. 
 
 기존 사람이 디자인한 ConvNet, AutoML을 통해 찾은 ConvNet 들과 비교를 한 결과는 다음 표에 나와있습니다.
+
 <figure>
 	<img src="{{ '/assets/img/efficientnet/7.PNG' | prepend: site.baseurl }}" alt=""> 
 	<figcaption> [ImageNet에 대한 실험 결과] </figcaption>
 </figure> 
+
 결과를 보시면 아시겠지만 기존 ConvNet들에 비해 비슷한 정확도를 보이면서 parameter수와 FLOPS 수를 굉장히 많이 절약할 수 있는 것을 알 수 있고, 또한 기존에 ImageNet 데이터셋에서 가장 높은 정확도를 달성했던 GPipe 보다 더 높은 정확도를 달성하는 것을 확인할 수 있습니다. 동시에 parameter 수와 FLOPS수도 굉장히 많이 절약할 수 있습니다. 실험결과가 굉장히 좋은 것을 바로 알 수 있습니다. 이 외에도 다양한 실험 결과들은 논문에서 추가로 확인하실 수 있습니다.
+
+<figure>
+	<img src="{{ '/assets/img/efficientnet/8.PNG' | prepend: site.baseurl }}" alt=""> 
+	<figcaption> [Class Activation Map 실험 결과] </figcaption>
+</figure> 
+
 마지막으로 모델이 이미지를 분류할 때 이미지의 어느 영역에 집중했는지 확인할 수 있는 Class Activation Map(CAM)을 뽑아보았는데, 3개의 scaling factor를 각각 고려할 때 보다 동시에 고려하였을 때 더 정교한 CAM을 얻을 수 있다는 점도 인상깊은 결과입니다. 
 
 <blockquote> 결론 </blockquote>
