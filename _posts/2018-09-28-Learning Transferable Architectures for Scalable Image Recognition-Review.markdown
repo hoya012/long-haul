@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  “Learning Transferable Architectures for Scalable Image Recognition ” 
+title:  “Learning Transferable Architectures for Scalable Image Recognition 리뷰” 
 date:   2018-09-28
 description: This is a review of 'Learning Transferable Architectures for Scalable Image Recognition' paper.
 comments: true
