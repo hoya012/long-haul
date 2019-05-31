@@ -24,7 +24,8 @@ ImageNet 데이터셋에 대해 정확도를 초점으로 한 모델과 Efficien
 	<img src="{{ '/assets/img/efficientnet/2.PNG' | prepend: site.baseurl }}" alt=""> 
 	<figcaption> [Model Scaling 기법 예시] </figcaption>
 </figure> 
-위의 그림은 이미 존재하는 모델의 Complexity를 높이는 여러 방법들을 보여주고 있습니다. 대표적으로 filter의 개수를(channel의 개수를) 늘리는 **width scaling** 와 layer의 개수를 늘리는 **depth scaling**과 input image의 해상도를 높이는 **resolution scaling** 이 자주 사용됩니다. ResNet이 depth scaling을 통해 모델의 크기를 조절하는 대표적인 모델이며(ex, ResNet-50, ResNet-101) MobileNet, ShuffleNet 등이 width scaling을 통해 모델의 크기를 조절하는 대표적인 모델입니다. (ex, MobileNet-224 1.0, MobileNet-224 0.5) 하지만 기존 방식들에서는 위의 3가지 scaling을 동시에 고려하는 경우가 거의 없었습니다. 
+위의 그림은 이미 존재하는 모델의 size를 키워주는 여러 방법들을 보여주고 있습니다. 대표적으로 filter의 개수를(channel의 개수를) 늘리는 **width scaling** 와 layer의 개수를 늘리는 **depth scaling**과 input image의 해상도를 높이는 **resolution scaling** 이 자주 사용됩니다. ResNet이 depth scaling을 통해 모델의 크기를 조절하는 대표적인 모델이며(ex, ResNet-50, ResNet-101) MobileNet, ShuffleNet 등이 width scaling을 통해 모델의 크기를 조절하는 대표적인 모델입니다. (ex, MobileNet-224 1.0, MobileNet-224 0.5) 하지만 기존 방식들에서는 위의 3가지 scaling을 동시에 고려하는 경우가 거의 없었습니다. 
+
 또한 3가지 scaling 기법 중에 어떤 기법을 사용할지에 대해서도 마땅한 가이드라인이 존재하지 않고, 실제로 무작정 키운다고 정확도가 계속 오르는 것도 아니라 일일이 실험을 해봐야하는 어려움도 존재하였습니다. 본 논문에서는 실제로 3가지 scaling 기법에 대해 각 scaling 기법마다 나머지는 고정해두고 1개의 scaling factor만 키워가며 정확도의 변화를 측정하였습니다. 
 
 <figure>
