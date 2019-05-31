@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  “Learning From Noisy Large-Scale Datasets With Minimal Supervision”
+title:  “Learning From Noisy Large-Scale Datasets With Minimal Supervision” 
 date:   2018-07-14
 description: This is a review of 'Learning From Noisy Large-Scale Datasets With minimal Supervision' paper.
 comments: true
