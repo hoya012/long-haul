@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  “EfficientNet Improving Accuracy and Efficiency through AutoML and Model Scaling 리뷰”
+title:  “EfficientNet; Improving Accuracy and Efficiency through AutoML and Model Scaling 리뷰”
 date:   2019-05-31
-description: ICML 2019에 제출된 “EfficientNet Improving Accuracy and Efficiency through AutoML and Model Scaling” 논문에 대한 리뷰를 수행하였습니다.
+description: ICML 2019에 제출된 “EfficientNet; Improving Accuracy and Efficiency through AutoML and Model Scaling” 논문에 대한 리뷰를 수행하였습니다.
 comments: true
 ---
 
