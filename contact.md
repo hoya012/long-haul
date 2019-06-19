@@ -32,7 +32,7 @@ title: Archives
 	<h1 class="pageTitle">  </h1>
 	<h1 class="pageTitle"> AutoML </h1>
 		<li><a href="https://hoya012.github.io/blog/EfficientNet-review/" target="_blank"> <b> “EfficientNet: Improving Accuracy and Efficiency through AutoML and Model Scaling 리뷰” </b></a>, 19/05/31 .</li>
-		<li><a href="https://hoya012.github.io/blog/Learning-Transferable-Architectures-for-Scalable-Image-Recognition-Review/" target="_blank"> <b> “Learning Transferable Architectures for Scalable Image Recognition ” </b></a>, 18/09/28 .</li>
+		<li><a href="https://hoya012.github.io/blog/Learning-Transferable-Architectures-for-Scalable-Image-Recognition-Review/" target="_blank"> <b> “Learning Transferable Architectures for Scalable Image Recognition 리뷰” </b></a>, 18/09/28 .</li>
 	<h1 class="pageTitle">  </h1>
 	<h1 class="pageTitle">  </h1>
 	<h1 class="pageTitle">  </h1>
