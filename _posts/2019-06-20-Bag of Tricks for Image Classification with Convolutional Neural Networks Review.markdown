@@ -42,7 +42,7 @@ Ex) “야 길동아, Cosine Annealing Learning Rate Scheduling을 쓰면 성능
 6. Normalize RGB channels by subtracting 123.68, 116.779, 103.939 and dividing by 58.393, 57.12, 57.375, respectively.  
 
 
-저희가 일반적으로 알고 있는 전처리 기법들을 사용하였으며 크게 차이가 나는 부분은 없으니 자세한 설명은 생략해도 될 것 같습니다.
+저희가 일반적으로 알고 있는 전처리 기법들을 사용하였으며 크게 생소한 부분은 없으니 자세한 설명은 생략해도 될 것 같습니다.
 
 그 뒤 모든 Conv, FC layer의 weight는 Xavier Initialization을 통해 Initialization을 해주었고, Batch Normalization의 감마는 1로, 베타는 0으로 Initialization을 해주었습니다. Optimizer는 NAG(Nesterov Accelerated Gradient) 알고리즘을 사용하였고, 8개의 GPU, Batch Size=256 환경에서 120 Epoch을 학습시켰습니다. Initial Learning Rate는 0.1로 설정을 하였고, 매 30, 60, 90번째 epoch마다 1/10을 해주는 Step Decay를 사용하였습니다. 
 
