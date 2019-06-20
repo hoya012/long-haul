@@ -13,9 +13,10 @@ comments: true
 이 논문을 소개 드리기 앞서 이 논문에서 제시하고 있는 결과를 먼저 보여드리고 시작하겠습니다
 
 <figure>
-	<img src="{{ '/assets/img/bag_of_trick/1.PNG' | prepend: site.baseurl }}" alt=""> 
+	<img src="{{ '/assets/img/bag_of_trick/1.PNG' | prepend: site.baseurl }}" alt="" width="800"> 
 	<figcaption> [Bag of Tricks 실험 결과] </figcaption>
 </figure> 
+
 AlexNet 이후로 굉장히 많이 다뤄진 ImageNet Classification task를 다룬 논문이며, 굉장히 많이 사용되고 있는 **ResNet** 은 다들 잘 아실 거라고 생각합니다. ResNet 외에도 ResNext, 앞선 포스팅에서 다뤘던
 <a href="https://hoya012.github.io/blog/DenseNet-Tutorial-1/" target="_blank"><b> DenseNet </b></a>, 2017년 ILSVRC 우승한 **SENet(Squeeze-Excitation Network)** 등 Architecture를 바꾸면서 정확도를 높이는 연구가 주를 이뤘습니다.
 
