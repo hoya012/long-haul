@@ -37,7 +37,7 @@ title: Archives
 	<h1 class="pageTitle">  </h1>
 	<h1 class="pageTitle">  </h1>
 	<h1 class="pageTitle"> Conference </h1>
-		<li><a href="https://hoya012.github.io/blog/ICLR-2019-best-paper-review/" target="_blank"> <b> “ICLR 2019 참석 후기 및 Best Paper Review” </b></a>, 19/05/23 .</li>
+		<li><a href="https://hoya012.github.io/blog/ICLR-2019-best-paper-review/" target="_blank"> <b> “ICLR 2019 참석 후기 및 단순하고 효과적인 Network Pruning 방법론을 다룬 Best Paper 리뷰” </b></a>, 19/05/23 .</li>
 		<li><a href="https://hoya012.github.io/blog/CVPR-2019-overview/" target="_blank"> <b> “CVPR 2019 image Overview” </b></a>, 19/04/19 .</li>
 		<li><a href="https://hoya012.github.io/blog/ICLR-image-recognition-paper-guide/" target="_blank"> <b> “ICLR 2019 image recognition paper list guide” </b></a>, 18/12/28 .</li>
 		<li><a href="https://hoya012.github.io/blog/SIGGRAPH-2018-review-2/" target="_blank"> <b> “SIGGRAPH 2018 review [2] 사람의 지각을 반영한 visibility metric 및 논문 4편 소개” </b></a>, 18/12/17 .</li>
