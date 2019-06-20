@@ -35,15 +35,10 @@ Ex) “야 길동아, Cosine Annealing Learning Rate Scheduling을 쓰면 성능
 
 우선 전처리 방법은 다음과 같습니다. 
 1. Randomly sample an image and decode it into 32-bit floating point raw pixel values in [0, 255].  
-
 2. Randomly crop a rectangular region whose aspect ratio is randomly sampled in [3/4, 4/3] and area randomly sampled in [8%, 100%], then resize the cropped region into a 224-by-224 square image.  
-
 3. Flip horizontally with 0.5 probability.   
-
 4. Scale hue, saturation, and brightness with coefficients uniformly drawn from [0.6, 1.4].  
-
 5. Add PCA noise with a coefficient sampled from a normal distribution N(0, 0.1).  
-
 6. Normalize RGB channels by subtracting 123.68, 116.779, 103.939 and dividing by 58.393, 57.12, 57.375, respectively.  
 
 
