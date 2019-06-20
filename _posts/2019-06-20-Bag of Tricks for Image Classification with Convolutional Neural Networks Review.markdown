@@ -23,7 +23,8 @@ AlexNet 이후로 굉장히 많이 다뤄진 ImageNet Classification task를 다
 
 하지만 정확도를 높이는 방법에는 Architecture를 바꾸는 방법만 존재하지 않습니다. 딥러닝을 연구하시는 분들은 다들 이런 경험이 있으실 겁니다. 
 
-Ex) “야 길동아, Cosine Annealing Learning Rate Scheduling을 쓰면 성능이 좋아진다던데 한번 해보렴~ Optimizer도 AMSGrad라는게 나왔던데 한번 써보자~”, 
+Ex) “야 길동아, Cosine Annealing Learning Rate Scheduling을 쓰면 성능이 좋아진다던데 한번 해보렴~ Optimizer도 AMSGrad라는게 나왔던데 한번 써보자~”,   
+
 “야 철수야, 너 한번 Batch Normalization을 써 보는건 어떻겠니? 아니면 1x1 convolution을 여기 저기에 넣어봐~ Residual Connection도 넣어보고~”
 
 학습에 관여하는 여러가지 요소들이 각각 활발하게 연구가 되고 있는데, 이를 다 합쳐서 실험을 수행한 논문은 많이 없다 보니 사용자가 일일이 모든 요소들을 바꿔가면서 실험을 해야 하고, 많은 시간이 필요한 문제는 다들 많이 겪어 보셨을 것입니다.
