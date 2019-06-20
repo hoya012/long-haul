@@ -177,7 +177,7 @@ Data에 dependent한 augmentation 기법이며 두 데이터의 이미지와 lab
 다음 번에도 재미있는 논문 리뷰 글로 찾아뵙도록 하겠습니다. 감사합니다!
 
 <blockquote> References </blockquote>
-- <a href=" https://arxiv.org/pdf/1706.02677.pdf" target="_blank"><b> Accurate, large minibatch SGD: training imagenet in 1 hour </b></a>   
+- <a href=" https://arxiv.org/pdf/1706.02677.pdf" target="_blank"><b> Accurate, large minibatch SGD: training imagenet in 1 hour  </b></a>   
 - <a href=" https://arxiv.org/pdf/1807.11205.pdf" target="_blank"><b> Highly scalable deep learning training system with mixed-precision: Training imagenet in four minutes. 논문 </b></a>   
 - <a href=" https://www.nextplatform.com/2018/05/10/tearing-apart-googles-tpu-3-0-ai-coprocessor/" target="_blank"><b> Floating Point 비교 그림 </b></a>   
 - <a href="https://arxiv.org/pdf/1710.03740.pdf" target="_blank"><b> Mixed precision training 논문 </b></a>   
