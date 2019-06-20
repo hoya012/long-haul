@@ -13,7 +13,7 @@ comments: true
 이 논문을 소개 드리기 앞서 이 논문에서 제시하고 있는 결과를 먼저 보여드리고 시작하겠습니다
 
 <figure>
-	<img src="{{ '/assets/img/bag_of_trick/1.PNG' | prepend: site.baseurl }}" alt="" width="800"> 
+	<img src="{{ '/assets/img/bag_of_trick/1.PNG' | prepend: site.baseurl }}" alt="" width="600"> 
 	<figcaption> [Bag of Tricks 실험 결과] </figcaption>
 </figure> 
 
