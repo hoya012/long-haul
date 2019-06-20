@@ -17,8 +17,7 @@ comments: true
 	<figcaption> [Bag of Tricks 실험 결과] </figcaption>
 </figure> 
 AlexNet 이후로 굉장히 많이 다뤄진 ImageNet Classification task를 다룬 논문이며, 굉장히 많이 사용되고 있는 **ResNet** 은 다들 잘 아실 거라고 생각합니다. ResNet 외에도 ResNext, 앞선 포스팅에서 다뤘던
-<a href="https://hoya012.github.io/blog/DenseNet-Tutorial-1/" target="_blank"><b> DenseNet </b></a> 
-, 2017년 ILSVRC 우승한 **SENet(Squeeze-Excitation Network)** 등 Architecture를 바꾸면서 정확도를 높이는 연구가 주를 이뤘습니다.
+<a href="https://hoya012.github.io/blog/DenseNet-Tutorial-1/" target="_blank"><b> DenseNet </b></a>, 2017년 ILSVRC 우승한 **SENet(Squeeze-Excitation Network)** 등 Architecture를 바꾸면서 정확도를 높이는 연구가 주를 이뤘습니다.
 
 하지만 정확도를 높이는 방법에는 Architecture를 바꾸는 방법만 존재하지 않습니다. 딥러닝을 연구하시는 분들은 다들 이런 경험이 있으실 겁니다. 
 
