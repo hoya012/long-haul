@@ -199,7 +199,7 @@ VDSR 이후 굉장히 다양한 Deep network 구조들이 제안이 되었으며
 
 또한 각 모델들의 architecture 구조를 그림으로 나타낸 자료 또한 서베이 논문을 통해 확인할 수 있습니다.
 <figure>
-	<img src="{{ '/assets/img/deep_learning_super_resolution/17.PNG' | prepend: site.baseurl }}" alt=""> 
+	<img src="{{ '/assets/img/deep_learning_super_resolution/17_new.PNG' | prepend: site.baseurl }}" alt=""> 
 </figure> 
 
 마지막으로는 위의 모델들을 시간 순서대로 한눈에 보기 편하게 정리한 그림을 소개드리고자 합니다. 불과 5년 사이에 굉장히 다양한 이름을 가진 모델들이 제안이 되었음을 확인할 수 있습니다. 
