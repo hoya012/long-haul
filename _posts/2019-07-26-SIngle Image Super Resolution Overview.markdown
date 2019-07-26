@@ -19,34 +19,30 @@ comments: true
 
 <blockquote> Image Super Resolution이란? </blockquote>
 
-<figure>
-	<img src="{{ '/assets/img/bag_of_trick/1_big.PNG' | prepend: site.baseurl }}" alt="" width="600"> 
-	<figcaption> [Bag of Tricks 실험 결과] </figcaption>
-</figure> 
 
 <figure>
-	<img src="{{ '/assets/img/deep_learning_super_resolution/1.PNG | prepend: site.baseurl }}" alt=""> 
+	<img src="{{ '/assets/img/deep_learning_super_resolution/1.PNG' | prepend: site.baseurl }}" alt=""> 
 	<figcaption> [Single Image Super Resolution 예시] </figcaption>
 </figure> 
 
 이번 포스팅의 주제인 Image Super Resolution(이하 SR)은 하나의 저해상도(Low Resolution) 이미지를 고해상도 이미지(High Resolution) 이미지로 변환시키는 문제를 의미합니다. 이미지 SR은 크게 하나의 이미지를 이용하는지, 여러 이미지를 이용하는지에 따라 Single Image Super Resolution(이하, SISR), Multi Image Super Resolution(이하, MISR)로 나뉘는데 주로 SISR에 대한 연구가 주를 이루고 있습니다.
 
 <figure>
-	<img src="{{ '/assets/img/deep_learning_super_resolution/2.PNG | prepend: site.baseurl }}" alt=""> 
+	<img src="{{ '/assets/img/deep_learning_super_resolution/2.PNG' | prepend: site.baseurl }}" alt=""> 
 	<figcaption> [Ill-Posed Problem 예시] </figcaption>
 </figure> 
 
 Super Resolution은 저해상도 이미지를 고해상도로 복원을 해야 하는데, 복원해야 하는 타겟인 고해상도의 이미지가 정답이 여러 개 존재할 수 있습니다. 정확히 말하면 유일한 정답이 존재하지 않는, 정의할 수 없는 문제를 의미합니다. 이러한 경우를 Regular Inverse Problem 혹은 Ill-Posed Problem이라 부릅니다. 
 
 <figure>
-	<img src="{{ '/assets/img/deep_learning_super_resolution/3.PNG | prepend: site.baseurl }}" alt=""> 
+	<img src="{{ '/assets/img/deep_learning_super_resolution/3.PNG' | prepend: site.baseurl }}" alt=""> 
 	<figcaption> [Single Image Super Resolution 문제 정의] </figcaption>
 </figure> 
 
 이러한 어려움을 타개하기 위해 대부분 위의 그림과 같은 framework를 따라서 연구를 수행하고 있습니다. 우선 고해상도의 타겟 이미지를 Ground Truth(GT)로 정의하고, 이를 Low Resolution image로 만들기 위해 blurring, down sampling, noise 주입 등을 거쳐 저해상도 이미지로 만듭니다. 그 뒤 모종의 방법을 통해 저해상도 이미지를 GT로 복원시키도록 모델을 학습시키는 구조를 따릅니다. 이러한 점이 Single Image Super Resolution의 근본적인 한계이며, 저해상도 이미지를 만들 때 사용한 distortion, down sapling 기법이 무엇이었는지에 따라 Super Resolution의 성능이 달라질 수 있습니다. 
 
 <figure>
-	<img src="{{ '/assets/img/deep_learning_super_resolution/4.PNG | prepend: site.baseurl }}" alt=""> 
+	<img src="{{ '/assets/img/deep_learning_super_resolution/4.PNG' | prepend: site.baseurl }}" alt=""> 
 	<figcaption> [NTIRE 2017 Challenge 결과 표] </figcaption>
 </figure> 
 
@@ -60,7 +56,7 @@ Super Resolution은 저해상도 이미지를 고해상도로 복원을 해야 �
  최근에 예전 인기를 끌었던 드라마 하얀거탑(2007)의 리마스터 버전이 화제가 되었습니다. 과거의 TV들에서 사용하던 HD(1280 x 720) 해상도의 영상을 최신 TV에 맞게 UHD(3840 x 2160)으로 변환하여 더욱 선명한 화질로 감상을 할 수 있어서 많은 호평을 받았습니다. 이 때에도 딥러닝을 이용한 SR 기술이 사용되었으며(물론 하얀거탑의 경우 SR 뿐만 아니라 다양한 기법들이 적용이 되었습니다), TV 외에도 많은 분야에서 SR 기법이 적용되고 있습니다. 
  
 <figure>
-	<img src="{{ '/assets/img/deep_learning_super_resolution/5.PNG | prepend: site.baseurl }}" alt=""> 
+	<img src="{{ '/assets/img/deep_learning_super_resolution/5.PNG' | prepend: site.baseurl }}" alt=""> 
 	<figcaption> [Super Resolution의 주요 적용 사례] </figcaption>
 </figure> 
 
@@ -81,7 +77,7 @@ Super Resolution은 저해상도 이미지를 고해상도로 복원을 해야 �
 
 
 <figure>
-	<img src="{{ '/assets/img/deep_learning_super_resolution/6.PNG | prepend: site.baseurl }}" alt=""> 
+	<img src="{{ '/assets/img/deep_learning_super_resolution/6.PNG' | prepend: site.baseurl }}" alt=""> 
 	<figcaption> [Super Resolution의 주요 적용 사례] </figcaption>
 </figure> 
 
@@ -96,7 +92,7 @@ Super Resolution은 저해상도 이미지를 고해상도로 복원을 해야 �
 은 **SRCNN** 이라는 이름으로 불리며, 2014년 ECCV에 공개된 논문입니다. 
 
 <figure>
-	<img src="{{ '/assets/img/deep_learning_super_resolution/7.PNG | prepend: site.baseurl }}" alt=""> 
+	<img src="{{ '/assets/img/deep_learning_super_resolution/7.PNG' | prepend: site.baseurl }}" alt=""> 
 	<figcaption> [SRCNN] </figcaption>
 </figure> 
 
@@ -104,7 +100,7 @@ Super Resolution은 저해상도 이미지를 고해상도로 복원을 해야 �
 
 ### 2. Efficient single image super resolution
 <figure>
-	<img src="{{ '/assets/img/deep_learning_super_resolution/8.PNG | prepend: site.baseurl }}" alt=""> 
+	<img src="{{ '/assets/img/deep_learning_super_resolution/8.PNG' | prepend: site.baseurl }}" alt=""> 
 	<figcaption> [SRCNN의 비효율적 연산] </figcaption>
 </figure> 
 다음 소개드릴 두 논문은 위의 그림처럼 기존 SRCNN에서 input LR 이미지를 HR 이미지의 해상도로 interpolate시킨 뒤(Early Upsampling or Pre Upsampling이라 부릅니다.) convolution 연산을 하는 과정에서 비효율적인 연산이 발생하고 있음을 지적하며, 이를 개선하기 위한 방법들을 제안하고 있습니다. 
@@ -114,7 +110,7 @@ Super Resolution은 저해상도 이미지를 고해상도로 복원을 해야 �
 <a href="http://mmlab.ie.cuhk.edu.hk/projects/FSRCNN.html" target="_blank"><b> “Accelerating the Super-Resolution Convolutional Neural Network, 2016 ECCV” </b></a>
 논문은 SRCNN의 저자가 낸 후속 논문이며 **FSRCNN** 이라는 모델 이름을 가지고 있습니다. 
 <figure>
-	<img src="{{ '/assets/img/deep_learning_super_resolution/9.PNG | prepend: site.baseurl }}" alt=""> 
+	<img src="{{ '/assets/img/deep_learning_super_resolution/9.PNG' | prepend: site.baseurl }}" alt=""> 
 	<figcaption> [FSRCNN] </figcaption>
 </figure> 
 Input으로 들어가는 LR 이미지를 그대로 convolution layer에 집어넣는 방식을 사용하였고, 마지막에 feature map의 가로, 세로 크기를 키워주는 deconvolution 연산을 사용하여 HR 이미지로 만드는 것이 가장 큰 특징입니다. 이렇게 LR 이미지를 convolution 연산을 하게 되면 키워주고자 하는 배수에 제곱에 비례하여 연산량이 줄어들게 됩니다. 그 결과 SRCNN에 비해 굉장히 연산량이 줄어들었고 거의 실시간에 준하는 성능을 보일 수 있음을 강조하고 있습니다. 또한 연산량이 줄어든 만큼 convolution layer의 개수도 늘려주면서 정확도(PSNR)도 챙길 수 있음을 보여주고 있습니다. 
@@ -125,7 +121,7 @@ Input으로 들어가는 LR 이미지를 그대로 convolution layer에 집어�
 이며 **ESPCN** 이라는 모델 이름을 가지고 있습니다. 
 마찬가지로 LR 이미지를 그대로 convolution layer에 집어넣지만 마지막에 feature map의 가로, 세로 크기를 키워주는 부분이 FSRCNN과 다릅니다. 이 논문에서는 **sub-pixel convolutional layer** 라는 구조를 제안하였으며, 이 연산은 **pixel shuffle** 혹은 **depth to space** 라는 이름으로도 불리는 연산입니다. 
 <figure>
-	<img src="{{ '/assets/img/deep_learning_super_resolution/10.PNG | prepend: site.baseurl }}" alt=""> 
+	<img src="{{ '/assets/img/deep_learning_super_resolution/10.PNG' | prepend: site.baseurl }}" alt=""> 
 	<figcaption> [ESPCN] </figcaption>
 </figure> 
 
@@ -138,7 +134,7 @@ Input으로 들어가는 LR 이미지를 그대로 convolution layer에 집어�
 <a href="https://cv.snu.ac.kr/research/VDSR/" target="_blank"><b> “Accurate Image Super-Resolution Using Very Deep Convolutional Networks, 2016 CVPR” </b></a>
 논문은 **VDSR** 이라는 이름으로 불리며 논문의 제목에서 알 수 있듯이 Very Deep한 ConvNet 구조를 사용하여 Super Resolution을 수행하였으며 Deep network를 사용함으로써 기존 방법들 대비 높은 정확도를 달성하게 됩니다. 
 <figure>
-	<img src="{{ '/assets/img/deep_learning_super_resolution/11.PNG | prepend: site.baseurl }}" alt=""> 
+	<img src="{{ '/assets/img/deep_learning_super_resolution/11.PNG' | prepend: site.baseurl }}" alt=""> 
 	<figcaption> [VDSR] </figcaption>
 </figure> 
 
@@ -148,7 +144,7 @@ Input으로 들어가는 LR 이미지를 그대로 convolution layer에 집어�
 VDSR 이후 굉장히 다양한 Deep network 구조들이 제안이 되었으며, 하나하나 리뷰하기엔 글이 너무 길어질 것 같아서, 서베이 논문의 그림을 빌려 간단히 소개만 하고 넘어가고자 합니다. 
 
 <figure>
-	<img src="{{ '/assets/img/deep_learning_super_resolution/12.PNG | prepend: site.baseurl }}" alt=""> 
+	<img src="{{ '/assets/img/deep_learning_super_resolution/12.PNG' | prepend: site.baseurl }}" alt=""> 
 	<figcaption> [Deep Architectures for SISR] </figcaption>
 </figure> 
 
@@ -168,7 +164,7 @@ VDSR 이후 굉장히 다양한 Deep network 구조들이 제안이 되었으며
 이라는 논문이며 **SRGAN** 이라는 이름으로 잘 알려진 논문입니다. 
 
 <figure>
-	<img src="{{ '/assets/img/deep_learning_super_resolution/13.PNG | prepend: site.baseurl }}" alt=""> 
+	<img src="{{ '/assets/img/deep_learning_super_resolution/13.PNG' | prepend: site.baseurl }}" alt=""> 
 	<figcaption> [SRGAN 결과 예시] </figcaption>
 </figure> 
 
@@ -176,7 +172,7 @@ VDSR 이후 굉장히 다양한 Deep network 구조들이 제안이 되었으며
 이 논문에서 위에 소개드린 SRResNet 구조도 제안이 되었으며 기존 Super Resolution 들은 MSE loss를 사용하여 복원을 하다보니 PSNR 수치는 높지만 다소 blurry 한 output을 내고 있음을 지적하며, 사람 눈에 그럴싸하게 보이는 복원을 하기 위해 GAN을 접목시키는 방법을 제안하고 있습니다. 
 
 <figure>
-	<img src="{{ '/assets/img/deep_learning_super_resolution/14.PNG | prepend: site.baseurl }}" alt=""> 
+	<img src="{{ '/assets/img/deep_learning_super_resolution/14.PNG' | prepend: site.baseurl }}" alt=""> 
 	<figcaption> [SRGAN architecture, loss] </figcaption>
 </figure> 
 
@@ -192,18 +188,18 @@ VDSR 이후 굉장히 다양한 Deep network 구조들이 제안이 되었으며
 ### 5. Summary
 위에서 다양한 방법들을 소개드렸는데, 분량 관계로 다 소개드리지 못한 점 양해 부탁드리며, 서베이 논문에서 정리해 놓은 대표적인 벤치마크 데이터셋과 각 모델들의 성능을 한 눈에 볼 수 있게 모아둔 자료로 대신하고자 합니다. 
 <figure>
-	<img src="{{ '/assets/img/deep_learning_super_resolution/15.PNG | prepend: site.baseurl }}" alt=""> 
+	<img src="{{ '/assets/img/deep_learning_super_resolution/15.PNG' | prepend: site.baseurl }}" alt=""> 
 	<figcaption> [대표적인 SR 모델들의 성능 지표] </figcaption>
 </figure> 
 서베이 논문에 의하면 **RCAN** 이라는 논문이 대체로 성능 지표인 PSNR, SSIM 이 높은 것을 확인할 수 있으며 5년 사이에 초기 모델인 SRCNN 대비 꽤 많은 성능 향상이 있었음을 확인할 수 있습니다. 
 <figure>
-	<img src="{{ '/assets/img/deep_learning_super_resolution/16.PNG | prepend: site.baseurl }}" alt=""> 
+	<img src="{{ '/assets/img/deep_learning_super_resolution/16.PNG' | prepend: site.baseurl }}" alt=""> 
 	<figcaption> [대표적인 SR 모델들의 architecture] </figcaption>
 </figure> 
 
 또한 각 모델들의 architecture 구조를 그림으로 나타낸 자료 또한 서베이 논문을 통해 확인할 수 있습니다.
 <figure>
-	<img src="{{ '/assets/img/deep_learning_super_resolution/17.PNG | prepend: site.baseurl }}" alt=""> 
+	<img src="{{ '/assets/img/deep_learning_super_resolution/17.PNG' | prepend: site.baseurl }}" alt=""> 
 </figure> 
 
 마지막으로는 위의 모델들을 시간 순서대로 한눈에 보기 편하게 정리한 그림을 소개드리고자 합니다. 불과 5년 사이에 굉장히 다양한 이름을 가진 모델들이 제안이 되었음을 확인할 수 있습니다. 
@@ -215,7 +211,7 @@ VDSR 이후 굉장히 다양한 Deep network 구조들이 제안이 되었으며
 우선 첫번째로 소개드릴 문제는 **Checkerboard artifact** 이며, 생성된, 혹은 복원된 이미지에 체커보드와 같이 생긴 열화가 발생하는 문제입니다. 
 
 <figure>
-	<img src="{{ '/assets/img/deep_learning_super_resolution/18.PNG | prepend: site.baseurl }}" alt=""> 
+	<img src="{{ '/assets/img/deep_learning_super_resolution/18.PNG' | prepend: site.baseurl }}" alt=""> 
 	<figcaption> [Checkerboard artifact] </figcaption>
 </figure> 
 
@@ -232,7 +228,7 @@ VDSR 이후 굉장히 다양한 Deep network 구조들이 제안이 되었으며
 <a href="https://arxiv.org/pdf/1511.08861.pdf" target="_blank"><b> “Loss Functions for Image Restoration with Neural Networks, 2016 IEEE TCI” </b></a>
 에서는 l1 loss와 SSIM loss 등을 적용하는 방법을 제안하였고, 최종적으론 l1 loss와 MS-SSIM loss를 적절히 섞어서 사용할 때 성능이 가장 좋았다고 제시하고 있습니다. 
 <figure>
-	<img src="{{ '/assets/img/deep_learning_super_resolution/19.PNG | prepend: site.baseurl }}" alt=""> 
+	<img src="{{ '/assets/img/deep_learning_super_resolution/19.PNG' | prepend: site.baseurl }}" alt=""> 
 <figcaption> [대표적인 SR 모델들에서 사용한 loss function] </figcaption>
 </figure> 
 
@@ -242,7 +238,7 @@ VDSR 이후 굉장히 다양한 Deep network 구조들이 제안이 되었으며
 마지막으로 다룰 문제는 성능 지표입니다. 영상의 화질을 복원하는 문제이다보니, 얼만큼 잘 복원했는지를 정량화하기가 어려운 것이 문제인데요, 대부분의 논문에서는 성능 지표로 Distortion measure인 **PSNR** 과 **SSIM** 이라는 지표를 사용하고 있습니다. 
 
 <figure>
-	<img src="{{ '/assets/img/deep_learning_super_resolution/20.PNG | prepend: site.baseurl }}" alt=""> 
+	<img src="{{ '/assets/img/deep_learning_super_resolution/20.PNG' | prepend: site.baseurl }}" alt=""> 
 <figcaption> [Super Resolution 대표적인 Metric - PSNR, SSIM] </figcaption>
 </figure> 
 
@@ -251,7 +247,7 @@ VDSR 이후 굉장히 다양한 Deep network 구조들이 제안이 되었으며
 이렇게 distortion measure 만으로 복원 결과를 판단하기엔 부족한 점이 있어서 SRGAN 논문에서는 MOS(Mean Opinion Score) 라는 지표도 사용하여 결과를 제시하고 있습니다. 
 
 <figure>
-	<img src="{{ '/assets/img/deep_learning_super_resolution/21.PNG | prepend: site.baseurl }}" alt=""> 
+	<img src="{{ '/assets/img/deep_learning_super_resolution/21.PNG' | prepend: site.baseurl }}" alt=""> 
 <figcaption> [Mean Opinion Score of SRGAN] </figcaption>
 </figure> 
 
@@ -262,7 +258,7 @@ SRGAN과 같이 GAN 기반의 방법들은 distortion measure에서는 낮은 �
 이 2018년 CVPR에 발표되었고, CVPR에서 개최되는 Super Resolution 챌린지에는 이 두가지 지표를 모두 반영한 지표로 성능 평가를 하고 있습니다. 
 
 <figure>
-	<img src="{{ '/assets/img/deep_learning_super_resolution/22.PNG | prepend: site.baseurl }}" alt=""> 
+	<img src="{{ '/assets/img/deep_learning_super_resolution/22.PNG' | prepend: site.baseurl }}" alt=""> 
 <figcaption> [The Perception-Distortion Tradeoff] </figcaption>
 </figure> 
 Distortion measure가 좋아지는 방향과, Perception measure가 좋아지는 방향이 서로 반대인 Trade-off 관계를 가지고 있음을 보이며, 두가지 지표를 동시에 좋아지게 하는 방향으로 연구를 수행하는 것이 좋은 성능을 내는 길임을 보여주고 있는 논문입니다. 
