@@ -48,5 +48,6 @@ title: Archives
 	<h1 class="pageTitle">  </h1>
 	<h1 class="pageTitle">  </h1>
 	<h1 class="pageTitle"> ETC. </h1>
+		<li><a href="https://hoya012.github.io/blog/SIngle-Image-Super-Resolution-Overview/" target="_blank"> <b> “Single Image Super Resolution using Deep Learning Overview” </b></a>, 19/07/26 .</li>
 		<li><a href="https://hoya012.github.io/blog/Fast-Style-Transfer-Tutorial/" target="_blank"> <b> “Fast Style Transfer PyTorch Tutorial” </b></a>, 19/03/05 .</li>
 </div>
