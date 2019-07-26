@@ -25,7 +25,7 @@ comments: true
 	<figcaption> [Single Image Super Resolution 예시] </figcaption>
 </figure> 
 
-이번 포스팅의 주제인 Image Super Resolution(이하 SR)은 하나의 저해상도(Low Resolution) 이미지를 고해상도 이미지(High Resolution) 이미지로 변환시키는 문제를 의미합니다. 이미지 SR은 크게 하나의 이미지를 이용하는지, 여러 이미지를 이용하는지에 따라 Single Image Super Resolution(이하, SISR), Multi Image Super Resolution(이하, MISR)로 나뉘는데 주로 SISR에 대한 연구가 주를 이루고 있습니다.
+이번 포스팅의 주제인 Image Super Resolution(이하 SR)은 저해상도(Low Resolution) 이미지를 고해상도 이미지(High Resolution) 이미지로 변환시키는 문제를 의미합니다. 이미지 SR은 크게 하나의 이미지를 이용하는지, 여러 이미지를 이용하는지에 따라 Single Image Super Resolution(이하, SISR), Multi Image Super Resolution(이하, MISR)로 나뉘는데 주로 SISR에 대한 연구가 주를 이루고 있습니다.
 
 <figure>
 	<img src="{{ '/assets/img/deep_learning_super_resolution/2.PNG' | prepend: site.baseurl }}" alt=""> 
