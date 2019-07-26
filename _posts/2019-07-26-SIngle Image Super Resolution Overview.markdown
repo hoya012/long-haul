@@ -18,17 +18,21 @@ comments: true
 에도 업로드를 해두었으니 편하신 자료로 보시면 좋을 것 같습니다. 이제 본격적으로 내용을 소개 드리도록 하겠습니다. 
 
 <blockquote> Image Super Resolution이란? </blockquote>
+
 <figure>
 	<img src="{{ '/assets/img/deep_learning_super_resolution/1.PNG | prepend: site.baseurl }}" alt=""> 
 	<figcaption> [Single Image Super Resolution 예시] </figcaption>
 </figure> 
+
 이번 포스팅의 주제인 Image Super Resolution(이하 SR)은 하나의 저해상도(Low Resolution) 이미지를 고해상도 이미지(High Resolution) 이미지로 변환시키는 문제를 의미합니다. 이미지 SR은 크게 하나의 이미지를 이용하는지, 여러 이미지를 이용하는지에 따라 Single Image Super Resolution(이하, SISR), Multi Image Super Resolution(이하, MISR)로 나뉘는데 주로 SISR에 대한 연구가 주를 이루고 있습니다.
+
 <figure>
 	<img src="{{ '/assets/img/deep_learning_super_resolution/2.PNG | prepend: site.baseurl }}" alt=""> 
 	<figcaption> [Ill-Posed Problem 예시] </figcaption>
 </figure> 
 
 Super Resolution은 저해상도 이미지를 고해상도로 복원을 해야 하는데, 복원해야 하는 타겟인 고해상도의 이미지가 정답이 여러 개 존재할 수 있습니다. 정확히 말하면 유일한 정답이 존재하지 않는, 정의할 수 없는 문제를 의미합니다. 이러한 경우를 Regular Inverse Problem 혹은 Ill-Posed Problem이라 부릅니다. 
+
 <figure>
 	<img src="{{ '/assets/img/deep_learning_super_resolution/3.PNG | prepend: site.baseurl }}" alt=""> 
 	<figcaption> [Single Image Super Resolution 문제 정의] </figcaption>
@@ -49,6 +53,7 @@ Super Resolution은 저해상도 이미지를 고해상도로 복원을 해야 �
 <blockquote> Super Resolution의 적용 사례</blockquote>
 
  최근에 예전 인기를 끌었던 드라마 하얀거탑(2007)의 리마스터 버전이 화제가 되었습니다. 과거의 TV들에서 사용하던 HD(1280 x 720) 해상도의 영상을 최신 TV에 맞게 UHD(3840 x 2160)으로 변환하여 더욱 선명한 화질로 감상을 할 수 있어서 많은 호평을 받았습니다. 이 때에도 딥러닝을 이용한 SR 기술이 사용되었으며(물론 하얀거탑의 경우 SR 뿐만 아니라 다양한 기법들이 적용이 되었습니다), TV 외에도 많은 분야에서 SR 기법이 적용되고 있습니다. 
+ 
 <figure>
 	<img src="{{ '/assets/img/deep_learning_super_resolution/5.PNG | prepend: site.baseurl }}" alt=""> 
 	<figcaption> [Super Resolution의 주요 적용 사례] </figcaption>
@@ -58,6 +63,8 @@ Super Resolution은 저해상도 이미지를 고해상도로 복원을 해야 �
 <a href="https://pdfs.semanticscholar.org/d576/d9b9f941537953fd833629f8476235c7db28.pdf" target="_blank"><b> 해당 논문</b></a>
 에서 참조를 하였습니다.
 이렇게 SR은 TV, 모니터 등 하드웨어의 발전과 함께 필요성과 중요성이 커지는 추세이며 딥러닝을 적용한 지는 아직 5년이 채 되지 않아 잠재력이 무궁무진한 분야라고 할 수 있습니다. 
+
+
 <blockquote> Super Resolution의 대표적인 접근 방법</blockquote>
 
 일반적으로 SIngle Image Super Resolution 문제를 접근하는 방식은 크게 3가지가 존재합니다.
@@ -66,6 +73,8 @@ Super Resolution은 저해상도 이미지를 고해상도로 복원을 해야 �
 -	(Deep) Learning-based method
 
 저희가 주로 사용하는 이미지 변환 라이브러리(OpenCV, PIL)을 통해 image resize 함수를 사용해보신 경험이 한번쯤은 있을 것입니다. 이러한 방식이 대표적인 **Interpolation-based method** 이며, interpolation 옵션을 다르게 사용하는 경우 이미지의 품질이 달라지는 것을 경험해보신 적이 있을 것입니다. **Bicubic**, **Bilinear**, **Nearest Neighbor** 등 다양한 interpolation 옵션이 있으며, 일반적으로 이미지의 해상도를 키워주는 경우에는 **Bicubic**, **Bilinear**, **Lanczos** interpolation을 사용합니다. 
+
+
 <figure>
 	<img src="{{ '/assets/img/deep_learning_super_resolution/6.PNG | prepend: site.baseurl }}" alt=""> 
 	<figcaption> [Super Resolution의 주요 적용 사례] </figcaption>
