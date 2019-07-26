@@ -20,6 +20,11 @@ comments: true
 <blockquote> Image Super Resolution이란? </blockquote>
 
 <figure>
+	<img src="{{ '/assets/img/bag_of_trick/1_big.PNG' | prepend: site.baseurl }}" alt="" width="600"> 
+	<figcaption> [Bag of Tricks 실험 결과] </figcaption>
+</figure> 
+
+<figure>
 	<img src="{{ '/assets/img/deep_learning_super_resolution/1.PNG | prepend: site.baseurl }}" alt=""> 
 	<figcaption> [Single Image Super Resolution 예시] </figcaption>
 </figure> 
