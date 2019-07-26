@@ -140,7 +140,7 @@ Input으로 들어가는 LR 이미지를 그대로 convolution layer에 집어�
 
 우선 VGG 기반의 20-layer convolutional network를 제안하였고, 원활한 학습을 위해 input image를 최종 output에 더해주는 방식인 **residual learning** 을 사용하였습니다. 또한 초기에 높은 learning rate를 사용하여 수렴이 잘 되도록 하기 위해 **gradient clipping** 도 같이 수행을 하고 있습니다. 이러한 방식들을 종합한 결과 deep network를 통해 기존 방법들 대비 정확도도 높일 수 있고, 학습 또한 잘 수렴할 수 있음을 보이고 있습니다. 이 논문 또한 추후 연구된 Super Resolution 논문들에 막대한 영향을 준 논문이라 할 수 있습니다. 
 
-### 3-2. After VDSR..
+#### 3-2. After VDSR..
 VDSR 이후 굉장히 다양한 Deep network 구조들이 제안이 되었으며, 하나하나 리뷰하기엔 글이 너무 길어질 것 같아서, 서베이 논문의 그림을 빌려 간단히 소개만 하고 넘어가고자 합니다. 
 
 <figure>
