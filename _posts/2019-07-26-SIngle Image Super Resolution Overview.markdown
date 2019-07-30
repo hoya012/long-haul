@@ -219,7 +219,7 @@ VDSR 이후 굉장히 다양한 Deep network 구조들이 제안이 되었으며
 <a href="https://distill.pub/2016/deconv-checkerboard/" target="_blank"><b> distill의 블로그 </b></a>
 에서 인용한 자료이며 deconvolution 연산을 사용할 때 filter size와 stride에 따라 **uneven overlap**이 발생할 수 있으며, 이로 인해 checkerboard artifact가 발생할 수 있음을 보이고 있습니다. 
 
-이를 개선하기 위해 deconvolution 연산 대신 “Interpolation 기반 resize + Convolution 연산” 의 조합을 사용할 수 있고, ESPCN에서 제안한 **Sub-pixel convolutional layer** 도 checkerboard artifact를 줄이는데 도움이 될 수 있습니다.
+이를 개선하기 위해 deconvolution 연산 대신 “Interpolation 기반 resize + convolution 연산” 의 조합을 사용할 수 있고, ESPCN에서 제안한 **Sub-pixel convolutional layer** 도 checkerboard artifact를 줄이는데 도움이 될 수 있습니다.
 
 ### Loss function
 다음 다룰 문제는 loss function입니다. 초기 연구들은 다 MSE loss를 loss function으로 사용하였는데, 이러한 loss는 단순히 MSE를 최소화하는 방향으로만 학습이 되기 때문에 detail한 정보들을 잘 복원하지 못하는 것이 문제로 여겨졌습니다. 
