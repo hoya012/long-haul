@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  “EfficientNet; Improving Accuracy and Efficiency through AutoML and Model Scaling 리뷰”
+title:  “EfficientNet | Rethinking Model Scaling for Convolutional Neural Networks 리뷰”
 date:   2019-05-31
-description: ICML 2019에 제출된 “EfficientNet; Improving Accuracy and Efficiency through AutoML and Model Scaling” 논문에 대한 리뷰를 수행하였습니다.
+description: ICML 2019에 제출된 “EfficientNet | Rethinking Model Scaling for Convolutional Neural Networks” 논문에 대한 리뷰를 수행하였습니다.
 comments: true
 ---
 
 안녕하세요, 이번 포스팅에서는 이틀 전 공개된 논문인 
- <a href="https://arxiv.org/pdf/1905.11946.pdf" target="_blank"><b> “EfficientNet: Improving Accuracy and Efficiency through AutoML and Model Scaling” </b></a> 
+ <a href="https://arxiv.org/pdf/1905.11946.pdf" target="_blank"><b> “EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks” </b></a> 
 논문에 대한 리뷰를 수행하려 합니다. 이 논문은 2019 CVPR에 발표된 
 <a href="https://arxiv.org/pdf/1807.11626.pdf" target="_blank"><b> “MnasNet: Platform-Aware Neural Architecture Search for Mobile” </b></a>
 의 저자인 Mingxing Tan과 Quoc V. Le 가 쓴 논문이며 Image Classification 타겟의 굉장히 성능이 좋은 Model인 EfficientNet을 제안하였습니다. 논문을 소개 드리기 앞서 이 논문의 결과를 먼저 보여드리고 시작을 하도록 하겠습니다.
