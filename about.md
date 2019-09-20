@@ -38,6 +38,7 @@ title: About me
 		<li> TA of <b> Digital System Design and Experiments(디지털 시스템 설계 및 실습) </b>, in SNUECE(서울대학교 전기정보공학부), 2017.9 ~ 2017.12 </li>
 		<li> TA of <b> Digital System Design and Experiments(디지털 시스템 설계 및 실습) </b>,  in SNUECE(서울대학교 전기정보공학부), 2016.9 ~ 2016.12 </li>
 	<h1 class="pageTitle">Publications</h1>
+		<li> Donghyeon Lee, Sangheon Lee, <b>Ho Seong Lee</b>, Kyujoong Lee, and Hyuk-Jae Lee, “Resolution-Preserving Generative Adversarial Networks for Image Enhancement," IEEE Access, Volume: 7, Pages: 110344-110357, Aug. 2019. </li>
 		<li> Donghyeon Lee, Sangheon Lee, <b>Ho Seong Lee</b>, Kyujoong Lee, and Hyuk-Jae Lee, “Context-Preserving Filter Reorganization for VDSR-Based Super-resolution," IEEE International Conference on Artificial Intelligence Circuits and Systems (AICAS), Mar. 2019. </li>
 		<li><a href="http://s-space.snu.ac.kr/handle/10371/141510" target="_blank"> <b>이호성</b>, "CNN 및 Edge detection 기반
 고속 손 동작 인식", 서울대학교 전기정보공학부 석사학위논문(Thesis), Feb. 2018 </a></li>
