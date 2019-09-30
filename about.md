@@ -10,6 +10,7 @@ title: About me
   		<li>In 2018, he joined the <a href="http://sualab.com/" target="_blank"> <b>SUALAB.</b></a>,Seoul, Korea, as a Machine Learning Engineer.</li>
   		<li>His research interests include algorithm and architecture for image recognition, image processing using deep learning.</li>
 	<h1 class="pageTitle"> Repository </h1>
+		<li> <a href="https://github.com/hoya012/ICCV-2019-Paper-Statistics" target="_blank"> https://github.com/hoya012/ICCV-2019-Paper-Statistics </a></li>
 		<li> <a href="https://github.com/hoya012/CVPR-2019-Paper-Statistics" target="_blank"> https://github.com/hoya012/CVPR-2019-Paper-Statistics </a></li>
 		<li> <a href="https://github.com/hoya012/deep_learning_object_detection" target="_blank"> https://github.com/hoya012/deep_learning_object_detection </a></li>
 		<li> <a href="https://github.com/hoya012/awesome-anomaly-detection" target="_blank"> https://github.com/hoya012/awesome-anomaly-detection </a></li>
@@ -21,6 +22,7 @@ title: About me
 		<li> <a href="https://github.com/hoya012/pytorch-MobileNet" target="_blank"> https://github.com/hoya012/pytorch-MobileNet </a></li>
 		<li> <a href="https://github.com/hoya012/pytorch-partial-conv-based-padding" target="_blank"> https://github.com/hoya012/pytorch-partial-conv-based-padding </a></li>
 	<h1 class="pageTitle">Slides </h1>
+		<li> <a href="https://www.slideshare.net/HoseongLee6/human-uncertainty-makes-classification-more-robust-iccv-2019-review" target="_blank"> "Human uncertainty makes classification more robust, ICCV 2019 Review" </a></li>
 		<li> <a href="https://www.slideshare.net/HoseongLee6/single-image-super-resolution-overview" target="_blank"> "Single Image Super Resolution Overview" </a></li>
 		<li> <a href="https://www.slideshare.net/HoseongLee6/2019-iclr-best-paper-review-147216667" target="_blank"> "2019 ICLR Best Paper "The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks" Review"</a></li>
 		<li> <a href="https://www.slideshare.net/HoseongLee6/2019-cvpr-paperoverview" target="_blank"> "2019 CVPR Paper Statistics & Paper Review"</a></li>
