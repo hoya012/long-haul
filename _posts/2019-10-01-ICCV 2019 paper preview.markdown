@@ -190,7 +190,7 @@ Computer Vision 학회이다 보니 **image**, **video**, **object** 등 general
 </figure> 
 
 ###  <a href="https://arxiv.org/pdf/1908.09101.pdf" target="_blank"><b> 12. Where Is My Mirror? </b></a>  
-- Topic: Segmentation
+- Topic: Semantic Segmentation
 - 그동안 대부분 Computer Vision 문제에서 거울은 잘 다루지 않아 왔음. 하지만 거울은 일상생활에서 자주 볼 수 있는 물건이며 보이는 것을 반사한다는 특징이 있음. 
 - 본 논문에서는 이미지로부터 거울 영역을 segmentation하기 위한 데이터셋을 제작하고 **MirrorNet** 이라는 네트워크 구조를 제안함. 
 - 최초의 mirror dataset인 MSD는 4,018장의 이미지와 mask로 구성이 되어있음. 참신한 문제 상황이 흥미로운 논문임.
