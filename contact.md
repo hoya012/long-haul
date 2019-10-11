@@ -22,7 +22,7 @@ title: Archives
 	<h1 class="pageTitle">  </h1>
 	<h1 class="pageTitle">  </h1>
 	<h1 class="pageTitle"> Classification </h1>
-		<li><a href="https://hoya012.github.io/blog/Bag-of-Tricks-for-Image-Classification-with-Convolutional-Neural-Networks-Review/" target="_blank"> <b> ““Bag of Tricks for Image Classification with Convolutional Neural Networks Review”” </b></a>, 19/06/20 .</li>
+		<li><a href="https://hoya012.github.io/blog/Bag-of-Tricks-for-Image-Classification-with-Convolutional-Neural-Networks-Review/" target="_blank"> <b> “Bag of Tricks for Image Classification with Convolutional Neural Networks Review” </b></a>, 19/06/20 .</li>
 		<li><a href="https://hoya012.github.io/blog/Pelee-Tutorial-2/" target="_blank"> <b> “Pelee Tutorial [2] PeleeNet PyTorch Code Implementation” </b></a>, 19/02/13 .</li>
 		<li><a href="https://hoya012.github.io/blog/Pelee-Tutorial-1/" target="_blank"> <b> “Pelee Tutorial [1] Paper Review & Implementation details” </b></a>, 19/02/12 .</li>
 		<li><a href="https://hoya012.github.io/blog/DenseNet-Tutorial-2/" target="_blank"> <b> “DenseNet Tutorial [2] PyTorch Code Implementation” </b></a>, 19/01/28 .</li>
