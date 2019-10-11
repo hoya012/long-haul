@@ -1,6 +1,6 @@
 ---
 layout: post
-title: “Gaussian YOLOv3. An Accurate and Fast Object Detector Using Localization Uncertainty for Autonomous Driving Review”
+title: “Tutorials of Object Detection using Deep Learning [9] Gaussian YOLOv3. An Accurate and Fast Object Detector Using Localization Uncertainty for Autonomous Driving Review”
 date: 2019-10-11
 description: ICCV 2019에 accept된 “Gaussian YOLOv3. An Accurate and Fast Object Detector Using Localization Uncertainty for Autonomous Driving” 논문에 대한 리뷰를 수행하였습니다.
 comments: true
