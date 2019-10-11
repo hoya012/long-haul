@@ -47,8 +47,9 @@ Network 구조는 YOLOv3 논문 혹은 다른 양질의 자료들을 확인하�
 </figure> 
 
 주어진 test input x에 대한 output y의 Single Gaussian Model은 위의 그림의 (1)과 같이 나타낼 수 있으며, YOLO v3 구조에 맞게 적용한 방식은 그림의 (2) ~ (4)에서 확인하실 수 있습니다. 각 coordinate의 mean 값은 예측된 bounding box 좌표를 의미하고 variance 값은 uncertainty를 의미합니다. 즉 variance가 작으면 확실한 bounding box라고 예측을 하는 것이고, variance가 크다면 예측한 bounding box가 불확실한 것을 의미하는 것입니다. Gaussian Modeling은 기존 YOLOv3의 detection layer만 수정을 하면 되고, 연산량 자체도 미미하게 증가하기 때문에 거의 처리 속도가 유지되며 정확도를 높일 수 있습니다. 
-(512x512 input 기준, YOLOv3: 99x10^9 FLOPS / Gaussian YOLOv3: 99.04x10^9 FLOPS)
 
+
+(512x512 input 기준, YOLOv3: 99x10^9 FLOPS / Gaussian YOLOv3: 99.04x10^9 FLOPS)
 
 
 ## Reconstruction of loss function
@@ -64,12 +65,25 @@ Network 구조는 YOLOv3 논문 혹은 다른 양질의 자료들을 확인하�
 기존 YOLO v3의 sum of the squared error loss는 학습 과정에서 noisy한 bounding box에 대해 아무런 penalty를 줄 수 없지만 재 구성한 loss function을 사용하면 학습 과정에서 noisy 한 bounding box에 대한 uncertainty를 반영하게 되면서 penalty를 부여할 수 있게 됩니다. 즉 데이터셋이 noisy하더라도 uncertainty를 이용하기 때문에 믿을 수 있는 데이터에 집중하는 효과를 얻을 수 있습니다. 또한 전반적인 정확도의 향상도 얻을 수 있게 됩니다. 
 
 ## Utilization of localization uncertainty
-마지막으로 제안하는 방법은 Detection Criterion에 localization uncertainty를 적용하는 방법입니다. 예측한 bounding box 안에 어떤 물체가 있는지 계산할 때 objectness score와 class score를 곱하여 사용하는데 여기에 **(1 – uncertainty)** 를 곱해주며, 이를 통해 False Positive를 줄이고 전반적인 정확도를 향상시킬 수 있습니다. Uncertainty는 각 coordinate의 uncertainty를 평균내서 사용을 하였습니다. 
+마지막으로 제안하는 방법은 Detection Criterion에 localization uncertainty를 적용하는 방법입니다. 
+
+<figure>
+	<img src="{{ '/assets/img/object_detection_ninth/6.PNG' | prepend: site.baseurl }}" alt=""> 
+	<figcaption> [Detection Criterion using localization uncertainty] </figcaption>
+</figure> 
+
+예측한 bounding box 안에 어떤 물체가 있는지 계산할 때 objectness score와 class score를 곱하여 사용하는데 여기에 **(1 – uncertainty)** 를 곱해주며, 이를 통해 False Positive를 줄이고 전반적인 정확도를 향상시킬 수 있습니다. Uncertainty는 각 coordinate의 uncertainty를 평균내서 사용을 하였습니다. 
  
 <blockquote> 실험 결과 </blockquote>
 
 ## 실험 데이터셋 & 환경
 본 논문에서는 자율주행 환경에 적합한 KITTI 데이터셋과 BDD 데이터셋을 이용하였습니다.
+
+<figure>
+	<img src="{{ '/assets/img/object_detection_ninth/7.PNG' | prepend: site.baseurl }}" alt=""> 
+	<figcaption> [KITTI 데이터셋(좌측), BDD 데이터셋(우측) 예시] </figcaption>
+</figure> 
+
 
  KITTI 데이터셋은 car, cyclist, pedestrian 3가지 class로 구성이 되어있고 7,481장의 학습 데이터셋, 7,518장의 테스트 데이터셋으로 구성이 되어있습니다. 다만 테스트 데이터셋은 GT가 존재하지 않아서 학습 데이터셋의 절반을 검증용으로 사용하였다고 합니다.  
 
