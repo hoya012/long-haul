@@ -5,6 +5,8 @@ title: Archives
 
 <div class="post">
 	<h1 class="pageTitle"> Object Detection </h1>
+		<li><a href="https://hoya012.github.io/blog/Tutorials-of-Object-Detection-Using-Deep-Learning-GaussianYOLOv3/" target="_blank"> <b> “Tutorials of Object Detection using Deep Learning [9] Gaussian YOLOv3: An Accurate and Fast Object Detector Using Localization Uncertainty for Autonomous Driving Review” 
+</b></a>, 19/10/11 .</li>
 		<li><a href="https://hoya012.github.io/blog/Tutorials-of-Object-Detection-Using-Deep-Learning-labeling/" target="_blank"> <b> “Tutorials of Object Detection using Deep Learning [8] Object Detection Labeling Guide”
  </b></a>, 19/01/23 .</li>
 		<li><a href="https://hoya012.github.io/blog/Tutorials-of-Object-Detection-Using-Deep-Learning-performance-three/" target="_blank"> <b> “Tutorials of Object Detection using Deep Learning [7] Object Detection 최신 논문 Review”
