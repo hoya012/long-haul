@@ -109,6 +109,6 @@ BDD 데이터셋은 bike, bus, car, motor, person, rider, traffic light, traffic
 다만 개인적으로 궁금했던 부분은 bounding box coordinate에 uncertainty를 부여하면서 얻을 수 있는 효과 중에 하나인 **noisy data에 robust 해진다는 점** 을 실험적으로도 그런 경향을 확인할 수 있는지 였습니다. 다만 이를 입증하기 위해선 noisy label을 담고 있는 자율주행용, 혹은 Object Detection 용 Public 데이터셋이 필요하기 때문에 본 논문에서는 실험을 할 수 없었겠지만, 추후에 이러한 데이터셋이 나온다면 적용해서 실험 결과를 살펴보는 것도 재미있을 것 같습니다.
 
 <blockquote> 결론 </blockquote>
-이번 포스팅에서는 ICCV 2019에 accpet된 논문인 ““Gaussian YOLOv3: An Accurate and Fast Object Detector Using Localization Uncertainty for Autonomous Driving” 논문을 리뷰해보았습니다. 자율주행을 타겟으로 실시간 동작을 하면서 동시에 자율주행에 치명적인 결과를 초래할 수 있는 False Positive를 효과적으로 줄이는 방법을 제안하였으며, 대표적인 자율주행 데이터셋에 대해 높은 성능을 보여주고 있음을 확인할 수 있었습니다. 
+이번 포스팅에서는 ICCV 2019에 accept된 논문인 ““Gaussian YOLOv3: An Accurate and Fast Object Detector Using Localization Uncertainty for Autonomous Driving” 논문을 리뷰해보았습니다. 자율주행을 타겟으로 실시간 동작을 하면서 동시에 자율주행에 치명적인 결과를 초래할 수 있는 False Positive를 효과적으로 줄이는 방법을 제안하였으며, 대표적인 자율주행 데이터셋에 대해 높은 성능을 보여주고 있음을 확인할 수 있었습니다. 
 다음 번에도 재미있는 논문 리뷰 글로 찾아 뵙도록 하겠습니다. 감사합니다!
 
