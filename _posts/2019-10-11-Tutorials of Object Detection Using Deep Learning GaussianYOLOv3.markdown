@@ -16,6 +16,10 @@ comments: true
 <a href="https://hoya012.github.io/blog/Tutorials-of-Object-Detection-Using-Deep-Learning-the-application-of-object-detection/" target="_blank"><b> “Tutorials of Object Detection using Deep Learning [3] The application of Object Detection” </b></a> 
 에서 설명 드렸듯이 자율 주행에서 사용하기 위해선 Object Detection 모델은 실시간 동작이 가능해야하면서 동시에 정확도도 높아야 하는 어려움이 있습니다. 이러한 점에 주목하여 어떻게 연구를 수행했는지 설명을 드리도록 하겠습니다.
 
+추가로, 얼마전 저자가 공식 코드를 공개하였습니다. YOLOv3 코드를 기반으로 작성하여 c 코드 기반이며 코드는 
+<a href="https://github.com/jwchoi384/Gaussian_YOLOv3" target="_blank"><b> 해당 링크 </b></a> 
+에서 확인하실 수 있습니다!
+
 <blockquote> Introduction </blockquote>
 딥러닝을 이용한 Object Detection 논문들을 정리한 
 <a href="https://github.com/hoya012/deep_learning_object_detection" target="_blank"><b> 제 github repository </b></a> 
