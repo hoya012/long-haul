@@ -17,8 +17,9 @@ comments: true
            <figcaption> [SinGAN을 이용한 여러 image manipulation 사례] </figcaption> 
 </figure> 
  
-위의 그림은 논문에서 제시하고 있는 여러 Image manipulation 의 결과 예시이며 Single Natural Image로 GAN을 학습시켰음에도 불구하고 굉장히 다양한 응용 사례가 존재하며, 결과도 매우 realistic한 것을 확인할 수 있습니다. 혹시 시간이 되시는 분들은  
-<a href="https://www.youtube.com/watch?v=-f8sz8AExdc" target="_blank"><b> “SinGAN: Learning a Generative Model from a Single Natural Image” 발표 영상 </b></a> 
+위의 그림은 논문에서 제시하고 있는 여러 Image manipulation 의 결과 예시이며 Single Natural Image로 GAN을 학습시켰음에도 불구하고 굉장히 다양한 응용 사례가 존재하며, 결과도 매우 realistic한 것을 확인할 수 있습니다. 
+
+혹시 시간이 되시는 분들은 <a href="https://www.youtube.com/watch?v=-f8sz8AExdc" target="_blank"><b> “SinGAN: Learning a Generative Model from a Single Natural Image” 발표 영상 </b></a> 
 도 보시는 것을 추천 드립니다. 시간이 없으신 분들은 3분 35초 정도까지의 결과 데모 정도만 보시는 것도 좋습니다!  
  
 이제 이 논문에 대해 소개를 드리도록 하겠습니다.  
@@ -35,7 +36,11 @@ GAN에 대해선 자세히 설명을 드리지 않아도 다들 많이 들어보
  
 이러한 질문을 가지고 접근한 논문은 오늘 소개드릴 **SinGAN** 외에도 한 편이 더 있습니다.  (이 논문도 ICCV 2019에서 발표가 되었습니다!)
  
-  
+<figure> 
+           <img src="{{ '/assets/img/iccv_review/19.PNG' | prepend: site.baseurl }}" alt="">  
+           <figcaption> [InGAN architecture] </figcaption> 
+</figure> 
+
 <a href="http://www.wisdom.weizmann.ac.il/~vision/ingan/resources/ingan.pdf" target="_blank"><b> “InGAN: Capturing and Remapping the “DNA” of a Natural Image, 2019 ICCV”  </b></a> 
 논문도 한장의 Natural Image로 부터 여러 image를 생성하는 연구를 수행하였지만 위에 말씀드린 것처럼 input image에 conditional한 방식을 사용하고 있습니다. 즉 image에서 image로 mapping하는 방식을 사용하고 있는 반면, 본 논문은 unconditional하게, 즉 noise로부터 image를 생성하는 방식을 사용하고 있습니다.  
  
@@ -62,7 +67,7 @@ SinGAN의 목표는 single training image의 내부 통계치(distribution)을 �
  
 그림에서 x0 는 training image 이고, 아래로 한 단계씩 내려갈수록 r 배(r>1)씩 downsampling 되는 방식입니다. 각 단계마다 Generator는 noise와 이전 단계에서 생성된 결과 image를 input으로 하여 image를 생성하고, 그 단계의 Discriminator는 downsampling된 GT와 생성된 image를 구분하도록 학습이 됩니다. 예외로 제일 첫 단계(맨 밑)에서는 noise만 이용하여 image를 생성합니다. 글보다는 그림을 보시는 것이 이해가 잘 되실 것 같습니다...
  
-앞 단계에서는 downsampling된 GT를 생성하도록 학습을 하다보니 coarse한, global한 특징에 집중을 하여 생성을 하게 되고, 위로 갈수록 fine한 영역에 집중하여 생성을 하게 됩니다. Generator 구조가 kernel 수만 다르고 연산자들은 같다 보니 동일한 receptive field를 갖게 되고, 생성하는 image의 크기만 다르다 보니 그림의 맨 오른쪽 부분처럼 *Effective Patch Size** 가 달라지면서 coarse-to-fine 하게 학습이 된다고 이해하시면 될 것 같습니다. 
+앞 단계에서는 downsampling된 GT를 생성하도록 학습을 하다보니 coarse한, global한 특징에 집중을 하여 생성을 하게 되고, 위로 갈수록 fine한 영역에 집중하여 생성을 하게 됩니다. Generator 구조가 kernel 수만 다르고 연산자들은 같다 보니 동일한 receptive field를 갖게 되고, 생성하는 image의 크기만 다르다 보니 그림의 맨 오른쪽 부분처럼 **Effective Patch Size** 가 달라지면서 coarse-to-fine 하게 학습이 된다고 이해하시면 될 것 같습니다. 
  
 참고로 각 Generator는 너무 capacity를 크게 가져가면 training image 자체를 외울 수 있기 때문에 적은 capacity를 갖도록 설계를 하였다고 합니다. 구조는 3x3 Conv-BatchNorm-LeakyReLU 를 5번 반복한 간단한 Fully-Convolutional 구조이고, 제일 coarse한 Generator는 32개의 kernel을 사용하였고, 4개의 scale이 오를때 마다 kernel 개수를 2배로 해주었다고 합니다. 또한 아래 그림과 같은 residual 구조를 이용하여 이미지를 생성하였습니다.
 
@@ -123,7 +128,7 @@ N scale에서 inference를 하는 것은 noise로부터 생성을 하는 것을 
            <figcaption> [AMT perceptual study 결과] </figcaption> 
 </figure> 
 
-Scale N 일 때 unpaired의 경우 약 43%의 confusion 정도를 보이지만 Scale N-1 일 때에는 거의 47%의 confusion을 보이는 것을 확인할 수 있습니다. 이상적인 경우는 50%의 confusion 보이는 것을 감안하면 굉장히 그럴싸하게 생성을 하고 있음을 알 수 있습니다.
+Scale N 일 때 unpaired의 경우 약 43%의 confusion 정도를 보이지만 Scale N-1 일 때에는 거의 47%의 confusion을 보이는 것을 확인할 수 있습니다. 이상적인 경우는 50%의 confusion 보이는 것을 감안하면 그럴싸하게 생성을 하고 있어서 사람이 보기에도 굉장히 헷갈리고 있다는 것을 확인할 수 있습니다.
 
 <blockquote> Applications </blockquote> 
 마지막으로 다룰 부분은, 이 연구의 꽃이라고 부를 수 있는 여러 응용 사례입니다. 단순히 하나의 image로 학습을 시켜서 이 image와 비슷한 image들을 여러 개 생성하는 결과만 보였다면 큰 흥미를 느끼지 못했을 것입니다. 이러한 점을 저자도 고려했는지 무려 5가지의 Application을 보여주고 있습니다. 아마 이 글의 앞부분 소개 드린 데모 동영상을 보셨다면 쉽게 이해하실 수 있을 것이라 생각합니다. 
