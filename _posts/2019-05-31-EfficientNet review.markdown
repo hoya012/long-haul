@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  “EfficientNet | Rethinking Model Scaling for Convolutional Neural Networks 리뷰”
+title:  “EfficientNet： Rethinking Model Scaling for Convolutional Neural Networks 리뷰”
 date:   2019-05-31
-description: ICML 2019에 제출된 “EfficientNet | Rethinking Model Scaling for Convolutional Neural Networks” 논문에 대한 리뷰를 수행하였습니다.
+description: ICML 2019에 제출된 “EfficientNet： Rethinking Model Scaling for Convolutional Neural Networks” 논문에 대한 리뷰를 수행하였습니다.
 comments: true
 ---
 
