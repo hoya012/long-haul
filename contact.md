@@ -40,8 +40,8 @@ title: Archives
 	<h1 class="pageTitle">  </h1>
 	<h1 class="pageTitle">  </h1>
 	<h1 class="pageTitle"> Conference </h1>
-		<li><a href="https://hoya012.github.io/blog/ICCV-2019-paper-preview/" target="_blank"> <b> “ICCV 2019 Review [2] Best Paper SinGAN： Learning a Generative Model from a Single Natural Image 리뷰” </b></a>, 19/11/03 .</li>
-		<li><a href="https://hoya012.github.io/blog/ICCV-2019-paper-preview/" target="_blank"> <b> “ICCV 2019 Review [1] 참석 후기 및 프로그램 소개” </b></a>, 19/11/03 .</li>
+		<li><a href="https://hoya012.github.io/blog/ICCV-2019_review_2/" target="_blank"> <b> “ICCV 2019 Review [2] Best Paper SinGAN： Learning a Generative Model from a Single Natural Image 리뷰” </b></a>, 19/11/03 .</li>
+		<li><a href="https://hoya012.github.io/blog/ICCV-2019_review_1/" target="_blank"> <b> “ICCV 2019 Review [1] 참석 후기 및 프로그램 소개” </b></a>, 19/11/03 .</li>
 		<li><a href="https://hoya012.github.io/blog/ICCV-2019-paper-preview/" target="_blank"> <b> “ICCV 2019 paper preview” </b></a>, 19/10/01 .</li>
 		<li><a href="https://hoya012.github.io/blog/ICLR-2019-best-paper-review/" target="_blank"> <b> “ICLR 2019 참석 후기 및 단순하고 효과적인 Network Pruning 방법론을 다룬 Best Paper 리뷰” </b></a>, 19/05/23 .</li>
 		<li><a href="https://hoya012.github.io/blog/CVPR-2019-overview/" target="_blank"> <b> “CVPR 2019 Overview” </b></a>, 19/04/19 .</li>
