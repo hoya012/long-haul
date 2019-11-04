@@ -16,7 +16,7 @@ comments: true
 -	<a href="https://hoya012.github.io/blog/ICLR-2019-best-paper-review/" target="_blank"><b> ICLR 2019 참석 후기 </b></a> 
 
 또한 ICCV 2019가 시작하기에 앞서 학회에 제출된 논문들을 분석하여 시각화하고, 주요 논문들을 간단하게 리뷰한 글은 다음과 같습니다.
--	<a href="https://hoya012.github.io/blog/ICCV-2019-paper-preview/" target="_blank"><b> ICLR 2019 paper preview </b></a> 
+-	<a href="https://hoya012.github.io/blog/ICCV-2019-paper-preview/" target="_blank"><b> ICCV 2019 paper preview </b></a> 
 
 
 
