@@ -2,7 +2,7 @@
 layout: post
 title:  “Self-training with Noisy Student improves ImageNet classification 논문 Review”
 date:   2019-11-14
-description: “Self-training with Noisy Student improves ImageNet classification” 논문에 대한 리뷰를 수행하였습니다.
+description: ImageNet 데이터셋에 대해 State-of-the-art를 갱신하여 화제가 된 “Self-training with Noisy Student improves ImageNet classification” 논문에 대한 리뷰를 수행하였습니다.
 comments: true
 ---
 
@@ -10,7 +10,7 @@ comments: true
  <a href="https://arxiv.org/pdf/1911.04252.pdf" target="_blank"><b> “Self-training with Noisy Student improves ImageNet classification” </b></a> 
 논문에 대한 리뷰를 수행하려 합니다. 이 논문은 제가 전에 리뷰했었던 
 <a href="https://hoya012.github.io/blog/EfficientNet-review/" target="_blank"><b> EfficientNet </b></a>
-논문을 기반으로 ImageNet 데이터셋에 대해 또 한 번 State-of-the-art를 갱신하며 주목을 받을 것으로 기대 중인 논문입니다! 이번에도 논문을 소개 드리기 앞서 실험 결과를 먼저 보여드리고 시작하겠습니다.
+논문을 기반으로 ImageNet 데이터셋에 대해 또 한 번 State-of-the-art(SOTA)를 갱신하며 주목을 받을 것으로 기대 중인 논문입니다! 이번에도 논문을 소개 드리기 앞서 실험 결과를 먼저 보여드리고 시작하겠습니다.
 
 <figure>
 	<img src="{{ '/assets/img/noisy_student/1.PNG' | prepend: site.baseurl }}" alt=""> 
