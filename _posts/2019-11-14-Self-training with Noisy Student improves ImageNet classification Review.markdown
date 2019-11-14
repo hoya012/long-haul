@@ -63,7 +63,9 @@ Teacher – Student 구조를 보면 Knowledge Distillation를 떠올릴 수 있
 등 Random한 학습 기법들을 사용하였고, 이러한 기법들을 Noise라 부르고 있습니다. 각각에 대한 방법론이 궁금하신 분들은 방법론을 누르시면 논문이 연결되니 참고하시면 좋을 것 같습니다.
 
 ### Fix train-test resolution discrepancy
-또한 최근 좋은 성능을 보였던 **fix train-test resolution discrepancy** 방법론 또한 적용을 하였습니다. 우선 첫 350 epoch 동안은 작은 resolution으로 학습을 시킨 뒤, 1.5 epoch 동안 unaugmented labeled images에 대해 큰 resolution으로 fine-tuning을 시키는 방법을 의미합니다. 해당 방법론을 제안한 논문과 유사하게, fine-tuning 동안은 shallow layer를 freeze시켜서 실험을 하였다고 합니다. 
+또한 최근 좋은 성능을 보였던 
+<a href="https://arxiv.org/pdf/1906.06423.pdf" target="_blank"><b> “fix train-test resolution discrepancy” </b></a> 
+방법론 또한 적용을 하였습니다. 우선 첫 350 epoch 동안은 작은 resolution으로 학습을 시킨 뒤, 1.5 epoch 동안 unaugmented labeled images에 대해 큰 resolution으로 fine-tuning을 시키는 방법을 의미합니다. 해당 방법론을 제안한 논문과 유사하게, fine-tuning 동안은 shallow layer를 freeze시켜서 실험을 하였다고 합니다. 
 
 ### Iterative Training
 마지막으로, 아까 보여드렸던 그림의 4번인 **Iterative training** 방식은 반복적으로 새로운 pseudo label을 만들고, 이를 이용하여 Student Model을 학습시키는 것을 의미합니다. 이 과정에서 약간의 트릭이 들어갑니다. 
