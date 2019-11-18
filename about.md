@@ -22,6 +22,7 @@ title: About me
 		<li> <a href="https://github.com/hoya012/pytorch-MobileNet" target="_blank"> https://github.com/hoya012/pytorch-MobileNet </a></li>
 		<li> <a href="https://github.com/hoya012/pytorch-partial-conv-based-padding" target="_blank"> https://github.com/hoya012/pytorch-partial-conv-based-padding </a></li>
 	<h1 class="pageTitle">Slides </h1>
+		<li> <a href="https://www.slideshare.net/HoseongLee6/unsupervised-visual-representation-learning-overview-toward-selfsupervision-194443768" target="_blank"> "Unsupervised visual representation learning overview: Toward Self-Supervision" </a></li>
 		<li> <a href="https://www.slideshare.net/HoseongLee6/human-uncertainty-makes-classification-more-robust-iccv-2019-review" target="_blank"> "Human uncertainty makes classification more robust, ICCV 2019 Review" </a></li>
 		<li> <a href="https://www.slideshare.net/HoseongLee6/single-image-super-resolution-overview" target="_blank"> "Single Image Super Resolution Overview" </a></li>
 		<li> <a href="https://www.slideshare.net/HoseongLee6/2019-iclr-best-paper-review-147216667" target="_blank"> "2019 ICLR Best Paper "The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks" Review"</a></li>
@@ -35,6 +36,8 @@ title: About me
 		<li> <a href="https://www.slideshare.net/HoseongLee6/learning-transferable-architectures-for-scalable-image-recognition-paper-review" target="_blank"> "Learning transferable architectures for scalable image recognition, 2018 CVPR" Paper Review</a></li>
 		<li> <a href="https://www.slideshare.net/HoseongLee6/searching-for-activation-functions-paper-review" target="_blank"> "Searching for Activation Functions, 2018 ICLR" Paper Review</a></li>
 		<li> <a href="https://www.slideshare.net/HoseongLee6/google-vizier-a-service-for-blackbox-optimization-paper-review" target="_blank"> "Google Vizier: A Service for Black-Box Optimization, 2017 KDD" Paper Review</a></li>
+	<h1 class="pageTitle">Presentation </h1>
+		<li> <a href="https://www.youtube.com/watch?v=eDDHsbMgOJQ&feature=youtu.be&fbclid=IwAR2TJ7dLDc9tCCbw8eJn6rJWqMCoQCHTj8hxFBo71z8wQ8sgAw3bnuyhRjY" target="_blank"> <b> PR-208: Unsupervised Visual Representation Learning Overview:Toward Self-Supervision </b> </a> </li>
 	<h1 class="pageTitle">Teaching Experience </h1>
 		<li> Lecturer of <a href="https://www.fastcampus.co.kr/data_workshop_obj/" target="_blank"> <b>Object Detection Workshop</b>, </a> in FastCampus, 2018.10 ~ 2019.5 </li>
 		<li> TA of <b> Digital System Design and Experiments(디지털 시스템 설계 및 실습) </b>, in SNUECE(서울대학교 전기정보공학부), 2017.9 ~ 2017.12 </li>
