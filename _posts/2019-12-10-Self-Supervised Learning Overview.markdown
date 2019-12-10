@@ -12,6 +12,12 @@ comments: true
 
 전설의 얀 르쿤 교수가 집중을 하고 있는 분야이기도 하고, 실제로 학계에서도 요즘 굉장히 많은 주목을 받고 있는 Self-Supervised Learning이 무엇인지 설명 드리기 위해 대표적인 논문을 시간 순서로 간략하게 정리를 하면서 설명을 드릴 예정입니다. 
 
+또한, 같은 내용을 PR-12에서 발표한 영상 자료도 필요하신 분들은 참고하셔도 좋을 것 같습니다. 아래의 내용을 발표자료를 통해 발표한 25분 내외의 동영상입니다.
+
+-	<a href="https://www.youtube.com/watch?v=eDDHsbMgOJQ" target="_blank"><b> PR-208: Unsupervised Visual Representation Learning Overview:Toward Self-Supervision </b></a>
+-	<a href="https://www.slideshare.net/HoseongLee6/unsupervised-visual-representation-learning-overview-toward-selfsupervision-194443768" target="_blank"><b> 발표 자료 </b></a>
+
+
 <blockquote> Self-Supervised Learning 이란? </blockquote>  
 딥러닝 모델을 학습시키기 위해 여러가지 요소를 고려해야 하지만, 제 개인적으론 가장 중요한 것은 양질의 데이터라고 생각합니다. 최근에는 학계에서 주로 사용하던 ImageNet을 넘어서 수천만장 규모의 데이터셋들이 공개가 되고 있고 자유롭게 저작권이 없는 Image들을 크롤링하여 자체적으로 데이터셋을 제작하여 사용하기도 합니다. 
 
