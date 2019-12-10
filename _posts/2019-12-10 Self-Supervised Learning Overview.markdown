@@ -14,7 +14,11 @@ comments: true
 
 <blockquote> Self-Supervised Learning 이란? </blockquote>  
 딥러닝 모델을 학습시키기 위해 여러가지 요소를 고려해야 하지만, 제 개인적으론 가장 중요한 것은 양질의 데이터라고 생각합니다. 최근에는 학계에서 주로 사용하던 ImageNet을 넘어서 수천만장 규모의 데이터셋들이 공개가 되고 있고 자유롭게 저작권이 없는 Image들을 크롤링하여 자체적으로 데이터셋을 제작하여 사용하기도 합니다. 
+
+
 Supervised Learning(지도 학습)은 2010년대에 접어들면서 굉장히 높은 성능을 달성하였지만 그러한 성능을 달성하기 위해선 무수히 많은 양의 데이터가 필요하고, 데이터를 사용하기 위해선 각 샘플마다 labeling을 해주어야 하는 점이 많은 시간과 비용을 필요로 하게 됩니다. 
+
+
 이러한 단점들을 해결하기 위해 여러가지 연구 주제들이 나오고, 활발하게 연구가 진행이 되고 있습니다. 유사한 task에서 학습된 network의 weight를 가져와서 target task에 적용하는 Transfer Learning, Domain Adaptation 사례와, 가지고 있는 데이터셋 중에 일부만 labeling을 하여 학습을 시키는 Semi-Supervised Learning 사례, 주로 Segmentation에서 기존의 label (segmentation mask) 보다 적은 비용으로 얻은 label (class, point, scribble, bounding box 등)을 이용하여 학습을 시키는 Weakly-Supervised Learning 등이 있습니다. 이 외에 아예 label을 이용하지 않는 Unsupervised Learning이 있고, 쉽게 유추하실 수 있듯이 가장 성능을 내기 어려운 분야입니다.
 
 이러한 Unsupervised Learning 중에 한 분야에 속하는 연구 주제가 바로 **Self-Supervised Learning** 입니다. 이름에서 유추할 수 있듯이 Supervision을 스스로 준다는 것을 의미하며, Unsupervised Learning 방식을 따라서 데이터셋은 오로지 레이블이 존재하지 않는(Unlabeled) 데이터만 사용을 합니다. 이때 사용되는 데이터는 image가 될 수도 있고, text, speech, video 등 다양한 종류의 데이터가 될 수 있습니다. 
