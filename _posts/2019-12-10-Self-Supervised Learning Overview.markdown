@@ -212,7 +212,7 @@ Random, Random rescaled 결과는 말 그대로 random weight로부터 학습을
 대부분의 Self-Supervised 방식이 논문이 발표된 시간 순으로 성능이 좋아지는 것을 확인할 수 있고, Rotation을 사용하였을 때의 결과는 Classification이나 Segmentation에서는 다소 낮은 성능을 보였지만 Object Detection에서는 거의 근소한 차이의 성능을 달성할 수 있음을 보여주고 있습니다. 실제로 Object Detection에서 ImageNet pretraining이 과연 최선의 방법인가? 라는 식의 논문들을 뒷받침해줄 수 있는 결과라고 생각이 됩니다. 
 
 ### Self-Supervised Learning을 의미 있게 사용하려면?
-Network를 학습시킬 때 default로 ImageNet pretraining을 하는 경우가 대부분입니다. 하지만Natural Image가 아닌 다른 Domain (ex, Depth image, CT, MRI 등 의료 image 등)에 대해 학습을 해야 하는 경우를 가정하면, 해당 Domain에서 ImageNet 역할을 해줄 대량의 데이터셋을 구축하기 위해선 Labeling을 하여야 하고 이 과정에서 많은 돈과 시간이 소요가 될 수 있습니다. 
+Network를 학습시킬 때 default로 ImageNet pretraining을 하는 경우가 대부분입니다. 하지만 Natural Image가 아닌 다른 Domain (ex, Depth image, CT, MRI 등 의료 image 등)에 대해 학습을 해야 하는 경우를 가정하면, 해당 Domain에서 ImageNet 역할을 해줄 대량의 데이터셋을 구축하기 위해선 Labeling을 해야 하고 이 과정에서 많은 돈과 시간이 소요가 될 수 있습니다. 
 
 하지만 Self-Supervised Learning을 이용한다면 오로지 많은 수의 Image만 있으면 Network를 pretraining 시킬 수 있기 때문에 **Natural Image가 아닌 Domain** 에서 **ImageNet과 같이 pretraining 시킬 데이터셋이 없다면, 혹은 Image는 많은데 Label이 없다면**, Self-Supervised Learning이 좋은 대안이 될 수 있을 것이라 생각합니다. 
 
