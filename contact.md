@@ -60,4 +60,8 @@ title: Archives
 		<li><a href="https://hoya012.github.io/blog/Self-Supervised-Learning-Overview/" target="_blank"> <b> “Unsupervised Visual Representation Learning Overview: Toward Self-Supervision” </b></a>, 19/12/10 .</li>
 		<li><a href="https://hoya012.github.io/blog/SIngle-Image-Super-Resolution-Overview/" target="_blank"> <b> “Single Image Super Resolution using Deep Learning Overview” </b></a>, 19/07/26 .</li>
 		<li><a href="https://hoya012.github.io/blog/Fast-Style-Transfer-Tutorial/" target="_blank"> <b> “Fast Style Transfer PyTorch Tutorial” </b></a>, 19/03/05 .</li>
+	<h1 class="pageTitle">  </h1>
+	<h1 class="pageTitle">  </h1>
+	<h1 class="pageTitle"> No Research..! </h1>
+		<li><a href="https://hoya012.github.io/blog/hoya012-2019-review/" target="_blank"> <b> “hoya012 Research Blog 2019년을 마치며!” </b></a>, 19/12/13 .</li>
 </div>
