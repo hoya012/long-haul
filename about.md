@@ -55,7 +55,7 @@ title: About me
 		<li>Donghyeon Lee, <b>Ho Seong Lee</b>, Hyun Kim, Jin-Sung Kim, and Hyuk-Jae Lee, “An Evenly Distributed Points based Hand Tracking Method,” International Technical Conference on Circuits/Systems, Computers and Communications, July. 2017</li>
 		<li> <b>이호성</b>, 이동현, 김진성, 이혁재, "Markov Model 기반 손 제스처 인식 알고리즘", SoC 학술대회, May, 2017</li>
 	<h1 class="pageTitle">Contact Me</h1>
-	    <p>If you have questions about the post, feel free to <a href="mailto:lee.hoseong@sualab.com">email me</a> or create an issue on <a href="https://github.com/hoya012">GitHub</a>. Enjoy!</p>	
+	    <p>If you have questions about the post, feel free to <a href="mailto:Hoseong.Lee@cognex.com">email me</a> or create an issue on <a href="https://github.com/hoya012">GitHub</a>. Enjoy!</p>	
 	<form action="http://formspree.io/your@mail.com" method="POST">
 		<label for="email">Email Address</label>	
 		<input type="email" id="email" name="_replyto" class="full-width"><br>	
