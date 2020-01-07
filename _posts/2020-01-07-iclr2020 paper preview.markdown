@@ -8,11 +8,10 @@ comments: true
 ---
 
 안녕하세요, 이번 포스팅에서는 2020년 4월 26일 ~ 30일 에티오피아 아디스아바바에서 열리는 
-<a href="https://iclr.cc/" target="_blank"><b> ICLR 2020 </b></a> 학회에 accept된 687편의 논문들 중 제 관심사인 이미지 인식과 관련이 있는 21편의 논문을 추려서 간단하게 요약하여 설명을 하는 글을 작성할 예정입니다. 제 블로그의 주요 학회 Preview 글은 이번이 6번째를 맞이하게 되었습니다!
+<a href="https://iclr.cc/" target="_blank"><b> ICLR 2020 </b></a> 학회에 accept된 687편의 논문들 중 제 관심사인 이미지 인식과 관련이 있는 21편의 논문을 추려서 간단하게 요약하여 설명을 하는 글을 작성할 예정입니다. 제 블로그의 주요 학회 Preview 글은 이번이 5번째를 맞이하게 되었습니다!
 
 이전 글들은 다음과 같습니다. 
 
-- <a href="https://hoya012.github.io/blog/SIGGRAPH-2018-review-2/" target="_blank"><b> SIGGRAPH 2018  </b></a> 
 - <a href="https://hoya012.github.io/blog/NIPS-image-recognition-paper-guide/" target="_blank"><b> NeurIPS 2018  </b></a> 
 - <a href="https://hoya012.github.io/blog/ICLR-image-recognition-paper-guide/" target="_blank"><b> ICLR 2019  </b></a> 
 - <a href="https://hoya012.github.io/blog/CVPR-2019-overview/" target="_blank"><b> CVPR 2019  </b></a> 
