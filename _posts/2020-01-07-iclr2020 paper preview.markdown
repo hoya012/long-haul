@@ -205,7 +205,9 @@ Repository를 참고하여 ICLR 2020에 제출된 논문들의 통계 자료를 
 - rating: 6 / 8 / 6, avg 6.67
 - Unsupervised Image-to-image Translation 연구이며 두 domain 간 변환을 할 때 차이가 나는 영역에 집중하여 변환을 하기 위한 Attention module을 이용하였음.
 - 변환을 할 때 데이터셋에 따라서 얼만큼 바꿔줄지를 network가 스스로 학습할 수 있게 도와주는 **AdaLIN(Adaptive Layer-Instance Normalization)** 기법을 제안하였으며 고정된 network architecture, hyper-parameter 환경에서 기존 모델들 대비 우수한 성능을 보임. 
+- <a href="https://github.com/taki0112/UGATIT" target="_blank"><b> Official Code(TensorFlow) </b></a> 
 - <a href="https://github.com/znxlwm/UGATIT-pytorch" target="_blank"><b> Official Code(Pytorch) </b></a> 
+
 <figure>
 	<img src="{{ '/assets/img/iclr2020_preview/20.PNG' | prepend: site.baseurl }}" alt=""> 
 	<figcaption> [U-GAT-IT architecture] </figcaption>
