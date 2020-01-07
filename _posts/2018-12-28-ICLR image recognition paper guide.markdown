@@ -294,7 +294,7 @@ comments: true
 	<figcaption> [본 논문의 성능 예시] </figcaption>
 </figure> 
 
-###  <a href="https://openreview.net/pdf?id=ryggIs0cYQ" target="_blank"><b>  (Poster) 27. Differentiable Learning-to-Normalize via Switchable Normalization </b></a>  
+###  <a href="https://openreview.net/pdf?id=ryggIs0cYQ" target="_blank"><b>  27. Differentiable Learning-to-Normalize via Switchable Normalization (Poster)</b></a>  
 - Rating: 7 / 7 / 7 , avg. 7.00
 - Learning-to-normalize 방식인 **Switchable normalization(SN)** 기법을 다룬 논문. SN은 channel, layer, minibatch 총 3개의 scope에서 mean과 variance를 계산하며, 다양한 network에 쉽게 적용이 가능한 장점이 있음. 또한 다양한 batch size(e.g. 2)에 대해서도 robust하게 동작하며 Group Normalization과 다르게 hyper-parameter에 sensitive하지 않은 장점이 있음. 
 
