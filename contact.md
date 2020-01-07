@@ -42,10 +42,11 @@ title: Archives
 	<h1 class="pageTitle">  </h1>
 	<h1 class="pageTitle">  </h1>
 	<h1 class="pageTitle"> Conference Preview </h1>
+		<li><a href="https://hoya012.github.io/blog/iclr2020-paper-preview/" target="_blank"> <b> “ICLR 2020 image recognition paper preview” </b></a>, 20/01/07 .</li>
 		<li><a href="https://hoya012.github.io/blog/ICCV-2019-paper-preview/" target="_blank"> <b> “ICCV 2019 paper preview” </b></a>, 19/10/01 .</li>
-		<li><a href="https://hoya012.github.io/blog/CVPR-2019-overview/" target="_blank"> <b> “CVPR 2019 Overview” </b></a>, 19/04/19 .</li>
-		<li><a href="https://hoya012.github.io/blog/ICLR-image-recognition-paper-guide/" target="_blank"> <b> “ICLR 2019 image recognition paper list guide” </b></a>, 18/12/28 .</li>
-		<li><a href="https://hoya012.github.io/blog/NIPS-image-recognition-paper-guide/" target="_blank"> <b> “NeurIPS 2018 image recognition paper list guide” </b></a>, 18/12/06 .</li>
+		<li><a href="https://hoya012.github.io/blog/CVPR-2019-overview/" target="_blank"> <b> “CVPR 2019 paper preview” </b></a>, 19/04/19 .</li>
+		<li><a href="https://hoya012.github.io/blog/ICLR-image-recognition-paper-guide/" target="_blank"> <b> “ICLR 2019 image recognition paper preview” </b></a>, 18/12/28 .</li>
+		<li><a href="https://hoya012.github.io/blog/NIPS-image-recognition-paper-guide/" target="_blank"> <b> “NeurIPS 2018 image recognition paper preview” </b></a>, 18/12/06 .</li>
 	<h1 class="pageTitle">  </h1>
 	<h1 class="pageTitle"> Conference Review </h1>
 		<li><a href="https://hoya012.github.io/blog/ICCV-2019_review_2/" target="_blank"> <b> “ICCV 2019 Review [2] Best Paper SinGAN： Learning a Generative Model from a Single Natural Image 리뷰” </b></a>, 19/11/03 .</li>
