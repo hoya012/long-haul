@@ -10,6 +10,7 @@ title: About me
   		<li>In 2018, he joined the <a href="http://sualab.com/" target="_blank"> <b>SUALAB.</b></a>,Seoul, Korea, as a Machine Learning Engineer.</li>
   		<li>His research interests include algorithm and architecture for image recognition, image processing using deep learning.</li>
 	<h1 class="pageTitle"> Repository </h1>
+		<li> <a href="https://github.com/hoya012/AAAI-2020-Paper-Statistics" target="_blank"> https://github.com/hoya012/AAAI-2020-Paper-Statistics </a></li>
 		<li> <a href="https://github.com/hoya012/NeurIPS-2019-Paper-Statistics" target="_blank"> https://github.com/hoya012/NeurIPS-2019-Paper-Statistics </a></li>
 		<li> <a href="https://github.com/hoya012/ICCV-2019-Paper-Statistics" target="_blank"> https://github.com/hoya012/ICCV-2019-Paper-Statistics </a></li>
 		<li> <a href="https://github.com/hoya012/CVPR-2019-Paper-Statistics" target="_blank"> https://github.com/hoya012/CVPR-2019-Paper-Statistics </a></li>
