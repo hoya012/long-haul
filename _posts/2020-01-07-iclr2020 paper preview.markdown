@@ -76,7 +76,7 @@ Repository를 참고하여 ICLR 2020에 제출된 논문들의 통계 자료를 
 
 ###  <a href="https://openreview.net/pdf?id=SJxSDxrKDr" target="_blank"><b> 4. Adversarial Training and Provable Defenses: Bridging the Gap (Oral) </b></a>  
 - rating: 8 / 6 / 8, avg 7.33 
-- Adversarial Training은 adversarial attack에 의해 생성된 adversarial inputs을 활용하여 학습을 하는 방식을 뜻하고 대체로 강인하게 방어를 하지만 모든 attack을 버틸 수 있다는 guarantee가 부족하다. Provable Defenses은 특정 attacker에 대해 강인하게 버틸 수 있다는 guarantee가 있지만 adversarial training보다 standard accuracy가 낮은 단점이 있다. 이러한 두 가지 방식을 동시에 고려하는 학습 방법을 본 논문에서 제안하고 있다. 
+- Adversarial Training은 adversarial attack에 의해 생성된 adversarial inputs을 활용하여 학습을 하는 방식을 뜻하고 대체로 강인하게 방어를 하지만 모든 attack을 버틸 수 있다는 guarantee가 부족함. Provable Defenses은 특정 attacker에 대해 강인하게 버틸 수 있다는 guarantee가 있지만 adversarial training보다 standard accuracy가 낮은 단점이 있음. 이러한 두 가지 방식을 동시에 고려하는 학습 방법을 본 논문에서 제안함. 
 - 매 iteration마다 **verifier** 는 convex relaxation을 이용하여 network를 certify하는데 집중하고,  **adversary** 는 이 convex relaxation 안에서 실패를 유발할 수 있는 input을 찾는데 집중하도록 하는 **layerwise adversarial training** 방식을 제안하였고, CIFAR-10 데이터셋에 대해 2/255 L-infinity perturbation에 대해 우수한 성능을 보임.
 
 <figure>
