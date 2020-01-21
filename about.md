@@ -39,6 +39,7 @@ title: About me
 		<li> <a href="https://www.slideshare.net/HoseongLee6/searching-for-activation-functions-paper-review" target="_blank"> "Searching for Activation Functions, 2018 ICLR" Paper Review</a></li>
 		<li> <a href="https://www.slideshare.net/HoseongLee6/google-vizier-a-service-for-blackbox-optimization-paper-review" target="_blank"> "Google Vizier: A Service for Black-Box Optimization, 2017 KDD" Paper Review</a></li>
 	<h1 class="pageTitle">Presentation </h1>
+		<li> <a href="https://www.onoffmix.com/event/205358" target="_blank"> <b> 제 9회 투빅스 빅데이터 컨퍼런스 </b> - Invited Talk </a> </li>
 		<li> <a href="https://www.youtube.com/watch?v=eDDHsbMgOJQ&feature=youtu.be&fbclid=IwAR2TJ7dLDc9tCCbw8eJn6rJWqMCoQCHTj8hxFBo71z8wQ8sgAw3bnuyhRjY" target="_blank"> <b> PR-208: Unsupervised Visual Representation Learning Overview:Toward Self-Supervision </b> </a> </li>
 	<h1 class="pageTitle">Teaching Experience </h1>
 		<li> Lecturer of <a href="https://www.fastcampus.co.kr/data_workshop_obj/" target="_blank"> <b>Object Detection Workshop</b>, </a> in FastCampus, 2018.10 ~ 2019.5 </li>
