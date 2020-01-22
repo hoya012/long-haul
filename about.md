@@ -24,6 +24,7 @@ title: About me
 		<li> <a href="https://github.com/hoya012/pytorch-MobileNet" target="_blank"> https://github.com/hoya012/pytorch-MobileNet </a></li>
 		<li> <a href="https://github.com/hoya012/pytorch-partial-conv-based-padding" target="_blank"> https://github.com/hoya012/pytorch-partial-conv-based-padding </a></li>
 	<h1 class="pageTitle">Slides </h1>
+		<li> <a href="https://www.slideshare.net/HoseongLee6/revisiting-self-supervised-visual-representation-learning-paper-review" target="_blank"> "Revisiting self supervised visual representation learning" Paper Review </a></li>
 		<li> <a href="https://www.slideshare.net/HoseongLee6/unsupervised-visual-representation-learning-overview-toward-selfsupervision-194443768" target="_blank"> "Unsupervised visual representation learning overview: Toward Self-Supervision" </a></li>
 		<li> <a href="https://www.slideshare.net/HoseongLee6/human-uncertainty-makes-classification-more-robust-iccv-2019-review" target="_blank"> "Human uncertainty makes classification more robust, ICCV 2019 Review" </a></li>
 		<li> <a href="https://www.slideshare.net/HoseongLee6/single-image-super-resolution-overview" target="_blank"> "Single Image Super Resolution Overview" </a></li>
