@@ -15,14 +15,14 @@ Anomaly Detection은 학습 데이터 셋에 비정상적인 sample이 포함되
 -	논문 서베이 자료는 <a href="https://github.com/hoya012/awesome-anomaly-detection" target="_blank"><b> “awesome-anomaly-detection” GitHub Repository </b></a> 에서 확인하실 수 있습니다. 
 
 ### 1. 학습시 비정상 sample의 사용여부 및 label 유무에 따른 분류
-#### Supervised Anomaly Detection
+#### - Supervised Anomaly Detection
 주어진 학습 데이터 셋에 정상 sample과 비정상 sample의 Data와 Label이 모두 존재하는 경우 Supervised Learning 방식이기 때문에 Supervised Anomaly Detection이라 부릅니다. Supervised Learning 방식은 다른 방법 대비 정확도가 높은 특징이 있습니다. 그래서 높은 정확도를 요구로 하는 경우에 주로 사용되며, 비정상 sample을 다양하게 보유할수록 더 높은 성능을 달성할 수 있습니다. 
 
 하지만 Anomaly Detection이 적용되는 일반적인 산업 현장에서는 정상 sample보다 비정상 sample의 발생 빈도가 현저히 적기 때문에 **Class-Imbalance(불균형)** 문제를 자주 겪게 됩니다. 이러한 문제를 해결하기 위해 Data Augmentation(증강), Loss function 재설계, Batch Sampling 등 다양한 연구가 수행되고 있습니다. 
 -	장점: 양/불 판정 정확도가 높다.
 -	단점: 비정상 sample을 취득하는데 시간과 비용이 많이 든다. Class-Imbalance 문제를 해결해야 한다. 
 
-#### Semi-supervised (One-Class) Anomaly Detection
+#### - Semi-supervised (One-Class) Anomaly Detection
 Supervised Anomaly Detection 방식의 가장 큰 문제는 비정상 sample을 확보하는데 많은 시간과 비용이 든다는 것입니다. 제조업의 경우를 예로 들면, 수백만 장의 정상 sample이 취득되는 동안 단 1~2장의 비정상 sample이 취득되는 상황이 종종 발생합니다. 
 
 제조업에서 Supervised Learning 방식으로 학습하기 위해 각 class 당 최소 100장의 이미지가 필요하다고 가정하면, 실제로는 sample 1억 장을 모아야 100장 정도의 비정상 sample을 확보할 수 있습니다. 이런 상황에서는 데이터 셋을 확보하는데 굉장히 오랜 시간이 소요되겠죠?
@@ -40,7 +40,7 @@ Supervised Anomaly Detection 방식의 가장 큰 문제는 비정상 sample을 
 -	장점: 비교적 활발하게 연구가 진행되고 있으며, 정상 sample만 있어도 학습이 가능하다.
 -	단점: Supervised Anomaly Detection 방법론과 비교했을 때 상대적으로 양/불 판정 정확도가 떨어진다. 
 
-#### Unsupervised Anomaly Detection
+#### - Unsupervised Anomaly Detection
 위에서 설명드린 One-Class(Semi-supervised) Anomaly Detection 방식은 정상 sample이 필요합니다. 수많은 데이터 중에 어떤 것이 정상 sample 인지 알기 위해서는 반드시 정상 sample에 대한 Label을 확보하는 과정이 필요합니다. 이러한 점에 주목해, 대부분의 데이터가 정상 sample이라는 가정을 하여 Label 취득 없이 학습을 시키는 Unsupervised Anomaly Detection 방법론도 연구가 이뤄지고 있습니다. 
 
 가장 단순하게는 주어진 데이터에 대해 Principal Component Analysis(PCA, 주성분 분석)를 이용하여 차원을 축소하고 복원을 하는 과정을 통해 비정상 sample을 검출할 수 있습니다. , Neural Network 기반으로는 대표적으로 Autoencoder 기반의 방법론이 주로 사용되고 있습니다. Autoencoder는 입력을 code 혹은 latent variable로 압축하는 Encoding과, 이를 다시 원본과 가깝게 복원해내는 Decoding 과정으로 진행이 되며 이를 통해 데이터의 중요한 정보들만 압축적으로 배울 수 있다는 점에서 데이터의 주성분을 배울 수 있는 PCA와 유사한 동작을 한다고 볼 수 있습니다. 
@@ -52,7 +52,7 @@ Supervised Anomaly Detection 방식의 가장 큰 문제는 비정상 sample을 
 
 Autoencoder를 이용하면 데이터에 대한 labeling을 하지 않아도 데이터의 주성분이 되는 정상 영역의 특징들을 배울 수 있습니다. 이때, 학습된 autoencoder에 정상 sample을 넣어주면 위의 그림과 같이 잘 복원을 하므로 input과 output의 차이가 거의 발생하지 않는 반면, 비정상적인 sample을 넣으면 autoencoder는 정상 sample처럼 복원하기 때문에 input과 output의 차이를 구하는 과정에서 차이가 도드라지게 발생하므로 비정상 sample을 검출할 수 있습니다. 
 
-다만 Autoencoder의 압축 정도(= code size = latent variable의 dimension) 같은 hyper-parameter에 따라 전반적인 복원 성능이 좌우되기 때문에 양/불 판정 정확도가 Supervised Anomaly Detection에 비해 다소 불안정하다는 단점이 존재합니다. 또한 autoencoder에 넣어주는 input과 output의 차이를 어떻게 정의할 것인지(= 어떤 방식으로 difference map을 계산할지) 어느 loss function을 사용해 autoencoder를 학습시킬지 등 여러 가지 요인에 따라 성능이 크게 달라질 수 있습니다. 이렇듯 성능에 영향을 주는 요인이 많다는 약점이 존재하지만 별도의 Labeling 과정 없이 어느정도 성능을 낼 수 있다는 점에서 장단이 뚜렷한 방법론이라 할 수 있습니다. 
+다만 Autoencoder의 code size (= latent variable의 dimension) 같은 hyper-parameter에 따라 전반적인 복원 성능이 좌우되기 때문에 양/불 판정 정확도가 Supervised Anomaly Detection에 비해 다소 불안정하다는 단점이 존재합니다. 또한 autoencoder에 넣어주는 input과 output의 차이를 어떻게 정의할 것인지(= 어떤 방식으로 difference map을 계산할지) 어느 loss function을 사용해 autoencoder를 학습시킬지 등 여러 가지 요인에 따라 성능이 크게 달라질 수 있습니다. 이렇듯 성능에 영향을 주는 요인이 많다는 약점이 존재하지만 별도의 Labeling 과정 없이 어느정도 성능을 낼 수 있다는 점에서 장단이 뚜렷한 방법론이라 할 수 있습니다. 
 
 하지만 Autoencoder를 이용하여 Unsupervised Anomaly Detection을 적용하여 Defect(결함)을 Segment 하는 대표적인 논문들에서는 Unsupervised 데이터 셋이 존재하지 않아서 실험의 편의를 위해 학습에 정상 sample들만 사용하는 Semi-Supervised Learning 방식을 이용하였으나, Autoencoder를 이용한 방법론은 Unsupervised Learning 방식이며 Unsupervised 데이터 셋에도 적용할 수 있습니다. Autoencoder 기반 Unsupervised Anomaly Detection을 다룬 논문들은 다음과 같습니다.
 -	<a href="https://arxiv.org/pdf/1807.02011.pdf" target="_blank"><b> Improving Unsupervised Defect Segmentation by Applying Structural Similarity to Autoencoders </b></a>
