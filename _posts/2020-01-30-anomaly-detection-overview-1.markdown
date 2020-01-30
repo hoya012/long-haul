@@ -14,15 +14,15 @@ Anomaly Detection은 학습 데이터 셋에 비정상적인 sample이 포함되
 
 -	논문 서베이 자료는 <a href="https://github.com/hoya012/awesome-anomaly-detection" target="_blank"><b> “awesome-anomaly-detection” GitHub Repository </b></a> 에서 확인하실 수 있습니다. 
 
-## 1. 학습시 비정상 sample의 사용여부 및 label 유무에 따른 분류
-### Supervised Anomaly Detection
+### 1. 학습시 비정상 sample의 사용여부 및 label 유무에 따른 분류
+#### Supervised Anomaly Detection
 주어진 학습 데이터 셋에 정상 sample과 비정상 sample의 Data와 Label이 모두 존재하는 경우 Supervised Learning 방식이기 때문에 Supervised Anomaly Detection이라 부릅니다. Supervised Learning 방식은 다른 방법 대비 정확도가 높은 특징이 있습니다. 그래서 높은 정확도를 요구로 하는 경우에 주로 사용되며, 비정상 sample을 다양하게 보유할수록 더 높은 성능을 달성할 수 있습니다. 
 
 하지만 Anomaly Detection이 적용되는 일반적인 산업 현장에서는 정상 sample보다 비정상 sample의 발생 빈도가 현저히 적기 때문에 **Class-Imbalance(불균형)** 문제를 자주 겪게 됩니다. 이러한 문제를 해결하기 위해 Data Augmentation(증강), Loss function 재설계, Batch Sampling 등 다양한 연구가 수행되고 있습니다. 
 -	장점: 양/불 판정 정확도가 높다.
 -	단점: 비정상 sample을 취득하는데 시간과 비용이 많이 든다. Class-Imbalance 문제를 해결해야 한다. 
 
-### Semi-supervised (One-Class) Anomaly Detection
+#### Semi-supervised (One-Class) Anomaly Detection
 Supervised Anomaly Detection 방식의 가장 큰 문제는 비정상 sample을 확보하는데 많은 시간과 비용이 든다는 것입니다. 제조업의 경우를 예로 들면, 수백만 장의 정상 sample이 취득되는 동안 단 1~2장의 비정상 sample이 취득되는 상황이 종종 발생합니다. 
 
 제조업에서 Supervised Learning 방식으로 학습하기 위해 각 class 당 최소 100장의 이미지가 필요하다고 가정하면, 실제로는 sample 1억 장을 모아야 100장 정도의 비정상 sample을 확보할 수 있습니다. 이런 상황에서는 데이터 셋을 확보하는데 굉장히 오랜 시간이 소요되겠죠?
@@ -30,7 +30,7 @@ Supervised Anomaly Detection 방식의 가장 큰 문제는 비정상 sample을 
 이처럼 Class-Imbalance가 매우 심한 경우 정상 sample만 이용해서 모델을 학습하기도 하는데, 이 방식을 One-Class Classification(혹은 Semi-supervised Learning)이라 합니다. 이 방법론의 핵심 아이디어는 정상 sample들을 둘러싸는 discriminative boundary를 설정하고, 이 boundary를 최대한 좁혀 boundary 밖에 있는 sample들을 모두 비정상으로 간주하는 것입니다. <a href="http://www.jmlr.org/papers/volume2/manevitz01a/manevitz01a.pdf" target="_blank"><b> One-Class SVM </b></a>이 One-Class Classification을 사용하는 대표적인 방법론으로 잘 알려져 있으며, 이 아이디어에서 확장해 Deep Learning을 기반으로 One-Class Classification 방법론을 사용하는 <a href="http://data.bit.uni-bonn.de/publications/ICML2018.pdf" target="_blank"><b> Deep SVDD </b></a> 논문이 잘 알려져 있습니다. 
 
 <figure>
-	<img src="{{ '/assets/img/anomaly-detection-overview-1/deep_svdd.PNG’| prepend: site.baseurl }}" alt=""> 
+	<img src="{{ '/assets/img/anomaly-detection-overview-1/deep_svdd.PNG'| prepend: site.baseurl }}" alt=""> 
 	<figcaption> [Deep SVDD 방법론 모식도] </figcaption>
 </figure> 
 
@@ -40,13 +40,13 @@ Supervised Anomaly Detection 방식의 가장 큰 문제는 비정상 sample을 
 -	장점: 비교적 활발하게 연구가 진행되고 있으며, 정상 sample만 있어도 학습이 가능하다.
 -	단점: Supervised Anomaly Detection 방법론과 비교했을 때 상대적으로 양/불 판정 정확도가 떨어진다. 
 
-### Unsupervised Anomaly Detection
+#### Unsupervised Anomaly Detection
 위에서 설명드린 One-Class(Semi-supervised) Anomaly Detection 방식은 정상 sample이 필요합니다. 수많은 데이터 중에 어떤 것이 정상 sample 인지 알기 위해서는 반드시 정상 sample에 대한 Label을 확보하는 과정이 필요합니다. 이러한 점에 주목해, 대부분의 데이터가 정상 sample이라는 가정을 하여 Label 취득 없이 학습을 시키는 Unsupervised Anomaly Detection 방법론도 연구가 이뤄지고 있습니다. 
 
 가장 단순하게는 주어진 데이터에 대해 Principal Component Analysis(PCA, 주성분 분석)를 이용하여 차원을 축소하고 복원을 하는 과정을 통해 비정상 sample을 검출할 수 있습니다. , Neural Network 기반으로는 대표적으로 Autoencoder 기반의 방법론이 주로 사용되고 있습니다. Autoencoder는 입력을 code 혹은 latent variable로 압축하는 Encoding과, 이를 다시 원본과 가깝게 복원해내는 Decoding 과정으로 진행이 되며 이를 통해 데이터의 중요한 정보들만 압축적으로 배울 수 있다는 점에서 데이터의 주성분을 배울 수 있는 PCA와 유사한 동작을 한다고 볼 수 있습니다. 
 
 <figure>
-	<img src="{{ '/assets/img/anomaly-detection-overview-1/autoencoder.PNG’| prepend: site.baseurl }}" alt=""> 
+	<img src="{{ '/assets/img/anomaly-detection-overview-1/autoencoder.PNG'| prepend: site.baseurl }}" alt=""> 
 	<figcaption> [autoencoder 기반 unsupervised anomaly detection] </figcaption>
 </figure> 
 
@@ -64,13 +64,13 @@ Autoencoder를 이용하면 데이터에 대한 labeling을 하지 않아도 데
 -	장점: Labeling 과정이 필요하지 않다. 
 -	단점: 양/불 판정 정확도가 높지 않고 hyper parameter에 매우 민감하다. 
 
-## 2. 비정상 sample 정의에 따른 분류
+### 2. 비정상 sample 정의에 따른 분류
 다음은 비정상 sample의 정의에 따른 분류입니다. 이 분류는 기준이 엄밀하게 정의가 되지 않아 틀린 부분이 있을 수도 있습니다. 이 점 미리 양해 바라며 나름대로 정리한 내용을 설명하겠습니다.
 
 저는 비정상 sample을 정의하는 방식에 따라 크게 Novelty Detection과 Outlier Detection으로 구분합니다. 다만 종종 두 방법론을 합쳐서 Anomaly Detection라 부르기도 합니다. 개인적인 생각으로는 Novelty Detection과 Outlier Detection은 용어가 가지는 뉘앙스의 차이가 존재하다고 느껴서, 예시를 통해 두 용어의 차이를 설명을 드리겠습니다. 
 
 <figure>
-	<img src="{{ '/assets/img/anomaly-detection-overview-1/novelty_outlier.PNG’| prepend: site.baseurl }}" alt=""> 
+	<img src="{{ '/assets/img/anomaly-detection-overview-1/novelty_outlier.PNG'| prepend: site.baseurl }}" alt=""> 
 	<figcaption> [Anomaly Detection 용어 정리를 위한 예시] </figcaption>
 </figure> 
 
@@ -83,7 +83,7 @@ Autoencoder를 이용하면 데이터에 대한 labeling을 하지 않아도 데
 
 Novelty Detection은 지금까지 등장하지 않았지만 충분히 등장할 수 있는 sample을 찾아내는 연구, 즉 데이터가 오염이 되지 않은 상황을 가정하는 연구와 관련된 용어라고 할 수 있고, Outlier Detection은 등장할 가능성이 거의 없는, 데이터에 오염이 발생했을 가능성이 있는 sample을 찾아 내는 연구와 관련된 용어 정도로 구분하여 정리할 수 있습니다. 
 
-## 3. 정상 sample의 class 개수에 따른 분류
+### 3. 정상 sample의 class 개수에 따른 분류
 앞서 설명드린 두 가지 기준은 데이터 셋이 정상 sample이 단일 class로 구성이 되어있고, 단순 양/불 판정을 하는 경우에 대해서만 가정했지만, 실제 환경에서는 정상 sample이 여러 개의 class로 구성될 수 있습니다. 
 
 그러나 정상 sample이 Multi-Class인 상황에서도 위의 Novelty Detection, Outlier Detection 기준을 똑같이 적용할 수 있습니다. 보통 이러한 경우 정상 sample이라는 표현 대신 In-distribution sample이라는 표현을 사용합니다.  
@@ -91,7 +91,7 @@ Novelty Detection은 지금까지 등장하지 않았지만 충분히 등장할 
 In-distribution 데이터 셋에 위의 예시 그림처럼 흰색 강아지만 있는 것이 아니라, 골든 레트리버, 닥스훈트, 도베르만, 말티즈 등 4가지 종류의 강아지 sample들이 존재한다고 가정하면, 불독 sample은 Novel sample, 호랑이 sample은 Outlier sample로 간주할 수 있습니다. 
 
 <figure>
-	<img src="{{ '/assets/img/anomaly-detection-overview-1/ood_example.PNG’| prepend: site.baseurl }}" alt=""> 
+	<img src="{{ '/assets/img/anomaly-detection-overview-1/ood_example.PNG'| prepend: site.baseurl }}" alt=""> 
 	<figcaption> [Out-of-distribution sample 예시] </figcaption>
 </figure> 
 
@@ -104,7 +104,7 @@ In-distribution 데이터 셋에 위의 예시 그림처럼 흰색 강아지만 
 이렇게 총 3가지 분류 방법으로 용어를 정리하였고, 이를 한 장의 그림으로 요약하면 다음과 같습니다.
 
 <figure>
-	<img src="{{ '/assets/img/anomaly-detection-overview-1/summary.PNG’| prepend: site.baseurl }}" alt=""> 
+	<img src="{{ '/assets/img/anomaly-detection-overview-1/summary.PNG'| prepend: site.baseurl }}" alt=""> 
 	<figcaption> [Anomaly Detection 관련 3가지 용어의 분류 방법 정리] </figcaption>
 </figure> 
 
@@ -116,7 +116,7 @@ In-distribution 데이터 셋에 위의 예시 그림처럼 흰색 강아지만 
 
 
 <figure>
-	<img src="{{ '/assets/img/anomaly-detection-overview-1/applications.PNG’| prepend: site.baseurl }}" alt=""> 
+	<img src="{{ '/assets/img/anomaly-detection-overview-1/applications.PNG'| prepend: site.baseurl }}" alt=""> 
 	<figcaption> [Anomaly Detection의 적용 사례] </figcaption>
 </figure> 
 
@@ -145,22 +145,13 @@ Anomaly Detection이 적용될 수 있는 주요 사례는 다음과 같습니�
 이어지는 포스팅에서는 위에서 소개 드린 Out-of-distribution Detection이 학계에서 어떻게 연구가 되고 있는지 초창기 논문부터 최신 논문까지 논문을 리뷰하며 각각 논문들의 특징들을 요약하여 설명을 드릴 예정입니다.
 <blockquote> Reference </blockquote>
 -	<a href="https://github.com/hoya012/awesome-anomaly-detection" target="_blank"><b> “awesome-anomaly-detection” GitHub Repository </b></a>
-
 -	<a href="http://www.jmlr.org/papers/volume2/manevitz01a/manevitz01a.pdf" target="_blank"><b> Larry M. Manevitz, Malik Yousef. “One-Class SVMs for Document Classification.” Journal of Machine Learning Research, 2001. </b></a>  
-
 -	<a href="http://data.bit.uni-bonn.de/publications/ICML2018.pdf" target="_blank"><b> Lukas Ruff, et al. “Deep One-Class Classification.” In International Conference on Machine Learning (ICML), 2018. </b></a>  
-
 -	<a href="https://arxiv.org/pdf/1605.07717.pdf" target="_blank"><b> Shuangfei Zhai, et al. “Deep structured energy based models for anomaly detection.” In International Conference on Machine Learning (ICML), 2016. </b></a>  
-
 -	<a href="https://sites.cs.ucsb.edu/~bzong/doc/iclr18-dagmm.pdf" target="_blank"><b> Bo Zong, et al. “Deep autoencoding gaussian mixture model for unsupervised anomaly detection.” In International Conference on Learning Representations (ICLR), 2018</b></a>  
-
 -	<a href="https://arxiv.org/pdf/1809.04758.pdf" target="_blank"><b> Dan Li, et al. “Anomaly detection with generative adversarial networks.” arXiv, 2018. </b></a>  
-
 -	<a href="https://papers.nips.cc/paper/8183-deep-anomaly-detection-using-geometric-transformations.pdf" target="_blank"><b> Izhak Golan, Ran El-Yaniv. “Deep Anomaly Detection Using Geometric Transformations.” In Conference on Neural Information Processing Systems (NeurIPS), 2018. </b></a>  
-
 -	<a href="https://kh-kim.github.io/blog/2019/12/15/Autoencoder-based-anomaly-detection.html" target="_blank"><b> 마키나락스 김기현님 블로그 글 </b></a>  
-
 -	<a href="https://arxiv.org/abs/1901.03407" target="_blank"><b> Raghavendra Chalapathy, Sanjay Chawla. “Deep Learning for Anomaly Detection: A Survey.” arXiv, 2019. </b></a>  
-
 -	<a href="https://www.kaggle.com/mlg-ulb/creditcardfraud" target="_blank"><b> Kaggle Credit Card Fraud Detection </b></a>  
 
