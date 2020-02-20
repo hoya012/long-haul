@@ -188,28 +188,16 @@ Out-of-distribution Detection 문제는 Computer Vision 분야 외에도 자연�
 <blockquote> Reference </blockquote>
 -	<a href="https://machinelearningmastery.com/roc-curves-and-precision-recall-curves-for-classification-in-python/" target="_blank"><b> AUROC, AUPR 그림 인용 블로그 글</b></a>
 
--	<a href="https://mnist-demo.herokuapp.com/" target="_blank"><b> MNIST Web Demo </b></a>
-
--	<a href="https://arxiv.org/pdf/1610.02136.pdf" target="_blank"><b> “A Baseline for Detecting Misclassified and Out-of-Distribution Examples in Neural Networks”, </b></a> 2017 ICLR  
-
--	<a href="https://arxiv.org/pdf/1706.02690.pdf" target="_blank"><b> “Enhancing The Reliability of Out-of-distribution Image Detection in Neural Networks”, </b></a> 2018 ICLR  
-
--	<a href="https://arxiv.org/pdf/1503.02531.pdf" target="_blank"><b> “Distilling the Knowledge in a Neural Network”, </b></a> 2014 NIPS Workshop  
-
--	<a href="https://arxiv.org/pdf/1706.04599.pdf" target="_blank"><b> “On Calibration of Modern Neural Networks”, </b></a> 2017 ICML  
-
--	<a href=" https://arxiv.org/pdf/1412.6572.pdf" target="_blank"><b> “Explaining and Harnessing Adversarial Examples”, </b></a> 2015 ICLR  
-
--	<a href="https://arxiv.org/pdf/1610.02136.pdf" target="_blank"><b> “Training Confidence-calibrated Classifiers for Detecting Out-of-Distribution Samples”, </b></a> 2018 ICLR  
-
--	<a href="http://papers.nips.cc/paper/7947-a-simple-unified-framework-for-detecting-out-of-distribution-samples-and-adversarial-attacks.pdf" target="_blank"><b> “A Simple Unified Framework for Detecting Out-of-Distribution Samples and Adversarial Attacks”, </b></a> 2018 NIPS
-
--	<a href="https://openreview.net/pdf?id=HyxCxhRcY7" target="_blank"><b> “Deep Anomaly Detection with Outlier Exposure”, </b></a> 2019 ICLR  
-
--	<a href="https://arxiv.org/pdf/1701.05517.pdf" target="_blank"><b> “PixelCNN++: Improving the PixelCNN with Discretized Logistic Mixture Likelihood and Other Modifications”,  </b></a> 2017 ICLR  
-
--	<a href="https://arxiv.org/pdf/1807.03039.pdf" target="_blank"><b> “Glow: Generative Flow with Invertible 1x1 Convolutions”, </b></a> 2018 NeurIPS  
-
--	<a href="https://arxiv.org/pdf/1810.01392.pdf" target="_blank"><b> “WAIC, but why? Generative ensembles for robust anomaly detection”, </b></a> 2018 arXiv  
-
--	<a href="https://openreview.net/pdf?id=SyxIWpVYvr" target="_blank"><b> “Input Complexity and Out-of-distribution Detection with Likelihood-based Generative Models”, </b></a> 2020 ICLR  
+- <a href="https://mnist-demo.herokuapp.com/" target="_blank"><b> MNIST Web Demo </b></a>
+- <a href="https://arxiv.org/pdf/1610.02136.pdf" target="_blank"><b> “A Baseline for Detecting Misclassified and Out-of-Distribution Examples in Neural Networks”, </b></a> 2017 ICLR  
+- <a href="https://arxiv.org/pdf/1706.02690.pdf" target="_blank"><b> “Enhancing The Reliability of Out-of-distribution Image Detection in Neural Networks”, </b></a> 2018 ICLR  
+- <a href="https://arxiv.org/pdf/1503.02531.pdf" target="_blank"><b> “Distilling the Knowledge in a Neural Network”, </b></a> 2014 NIPS Workshop  
+- <a href="https://arxiv.org/pdf/1706.04599.pdf" target="_blank"><b> “On Calibration of Modern Neural Networks”, </b></a> 2017 ICML  
+- <a href=" https://arxiv.org/pdf/1412.6572.pdf" target="_blank"><b> “Explaining and Harnessing Adversarial Examples”, </b></a> 2015 ICLR  
+- <a href="https://arxiv.org/pdf/1610.02136.pdf" target="_blank"><b> “Training Confidence-calibrated Classifiers for Detecting Out-of-Distribution Samples”, </b></a> 2018 ICLR  
+- <a href="http://papers.nips.cc/paper/7947-a-simple-unified-framework-for-detecting-out-of-distribution-samples-and-adversarial-attacks.pdf" target="_blank"><b> “A Simple Unified Framework for Detecting Out-of-Distribution Samples and Adversarial Attacks”, </b></a> 2018 NIPS
+- <a href="https://openreview.net/pdf?id=HyxCxhRcY7" target="_blank"><b> “Deep Anomaly Detection with Outlier Exposure”, </b></a> 2019 ICLR  
+- <a href="https://arxiv.org/pdf/1701.05517.pdf" target="_blank"><b> “PixelCNN++: Improving the PixelCNN with Discretized Logistic Mixture Likelihood and Other Modifications”,  </b></a> 2017 ICLR  
+- <a href="https://arxiv.org/pdf/1807.03039.pdf" target="_blank"><b> “Glow: Generative Flow with Invertible 1x1 Convolutions”, </b></a> 2018 NeurIPS  
+- <a href="https://arxiv.org/pdf/1810.01392.pdf" target="_blank"><b> “WAIC, but why? Generative ensembles for robust anomaly detection”, </b></a> 2018 arXiv  
+- <a href="https://openreview.net/pdf?id=SyxIWpVYvr" target="_blank"><b> “Input Complexity and Out-of-distribution Detection with Likelihood-based Generative Models”, </b></a> 2020 ICLR  
