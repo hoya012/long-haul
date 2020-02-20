@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  “Tutorials of Object Detection using Deep Learning [8] Object Detection Labeling Guide”
+title:  Tutorials of Object Detection using Deep Learning [8] Object Detection Labeling Guide
 date:   2019-01-23
 description: Deep Learning을 이용한 Object detection Tutorial - [8] Object Detection Labeling에 대한 설명과 Tool 사용법 등을 소개드립니다.
 comments: true
