@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  “ICCV 2019 paper preview”
+title:  ICCV 2019 paper preview
 date:   2019-10-01
 description: ICCV 2019 학회에 논문들에 대한 간단한 분석 및 주요 논문 22편에 대한 리뷰를 작성하였습니다.
 comments: true
