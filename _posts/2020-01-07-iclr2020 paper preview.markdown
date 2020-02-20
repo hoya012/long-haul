@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  “ICLR 2020 image recognition paper preview”
+title:  ICLR 2020 image recognition paper preview
 date:   2020-1-7
 description: ICLR 2020 논문 중 이미지 인식과 관련 있는 논문들 중 관심있는 논문들을 간단히 요약하였습니다.
  
