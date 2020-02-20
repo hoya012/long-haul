@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  “EfficientDet ： Scalable and Efficient Object Detection Review”
+title:  EfficientDet ： Scalable and Efficient Object Detection Review
 date:   2019-11-22
 description: “EfficientDet： Scalable and Efficient Object Detection"논문에 대한 리뷰를 수행하였습니다.
 comments: true
