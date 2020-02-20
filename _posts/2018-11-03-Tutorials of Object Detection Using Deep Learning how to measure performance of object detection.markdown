@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  “Tutorials of Object Detection using Deep Learning [4] How to measure performance of object detection”
+title:  Tutorials of Object Detection using Deep Learning [4] How to measure performance of object detection
 date:   2018-11-03
 description: Deep Learning을 이용한 Object detection Tutorial - [4] How to measure performance of object detection
 comments: true
