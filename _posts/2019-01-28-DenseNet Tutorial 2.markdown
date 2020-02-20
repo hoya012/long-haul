@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  “DenseNet Tutorial [2] PyTorch Code Implementation”
+title:  DenseNet Tutorial [2] PyTorch Code Implementation
 date:   2019-01-28
 description: 대표적인 CNN architecture인 DenseNet을 PyTorch로 구현하고 실습하는 과정을 정리하였습니다.
 comments: true
