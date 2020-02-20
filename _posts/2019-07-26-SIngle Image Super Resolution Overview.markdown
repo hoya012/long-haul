@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  “Single Image Super Resolution using Deep Learning Overview”
+title:  Single Image Super Resolution using Deep Learning Overview
 date:   2019-07-26
 description: Single Image Super Resolution에 대해 간단한 소개, 딥러닝을 적용하는 방법들에 대한 소개를 다루고 있습니다.
 comments: true
