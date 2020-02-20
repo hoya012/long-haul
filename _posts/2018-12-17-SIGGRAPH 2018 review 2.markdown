@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  “SIGGRAPH 2018 review [2] 사람의 지각을 반영한 visibility metric 및 논문 4편 소개”
+title:  SIGGRAPH 2018 review [2] 사람의 지각을 반영한 visibility metric 및 논문 4편 소개
 date:   2018-12-17
 description: SIGGRAPH 2018 학회에서 흥미롭게 본 논문에 대한 소개와 리뷰를 담은 글입니다.
 comments: true
