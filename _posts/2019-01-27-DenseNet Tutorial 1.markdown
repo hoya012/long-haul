@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  “DenseNet Tutorial [1] Paper Review & Implementation details”
+title:  DenseNet Tutorial [1] Paper Review & Implementation details
 date:   2019-01-27
 description: 대표적인 CNN architecture인 DenseNet에 대한 리뷰와 구현을 위한 detail들을 분석하고 정리하였습니다.
 comments: true
