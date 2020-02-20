@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  “Bag of Tricks for Image Classification with Convolutional Neural Networks Review”
+title:  Bag of Tricks for Image Classification with Convolutional Neural Networks Review
 date:   2019-06-20
 description: CVPR 2019에 제출된 “Bag of Tricks for Image Classification with Convolutional Neural Networks” 논문에 대한 리뷰를 수행하였습니다.
 comments: true
