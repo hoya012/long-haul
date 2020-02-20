@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  “hoya012 Research Blog 2019년을 마치며!”
+title:  hoya012 Research Blog 2019년을 마치며!
 date:   2019-12-13
 description: 2019년을 마무리하며 그 동안 작성했던 글들에 대한 소회, 조회수 높았던 글 분석, 유입 키워드 분석 등 리뷰를 해보고 내년에 작성할 글들에 대해 정리를 해보았습니다.
 comments: true
