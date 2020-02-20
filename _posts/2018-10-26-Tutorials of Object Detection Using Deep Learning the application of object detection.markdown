@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  “Tutorials of Object Detection using Deep Learning [3] The application of Object Detection”
+title:  “Tutorials of Object Detection using Deep Learning [3] The application of Object Detectio
 date:   2018-10-26
 description: Deep Learning을 이용한 Object detection Tutorial - [3] The application of Object Detection
 comments: true
