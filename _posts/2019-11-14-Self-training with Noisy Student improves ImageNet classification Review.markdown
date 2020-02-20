@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  “Self-training with Noisy Student improves ImageNet classification Review”
+title:  Self-training with Noisy Student improves ImageNet classification Review
 date:   2019-11-14
 description: ImageNet 데이터셋에 대해 State-of-the-art를 갱신하여 화제가 된 “Self-training with Noisy Student improves ImageNet classification” 논문에 대한 리뷰를 수행하였습니다.
 comments: true
