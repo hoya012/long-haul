@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  “SIGGRAPH 2018 review [1] 참석 후기 및 프로그램 소개”
+title:  SIGGRAPH 2018 review [1] 참석 후기 및 프로그램 소개
 date:   2018-12-14
 description: SIGGRAPH 2018 학회에 참석하여 느낀 점들과 후기, 대표적인 프로그램 소개 등을 정리하였습니다.
 comments: true
