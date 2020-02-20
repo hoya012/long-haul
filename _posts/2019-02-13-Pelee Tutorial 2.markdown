@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  “Pelee Tutorial [2] PeleeNet PyTorch Code Implementation”
+title:  Pelee Tutorial [2] PeleeNet PyTorch Code Implementation
 date:   2019-02-13
 description: Mobile Device에서 Classification을 수행하기 위한 최신 연구인 PeleeNet을 PyTorch로 구현하였습니다. 
 comments: true
