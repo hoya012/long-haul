@@ -9,7 +9,7 @@ comments: true
 안녕하세요, 이번 포스팅에서는 지난 포스팅에 이어 Anomaly Detection(이상 탐지)에 대한 내용을 다룰 예정이며 Anomaly Detection 연구 분야 중 Out-of-distribution(OOD) Detection 문제에 대해 여러 논문을 토대로 깊이 있게 소개를 드릴 예정입니다. 
 
 <blockquote> Out-of-distribution(OOD) Detection 이란? </blockquote>  
-이전 포스팅인 <a href="http://research.sualab.com/introduction/review/2020/01/30/anomaly-detection-overview-1.html" target="_blank"><b> ” Anomaly Detection 개요: (1) 이상치 탐지 분야에 대한 소개 및 주요 문제와 핵심 용어, 산업 현장 적용 사례 정리” </b></a> 에서 잠시 언급했던 Out-of-distribution(OOD) Detection은 현재 보유하고 있는 In-distribution 데이터 셋을 이용하여 multi-class classification network를 학습시킨 뒤, test 단계에서 In-distribution test set은 정확하게 예측하고 Out-of-distribution 데이터 셋은 걸러내는 것을 목표로 하고 있다고 말씀드렸습니다. 
+이전 포스팅인 <a href="https://hoya012.github.io/blog/anomaly-detection-overview-1/" target="_blank"><b> ” Anomaly Detection 개요: (1) 이상치 탐지 분야에 대한 소개 및 주요 문제와 핵심 용어, 산업 현장 적용 사례 정리” </b></a> 에서 잠시 언급했던 Out-of-distribution(OOD) Detection은 현재 보유하고 있는 In-distribution 데이터 셋을 이용하여 multi-class classification network를 학습시킨 뒤, test 단계에서 In-distribution test set은 정확하게 예측하고 Out-of-distribution 데이터 셋은 걸러내는 것을 목표로 하고 있다고 말씀드렸습니다. 
 
 
 하지만 기존 classification network는 분류를 위해 feature extractor 마지막 부분에 softmax를 붙여서 사용하는데, softmax 계산 식이 exponential 함수를 이용하기 때문에 예측 확률이 거의 1에 근접하는 **high-confidence** 예측이 자주 관찰됩니다. In-distribution 데이터 셋을 정확하게 high-confidence로 예측하는 것은 큰 문제가 되지 않습니다. 다만 Out-of-distribution 데이터 셋을 test 단계에 넣어주는 경우, 이상적인 결과는 어떠한 class로도 예측되지 않도록 각 class를 (1/class 개수) 확률로 uniform 하게 예측하는 것입니다. 하지만 대부분의 경우 Out-of-distribution 데이터 셋을 test 단계에 넣어주면 high-confidence 예측이 관찰되기 때문에 단순한 방법으로는 걸러 내기 힘든 문제가 있습니다. 
