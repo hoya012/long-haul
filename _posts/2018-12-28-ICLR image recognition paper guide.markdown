@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  “ICLR 2019 image recognition paper list guide”
+title:  ICLR 2019 image recognition paper list guide
 date:   2018-12-28
 description: ICLR 2019 논문 중 이미지 인식과 관련있는 논문 리스트에 대해 제 주관적으로 정리하였습니다.
 comments: true
