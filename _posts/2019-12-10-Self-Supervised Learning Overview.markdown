@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  “Unsupervised Visual Representation Learning Overview： Toward Self-Supervision”
+title:  Unsupervised Visual Representation Learning Overview： Toward Self-Supervision
 date:   2019-12-10
 description: Self-Supervised Learning 분야에 대한 전반적인 설명과, Image 인식 분야에 Self-Supervised Learning을 적용시킨 대표적인 논문들을 간단하게 리뷰하였습니다.
 comments: true
