@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  “Tutorials of Object Detection using Deep Learning [6] Object Detection Multi Scale Testing Method Review”
+title:  Tutorials of Object Detection using Deep Learning [6] Object Detection Multi Scale Testing Method Review
 date:   2019-01-03
 description: Deep Learning을 이용한 Object detection Tutorial - [6] Object Detection Multi Scale Testing Method Review
 comments: true
