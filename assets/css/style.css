@@ -42,6 +42,10 @@ a{
   -webkit-text-decoration-skip:objects;
 }
 
+a:-webkit-any-link{
+  text-decoration: None;
+}
+
 abbr[title]{
   border-bottom:none;
   text-decoration:underline;
