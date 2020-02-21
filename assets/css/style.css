@@ -41,9 +41,13 @@ a{
   background-color:transparent;
   -webkit-text-decoration-skip:objects;
 }
-
+/*
 a:-webkit-any-link{
   text-decoration: none;
+}
+*/
+a, a:link, a:visited, a:focus, a:hover, a:active{
+  text-decoration:none; 
 }
 
 abbr[title]{
