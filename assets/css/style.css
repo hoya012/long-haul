@@ -43,7 +43,7 @@ a{
 }
 
 a:-webkit-any-link{
-  text-decoration: None;
+  text-decoration: none;
 }
 
 abbr[title]{
