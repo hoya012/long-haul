@@ -51,7 +51,7 @@ Image Classification 성능을 높이기 위한 다양한 시도들이 있는데
 	<figcaption> [AlexNet 주요 특징] </figcaption>
 </figure> 
 
-Multi GPU Training 외에도 3가지 특징이 있습니다. 첫째론 activation function으로 Rectified Linear Units(ReLUs)를 사용하였으며, ReLU 자체를 처음 제안한 논문은 아닙니다. 기존에 사용되던 tanh 보다 빠르게 수렴하는 효과를 얻을 수 있었다고 합니다. 둘째론 최근엔 거의 사용하지 않는 normalization 테크닉인 Local Response Normalization을 사용하였고, 마지막으론 Pooling의 kernel size를 stride보다 크게 하는 Overlapping Pooling을 사용하였습니다. 이 외에도 Dropout, PCA를 이용한 data augmentation 등의 기법들도 사용하였습니다. 
+Multi GPU Training 외에도 3가지 특징이 있습니다. 첫째론 activation function으로 **Rectified Linear Units(ReLUs)** 를 사용하였으며, ReLU 자체를 처음 제안한 논문은 아닙니다. 기존에 사용되던 tanh 보다 빠르게 수렴하는 효과를 얻을 수 있었다고 합니다. 둘째론 최근엔 거의 사용하지 않는 normalization 테크닉인 **Local Response Normalization(LRN)** 을 사용하였고, 마지막으론 Pooling의 kernel size를 stride보다 크게 하는 **Overlapping Pooling** 을 사용하였습니다. 이 외에도 Dropout, PCA를 이용한 data augmentation 등의 기법들도 사용하였습니다. 
 
 ### <a href="https://arxiv.org/pdf/1311.2901.pdf" target="_blank"><b> ZFNet, 2013 </b></a>
 
@@ -61,7 +61,7 @@ Multi GPU Training 외에도 3가지 특징이 있습니다. 첫째론 activatio
 	<figcaption> [ZFNet architecture] </figcaption>
 </figure> 
 
- AlexNet을 기반으로 첫 Conv layer의 filter size를 11에서 7로, stride를 4에서 2로 바꾸고, 그 뒤의 Conv layer들의 filter 개수를 키워주는 등(Conv3,4,5: 384, 384, 256  512, 1024, 512) 약간의 튜닝을 거쳤으며 이 논문은 architecture에 집중하기 보다는, 학습이 진행됨에 따라 feature map을 시각화하는 방법과, 모델이 어느 영역을 보고 예측을 하는지 관찰하기 위한 Occlusion 기반의 attribution 기법 등 시각화 측면에 집중한 논문이라고 할 수 있습니다. 
+ AlexNet을 기반으로 첫 Conv layer의 filter size를 11에서 7로, stride를 4에서 2로 바꾸고, 그 뒤의 Conv layer들의 filter 개수를 키워주는 등(Conv3,4,5: 384, 384, 256 --> 512, 1024, 512) 약간의 튜닝을 거쳤으며 이 논문은 architecture에 집중하기 보다는, 학습이 진행됨에 따라 feature map을 시각화하는 방법과, 모델이 어느 영역을 보고 예측을 하는지 관찰하기 위한 Occlusion 기반의 attribution 기법 등 시각화 측면에 집중한 논문이라고 할 수 있습니다. 
 
 <figure>
 	<img src="{{ '/assets/img/image_classification_guidebook/5.PNG' | prepend: site.baseurl }}" alt=""> 
@@ -76,7 +76,7 @@ Multi GPU Training 외에도 3가지 특징이 있습니다. 첫째론 activatio
 	<figcaption> [VGG architecture] </figcaption>
 </figure> 
 
-이전 방식들과는 다르게 비교적 작은 크기인 3x3 convolution filter를 깊게 쌓는다는 것이 VGG의 핵심이며, AlexNet, ZFNet은 8개의 layer를 사용하였다면 VGG는 11개, 13개, 16개, 19개 등 더 많은 수의 layer를 사용하고 있습니다. 이렇게 3x3 filter를 중첩하여 쌓는 이유는, 3개의 3x3 conv layer를 중첩하면 1개의 7x7 conv layer와 receptive field가 같아지지만, activation function을 더 많이 사용할 수 있어서 더 많은 비선형성을 얻을 수 있으며, parameter 수도 줄어드는 효과를 얻을 수 있습니다. (3 * 3*3 = 27 < 7*7 = 49) 
+이전 방식들과는 다르게 비교적 작은 크기인 3x3 convolution filter를 깊게 쌓는다는 것이 VGG의 핵심이며, AlexNet, ZFNet은 8개의 layer를 사용하였다면 VGG는 11개, 13개, 16개, 19개 등 더 많은 수의 layer를 사용하고 있습니다. 이렇게 3x3 filter를 중첩하여 쌓는 이유는, 3개의 3x3 conv layer를 중첩하면 1개의 7x7 conv layer와 receptive field가 같아지지만, activation function을 더 많이 사용할 수 있어서 더 많은 비선형성을 얻을 수 있으며, parameter 수도 줄어드는 효과를 얻을 수 있습니다. (3x3x3 = 27 < 7x7 = 49) 
 
 <figure>
 	<img src="{{ '/assets/img/image_classification_guidebook/7.PNG' | prepend: site.baseurl }}" alt=""> 
@@ -105,7 +105,7 @@ VGG의 주요 특징은 cs231n의 강의 자료에 잘 정리가 되어있어서
 
 GoogLeNet은 Inception module을 총 9번 쌓아서 구성이 되며, 3번째와 6번째 Inception module 뒤에 classifier를 추가로 붙여서 총 3개의 classifier를 사용하였고, 이를 **Auxiliary Classifier** 라 부릅니다. Auxiliary Classifier를 통해 vanishing gradient 문제를 완화시킬 수 있고 regularization 효과를 얻을 수 있으며, 학습 단계에만 사용이 되고 inference 단계에선 사용이 되지 않습니다.
 
-마지막으로 대부분의 CNN의 대부분의 parameter를 차지하고 있는 Fully-Connected Layer를 NIN 논문에서 제안된 방식인 Global Average Pooling(GAP)으로 대체하여 parameter 수를 크게 줄이는 효과를 얻었습니다. GAP란 각 feature map의 모든 element의 평균을 구하여 하나의 node로 바꿔주는 연산을 뜻하며, feature map의 개수만큼의 node를 output으로 출력하게 됩니다. GoogLeNet에서는 GAP를 거쳐 총 1024개의 node를 만든 뒤 class 개수(ImageNet=1000)의 output을 출력하도록 하나의 Fully-Connected layer만 사용하여 classifier를 구성하였습니다. 그 덕에 AlexNet, ZFNet, VGG 등에 비해 훨씬 적은 수의 parameter를 갖게 되었습니다. 
+마지막으로 대부분의 CNN의 대부분의 parameter를 차지하고 있는 Fully-Connected Layer를 NIN 논문에서 제안된 방식인 **Global Average Pooling(GAP)** 으로 대체하여 parameter 수를 크게 줄이는 효과를 얻었습니다. GAP란 각 feature map의 모든 element의 평균을 구하여 하나의 node로 바꿔주는 연산을 뜻하며, feature map의 개수만큼의 node를 output으로 출력하게 됩니다. GoogLeNet에서는 GAP를 거쳐 총 1024개의 node를 만든 뒤 class 개수(ImageNet=1000)의 output을 출력하도록 하나의 Fully-Connected layer만 사용하여 classifier를 구성하였습니다. 그 덕에 AlexNet, ZFNet, VGG 등에 비해 훨씬 적은 수의 parameter를 갖게 되었습니다. 
 
 ### <a href="https://arxiv.org/pdf/1512.03385.pdf" target="_blank"><b> ResNet, 2015 </b></a>
 오늘 마지막으로 소개드릴 architecture는 굉장히 유명하고, 지금도 널리 사용되는 **ResNet** 입니다. Microsoft Research에서 제안한 구조이며 ILSVRC 2015 대회에서 1위를 하였습니다. 확실히 2014년부터 기업이 힘을 쓰기 시작하면서 2015년에도 거대 기업에서 우승을 한 점이 인상깊네요. Architecture의 이름은 본 논문에서 제안한 핵심 아이디어인 Residual Block에서 유래하였으며, 실제로도 이 Residual Block 하나만 알면 architecture를 이해할 수 있을 정도로 단순하면서 효과적인 구조를 제안하였습니다. 
@@ -122,11 +122,11 @@ GoogLeNet은 Inception module을 총 9번 쌓아서 구성이 되며, 3번째와
 	<figcaption> [ResNet 주요 특징] </figcaption>
 </figure> 
 
-다시 ResNet-34의 그림으로 돌아가면, 2개의 conv layer마다 옆으로 화살표가 빠져나간 뒤 합쳐지는 식으로 그려져 있습니다. 이러한 구조를 **Shortcut** 이라 부릅니다. 일반적으로 Shortcut으로는 **identity shortcut**, 즉 input feature map x를 그대로 output에 더해주는 방식을 사용합니다.
+다시 ResNet-34의 그림으로 돌아가면, 2개의 conv layer마다 옆으로 화살표가 빠져나간 뒤 합쳐지는 식으로 그려져 있습니다. 이러한 구조를 **Shortcut** 이라 부릅니다. 일반적으로 Shortcut으로는 **identity shortcut**, 즉 input feature map x를 그대로 output에 더해주는 방식을 사용합니다. 
 
-하지만, 그림을 자세히 보시면 conv 연산을 나타내는 네모 박스의 색이 output feature map의 개수가 변함에 따라 달라지는 것을 알 수 있으며, 이 때는 Shortcut이 실선이 아니라 점선을 이용하는 것을 알 수 있습니다. Output feature map의 개수가 2배로 커질 때 마다 feature map의 가로, 세로 size는 절반으로 줄여주는 방식을 이용하고 있으며, 이 때는 pooling 대신 stride=2를 갖는 convolution 연산을 이용하는 점이 특징입니다. 이 경우, Shortcut에서도 feature map size를 줄여주어야 하며, 이 때는 identity shortcut 대신 **projection shortcut** 을 이용합니다.
+하지만, 그림을 자세히 보시면 conv 연산을 나타내는 네모 박스의 색이 output feature map의 개수가 변함에 따라 달라지는 것을 알 수 있으며, 이 때는 Shortcut이 실선이 아니라 점선을 이용하는 것을 알 수 있습니다. Output feature map의 개수가 2배로 커질 때 마다 feature map의 가로, 세로 size는 절반으로 줄여주는 방식을 이용하고 있으며, 이 때는 pooling 대신 stride=2를 갖는 convolution 연산을 이용하는 점이 특징입니다. 이 경우, Shortcut에서도 feature map size를 줄여주어야 하며, 이 때는 identity shortcut 대신 **projection shortcut** 을 이용합니다. 이러한 shortcut 구조를 통해 vanishing gradient에 강인한 학습을 수행할 수 있게됩니다.
 
-또한 ResNet-50 이상의 모델에서는 feature map의 개수가 많다 보니 연산량도 많아지게 되는데, Inception module에서 보았던 bottleneck 구조를 차용하여 bottleneck residual block을 중첩하여 사용하는 점이 특징입니다. 
+또한 ResNet-50 이상의 모델에서는 feature map의 개수가 많다 보니 연산량도 많아지게 되는데, Inception module에서 보았던 bottleneck 구조를 차용하여 **bottleneck residual block** 을 중첩하여 사용하는 점이 특징입니다. 
 
 마지막으론 같은 2015년에 제안이 되었고, 지금도 굉장히 자주 사용되는 방식인 **Batch Normalization(BN)** 을 Residual block에 사용을 하였으며, Conv-BN-ReLU 순으로 배치를 하였습니다. 3가지 연산을 어떤 순서로 배치하는지에 따라 성능이 조금 달라질 수 있는데 이와 관련된 논문은 다음 포스팅에서 다룰 예정입니다. 
 
