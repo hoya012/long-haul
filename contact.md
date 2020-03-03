@@ -4,6 +4,11 @@ title: Archives
 ---
 
 <div class="post">
+	<h1 class="pageTitle"> Deep Learning Classification Guidebook </h1>
+		<li><a href="https://hoya012.github.io/blog/deeplearning-classification-guidebook-1/" target="_blank"> <b> Deep Learning Image Classification Guidebook [1] LeNet, AlexNet, ZFNet, VGG, GoogLeNet, ResNet </b></a>, 20/03/03 .</li>
+	<h1 class="pageTitle">  </h1>
+	<h1 class="pageTitle">  </h1>
+	<h1 class="pageTitle">  </h1>
 	<h1 class="pageTitle"> Object Detection </h1>
 		<li><a href="https://hoya012.github.io/blog/Tutorials-of-Object-Detection-Using-Deep-Learning-GaussianYOLOv3/" target="_blank"> <b> Tutorials of Object Detection using Deep Learning [9] Gaussian YOLOv3: An Accurate and Fast Object Detector Using Localization Uncertainty for Autonomous Driving Review 
 </b></a>, 19/10/11 .</li>
