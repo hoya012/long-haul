@@ -12,7 +12,7 @@ comments: true
 	<img src="{{ '/assets/img/image_classification_guidebook/0.PNG' | prepend: site.baseurl }}" alt=""> 
 </figure> 
 
-위의 그림은 제가 좋아하는 강의 자료인 <a href="http://cs231n.stanford.edu/" target="_blank"><b> Stanford의 cs231n </b></a> 의 강의 자료의 한 페이지를 가져온 것입니. 대부분의 강의 자료와 잘 정리된 블로그 글 등을 보면 2012년 제안된 AlexNet을 시작으로 VGG, googLeNet, ResNet 정도 까지는 굉장히 잘 설명이 되어있습니다. 
+위의 그림은 제가 좋아하는 강의 자료인 <a href="http://cs231n.stanford.edu/" target="_blank"><b> Stanford의 cs231n </b></a> 의 강의 자료의 한 페이지를 가져온 것입니. 대부분의 강의 자료와 잘 정리된 블로그 글 등을 보면 2012년 제안된 AlexNet을 시작으로 VGG, GoogLeNet, ResNet 정도 까지는 굉장히 잘 설명이 되어있습니다. 
 
 하지만, 딥러닝 연구의 붐이 불기 시작한 2016년 무렵 이후에 발표된 수많은 연구들에 대해선 한 곳에 잘 모아 놓은 자료가 거의 없어서 논문을 하나 하나 찾아보면서 공부를 하면서, “시간 순으로 잘 모아둔 자료가 있으면 좋겠다!” 고 느꼈고, 그러다 보니 공부도 할 겸 자연스럽게 글을 작성하게 되었습니다. 
 
