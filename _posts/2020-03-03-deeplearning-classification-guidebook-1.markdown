@@ -142,6 +142,9 @@ GoogLeNet은 Inception module을 총 9번 쌓아서 구성이 되며, 3번째와
 
 다음 포스팅에서는 오늘 소개 드린 architecture에 이어서 2016년에 제안된 여러 CNN architecture들을 소개드릴 예정입니다. 다음 편을 기대해주세요!
 
+<blockquote> <a href="https://hoya012.github.io/blog/deeplearning-classification-guidebook-2/" target="_blank"><b> 2편으로 이동 </b></a> </blockquote> 
+
+
 <blockquote> Reference </blockquote>  
 - <a href="http://cs231n.stanford.edu/" target="_blank"><b> Stanford cs231n </b></a>  
 - <a href="http://image-net.org/challenges/LSVRC/2014/slides/ILSVRC2014_NUS_release.pdf" target="_blank"><b> Network In Network, 2014 ICLR Slides </b></a>
