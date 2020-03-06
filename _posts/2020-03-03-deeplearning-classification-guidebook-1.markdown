@@ -144,7 +144,7 @@ GoogLeNet은 Inception module을 총 9번 쌓아서 구성이 되며, 3번째와
 
 <blockquote> <a href="https://hoya012.github.io/blog/deeplearning-classification-guidebook-2/" target="_blank"><b> 2편으로 이동 </b></a> </blockquote> 
 
-###
+위의 버튼을 클릭하세요!
 
 <blockquote> Reference </blockquote>  
 - <a href="http://cs231n.stanford.edu/" target="_blank"><b> Stanford cs231n </b></a>  
