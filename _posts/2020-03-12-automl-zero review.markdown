@@ -96,12 +96,6 @@ AutoML-Zero는 굉장히 많은 요소가 있는데, 하나의 큰 그림을 그
 
 아무튼 CIFAR-10과 MNIST에 대해 20번 작은 실험을 해보니 사람이 디자인한 2-layer MLP + gradient descent 모델보다 20번 중 13번 더 좋은 성능을 달성하였다고 합니다. 또한 전체 CIFAR-10 test set에 대해 성능을 비교해보니 AutoML-Zero로 찾은 모델이 logistic regression, 2-layer MLP보다 더 높은 정확도를 달성하였고, SVHN, downsampled ImageNet, Fashion MNIST에서도 높은 정확도를 달성할 수 있었습니다. 즉 밑바닥부터 찾아낸 코드가 사람이 짠 2-layer MLP + gradient descent 코드보다 성능이 좋았음을 의미합니다. 
 
-<figure>
-	<img src="{{ '/assets/img/automl_zero/8.PNG' | prepend: site.baseurl }}" alt=""> 
-	<figcaption> [AutoML-Zero의 성장 그래프] </figcaption>
-</figure> 
-
-
 이 과정에 대한 설명은 맨 처음 보여드렸던 그림에서 확인하실 수 있으며, 놀랍게도 시간이 지날수록 Input noise, Loss Clipping, SGD, Gradient Normalization, Hard-coded LR, ReLU, Random Weight Initialization, averaged perceptron, weight averaging 등을 차례대로 배워가는 모습이 관찰이 되었다고 합니다. 그리고 최종적으론 높은 정확도를 내는 깔끔한 코드로 완성이 됩니다. 정말 신기한 결과입니다! 
 
 ### Discovering Algorithm Adaptations
