@@ -101,6 +101,7 @@ AutoML-Zero는 굉장히 많은 요소가 있는데, 하나의 큰 그림을 그
 	<figcaption> [AutoML-Zero의 성장 그래프] </figcaption>
 </figure> 
 
+
 이 과정에 대한 설명은 맨 처음 보여드렸던 그림에서 확인하실 수 있으며, 놀랍게도 시간이 지날수록 Input noise, Loss Clipping, SGD, Gradient Normalization, Hard-coded LR, ReLU, Random Weight Initialization, averaged perceptron, weight averaging 등을 차례대로 배워가는 모습이 관찰이 되었다고 합니다. 그리고 최종적으론 높은 정확도를 내는 깔끔한 코드로 완성이 됩니다. 정말 신기한 결과입니다! 
 
 ### Discovering Algorithm Adaptations
