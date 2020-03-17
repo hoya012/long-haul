@@ -73,5 +73,5 @@ title: Archives
 	<h1 class="pageTitle">  </h1>
 	<h1 class="pageTitle">  </h1>
 	<h1 class="pageTitle"> No Research..! </h1>
-		<li><a href="https://hoya012.github.io/blog/hoya012-2019-review/" target="_blank"> <b> hoya012 Research Blog 2019년을 마치며! </b></a>, 19/12/13 .</li>
+		<li><a href="https://hoya012.github.io/blog/hoya012-2019-review/" target="_blank"> <b> Research Blog 2019년을 마치며! </b></a>, 19/12/13 .</li>
 </div>
