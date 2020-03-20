@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Anomaly Detection 개요： (2) Out-of-distribution(OOD) Detection 문제 소개 및 핵심 논문 리뷰
+title:  Anomaly Detection 개요： [2] Out-of-distribution(OOD) Detection 문제 소개 및 핵심 논문 리뷰
 date:   2020-2-20
 description: Anomaly Detection 연구 분야 중 Out-of-distribution(OOD) Detection 문제에 대한 소개를 드리고 핵심 논문들을 리뷰할 예정입니다.
 comments: true
