@@ -52,7 +52,7 @@ from google.colab import drive
 drive.mount("/content/gdrive")
 ```
 
-위의 코드 block을 실행하면 **Go to this URL in a browser: ** 라는 메시지와 함께 URL이 생성됩니다. 해당 URL을 클릭하신 뒤 google 계정을 인증하면 코드가 생성됩니다. 이 코드를 복사해서 입력해주고 enter를 누르면 Google drive가 마운트 됩니다. 
+위의 코드 block을 실행하면 **Go to this URL in a browser:** 라는 메시지와 함께 URL이 생성됩니다. 해당 URL을 클릭하신 뒤 google 계정을 인증하면 코드가 생성됩니다. 이 코드를 복사해서 입력해주고 enter를 누르면 Google drive가 마운트 됩니다. 
 
 ### 기존 TorchVision Data Pipeline
 저는 평소에 PyTorch와 TorchVision을 통해 Data Loader를 구현해서 사용을 합니다. 튜토리얼을 위해 간단한 Dataset class를 만들고, image를 불러와서 약간의 transform을 적용하는 과정을 보여드리고, 이를 100번 반복한 뒤 평균 수행 시간을 측정해보았습니다. 
