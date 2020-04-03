@@ -5,6 +5,7 @@ title: Archives
 
 <div class="post">
 	<h1 class="pageTitle"> Deep Learning Classification Guidebook </h1>
+		<li><a href="https://hoya012.github.io/blog/deeplearning-classification-guidebook-4/" target="_blank"> <b> Deep Learning Image Classification Guidebook [4] Squeeze-and-Excitation Network (SENet), ShuffleNet, CondenseNet, MobileNetV2, ShuffleNetV2, NASNet, AmoebaNet, PNASNet, MnasNet </b></a>, 20/04/03 .</li>
 		<li><a href="https://hoya012.github.io/blog/deeplearning-classification-guidebook-3/" target="_blank"> <b> Deep Learning Image Classification Guidebook [3] SqueezeNet, Xception, MobileNet, ResNext, PolyNet, PyramidNet, Residual Attention Network, DenseNet, Dual Path Network (DPN) </b></a>, 20/03/20 .</li>
 		<li><a href="https://hoya012.github.io/blog/deeplearning-classification-guidebook-2/" target="_blank"> <b> Deep Learning Image Classification Guidebook [2] PreActResNet, Inception-v2, Inception-v3, Inception-v4, Inception-ResNet, Stochastic Depth ResNet, WRN </b></a>, 20/03/06 .</li>
 		<li><a href="https://hoya012.github.io/blog/deeplearning-classification-guidebook-1/" target="_blank"> <b> Deep Learning Image Classification Guidebook [1] LeNet, AlexNet, ZFNet, VGG, GoogLeNet, ResNet </b></a>, 20/03/03 .</li>
