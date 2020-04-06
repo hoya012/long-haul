@@ -8,6 +8,11 @@ comments: true
 
 안녕하세요, 최근 논문 리뷰 위주로 글을 작성해왔는데 얼마 전 알게 된 image augmentation library인 <a href="https://github.com/albumentations-team/albumentations" target="_blank"><b> albumentations </b></a> 가 생각보다 편하고 쓸만해서 간단히 소개드릴 예정입니다. 
 
+아! 추가로, 공부하다가 albumentations 라이브러리를 한글로 친절하게 설명해주시는 유튜브 강의 영상이 있어서 강의 영상을 보셔도 좋을 것 같습니다! 굉장히 상세하게 사용법을 설명해주시고 계십니다! ㅎㅎ 인용 허락해주셔서 감사합니다!!
+
+- <a href="https://www.youtube.com/watch?v=n_f6d4bPFME" target="_blank"><b> 이유한님의 "Bengali.AI competition - Ch 5. Image augmentations using albumentations" 강의 영상 링크 </b></a>
+
+
 <blockquote> What is albumentations? </blockquote>  
 저는 최근에는 주로 PyTorch를 사용하다 보니 image augmentation 등 imgae의 형태를 변환하여야 할 때, TorchVision에서 제공하고 있는 <a href="https://pytorch.org/docs/stable/torchvision/transforms.html" target="_blank"><b> torchvision.transforms </b></a> 를 주로 사용해왔습니다. Torchvision.transforms에도 자주 쓰이는 augmentation 기법들이 대부분 구현이 되어있어서 편하게 사용을 해왔고, custom augmentation이 필요한 경우 직접 구현해서 사용을 해왔습니다. 
 
