@@ -43,6 +43,7 @@ title: Archives
 	<h1 class="pageTitle">  </h1>
 	<h1 class="pageTitle">  </h1>
 	<h1 class="pageTitle"> AutoML </h1>
+		<li><a href="https://hoya012.github.io/blog/evonorm/" target="_blank"> <b> Evolving Normalization-Activation Layers Review </b></a>, 20/04/20 .</li>
 		<li><a href="https://hoya012.github.io/blog/automl-zero-review/" target="_blank"> <b> AutoML-Zero：Evolving Machine Learning Algorithms From Scratch Review </b></a>, 20/03/12 .</li>
 		<li><a href="https://hoya012.github.io/blog/EfficientDet-Review/" target="_blank"> <b> EfficientDet: Scalable and Efficient Object Detection Review </b></a>, 19/11/22 .</li>
 		<li><a href="https://hoya012.github.io/blog/EfficientNet-review/" target="_blank"> <b> EfficientNet: Improving Accuracy and Efficiency through AutoML and Model Scaling 리뷰 </b></a>, 19/05/31 .</li>
