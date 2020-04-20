@@ -88,7 +88,8 @@ Mutation(돌연변이)으로는 (1) 현재 node에서 intermediate node를 unifo
 
 ```
 We use the same training setup for all the CIFAR-10 with a batch size of 128 for training, and use the architectures. 
-Specifically, we use 24×24 random crops on We use SGD with learning rate 0.1, Nesterov momentum original 32×32 image with a batch size of 512 for validation. 0.9 and weight decay 10−4. 
+Specifically, we use 24×24 random crops on CIFAR-10 with a batch size of 128 for training, and use the original 32x32 image with a batch size of 512 for validation.
+We use SGD with learning rate 0.1, Nesterov momentum 0.9 and weight decay 10−4.
 Each model is trained for 2000 steps with a constant learning rate for the EvoNorm-B experiment. 
 Each model is trained for 5000 steps following a cosine learning rate schedule for the EvoNorm-S experiment. 
 These are chosen to ensure the majority of the models can achieve reasonable convergence quickly. 
