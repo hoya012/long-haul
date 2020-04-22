@@ -167,6 +167,10 @@ Stochastic Depth ResNet은 CIFAR-10, SVHN 등에 대해선 test error가 줄어�
 
 다음 포스팅에서 다룰 2017년에서는 모델의 경량화를 초점으로 한 여러 lightweight CNN 구조들, ResNet 만큼 유명한 DenseNet, 그 외 여러 다양한 시도를 한 논문들을 소개드릴 예정입니다. 다음편도 기대해주세요!
 
+<blockquote> <a href="https://hoya012.github.io/blog/deeplearning-classification-guidebook-3/" target="_blank"><b> 3편으로 이동 </b></a> </blockquote> 
+
+위의 버튼을 클릭하세요!
+
 <blockquote> Reference </blockquote>  
 -	<a href="https://hoya012.github.io/blog/Bag-of-Tricks-for-Image-Classification-with-Convolutional-Neural-Networks-Review/" target="_blank"><b> Bag-of-Tricks-for-Image-Classification-with-Convolutional-Neural-Networks 리뷰 블로그 글 </b></a>
 -	<a href="http://cs231n.stanford.edu/" target="_blank"><b> An Analysis of Deep Neural Network Models for Practical Applications, 2016 arXiv</b></a>
