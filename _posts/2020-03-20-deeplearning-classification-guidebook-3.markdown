@@ -230,6 +230,10 @@ DPN은 “ResNet과 DenseNet의 장점들을 잘 합쳐서 높은 정확도, 작
 
 다음 포스팅에서 다룰 2018년에서는 모델의 경량화를 다룬 논문들의 멋진 후속 작품들을 비롯해서, CNN architecture에 큰 패러다임 시프트를 가져온 AutoML을 이용한 Neural Architecture Search(NAS) 논문들을 소개드릴 예정입니다. 다음편도 기대해주세요!
 
+<blockquote> <a href="https://hoya012.github.io/blog/deeplearning-classification-guidebook-4/" target="_blank"><b> 4편으로 이동 </b></a> </blockquote> 
+
+위의 버튼을 클릭하세요!
+
 <blockquote> Reference </blockquote>  
 - <a href="https://machinethink.net/blog/googles-mobile-net-architecture-on-iphone/" target="_blank"><b> Depthwise-Separable Convolution 연산 그림 </b></a>
 - <a href="http://image-net.org/challenges/LSVRC/2016/results#loc" target="_blank"><b> 2016 ILSVRC 결과 표 </b></a>
