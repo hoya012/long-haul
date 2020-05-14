@@ -151,7 +151,7 @@ Edge device에서 DNN의 수요가 증가함에 따라, 저전력으로 DNN을 �
 
 Continual Learning이란 기존에 학습한 지식들을 그대로 유지한 채, 새로운 지식을 학습하는 방법론을 의미하며 Lifelong Learning이라고도 불립니다. 예를 들면 한 classifier가 10가지 종류의 새를 분류하도록 학습을 한 뒤에, 갑자기 10가지 종류의 꽃도 분류를 해야 한다고 가정했을 때 feature extractor 뒷부분에 추가적인 FC layer를 붙여서 fine-tuning을 시켜서 꽃을 학습시키면 기존에 새를 분류하던 성능이 망가지는 문제가 있는데, 떨어지는 성능폭을 줄이기 위한 기법들을 다룬 논문을 소개해 주셨습니다. 
 
-### 7주차: 조진형(현대자동차), 최현영(게임아이)
+### 7주차: 조진형(현대자동차), 최현영(forcs)
 7주차에는 조진형님과 최현영님이 발표해 주셨습니다.
 
 -	<a href="https://drive.google.com/file/d/1o4yIAs5ztRR1RrS6bc5WFhEIW7Tt7pbV/view" target="_blank"><b> 조진형님 발표자료 </b></a>
