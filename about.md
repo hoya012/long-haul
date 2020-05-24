@@ -25,6 +25,7 @@ title: About me
 		<li> <a href="https://github.com/hoya012/pytorch-MobileNet" target="_blank"> https://github.com/hoya012/pytorch-MobileNet </a></li>
 		<li> <a href="https://github.com/hoya012/pytorch-partial-conv-based-padding" target="_blank"> https://github.com/hoya012/pytorch-partial-conv-based-padding </a></li>
 	<h1 class="pageTitle">Slides </h1>
+		<li> <a href="https://www.slideshare.net/HoseongLee6/yolov4-optimal-speed-and-accuracy-of-object-detection-review" target="_blank"> "YOLOv4: optimal speed and accuracy of object detection" Paper Review </a></li>
 		<li> <a href="https://www.slideshare.net/HoseongLee6/fixmatchsimplifying-semi-supervised-learning-with-consistency-and-confidence" target="_blank"> "FixMatch:simplifying semi supervised learning with consistency and confidence" Paper Review </a></li>
 		<li> <a href="https://www.slideshare.net/HoseongLee6/revisiting-self-supervised-visual-representation-learning-paper-review" target="_blank"> "Revisiting self supervised visual representation learning" Paper Review </a></li>
 		<li> <a href="https://www.slideshare.net/HoseongLee6/unsupervised-visual-representation-learning-overview-toward-selfsupervision-194443768" target="_blank"> "Unsupervised visual representation learning overview: Toward Self-Supervision" </a></li>
@@ -42,10 +43,11 @@ title: About me
 		<li> <a href="https://www.slideshare.net/HoseongLee6/searching-for-activation-functions-paper-review" target="_blank"> "Searching for Activation Functions, 2018 ICLR" Paper Review</a></li>
 		<li> <a href="https://www.slideshare.net/HoseongLee6/google-vizier-a-service-for-blackbox-optimization-paper-review" target="_blank"> "Google Vizier: A Service for Black-Box Optimization, 2017 KDD" Paper Review</a></li>
 	<h1 class="pageTitle">Presentation </h1>
+		<li> <a href="https://youtu.be/CXRlpsFpVUE" target="_blank"> <b> PR-249: YOLOv4: Optimal Speed and Accuracy of Object Detection </b> </a> </li>
 		<li> <a href="https://youtu.be/fOCxgrR95ew" target="_blank"> <b> PR-237: FixMatch: Simplifying Semi-Supervised Learning with Consistency and Confidence </b> </a> </li>
 		<li> <a href="https://youtu.be/6pDIfC14By8" target="_blank"> <b> PR-222: Revisiting Self-Supervised Visual Representation Learning </b> </a> </li>
-		<li> <a href="https://www.onoffmix.com/event/205358" target="_blank"> <b> 제 9회 투빅스 빅데이터 컨퍼런스 </b> - Invited Talk </a> </li>
 		<li> <a href="https://youtu.be/eDDHsbMgOJQ" target="_blank"> <b> PR-208: Unsupervised Visual Representation Learning Overview:Toward Self-Supervision </b> </a> </li>
+		<li> <a href="https://www.onoffmix.com/event/205358" target="_blank"> <b> 제 9회 투빅스 빅데이터 컨퍼런스 </b> - Invited Talk </a> </li>
 	<h1 class="pageTitle">Teaching Experience </h1>
 		<li> Lecturer of <a href="https://www.fastcampus.co.kr/data_workshop_obj/" target="_blank"> <b>Object Detection Workshop</b>, </a> in FastCampus, 2018.10 ~ 2019.5 </li>
 		<li> TA of <b> Digital System Design and Experiments(디지털 시스템 설계 및 실습) </b>, in SNUECE(서울대학교 전기정보공학부), 2017.9 ~ 2017.12 </li>
