@@ -13,6 +13,7 @@ title: Archives
 	<h1 class="pageTitle">  </h1>
 	<h1 class="pageTitle">  </h1>
 	<h1 class="pageTitle"> Object Detection </h1>
+		<li><a href="https://hoya012.github.io/blog/yolov4/" target="_blank"> <b> YOLOv4：Optimal Speed and Accuracy of Object Detection Review </b></a>, 20/05/26 .</li>
 		<li><a href="https://hoya012.github.io/blog/Tutorials-of-Object-Detection-Using-Deep-Learning-GaussianYOLOv3/" target="_blank"> <b> Tutorials of Object Detection using Deep Learning [9] Gaussian YOLOv3: An Accurate and Fast Object Detector Using Localization Uncertainty for Autonomous Driving Review 
 </b></a>, 19/10/11 .</li>
 		<li><a href="https://hoya012.github.io/blog/Tutorials-of-Object-Detection-Using-Deep-Learning-labeling/" target="_blank"> <b> Tutorials of Object Detection using Deep Learning [8] Object Detection Labeling Guide
