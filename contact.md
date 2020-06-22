@@ -12,6 +12,12 @@ title: Archives
 	<h1 class="pageTitle">  </h1>
 	<h1 class="pageTitle">  </h1>
 	<h1 class="pageTitle">  </h1>
+	<h1 class="pageTitle"> Self-Supervised Learning (Visual Representation Learning) </h1>
+		<li><a href="https://hoya012.github.io/blog/byol/" target="_blank"> <b> Bootstrap Your Own Latent： A New Approach to Self-Supervised Learning 리뷰 </b></a>, 20/06/22 .</li>
+		<li><a href="https://hoya012.github.io/blog/Self-Supervised-Learning-Overview/" target="_blank"> <b> Unsupervised Visual Representation Learning Overview: Toward Self-Supervision </b></a>, 19/12/10 .</li>
+	<h1 class="pageTitle">  </h1>
+	<h1 class="pageTitle">  </h1>
+	<h1 class="pageTitle">  </h1>
 	<h1 class="pageTitle"> Object Detection </h1>
 		<li><a href="https://hoya012.github.io/blog/yolov4/" target="_blank"> <b> YOLOv4：Optimal Speed and Accuracy of Object Detection Review </b></a>, 20/05/26 .</li>
 		<li><a href="https://hoya012.github.io/blog/Tutorials-of-Object-Detection-Using-Deep-Learning-GaussianYOLOv3/" target="_blank"> <b> Tutorials of Object Detection using Deep Learning [9] Gaussian YOLOv3: An Accurate and Fast Object Detector Using Localization Uncertainty for Autonomous Driving Review 
@@ -74,7 +80,6 @@ title: Archives
 		<li><a href="https://hoya012.github.io/blog/albumentation_tutorial/" target="_blank"> <b> albumentations - fast image augmentation library 소개 및 사용법 Tutorial </b></a>, 20/03/23 .</li>
 		<li><a href="https://hoya012.github.io/blog/anomaly-detection-overview-2/" target="_blank"> <b> Anomaly Detection 개요: [2] Out-of-distribution(OOD) Detection 문제 소개 및 핵심 논문 리뷰 </b></a>, 20/02/20 .</li>
 		<li><a href="https://hoya012.github.io/blog/anomaly-detection-overview-1/" target="_blank"> <b> Anomaly Detection 개요: [1] 이상치 탐지 분야에 대한 소개 및 주요 문제와 핵심 용어, 산업 현장 적용 사례 정리 </b></a>, 20/01/30 .</li>
-		<li><a href="https://hoya012.github.io/blog/Self-Supervised-Learning-Overview/" target="_blank"> <b> Unsupervised Visual Representation Learning Overview: Toward Self-Supervision </b></a>, 19/12/10 .</li>
 		<li><a href="https://hoya012.github.io/blog/SIngle-Image-Super-Resolution-Overview/" target="_blank"> <b> Single Image Super Resolution using Deep Learning Overview </b></a>, 19/07/26 .</li>
 		<li><a href="https://hoya012.github.io/blog/Fast-Style-Transfer-Tutorial/" target="_blank"> <b> Fast Style Transfer PyTorch Tutorial </b></a>, 19/03/05 .</li>
 	<h1 class="pageTitle">  </h1>
