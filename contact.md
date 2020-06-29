@@ -75,6 +75,7 @@ title: Archives
 	<h1 class="pageTitle">  </h1>
 	<h1 class="pageTitle">  </h1>
 	<h1 class="pageTitle"> ETC. </h1>
+		<li><a href="https://hoya012.github.io/blog/reproducible_pytorch/" target="_blank"> <b> Reproducible PyTorch를 위한 randomness 올바르게 제어하기! </b></a>, 20/06/29 .</li>
 		<li><a href="https://hoya012.github.io/blog/cross_entropy_vs_kl_divergence/" target="_blank"> <b> An introduction to entropy, cross entropy and KL divergence in machine learning </b></a>, 20/06/03 .</li>
 		<li><a href="https://hoya012.github.io/blog/snuai7th/" target="_blank"> <b> SNUAI 스터디 7기 발표 내용 소개 및 후기 </b></a>, 20/05/14 .</li>
 		<li><a href="https://hoya012.github.io/blog/albumentation_tutorial/" target="_blank"> <b> albumentations - fast image augmentation library 소개 및 사용법 Tutorial </b></a>, 20/03/23 .</li>
