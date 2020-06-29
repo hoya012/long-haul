@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  PyTorch의 Reproducibility를 위한 randomness 올바르게 제어하기!
+title:  Reproducible PyTorch를 위한 randomness 올바르게 제어하기!
 date:   2020-6-29
 description: PyTorch 코드의 완벽한 재현을 위해 고려해야할 randomness를 제어하는 법을 설명드리겠습니다.
 comments: true
@@ -69,7 +69,6 @@ np.random.seed(random_seed)
 
 <figure>
 	<img src="{{ '/assets/img/reproducibility_pytorch/2.PNG' | prepend: site.baseurl }}" alt=""> 
-	<figcaption> [torchvision.transforms의 random augmentation으로 인한 차이 발생] </figcaption>
 </figure>
 
 data loader를 정의한 뒤 3개의 batch를 뽑아서 각 batch의 첫번째 image의 가장 왼쪽 위의 픽셀 값과, 각 batch의 64개의 label들을 프린트하였더니 label은 정확히 일치했지만 image의 pixel 값이 다른 것을 발견했습니다. 원인을 찾다 보니, 제가 dataset 구성할 때 사용한 torchvision의 transforms 함수 때문이었습니다. 
@@ -94,7 +93,6 @@ random.seed(random_seed)
 
 <figure>
 	<img src="{{ '/assets/img/reproducibility_pytorch/3.PNG' | prepend: site.baseurl }}" alt=""> 
-	<figcaption> [python random 라이브러리의 random seed 고정] </figcaption>
 </figure>
 
 
@@ -150,7 +148,7 @@ torch.cuda.manual_seed_all(random_seed) # if use multi-GPU
 
 
 <figure>
-	<img src="{{ '/assets/img/reproducibility_pytorch/6.PNG' | prepend: site.baseurl }}" alt=""> 
+	<img src="{{ '/assets/img/reproducibility_pytorch/7.PNG' | prepend: site.baseurl }}" alt=""> 
 	<figcaption> [2 epoch 동안의 loss 변화와 validation accuracy 변화] </figcaption>
 </figure>
 
