@@ -130,6 +130,8 @@ torch hub에서 제공하고 있는 vision model 들 중에 저는 resnet 18을 
 놀랍게도(?!) 100 iteration 후 값을 찍어보니 input과 label은 동일한 순서로 들어가고 있음에도 불구하고 loss도 다르고, output 값도 다른 것을 확인할 수 있었습니다. 즉, model의 학습된 weight가 다르다는 얘기겠죠? 왜 그런것일까요.. 이 부분은 저도 정확한 원인을 잘 모르겠습니다.. 아시는 분 계시면 댓글로 부탁드리겠습니다!
 
 열심히 구글링을 한 결과, 공식 문서에는 없는 내용이지만 pytorch의 official repository의 issue를 찾다가 저와 같은 고민을 하신 분들이 많고, 해결 책을 찾으신 분이 계셔서 그분이 정리해주신 내용을 바탕으로 아래의 두줄을 추가해주었습니다. 
+
+
 (출처: https://github.com/pytorch/pytorch/issues/7068)
 
 ```python
@@ -169,3 +171,44 @@ random.seed(random_seed)
 ```
 
 이러한 점들을 잘 고려하셔서 코드를 관리하시면 누구나 같은 결과를 얻을 수 있겠죠? 재현이 가능한 실험 환경을 구축하시는데 도움이 되셨으면 좋겠습니다! 읽어주셔서 감사합니다!
+
+
+<blockquote> 보너스! TensorFlow의 Reproducibility! </blockquote>  
+
+TensorFlow는 제가 사용하지 않아서 정리를 따로 안했는데, 찾아보니 잘 정리된 블로그 포스팅이 있어서 공유드립니다. 
+- <a href="https://suneeta-mall.github.io/2019/12/22/Reproducible-ml-tensorflow.html" target="_blank"><b> Realizing reproducible Machine Learning - with Tensorflow </b></a>
+
+전반적인 방식은 PyTorch와 거의 유사한 듯 합니다. 
+
+```python
+def set_seeds(seed=SEED):
+    os.environ['PYTHONHASHSEED'] = str(seed)
+    random.seed(seed)
+    tf.random.set_seed(seed)
+    np.random.seed(seed)
+    
+def set_global_determinism(seed=SEED, fast_n_close=False):
+    """
+        Enable 100% reproducibility on operations related to tensor and randomness.
+        Parameters:
+        seed (int): seed value for global randomness
+        fast_n_close (bool): whether to achieve efficient at the cost of determinism/reproducibility
+    """
+    set_seeds(seed=seed)
+    if fast_n_close:
+        return
+
+    logging.warning("*******************************************************************************")
+    logging.warning("*** set_global_determinism is called,setting full determinism, will be slow ***")
+    logging.warning("*******************************************************************************")
+
+    os.environ['TF_DETERMINISTIC_OPS'] = '1'
+    os.environ['TF_CUDNN_DETERMINISTIC'] = '1'
+    # https://www.tensorflow.org/api_docs/python/tf/config/threading/set_inter_op_parallelism_threads
+    tf.config.threading.set_inter_op_parallelism_threads(1)
+    tf.config.threading.set_intra_op_parallelism_threads(1)
+    from tfdeterminism import patch
+    patch()    
+```
+
+이 두 함수를 선언하고 코드의 초입 부분에 호출하시면 아마도 100% 재현이 가능하지 않을까 싶네요! (해볼 생각은 없습니다! ㅋㅋ)
