@@ -172,7 +172,6 @@ random.seed(random_seed)
 
 이러한 점들을 잘 고려하셔서 코드를 관리하시면 누구나 같은 결과를 얻을 수 있겠죠? 재현이 가능한 실험 환경을 구축하시는데 도움이 되셨으면 좋겠습니다! 읽어주셔서 감사합니다!
 
-
 <blockquote> 보너스! TensorFlow의 Reproducibility! </blockquote>  
 
 TensorFlow는 제가 사용하지 않아서 정리를 따로 안했는데, 찾아보니 잘 정리된 블로그 포스팅이 있어서 공유드립니다. 
