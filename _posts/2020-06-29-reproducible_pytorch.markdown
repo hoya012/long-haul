@@ -117,7 +117,8 @@ torch hub에서 제공하고 있는 vision model 들 중에 저는 resnet 18을 
 	<figcaption> [random initialized resnet 18 weight 비교] </figcaption>
 </figure>
 
-첫번째 Conv Filter의 weight만 출력을 해보았는데요, 정확히 일치하는 것을 확인할 수 있습니다. 대부분 torch.nn 연산을 통해 model이 선언이 되었기 때문에 torch.manual_seed 에서 randomness가 통제가 되고 있기 때문입니다.
+첫번째 Conv Filter의 weight만 출력을 해보았는데요, 정확히 일치하는 것을 확인할 수 있습니다. 
+대부분 torch.nn 연산을 통해 model이 선언이 되고, torch.manual_seed 에서 randomness가 통제가 되고 있기 때문입니다.
 
 ### Training & Validation
 자, 이제 마지막으로 선언한 data loader와 model을 바탕으로 학습을 시켜보겠습니다. 편의상 2 epoch만 학습을 시킬 예정이고, 100 iteration 마다 training loss를 출력하도록 코드를 구성해서 학습을 시켜보았습니다. 재현이 잘 되겠죠??
