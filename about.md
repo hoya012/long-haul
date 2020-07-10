@@ -11,6 +11,8 @@ title: About me
   		<li>His research interests include algorithm and architecture for image recognition, image processing using deep learning.</li>
 	  	<li>He is operator of <a href="https://drive.google.com/drive/folders/0B8z5oUpB2DysbFNEOWxfVDh5VW8" target="_blank"> <b>SNUAI study</b> </a> and participates in <a href="https://www.youtube.com/results?search_query=pr12" target="_blank"><b>PR-12 deep learning paper reading study from tensorflow-kr facebook group.</b> </a> </li>
 	<h1 class="pageTitle"> Repository </h1>
+		<li> <a href="https://github.com/hoya012/carrier-of-tricks-for-classification-pytorch" target="_blank"> https://github.com/hoya012/carrier-of-tricks-for-classification-pytorch </a></li>
+		<li> <a href="https://github.com/hoya012/CVPR-2020-Paper-Statistics" target="_blank"> https://github.com/hoya012/CVPR-2020-Paper-Statistics </a></li>
 		<li> <a href="https://github.com/hoya012/AAAI-2020-Paper-Statistics" target="_blank"> https://github.com/hoya012/AAAI-2020-Paper-Statistics </a></li>
 		<li> <a href="https://github.com/hoya012/NeurIPS-2019-Paper-Statistics" target="_blank"> https://github.com/hoya012/NeurIPS-2019-Paper-Statistics </a></li>
 		<li> <a href="https://github.com/hoya012/ICCV-2019-Paper-Statistics" target="_blank"> https://github.com/hoya012/ICCV-2019-Paper-Statistics </a></li>
