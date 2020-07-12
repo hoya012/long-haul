@@ -182,10 +182,10 @@ Semi-supervised setup에서는 1%, 10%의 training sample로 fine-tuning을 시�
 	<figcaption> [Ablation Study & Intuitions] </figcaption>
 </figure>
 
-SimCLR은 batch size가 작을 때 성능이 많이 망가졌었는데 BYOL은 덜 망가진다!
-Contrastive method에 비해 image augmentation option에 robust하다.
-exponential moving average coefficient 값에 따라 성능이 약간씩 차이가 존재하지만 대체로 잘 된다! 1이면 constant random network(위의 간단한 실험에서의 A network 역할), 0이면 online weight를 그대로 target weight로 사용. 둘 다 좋은 성능을 보이지 못함. 즉, 적절히 target weight에 좀 delayed 되었지만 안정적인 online network의 weight로 넣어주는 것이 효과적임.
-BYOL과 SimCLR을 InfoNCE objective로 표현하여 두 알고리즘의 근본적인 차이를 분석함. 요약하면 SimCLR은 predictor가 없고 target network가 없음. BYOL은 negative example이 없음. BYOL에 negative example을 주고 학습을 시켰을 때는 오히려 성능이 떨어지지만, 적절한 tuning을 하면 사용하지 않았을 때와 비슷한 성능을 달성할 수 있음. (굳이 사용안하는게 나음)
+- SimCLR은 batch size가 작을 때 성능이 많이 망가졌었는데 BYOL은 덜 망가진다!  
+- Contrastive method에 비해 image augmentation option에 robust하다.
+- Exponential moving average coefficient 값에 따라 성능이 약간씩 차이가 존재하지만 대체로 잘 된다! 1이면 constant random network(위의 간단한 실험에서의 A network 역할), 0이면 online weight를 그대로 target weight로 사용. 둘 다 좋은 성능을 보이지 못함. 즉, 적절히 target weight에 좀 delayed 되었지만 안정적인 online network의 weight로 넣어주는 것이 효과적임.
+- BYOL과 SimCLR을 InfoNCE objective로 표현하여 두 알고리즘의 근본적인 차이를 분석함. 요약하면 SimCLR은 predictor가 없고 target network가 없음. BYOL은 negative example이 없음. BYOL에 negative example을 주고 학습을 시켰을 때는 오히려 성능이 떨어지지만, 적절한 tuning을 하면 사용하지 않았을 때와 비슷한 성능을 달성할 수 있음. (굳이 사용안하는게 나음)
 
 <blockquote> 결론 </blockquote>  
 
