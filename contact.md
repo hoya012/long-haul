@@ -49,6 +49,13 @@ title: Archives
 	<h1 class="pageTitle">  </h1>
 	<h1 class="pageTitle">  </h1>
 	<h1 class="pageTitle">  </h1>
+	<h1 class="pageTitle"> Anomaly Detection </h1>
+		<li><a href="https://hoya012.github.io/blog/MVTec-AD/" target="_blank"> <b> MVTec AD—A Comprehensive Real-World Dataset for Unsupervised Anomaly Detection 리뷰 </b></a>, 20/07/19 .</li>
+		<li><a href="https://hoya012.github.io/blog/anomaly-detection-overview-2/" target="_blank"> <b> Anomaly Detection 개요: [2] Out-of-distribution(OOD) Detection 문제 소개 및 핵심 논문 리뷰 </b></a>, 20/02/20 .</li>
+		<li><a href="https://hoya012.github.io/blog/anomaly-detection-overview-1/" target="_blank"> <b> Anomaly Detection 개요: [1] 이상치 탐지 분야에 대한 소개 및 주요 문제와 핵심 용어, 산업 현장 적용 사례 정리 </b></a>, 20/01/30 .</li>
+	<h1 class="pageTitle">  </h1>
+	<h1 class="pageTitle">  </h1>
+	<h1 class="pageTitle">  </h1>
 	<h1 class="pageTitle"> AutoML </h1>
 		<li><a href="https://hoya012.github.io/blog/evonorm/" target="_blank"> <b> Evolving Normalization-Activation Layers Review </b></a>, 20/04/20 .</li>
 		<li><a href="https://hoya012.github.io/blog/automl-zero-review/" target="_blank"> <b> AutoML-Zero：Evolving Machine Learning Algorithms From Scratch Review </b></a>, 20/03/12 .</li>
@@ -79,8 +86,6 @@ title: Archives
 		<li><a href="https://hoya012.github.io/blog/cross_entropy_vs_kl_divergence/" target="_blank"> <b> An introduction to entropy, cross entropy and KL divergence in machine learning </b></a>, 20/06/03 .</li>
 		<li><a href="https://hoya012.github.io/blog/snuai7th/" target="_blank"> <b> SNUAI 스터디 7기 발표 내용 소개 및 후기 </b></a>, 20/05/14 .</li>
 		<li><a href="https://hoya012.github.io/blog/albumentation_tutorial/" target="_blank"> <b> albumentations - fast image augmentation library 소개 및 사용법 Tutorial </b></a>, 20/03/23 .</li>
-		<li><a href="https://hoya012.github.io/blog/anomaly-detection-overview-2/" target="_blank"> <b> Anomaly Detection 개요: [2] Out-of-distribution(OOD) Detection 문제 소개 및 핵심 논문 리뷰 </b></a>, 20/02/20 .</li>
-		<li><a href="https://hoya012.github.io/blog/anomaly-detection-overview-1/" target="_blank"> <b> Anomaly Detection 개요: [1] 이상치 탐지 분야에 대한 소개 및 주요 문제와 핵심 용어, 산업 현장 적용 사례 정리 </b></a>, 20/01/30 .</li>
 		<li><a href="https://hoya012.github.io/blog/SIngle-Image-Super-Resolution-Overview/" target="_blank"> <b> Single Image Super Resolution using Deep Learning Overview </b></a>, 19/07/26 .</li>
 		<li><a href="https://hoya012.github.io/blog/Fast-Style-Transfer-Tutorial/" target="_blank"> <b> Fast Style Transfer PyTorch Tutorial </b></a>, 19/03/05 .</li>
 	<h1 class="pageTitle">  </h1>
