@@ -27,6 +27,7 @@ title: About me
 		<li> <a href="https://github.com/hoya012/pytorch-MobileNet" target="_blank"> https://github.com/hoya012/pytorch-MobileNet </a></li>
 		<li> <a href="https://github.com/hoya012/pytorch-partial-conv-based-padding" target="_blank"> https://github.com/hoya012/pytorch-partial-conv-based-padding </a></li>
 	<h1 class="pageTitle">Slides </h1>
+		<li> <a href="https://www.slideshare.net/HoseongLee6/mvtec-ad-a-comprehensive-realworld-dataset-for-unsupervised-anomaly-detection" target="_blank"> "MVTec AD: A Comprehensive Real-World Dataset for Unsupervised Anomaly Detection" Paper Review </a></li>
 		<li> <a href="https://www.slideshare.net/HoseongLee6/yolov4-optimal-speed-and-accuracy-of-object-detection-review" target="_blank"> "YOLOv4: optimal speed and accuracy of object detection" Paper Review </a></li>
 		<li> <a href="https://www.slideshare.net/HoseongLee6/fixmatchsimplifying-semi-supervised-learning-with-consistency-and-confidence" target="_blank"> "FixMatch:simplifying semi supervised learning with consistency and confidence" Paper Review </a></li>
 		<li> <a href="https://www.slideshare.net/HoseongLee6/revisiting-self-supervised-visual-representation-learning-paper-review" target="_blank"> "Revisiting self supervised visual representation learning" Paper Review </a></li>
