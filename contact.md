@@ -65,6 +65,11 @@ title: Archives
 	<h1 class="pageTitle">  </h1>
 	<h1 class="pageTitle">  </h1>
 	<h1 class="pageTitle">  </h1>
+	<h1 class="pageTitle"> Semantic Segmentation </h1>
+			<li><a href="https://hoya012.github.io/blog/iclr2020-paper-preview/" target="_blank"> <b> ICLR 2020 image recognition paper preview </b></a>, 20/01/07 .</li>
+	<h1 class="pageTitle">  </h1>
+	<h1 class="pageTitle">  </h1>
+	<h1 class="pageTitle">  </h1>
 	<h1 class="pageTitle"> Conference Preview </h1>
 		<li><a href="https://hoya012.github.io/blog/iclr2020-paper-preview/" target="_blank"> <b> ICLR 2020 image recognition paper preview </b></a>, 20/01/07 .</li>
 		<li><a href="https://hoya012.github.io/blog/ICCV-2019-paper-preview/" target="_blank"> <b> ICCV 2019 paper preview </b></a>, 19/10/01 .</li>
