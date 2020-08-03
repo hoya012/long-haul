@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  Semantic Segmentation PyTorch Tutorial & ECCV 2020 VIPriors Workshop 참가 후기 정리
+title:  Semantic Segmentation PyTorch Tutorial & ECCV 2020 VIPriors Challenge 참가 후기 정리
 date:   2020-08-03
-description: PyTorch를 이용하여 Semantic Segmentation Tutorial 코드를 만들고 ECCV 2020 Workshop의 챌린지에 참가한 후기를 정리하였습니다. 
+description: PyTorch를 이용하여 Semantic Segmentation Tutorial 코드를 만들고 ECCV 2020 VIPriors Workshop의 챌린지에 참가한 후기를 정리하였습니다. 
 comments: true
 ---
 
-안녕하세요, 오늘 포스팅에서는 PyTorch로 Semantic Segmentation Tutorial 코드를 만들고, 코드에 대한 설명을 드리고, 이 코드 베이스로 ECCV 2020 VIPriors 워크샵에 참가한 후기를 간단히 정리해볼 예정입니다.
+안녕하세요, 오늘 포스팅에서는 PyTorch로 작성한 Semantic Segmentation Tutorial 코드에 대해 설명드리고, 이 코드 베이스로 ECCV 2020 VIPriors 챌린지에 참가한 후기를 간단히 정리해볼 예정입니다.
 
 제가 작성한 Tutorial 코드는 <a href="https://github.com/hoya012/semantic-segmentation-tutorial-pytorch" target="_blank"><b> 제 GitHub Repository </b></a> 에서 확인하실 수 있습니다. 도움이 되셨다면 Star 하나씩 눌러주세요! ㅎㅎ
 
