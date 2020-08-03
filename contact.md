@@ -66,7 +66,7 @@ title: Archives
 	<h1 class="pageTitle">  </h1>
 	<h1 class="pageTitle">  </h1>
 	<h1 class="pageTitle"> Semantic Segmentation </h1>
-			<li><a href="https://hoya012.github.io/blog/iclr2020-paper-preview/" target="_blank"> <b> ICLR 2020 image recognition paper preview </b></a>, 20/01/07 .</li>
+			<li><a href="https://hoya012.github.io/blog/segmentation_tutorial_pytorch/" target="_blank"> <b> Semantic Segmentation PyTorch Tutorial & ECCV 2020 VIPriors Challenge 참가 후기 정리 </b></a>, 20/08/03 .</li>
 	<h1 class="pageTitle">  </h1>
 	<h1 class="pageTitle">  </h1>
 	<h1 class="pageTitle">  </h1>
