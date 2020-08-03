@@ -61,10 +61,11 @@ Test Metric이 mIoU 인데 이 Metric은 19가지의 class들의 IoU를 평균�
 우선 minicity 폴더에는 저희가 사용할 데이터셋이 들어갈 예정이며, 파일 용량이 커서 github repository 상에는 올려두지 않았고 제 구글 드라이브에 올려두었습니다. 혹시 MiniCity 데이터셋으로 코드를 돌려보고 싶으신 분들은 <a href="https://drive.google.com/file/d/1YjkiaLqU1l9jVCVslrZpip4YsCHHlbNA/view" target="_blank"><b> 구글 드라이브 링크 </b></a> 를 클릭하셔서 다운 받으신 뒤 압축을 풀어서 minicity 폴더에 넣어주시면 됩니다. 
 
 learning 폴더에는 학습에 관여하는 파이썬 코드들이 존재하며, 총 4개의 파일로 구성이 되어있습니다. 
-Training, Validation, Test와 관련이 있는 **learner.py**
-Dataset과 Dataloader와 관련이 있는 **minicity.py**
-Model Architecture와 관련이 있는 **model.py** 
-각종 util 함수들을 구현해둔 **utils.py** 
+
+- Training, Validation, Test와 관련이 있는 **learner.py**  
+- Dataset과 Dataloader와 관련이 있는 **minicity.py**  
+- Model Architecture와 관련이 있는 **model.py**   
+- 각종 utility 함수들을 구현해둔 **utils.py**   
 
 helpers 폴더에는 주로 evaluation과 관련이 있는 함수들이 들어가 있으며, 주최측이 제공해준 코드를 그대로 사용하였습니다. 모든 코드를 다 설명드리면 글이 너무 길어질 것 같아서 가장 중요한 main 역할을 하는 **baseline.py** 코드만 설명을 드리도록 하겠습니다. 
 
@@ -167,21 +168,21 @@ Training Loop는 위의 코드와 같이 구현하였으며, 매 epoch 마다 tr
 <blockquote> Tutorial 코드 돌려보기! </blockquote>  
 코드에 대한 설명은 여기까지 하고, 이제 이 코드들을 어떻게 돌릴 수 있는지 설명드리겠습니다. 우선 제가 실험했던 것들은 다음과 같으며, 모든 실험들은 다 똑같이 돌려보실 수 있습니다.
 
-Model
-DeepLab V3 with ResNet-50, ResNet-101
-Loss Function
-Cross-Entropy Loss
-Class-Weighted Cross-Entropy Loss
-Focal Loss
-Normalization Layer
-Batch Normalization (BN)
-Instance Normalization (IN)
-Group Normalization (GN)
-Evolving Normalization (EvoNorm)
-Augmentation
-CutMix
-CopyBlob
-Multi-Scale Inference (Test Time Augmentation)
+- Model
+     - DeepLab V3 with ResNet-50, ResNet-101
+- Loss Function
+     - Cross-Entropy Loss
+     - Class-Weighted Cross-Entropy Loss
+     - Focal Loss
+- Normalization Layer
+     - Batch Normalization (BN)
+     - Instance Normalization (IN)
+     - Group Normalization (GN)
+     - Evolving Normalization (EvoNorm)
+- Augmentation
+     - CutMix
+     - CopyBlob
+- Multi-Scale Inference (Test Time Augmentation)
 
 ### 1. Training Baseline Model
 우선 코드를 돌리기에 앞서, Segmentation Task의 특성 상 GPU Memory를 많이 잡아먹기 때문에 원활한 학습을 위해선 4개 이상의 GPU가 필요합니다. 저는 RTX 2080 Ti 4개를 사용하였는데도 Batch Size를 8까지밖에 키우지 못했습니다. ㅠㅠ. 만약 Single GPU로 돌려보고 싶으시다면 Batch Size를 아마도 1이나 2로 낮춰서 실험을 하셔야 할 것 같습니다. 
@@ -273,14 +274,13 @@ python baseline.py --save_path baseline_run_deeplabv3_resnet50 --batch_size 1 --
 </figure>
 
 위의 그림은 VIPriors Semantic Segmentation 챌린지의 최종 리더보드이며 저는 5위의 성적을 거두었습니다. 다만, 참가자들은 모두 4페이지 분량의 tech report를 제출하여야 하는데 깜빡하여 제출 일자를 놓쳐서 제 점수가 공식 기록으로 인정 받지는 못했습니다. (ㅠㅠ) 
-그래도 주최측에서 제공해준 코드의 성능인 0.39 보다는 0.22 높은 값을 달성하였고 나쁘지 않은 성능을 얻은 점이 만족스러웠지만 아쉬웠던 점도 많았던 것 같습니다. 
-GPU memory의 한계로 더 큰 Batch Size를 실험하지 못한 점
-GPU memory의 Input Resolution을 절반으로 줄여서 실험한 점(ResNet-101 Backbone)
-GPU memory의 한계로 더 큰 segmentation network 들을 실험하지 못한 점 (현 시점 SOTA인 HRNet, EfficientPS 등을 돌려보고 싶었지만..)
-챌린지의 취지에 부합하는 시도를 1가지 (CopyBlob) 밖에 떠올리지 못한 점
-모델 앙상블을 하지 않은 점
+그래도 주최측에서 제공해준 코드의 성능인 0.39 보다는 0.22 높은 값을 달성하였고 나쁘지 않은 성능을 얻은 점이 만족스러웠지만 아쉬웠던 점도 많았던 것 같습니다. 제가 생각한 아쉬웠던 점은 다음과 같습니다.
 
-아쉬웠던 점이 많았던 만큼 다음에 비슷한 기회가 있다면 더 잘 준비해서 도전을 해봐야 겠다고 생각이 들었습니다. 또한 오늘 글에서는 대체로 잘 된 시도들만 정리를 하였고, 대부분의 실패했던 시도들은 설명을 안드렸는데, 많은 실패를 통해서 경험치를 많이 쌓은 것 같아서 만족스러웠습니다.
+- GPU memory의 한계로 더 큰 Batch Size를 실험하지 못한 점
+- GPU memory의 Input Resolution을 절반으로 줄여서 실험한 점(ResNet-101 Backbone)
+- GPU memory의 한계로 더 큰 segmentation network 들을 실험하지 못한 점 (현 시점 SOTA인 HRNet, EfficientPS 등을 돌려보고 싶었지만..)
+- 챌린지의 취지에 부합하는 시도를 1가지 (CopyBlob) 밖에 떠올리지 못한 점
+- 모델 앙상블을 하지 않은 점
 
-챌린지의 취지가 재미있고 공부하기에 적합한 것 같아서 Segmentation 뿐만 아니라 다른 task에 관심 있으신 분들은 공부용으로 사용하셔도 좋을 것 같네요! 읽어주셔서 감사합니다! 
+아쉬웠던 점이 많았던 만큼 다음에 비슷한 기회가 있다면 더 잘 준비해서 도전을 해봐야 겠다고 생각이 들었습니다. 또한 오늘 글에서는 대체로 잘 된 시도들만 정리를 하였고, 대부분의 실패했던 시도들은 설명을 안드렸는데, 많은 실패를 통해서 경험치를 많이 쌓은 것 같아서 만족스러웠습니다. 챌린지의 취지가 재미있고 공부하기에 적합한 것 같아서 Segmentation 뿐만 아니라 다른 task에 관심 있으신 분들은 공부용으로 사용하셔도 좋을 것 같네요! 읽어주셔서 감사합니다! 
 
