@@ -258,7 +258,7 @@ python baseline.py --save_path baseline_run_deeplabv3_resnet50_copyblob --crop_s
 ```
 
 ### 5. Multi-Scale Inference
-마지막으로, Inference를 할 때 Multi-Scale로 Inference를 한 뒤 결과를 평균내는 Test Time Augmentation도 적용을 해보았으며, 이 방법을 적용하였을 때도 꽤 유의미한 성능 향상이 있었습니다. Multi-Scale Inference를 적용하고 싶으신 분들은 다음과 같은 커맨드라인으로 돌려보실 수 있습니다.
+마지막으로, Inference를 할 때 Multi-Scale로 Inference를 한 뒤 결과를 평균내는 Test Time Augmentation도 적용을 해보았으며, 이 방법을 적용하였을 때도 꽤 유의미한 성능 향상이 있었습니다. Multi-Scale Inference를 적용하고 싶으신 분들은 다음과 같은 커맨드라인으로 돌려보실 수 있습니다. 이 때 유의하실 점은 Batch size를 무조건 1로 고정해야 합니다!
 
 ```python
 # Single-Scale Inference
