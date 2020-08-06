@@ -47,6 +47,8 @@ title: About me
 		<li> <a href="https://www.slideshare.net/HoseongLee6/searching-for-activation-functions-paper-review" target="_blank"> "Searching for Activation Functions, 2018 ICLR" Paper Review</a></li>
 		<li> <a href="https://www.slideshare.net/HoseongLee6/google-vizier-a-service-for-blackbox-optimization-paper-review" target="_blank"> "Google Vizier: A Service for Black-Box Optimization, 2017 KDD" Paper Review</a></li>
 	<h1 class="pageTitle">Presentation </h1>
+		<li> 고려대학교 산업경영공학부 산업인공지능 프로그램 - Invited Talk </li>
+		<li> <a href="https://youtu.be/7skd4bdE_jg" target="_blank"> <b> PR-263: MVTec AD-A Comprehensive Real-World Dataset for Unsupervised Anomaly Detection </b> </a> </li>
 		<li> <a href="https://youtu.be/CXRlpsFpVUE" target="_blank"> <b> PR-249: YOLOv4: Optimal Speed and Accuracy of Object Detection </b> </a> </li>
 		<li> <a href="https://youtu.be/fOCxgrR95ew" target="_blank"> <b> PR-237: FixMatch: Simplifying Semi-Supervised Learning with Consistency and Confidence </b> </a> </li>
 		<li> <a href="https://youtu.be/6pDIfC14By8" target="_blank"> <b> PR-222: Revisiting Self-Supervised Visual Representation Learning </b> </a> </li>
