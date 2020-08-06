@@ -9,7 +9,7 @@ title: About me
 		<li>I received the <a href="http://capp.snu.ac.kr/" target="_blank"> <b>M.S. degrees</b>, </a> in Electrical and Computer Engineering from Seoul National University, Seoul, Korea, in 2018.</li>
   		<li>In 2018, I joined the <a href="http://sualab.com/" target="_blank"> <b>SUALAB.</b></a>,Seoul, Korea, as a Machine Learning Engineer.</li>
   		<li>My research interests include algorithm and architecture for image recognition, image processing using deep learning.</li>
-	  	<li>I'm organizer of <a href="https://drive.google.com/drive/folders/0B8z5oUpB2DysbFNEOWxfVDh5VW8" target="_blank"> <b>SNUAI study</b> </a>, <a href="https://www.facebook.com/groups/TensorFlowKR" target="_blank"> <b> TFUG(TensorFlow KR Facebook Group) </b> </a> </li>
+	  	<li>I'm organizer of <a href="https://drive.google.com/drive/folders/0B8z5oUpB2DysbFNEOWxfVDh5VW8" target="_blank"> <b>SNUAI study</b> </a>, <a href="https://www.facebook.com/groups/TensorFlowKR" target="_blank"> <b> TFUG(TensorFlow-KR Facebook User Group) </b> </a> </li>
 		<li>I participates in <a href="https://www.youtube.com/results?search_query=pr12" target="_blank"><b>PR-12 Deep Learning Paper Reading Study from Tensorflow-KR Facebook User Group.</b> </a> </li>
 	<h1 class="pageTitle"> Repository </h1>
 		<li> <a href="https://github.com/hoya012/semantic-segmentation-tutorial-pytorch" target="_blank"> https://github.com/hoya012/semantic-segmentation-tutorial-pytorch </a></li>
