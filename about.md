@@ -11,6 +11,7 @@ title: About me
   		<li>His research interests include algorithm and architecture for image recognition, image processing using deep learning.</li>
 	  	<li>He is organizer of <a href="https://drive.google.com/drive/folders/0B8z5oUpB2DysbFNEOWxfVDh5VW8" target="_blank"> <b>SNUAI study</b> </a>, <a href="https://www.facebook.com/groups/TensorFlowKR" target="_blank"> <b> TFUG(TensorFlow KR Facebook Group) </b> </a> and participates in <a href="https://www.youtube.com/results?search_query=pr12" target="_blank"><b>PR-12 deep learning paper reading study from tensorflow-kr facebook group.</b> </a> </li>
 	<h1 class="pageTitle"> Repository </h1>
+		<li> <a href="https://github.com/hoya012/semantic-segmentation-tutorial-pytorch" target="_blank"> https://github.com/hoya012/semantic-segmentation-tutorial-pytorch </a></li>
 		<li> <a href="https://github.com/hoya012/carrier-of-tricks-for-classification-pytorch" target="_blank"> https://github.com/hoya012/carrier-of-tricks-for-classification-pytorch </a></li>
 		<li> <a href="https://github.com/hoya012/CVPR-2020-Paper-Statistics" target="_blank"> https://github.com/hoya012/CVPR-2020-Paper-Statistics </a></li>
 		<li> <a href="https://github.com/hoya012/AAAI-2020-Paper-Statistics" target="_blank"> https://github.com/hoya012/AAAI-2020-Paper-Statistics </a></li>
@@ -56,6 +57,7 @@ title: About me
 		<li> TA of <b> Digital System Design and Experiments(디지털 시스템 설계 및 실습) </b>, in SNUECE(서울대학교 전기정보공학부), 2017.9 ~ 2017.12 </li>
 		<li> TA of <b> Digital System Design and Experiments(디지털 시스템 설계 및 실습) </b>,  in SNUECE(서울대학교 전기정보공학부), 2016.9 ~ 2016.12 </li>
 	<h1 class="pageTitle">Publications</h1>
+		<li> Taeoh Kim*, Hyeongmin Lee*, MyeongAh Cho*,<b>Ho Seong Lee</b>, Dong Heon Cho, Sangyoun Lee (*Equal Contribution), "Learning Temporally Invariant and Localizable Feature via Data Augmentation for Video Recognition," European Conference on Computer Vision Workshop (ECCVW 2020), July. 2020. </li>
 		<li> Donghyeon Lee, <b>Ho Seong Lee</b>, Sangheon Lee, Kyujoong Lee, and Hyuk-Jae Lee, "Hardware Design of a Context-Preserving Filter-Reorganized CNN for Super-resolution," IEEE Journal on Emerging and Selected Topics in Circuits and Systems(JETCAS), Volume: 9, Issue: 4, Pages: 612-622, Dec. 2019. </li>
 		<li> Donghyeon Lee, Sangheon Lee, <b>Ho Seong Lee</b>, Kyujoong Lee, and Hyuk-Jae Lee, “Resolution-Preserving Generative Adversarial Networks for Image Enhancement," IEEE Access, Volume: 7, Pages: 110344-110357, Aug. 2019. </li>
 		<li> Donghyeon Lee, Sangheon Lee, <b>Ho Seong Lee</b>, Kyujoong Lee, and Hyuk-Jae Lee, “Context-Preserving Filter Reorganization for VDSR-Based Super-resolution," IEEE International Conference on Artificial Intelligence Circuits and Systems (AICAS), Mar. 2019. </li>
