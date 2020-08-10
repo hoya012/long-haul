@@ -87,6 +87,7 @@ title: Archives
 	<h1 class="pageTitle">  </h1>
 	<h1 class="pageTitle">  </h1>
 	<h1 class="pageTitle"> ETC. </h1>
+		<li><a href="https://hoya012.github.io/blog/Mixed-Precision-Training/" target="_blank"> <b> Mixed-Precision Training of Deep Neural Networks </b></a>, 20/08/10 .</li>
 		<li><a href="https://hoya012.github.io/blog/reproducible_pytorch/" target="_blank"> <b> Reproducible PyTorch를 위한 randomness 올바르게 제어하기! </b></a>, 20/06/29 .</li>
 		<li><a href="https://hoya012.github.io/blog/cross_entropy_vs_kl_divergence/" target="_blank"> <b> An introduction to entropy, cross entropy and KL divergence in machine learning </b></a>, 20/06/03 .</li>
 		<li><a href="https://hoya012.github.io/blog/snuai7th/" target="_blank"> <b> SNUAI 스터디 7기 발표 내용 소개 및 후기 </b></a>, 20/05/14 .</li>
