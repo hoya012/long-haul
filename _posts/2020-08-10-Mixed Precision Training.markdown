@@ -19,14 +19,14 @@ Floating Point는 한글로는 부동 소수점이라 부르며 컴퓨터 공학
 	<img src="{{ '/assets/img/mixed_precision/1.PNG' | prepend: site.baseurl }}" alt=""> 
 </figure>
 
-위의 그림은 IEEE 754 표준을 따르는 Floating Point 표기법을 나타낸 것이며, 주로 32-bit Floating Point를 사용하고, 이를 단 정밀도(Single Precision) Floating Point라 부릅니다. 더 세밀하게 수를 표현하기 위해 64bit를 사용하는 Double Precision과 128bit를 사용하는 Quadruple Precision도 사용되지만, 어떠한 방식을 사용해도 실수를 오차 없이 표현하는 것은 불가능 합니다. 반대로 더 적은 bit로 수를 표현할 때는 16bit을 사용하며, 이를 Half Precision이라 부릅니다. 
+위의 그림은 IEEE 754 표준을 따르는 Floating Point 표기법을 나타낸 것이며, 주로 32-bit Floating Point를 사용하고, 이를 **단 정밀도(Single Precision)** Floating Point라 부릅니다. 더 세밀하게 수를 표현하기 위해 64bit를 사용하는 **Double Precision** 과 128bit를 사용하는 **Quadruple Precision** 도 사용되지만, 어떠한 방식을 사용해도 실수를 오차 없이 표현하는 것은 불가능 합니다. 반대로 더 적은 bit로 수를 표현할 때는 16bit을 사용하며, 이를 **Half Precision**이라 부릅니다. 
 
 대표적으로 0.1, 0.01, 파이(3.141592..) 등을 표현할 때 오차가 발생하고, 덧셈과 곱셈에서 결합 법칙, 분배법칙이 성립하지 않는 문제도 발생합니다. Floating Point로 실수를 근사하는 예시는 인터넷이나 컴퓨터 공학 책에서 잘 다루고 있으니 설명은 여기까지 하도록 하겠습니다. 
 
 <blockquote> Floating Point 를 이용한 Deep Neural Network </blockquote>  
 우선 저희는 일반적으로 Single Precision Floating Point를 사용하는데 최근 연구들을 보면 모델 사이즈가 점점 커지면서, 계산량과 필요한 메모리 크기 등이 기하 급수적으로 커지다 보니 학습을 시키기 위해 많은 리소스가 필요해지고, 학습, Inference도 오래 걸리는 문제가 발생합니다. 물론 거대 기업들은 수천, 수만개의 GPU를 이용하여 거대한 모델을 학습 시키겠지만 많은 비용이 발생하고 막대한 이산화탄소 배출로 인해 환경을 파괴하는 등 여러 문제가 뒤따라 발생합니다. 
 
-이러한 문제점에 주목하여 계산량을 줄이기 위해 딥러닝 모델의 학습에 Single Precision (FP32) 대신 Half Precision (FP16)을 사용하는 방법을 떠올립니다. .Bit 수가 절반으로 줄어들어서 숫자를 표현할 수 있는 범위가 크게 줄어들었지만 계산량과 메모리 사용량을 크게 줄일 수 있겠죠? 
+이러한 문제점에 주목하여 계산량을 줄이기 위해 딥러닝 모델의 학습에 Single Precision (FP32) 대신 Half Precision (FP16)을 사용하는 방법을 떠올립니다. Bit 수가 절반으로 줄어들어서 숫자를 표현할 수 있는 범위가 크게 줄어들었지만 계산량과 메모리 사용량을 크게 줄일 수 있겠죠? 
 
 <figure>
 	<img src="{{ '/assets/img/mixed_precision/2.PNG' | prepend: site.baseurl }}" alt=""> 
@@ -34,7 +34,7 @@ Floating Point는 한글로는 부동 소수점이라 부르며 컴퓨터 공학
 
 하지만 기존에 사용하던 코드에서 모든 값들을 FP32에서 FP16으로 바꿔서 학습을 시키면 training loss가 잘 떨어지다가 갑자기 증가하는 문제가 생기게 됩니다. 아무래도 학습을 하다 보면 back-propagation 과정에서 gradient를 계산하고 이를 acculmate 하여 weight를 업데이트 하는데, 이 과정에서 FP16은 표현할 수 있는 수의 범위가 좁다 보니 오차가 발생하고, 이 오차가 누적이 되면서 학습이 제대로 되지 않는 것입니다. 이러한 경향이 위의 그림에 잘 나타나고 있습니다. 위의 그림은 NVIDIA 블로그 글의 그림을 인용한 것인데요, 회색으로 그려진 loss graph가 별다른 처리를 하지 않았을 때의 학습 경향을 보여줍니다.
 
-FP16이 실패하는 이유를 자세히 분석하면 다음과 같습니다. Half-Precision Floating Point는 앞서 설명드렸듯이 부호 1bit, 지수 5bit, 가수 10bit를 사용하는데, 이 때 지수가 표현할 수 있는 수의 범위는 [-14 ~ 15] 이며, subnormal number (혹은 denormal number) 까지 고려하면 [-24 ~ 15] 까지 표현할 수 있게 됩니다. 즉, [2^-24, 1.1111111111 x 2^15 =65,504] 범위의 수를 표현할 수 있는 것입니다.. [2^-149, 3.4x10^38] 의 범위의 수를 표현할 수 있는 Single Precision에 비해 굉장히 협소한 범위를 가지고 있기 때문에 당연히 학습 과정에서 gradient 값이 너무 크거나, 너무 작은 경우에 수를 제대로 표현하기 힘들어 집니다. 주로 gradient 값이 엄청 작은 경우에 문제가 발생합니다. 
+FP16이 실패하는 이유를 자세히 분석하면 다음과 같습니다. Half-Precision Floating Point는 앞서 설명드렸듯이 부호 1bit, 지수 5bit, 가수 10bit를 사용하는데, 이 때 지수가 표현할 수 있는 수의 범위는 [-14, 15] 이며, subnormal number (혹은 denormal number) 까지 고려하면 [-24, 15] 까지 표현할 수 있게 됩니다. 즉, [2^-24, 1.1111111111 x 2^15 =65,504] 범위의 수를 표현할 수 있는 것입니다.. [2^-149, 3.4x10^38] 의 범위의 수를 표현할 수 있는 Single Precision에 비해 굉장히 협소한 범위를 가지고 있기 때문에 당연히 학습 과정에서 gradient 값이 너무 크거나, 너무 작은 경우에 수를 제대로 표현하기 힘들어 집니다. 주로 gradient 값이 엄청 작은 경우에 문제가 발생합니다. 
 
 <blockquote> Mixed Precision Training </blockquote>  
 자, 이제 위에서 다룬 Floating Point 개념을 바탕으로 Mixed Precision 에 대해 설명드리도록 하겠습니다. NVIDIA와 Baidu Research 연구진들은 이러한 점을 해결하기 위해 <a href="https://arxiv.org/abs/1710.03740" target="_blank"><b> Mixed-Precision Training</b></a> 이라는 기법을 제안합니다. 이 논문은 2018 ICLR에서 발표가 된 논문입니다.
