@@ -16,7 +16,7 @@ Floating Point는 한글로는 부동 소수점이라 부르며 컴퓨터 공학
 십진수 13.1875를 Floating Point로 표현하는 것을 예시로 들어보면, 우선 소수점 위의 부분인 13은 이진수로 나타내면 8 + 4 + 1 이므로 1101로 나타낼 수 있습니다. 소수점 아래 부분인 0.1875는 0.125 + 0.0625 이므로 0011 로 나타낼 수 있습니다. 즉 13.1875는 1101.0011 이며 정규화하면 1.1010011 x 2^3 로 나타낼 수 있습니다. 즉, 가수 (Fraction or Mantissa)는 1010011 에 남은 자리수는 다 0으로 채운 **10100110000000000000000** 로 나타낼 수 있습니다. 지수는 따로 부호 비트가 없어서 음수 값을 처리하기 위해 바이어스 표현법을 사용합니다. 0000000 이 -127을 의미하고 01111111이 0을, 11111111이 128을 의미합니다. 아까 구한 지수 값이 3 이었으므로 바이어스 표현법으로 나타내면 **10000010** 이 됩니다. 마지막으로 제일 앞에 붙는 부호 비트는 양수이므로 0이 되어서 최종적으로 **01000001 01010011 00000000 00000000** 로 나타낼 수 있게 되는 것입니다. 
 
 <figure>
-	<img src="{{ '/assets/img/mixed_precision/1.PNG | prepend: site.baseurl }}" alt=""> 
+	<img src="{{ '/assets/img/mixed_precision/1.PNG' | prepend: site.baseurl }}" alt=""> 
 </figure>
 
 위의 그림은 IEEE 754 표준을 따르는 Floating Point 표기법을 나타낸 것이며, 주로 32-bit Floating Point를 사용하고, 이를 단 정밀도(Single Precision) Floating Point라 부릅니다. 더 세밀하게 수를 표현하기 위해 64bit를 사용하는 Double Precision과 128bit를 사용하는 Quadruple Precision도 사용되지만, 어떠한 방식을 사용해도 실수를 오차 없이 표현하는 것은 불가능 합니다. 반대로 더 적은 bit로 수를 표현할 때는 16bit을 사용하며, 이를 Half Precision이라 부릅니다. 
@@ -29,7 +29,7 @@ Floating Point는 한글로는 부동 소수점이라 부르며 컴퓨터 공학
 이러한 문제점에 주목하여 계산량을 줄이기 위해 딥러닝 모델의 학습에 Single Precision (FP32) 대신 Half Precision (FP16)을 사용하는 방법을 떠올립니다. .Bit 수가 절반으로 줄어들어서 숫자를 표현할 수 있는 범위가 크게 줄어들었지만 계산량과 메모리 사용량을 크게 줄일 수 있겠죠? 
 
 <figure>
-	<img src="{{ '/assets/img/mixed_precision/2.PNG | prepend: site.baseurl }}" alt=""> 
+	<img src="{{ '/assets/img/mixed_precision/2.PNG' | prepend: site.baseurl }}" alt=""> 
 </figure>
 
 하지만 기존에 사용하던 코드에서 모든 값들을 FP32에서 FP16으로 바꿔서 학습을 시키면 training loss가 잘 떨어지다가 갑자기 증가하는 문제가 생기게 됩니다. 아무래도 학습을 하다 보면 back-propagation 과정에서 gradient를 계산하고 이를 acculmate 하여 weight를 업데이트 하는데, 이 과정에서 FP16은 표현할 수 있는 수의 범위가 좁다 보니 오차가 발생하고, 이 오차가 누적이 되면서 학습이 제대로 되지 않는 것입니다. 이러한 경향이 위의 그림에 잘 나타나고 있습니다. 위의 그림은 NVIDIA 블로그 글의 그림을 인용한 것인데요, 회색으로 그려진 loss graph가 별다른 처리를 하지 않았을 때의 학습 경향을 보여줍니다.
@@ -40,25 +40,25 @@ FP16이 실패하는 이유를 자세히 분석하면 다음과 같습니다. Ha
 자, 이제 위에서 다룬 Floating Point 개념을 바탕으로 Mixed Precision 에 대해 설명드리도록 하겠습니다. NVIDIA와 Baidu Research 연구진들은 이러한 점을 해결하기 위해 <a href="https://arxiv.org/abs/1710.03740" target="_blank"><b> Mixed-Precision Training</b></a> 이라는 기법을 제안합니다. 이 논문은 2018 ICLR에서 발표가 된 논문입니다.
 
 <figure>
-	<img src="{{ '/assets/img/mixed_precision/3.PNG | prepend: site.baseurl }}" alt=""> 
+	<img src="{{ '/assets/img/mixed_precision/3.PNG' | prepend: site.baseurl }}" alt=""> 
 </figure>
 
 위의 그림은 논문의 서두에 등장하는 그림이며, Mixed-Precision Training의 핵심을 잘 보여주고 있습니다. 우선 Master-Weight를 FP32 에서 FP16 으로 변환한 뒤, Forward Propagation과 Backward Propagation은 모두 FP16으로 연산이 수행됩니다. 그 뒤, Weight를 Update하는 과정에서 다시 FP32로 변환이 되어 값이 축적되어 Weight가 업데이트가 됩니다. 이 과정에서 **Loss Scaling** 이라는 기법이 추가가 되는데, 그림을 통해 설명드리겠습니다. 
 
 <figure>
-	<img src="{{ '/assets/img/mixed_precision/4.PNG | prepend: site.baseurl }}" alt=""> 
+	<img src="{{ '/assets/img/mixed_precision/4.PNG' | prepend: site.baseurl }}" alt=""> 
 </figure>
 
 Deep Neural Network의 학습에 관여하는 Tensor는 총 4가지로 나눌 수 있습니다. Activations, Activation gradients, Weights, Weight gradients. 저자들이 FP16으로 학습을 시켰을 때, Weights와 Weights gradients는 FP16이 나타낼 수 있는 수의 범위 안에 잘 들어오는 편이었다고 합니다. 다만, 일부의 network에서 굉장히 크기가 작은 Activation gradients 값이 관찰되었고, FP16이 나타낼 수 있는 수의 최소 범위인 2^24 보다 작게 되어서 0으로 강제 변환이 되게 됩니다. 위의 그림은 SSD Object Detector를 학습시킬 때 Activation gradients들의 크기의 빈도를 히스토그램으로 나타낸 것입니다. 대부분의 gradient 값들이 FP16이 나타내지 못하는 구간에 존재하는 것을 확인할 수 있습니다. 
 
 <figure>
-	<img src="{{ '/assets/img/mixed_precision/5.PNG | prepend: site.baseurl }}" alt=""> 
+	<img src="{{ '/assets/img/mixed_precision/5.PNG' | prepend: site.baseurl }}" alt=""> 
 </figure>
 
 또한 FP16이 나타낼 수 있는 범위 중에 왼쪽 영역에 값들이 몰려있는데, 가장 쉽게 접근할 수 있는 생각은 이 값들을 오른쪽으로 밀어주는 것이죠. 즉, gradient에 큰 수를 곱해서 값들을 오른쪽으로 shift 시키는 아이디어입니다. 저자들은 간단하게 gradient 값들에 8을 곱해서 학습을 시켜보니 SSD 가 학습이 잘 되는 것을 확인하였습니다. 즉, 값이 작은 gradient 들을 모두 다 살릴 필요는 없고, 2^-27 ~ 2^-24 범위의 gradient만 잘 살려도 학습이 잘 되는 것을 관찰합니다. 
 
 <figure>
-	<img src="{{ '/assets/img/mixed_precision/6.PNG | prepend: site.baseurl }}" alt=""> 
+	<img src="{{ '/assets/img/mixed_precision/6.PNG' | prepend: site.baseurl }}" alt=""> 
 </figure>
 
 NVIDIA 측에서 작성한 <a href="https://docs.nvidia.com/deeplearning/performance/mixed-precision-training/index.html" target="_blank"><b> Training with Mixed Precision User Guide</b></a> 문서에서는 처음엔 Scaling Factor를 큰 값으로 사용한 뒤에 점진적으로 값을 줄이고 늘리는 방식으로 적절한 값을 튜닝하는 것을 가이드로 제공하고 있습니다. 
@@ -67,7 +67,7 @@ NVIDIA 측에서 작성한 <a href="https://docs.nvidia.com/deeplearning/perform
 마지막으로, Mixed Precision으로 학습을 시켰을 때 정확도 손실이 어느정도 발생하는지를 다룬 실험 결과를 보여드리겠습니다. 저자들은 Classification, Object Detection, Speech Recognition, Machine Translation, Language Modeling, DCGAN 등 다양한 task에 대해 Mixed Precision을 적용하여 성능을 검증하였습니다. 
 
 <figure>
-	<img src="{{ '/assets/img/mixed_precision/7.PNG | prepend: site.baseurl }}" alt=""> 
+	<img src="{{ '/assets/img/mixed_precision/7.PNG' | prepend: site.baseurl }}" alt=""> 
 </figure>
 
 Classification 에는 ImageNet 데이터셋을 사용하였고 FP32를 사용하였을 때와 거의 유사하거나, 약간 오른 accuracy를 얻을 수 있었다고 합니다. 당연히 학습 시간도 빨라졌겠죠? 다만 동일한 하드웨어에서 학습 시간이 얼마나 줄어들었는 지에 대해선 언급하고 있지 않아서 결과가 궁금하네요.
@@ -75,7 +75,7 @@ Classification 에는 ImageNet 데이터셋을 사용하였고 FP32를 사용하
 Object Detection은 PASCAL VOC 2007에 대해서 Faster R-CNN과 Multibox SSD로 실험을 하였으며, SSD의 경우 loss-scaling을 하지 않으면 학습이 발산을 하였는데, 128배 loss scaling을 해주면 FP32와 거의 비슷한 성능을 얻을 수 있었다고 합니다. 
 
 <figure>
-	<img src="{{ '/assets/img/mixed_precision/8.PNG | prepend: site.baseurl }}" alt=""> 
+	<img src="{{ '/assets/img/mixed_precision/8.PNG' | prepend: site.baseurl }}" alt=""> 
 </figure>
 
 Computer Vision Task 뿐만 아니라 음성 인식, 기계 번역, Language Modeling, DCGAN을 이용한 이미지 생성 등 다양한 task에서도 성능이 잘 유지가 되는 것을 확인하실 수 있습니다. 
@@ -85,7 +85,7 @@ Computer Vision Task 뿐만 아니라 음성 인식, 기계 번역, Language Mod
 오늘 다룬 Mixed Precision Training이 저희가 일반적으로 사용하는 NVIDIA GPU만 있으면 사용할 수 있는지 짧은 식견으로 정리를 해보았습니다. (틀린 내용이 있을 수 있습니다! ㅠㅠ 잘못된 내용이 있으면 정정 부탁드릴게요!)
 
 <figure>
-	<img src="{{ '/assets/img/mixed_precision/9.PNG | prepend: site.baseurl }}" alt=""> 
+	<img src="{{ '/assets/img/mixed_precision/9.PNG' | prepend: site.baseurl }}" alt=""> 
 </figure>
 
 우선 NVIDIA GPU에도 Intel의 CPU처럼 세대가 존재합니다. 제가 2018년 SIGGRAPH 학회에 갔을 때 Turing 아키텍처가 공개가 되었었는데, 올해 5월 NVIDIA의 GTC 2020 행사에서 Ampere 아키텍처가 공개되었습니다. 저는 주로 Pascal 아키텍처의 1080 Ti를 이용하고 있는데 이 GPU 에는 Tensor Core가 들어가 있지 않습니다. Tensor Core는 Pascal 다음 세대인 Volta에서 처음 도입되었습니다. 
