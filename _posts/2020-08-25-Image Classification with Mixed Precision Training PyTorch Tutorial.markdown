@@ -82,13 +82,13 @@ pip install -r requirements.txt
 -	Training Augmentation: Resize((256, 256)), RandomHorizontalFlip()
 - Adam + Cosine Learning rate scheduling with warmup
 
-굉장히 기본적인 기법들만 적용을 하였으며 실험에 사용한 하드웨어(GPU)는 Tensor Core가 없는 Pascal 세대의 GTX 1080 Ti 1개와, Tensor Core가 있는 Turing 세대의 RTX 2080 Ti 1개를 사용하였습니다. 이 두 개의 GPU가 아무래도 많이 사용이 되기도 하고, 저 같은 서민들이 사용할 수 있는 하이엔드 GPU기도 합니다. (GPU 많은 서버 사용해보고 싶습니다…)
+굉장히 기본적인 기법들만 적용을 하였으며 실험에 사용한 하드웨어(GPU)는 Tensor Core가 없는 Pascal 세대의 GTX 1080 Ti 1개와, Tensor Core가 있는 Turing 세대의 RTX 2080 Ti 1개를 사용하였습니다. 이 두 개의 GPU가 아무래도 많이 사용이 되기도 하고, 저 같은 서민들이 사용할 수 있는 하이엔드 GPU기도 합니다. (GPU 많은 서버 갖고 싶네요..)
 
 <figure>
 	<img src="{{ '/assets/img/mixed_precision/11.PNG | prepend: site.baseurl }}" alt=""> 
 </figure>
 
-제가 업로드한 코드를 다운 받으시고 데이터셋을 `data` 폴더에 넣어 주시면 준비는 끝입니다. 
+제가 업로드한 코드를 다운 받으시고 데이터셋을 **data** 폴더에 넣어 주시면 준비는 끝입니다. 
 학습을 돌리기 위해선 다음과 같은 Command Line 명령어를 입력해주시면 됩니다. 
 
 ```python
@@ -98,7 +98,7 @@ Python main.py --checkpoint_name baseline
 ### 2. Automatic Mixed Precision Training
 다음은 PyTorch 1.6의 AMP 기능을 추가하여 실험을 돌리는 방법을 설명 드리겠습니다. 
 
-제 코드의 `learning/trainer.py` 에서 training loop가 돌아가는데 이 부분에서 torch.cuda.amp 를 붙여서 AMP 기능을 사용하였습니다. 
+제 코드의 **learning/trainer.py** 에서 training loop가 돌아가는데 이 부분에서 torch.cuda.amp 를 붙여서 AMP 기능을 사용하였습니다. 
 
 ```python
 """ define loss scaler for automatic mixed precision """
