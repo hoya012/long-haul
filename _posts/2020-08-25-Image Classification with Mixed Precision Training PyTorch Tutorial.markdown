@@ -69,7 +69,7 @@ pip install -r requirements.txt
 그 뒤 실험에 사용할 데이터셋을 다운받아야 하는데요, 저는 맨날 쓰는 ImageNet, CIFAR 등의 데이터셋 말고 새로운 데이터셋을 사용해보고 싶어서 이것 저것 찾아보다가 작년 Kaggle에서 진행되었던 **Intel Image Classification** 데이터셋이 마음에 들어서 자주 사용하고 있습니다.
 
 <figure>
-	<img src="{{ '/assets/img/mixed_precision/10.PNG | prepend: site.baseurl }}" alt=""> 
+	<img src="{{ '/assets/img/mixed_precision/10.PNG' | prepend: site.baseurl }}" alt=""> 
 </figure>
 
 이 데이터셋은 빌딩, 숲, 빙하, 산, 바다, 거리 총 6가지의 class로 구성되어 있고, 150x150 크기의 image 25000장이 제공됩니다. 비교적 구분이 잘 되는 class긴 한데 직접 데이터를 까보면 class가 애매하거나 잘못 labeling 된 image도 존재해서 나름 재미있습니다. 오늘 실험에서는 이 Intel Classification 데이터셋을 사용할 예정입니다.
@@ -85,7 +85,7 @@ pip install -r requirements.txt
 굉장히 기본적인 기법들만 적용을 하였으며 실험에 사용한 하드웨어(GPU)는 Tensor Core가 없는 Pascal 세대의 GTX 1080 Ti 1개와, Tensor Core가 있는 Turing 세대의 RTX 2080 Ti 1개를 사용하였습니다. 이 두 개의 GPU가 아무래도 많이 사용이 되기도 하고, 저 같은 서민들이 사용할 수 있는 하이엔드 GPU기도 합니다. (GPU 많은 서버 갖고 싶네요..)
 
 <figure>
-	<img src="{{ '/assets/img/mixed_precision/11.PNG | prepend: site.baseurl }}" alt=""> 
+	<img src="{{ '/assets/img/mixed_precision/11.PNG' | prepend: site.baseurl }}" alt=""> 
 </figure>
 
 제가 업로드한 코드를 다운 받으시고 데이터셋을 **data** 폴더에 넣어 주시면 준비는 끝입니다. 
