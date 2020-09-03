@@ -78,6 +78,7 @@ title: Archives
 		<li><a href="https://hoya012.github.io/blog/NIPS-image-recognition-paper-guide/" target="_blank"> <b> NeurIPS 2018 image recognition paper preview </b></a>, 18/12/06 .</li>
 	<h1 class="pageTitle">  </h1>
 	<h1 class="pageTitle"> Conference Review </h1>
+		<li><a href="https://hoya012.github.io/blog/ECCV-2020-review/" target="_blank"> <b> ECCV 2020 Virtual Conference 참석 후기 및 프로그램 소개 </b></a>, 20/09/03 .</li>
 		<li><a href="https://hoya012.github.io/blog/ICCV-2019_review_2/" target="_blank"> <b> ICCV 2019 Review [2] Best Paper SinGAN： Learning a Generative Model from a Single Natural Image 리뷰 </b></a>, 19/11/03 .</li>
 		<li><a href="https://hoya012.github.io/blog/ICCV-2019_review_1/" target="_blank"> <b> ICCV 2019 Review [1] 참석 후기 및 프로그램 소개 </b></a>, 19/11/03 .</li>
 		<li><a href="https://hoya012.github.io/blog/ICLR-2019-best-paper-review/" target="_blank"> <b> ICLR 2019 참석 후기 및 단순하고 효과적인 Network Pruning 방법론을 다룬 Best Paper 리뷰 </b></a>, 19/05/23 .</li>
