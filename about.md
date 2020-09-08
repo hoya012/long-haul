@@ -12,6 +12,7 @@ title: About me
 	  	<li>I'm organizer of <a href="https://drive.google.com/drive/folders/0B8z5oUpB2DysbFNEOWxfVDh5VW8" target="_blank"> <b>SNUAI study</b> </a>, <a href="https://www.facebook.com/groups/TensorFlowKR" target="_blank"> <b> TFUG(TensorFlow-KR Facebook User Group) </b> </a> </li>
 		<li>I participates in <a href="https://www.youtube.com/results?search_query=pr12" target="_blank"><b>PR-12 Deep Learning Paper Reading Study from Tensorflow-KR Facebook User Group.</b> </a> </li>
 	<h1 class="pageTitle"> Repository </h1>
+		<li> <a href="https://github.com/hoya012/automatic-mixed-precision-tutorials-pytorch" target="_blank"> https://github.com/hoya012/automatic-mixed-precision-tutorials-pytorch </a></li>
 		<li> <a href="https://github.com/hoya012/semantic-segmentation-tutorial-pytorch" target="_blank"> https://github.com/hoya012/semantic-segmentation-tutorial-pytorch </a></li>
 		<li> <a href="https://github.com/hoya012/carrier-of-tricks-for-classification-pytorch" target="_blank"> https://github.com/hoya012/carrier-of-tricks-for-classification-pytorch </a></li>
 		<li> <a href="https://github.com/hoya012/CVPR-2020-Paper-Statistics" target="_blank"> https://github.com/hoya012/CVPR-2020-Paper-Statistics </a></li>
@@ -29,6 +30,7 @@ title: About me
 		<li> <a href="https://github.com/hoya012/pytorch-MobileNet" target="_blank"> https://github.com/hoya012/pytorch-MobileNet </a></li>
 		<li> <a href="https://github.com/hoya012/pytorch-partial-conv-based-padding" target="_blank"> https://github.com/hoya012/pytorch-partial-conv-based-padding </a></li>
 	<h1 class="pageTitle">Slides </h1>
+		<li> <a href="https://www.slideshare.net/HoseongLee6/mixed-precision-training-review" target="_blank"> "Mixed Precision Training" Paper Review </a></li>
 		<li> <a href="https://www.slideshare.net/HoseongLee6/mvtec-ad-a-comprehensive-realworld-dataset-for-unsupervised-anomaly-detection" target="_blank"> "MVTec AD: A Comprehensive Real-World Dataset for Unsupervised Anomaly Detection" Paper Review </a></li>
 		<li> <a href="https://www.slideshare.net/HoseongLee6/yolov4-optimal-speed-and-accuracy-of-object-detection-review" target="_blank"> "YOLOv4: optimal speed and accuracy of object detection" Paper Review </a></li>
 		<li> <a href="https://www.slideshare.net/HoseongLee6/fixmatchsimplifying-semi-supervised-learning-with-consistency-and-confidence" target="_blank"> "FixMatch:simplifying semi supervised learning with consistency and confidence" Paper Review </a></li>
@@ -48,7 +50,8 @@ title: About me
 		<li> <a href="https://www.slideshare.net/HoseongLee6/searching-for-activation-functions-paper-review" target="_blank"> "Searching for Activation Functions, 2018 ICLR" Paper Review</a></li>
 		<li> <a href="https://www.slideshare.net/HoseongLee6/google-vizier-a-service-for-blackbox-optimization-paper-review" target="_blank"> "Google Vizier: A Service for Black-Box Optimization, 2017 KDD" Paper Review</a></li>
 	<h1 class="pageTitle">Presentation </h1>
-		<li> 고려대학교 산업경영공학부 산업인공지능 프로그램 - Invited Talk </li>
+		<li> <a href="https://youtu.be/VEG7qjSa3kY" target="_blank"> <b> PR-273: Mixed Precision Training </b> </a> </li>
+		<li> <a href="http://dsba.korea.ac.kr/notice/?uid=1322&mod=document&pageid=1" target="_blank"> <b> 고려대학교 산업경영공학부 산업인공지능 프로그램 - Invited Talk, 2020.8.11 </b> </a> </li>
 		<li> <a href="https://youtu.be/7skd4bdE_jg" target="_blank"> <b> PR-263: MVTec AD-A Comprehensive Real-World Dataset for Unsupervised Anomaly Detection </b> </a> </li>
 		<li> <a href="https://youtu.be/CXRlpsFpVUE" target="_blank"> <b> PR-249: YOLOv4: Optimal Speed and Accuracy of Object Detection </b> </a> </li>
 		<li> <a href="https://youtu.be/fOCxgrR95ew" target="_blank"> <b> PR-237: FixMatch: Simplifying Semi-Supervised Learning with Consistency and Confidence </b> </a> </li>
