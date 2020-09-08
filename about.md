@@ -50,6 +50,7 @@ title: About me
 		<li> <a href="https://www.slideshare.net/HoseongLee6/searching-for-activation-functions-paper-review" target="_blank"> "Searching for Activation Functions, 2018 ICLR" Paper Review</a></li>
 		<li> <a href="https://www.slideshare.net/HoseongLee6/google-vizier-a-service-for-blackbox-optimization-paper-review" target="_blank"> "Google Vizier: A Service for Black-Box Optimization, 2017 KDD" Paper Review</a></li>
 	<h1 class="pageTitle">Presentation </h1>
+		<li> <a href="https://festa.io/events/1159" target="_blank"> <b> 비전을 나누는 시간(전액 기부 웨비나) 연사, 2020.9.18 </b> </a> </li>
 		<li> <a href="https://youtu.be/VEG7qjSa3kY" target="_blank"> <b> PR-273: Mixed Precision Training </b> </a> </li>
 		<li> <a href="http://dsba.korea.ac.kr/notice/?uid=1322&mod=document&pageid=1" target="_blank"> <b> 고려대학교 산업경영공학부 산업인공지능 프로그램 - Invited Talk, 2020.8.11 </b> </a> </li>
 		<li> <a href="https://youtu.be/7skd4bdE_jg" target="_blank"> <b> PR-263: MVTec AD-A Comprehensive Real-World Dataset for Unsupervised Anomaly Detection </b> </a> </li>
@@ -57,7 +58,7 @@ title: About me
 		<li> <a href="https://youtu.be/fOCxgrR95ew" target="_blank"> <b> PR-237: FixMatch: Simplifying Semi-Supervised Learning with Consistency and Confidence </b> </a> </li>
 		<li> <a href="https://youtu.be/6pDIfC14By8" target="_blank"> <b> PR-222: Revisiting Self-Supervised Visual Representation Learning </b> </a> </li>
 		<li> <a href="https://youtu.be/eDDHsbMgOJQ" target="_blank"> <b> PR-208: Unsupervised Visual Representation Learning Overview:Toward Self-Supervision </b> </a> </li>
-		<li> <a href="https://www.onoffmix.com/event/205358" target="_blank"> <b> 제 9회 투빅스 빅데이터 컨퍼런스 </b> - Invited Talk </a> </li>
+		<li> <a href="https://www.onoffmix.com/event/205358" target="_blank"> <b> 제 9회 투빅스 빅데이터 컨퍼런스 - Invited Talk, 2020.1.11 </b> </a> </li>
 	<h1 class="pageTitle">Teaching Experience </h1>
 		<li> Lecturer of <a href="https://www.fastcampus.co.kr/data_workshop_obj/" target="_blank"> <b>Object Detection Workshop</b>, </a> in FastCampus, 2018.10 ~ 2019.5 </li>
 		<li> TA of <b> Digital System Design and Experiments(디지털 시스템 설계 및 실습) </b>, in SNUECE(서울대학교 전기정보공학부), 2017.9 ~ 2017.12 </li>
