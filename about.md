@@ -52,6 +52,7 @@ title: About me
 		<li> <a href="https://www.slideshare.net/HoseongLee6/google-vizier-a-service-for-blackbox-optimization-paper-review" target="_blank"> "Google Vizier: A Service for Black-Box Optimization, 2017 KDD" Paper Review</a></li>
 	<h1 class="pageTitle">Presentation </h1>
 		<li> <a href="https://festa.io/events/1159" target="_blank"> <b> 비전을 나누는 시간(전액 기부 웨비나) 연사, 2020.9.18 </b> </a> </li>
+		<li> <a href="https://festa.io/events/1158" target="_blank"> <b> [DevC Seongnam Launching] World of PyTorch - Invited Talk, 2020.9.17 </b> </a> </li>
 		<li> <a href="https://youtu.be/VEG7qjSa3kY" target="_blank"> <b> PR-273: Mixed Precision Training </b> </a> </li>
 		<li> <a href="http://dsba.korea.ac.kr/notice/?uid=1322&mod=document&pageid=1" target="_blank"> <b> 고려대학교 산업경영공학부 산업인공지능 프로그램 - Invited Talk, 2020.8.11 </b> </a> </li>
 		<li> <a href="https://youtu.be/7skd4bdE_jg" target="_blank"> <b> PR-263: MVTec AD-A Comprehensive Real-World Dataset for Unsupervised Anomaly Detection </b> </a> </li>
