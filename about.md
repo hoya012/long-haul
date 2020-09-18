@@ -30,7 +30,7 @@ title: About me
 		<li> <a href="https://github.com/hoya012/pytorch-MobileNet" target="_blank"> https://github.com/hoya012/pytorch-MobileNet </a></li>
 		<li> <a href="https://github.com/hoya012/pytorch-partial-conv-based-padding" target="_blank"> https://github.com/hoya012/pytorch-partial-conv-based-padding </a></li>
 	<h1 class="pageTitle">Slides </h1>
-		<li> <a href="https://www.slideshare.net/HoseongLee6/carrier-oftricksforimageclassification" target="_blank"> "Carrier of Tricks for Image Classification" </a></li>
+		<li> <a href="https://www.slideshare.net/HoseongLee6/carrier-oftricksforimageclassification-238528771" target="_blank"> "Carrier of Tricks for Image Classification" </a></li>
 		<li> <a href="https://www.slideshare.net/HoseongLee6/the-many-faces-of-robustness-a-critical-analysis-of-outofdistribution-generalization-paper-review" target="_blank"> "The Many Faces of Robustness: A Critical Analysis of Out-of-Distribution Generalization" Paper Review </a></li>
 		<li> <a href="https://www.slideshare.net/HoseongLee6/mixed-precision-training-review" target="_blank"> "Mixed Precision Training" Paper Review </a></li>
 		<li> <a href="https://www.slideshare.net/HoseongLee6/mvtec-ad-a-comprehensive-realworld-dataset-for-unsupervised-anomaly-detection" target="_blank"> "MVTec AD: A Comprehensive Real-World Dataset for Unsupervised Anomaly Detection" Paper Review </a></li>
