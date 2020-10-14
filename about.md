@@ -12,6 +12,7 @@ title: About me
 	  	<li>I'm organizer of <a href="https://drive.google.com/drive/folders/0B8z5oUpB2DysbFNEOWxfVDh5VW8" target="_blank"> <b>SNUAI study</b> </a>, <a href="https://www.facebook.com/groups/TensorFlowKR" target="_blank"> <b> TFUG(TensorFlow-KR Facebook User Group) </b> </a> </li>
 		<li>I participates in <a href="https://www.youtube.com/results?search_query=pr12" target="_blank"><b>PR-12 Deep Learning Paper Reading Study from Tensorflow-KR Facebook User Group.</b> </a> </li>
 	<h1 class="pageTitle"> Repository </h1>
+		<li> <a href="https://github.com/hoya012/NeurIPS-2020-Paper-Statistics" target="_blank"> https://github.com/hoya012/NeurIPS-2020-Paper-Statistics </a></li>
 		<li> <a href="https://github.com/hoya012/automatic-mixed-precision-tutorials-pytorch" target="_blank"> https://github.com/hoya012/automatic-mixed-precision-tutorials-pytorch </a></li>
 		<li> <a href="https://github.com/hoya012/semantic-segmentation-tutorial-pytorch" target="_blank"> https://github.com/hoya012/semantic-segmentation-tutorial-pytorch </a></li>
 		<li> <a href="https://github.com/hoya012/carrier-of-tricks-for-classification-pytorch" target="_blank"> https://github.com/hoya012/carrier-of-tricks-for-classification-pytorch </a></li>
