@@ -12,47 +12,47 @@ title: About me
 	  	<li>I'm organizer of <a href="https://drive.google.com/drive/folders/0B8z5oUpB2DysbFNEOWxfVDh5VW8" target="_blank"> <b>SNUAI study</b> </a>, <a href="https://www.facebook.com/groups/TensorFlowKR" target="_blank"> <b> TFUG(TensorFlow-KR Facebook User Group) </b> </a> </li>
 		<li>I participates in <a href="https://www.youtube.com/results?search_query=pr12" target="_blank"><b>PR-12 Deep Learning Paper Reading Study from Tensorflow-KR Facebook User Group.</b> </a> </li>
 	<h1 class="pageTitle"> Repository </h1>
-		<li> <a href="https://github.com/hoya012/NeurIPS-2020-Paper-Statistics" target="_blank"> https://github.com/hoya012/NeurIPS-2020-Paper-Statistics </a></li>
-		<li> <a href="https://github.com/hoya012/automatic-mixed-precision-tutorials-pytorch" target="_blank"> https://github.com/hoya012/automatic-mixed-precision-tutorials-pytorch </a></li>
-		<li> <a href="https://github.com/hoya012/semantic-segmentation-tutorial-pytorch" target="_blank"> https://github.com/hoya012/semantic-segmentation-tutorial-pytorch </a></li>
-		<li> <a href="https://github.com/hoya012/carrier-of-tricks-for-classification-pytorch" target="_blank"> https://github.com/hoya012/carrier-of-tricks-for-classification-pytorch </a></li>
-		<li> <a href="https://github.com/hoya012/CVPR-2020-Paper-Statistics" target="_blank"> https://github.com/hoya012/CVPR-2020-Paper-Statistics </a></li>
-		<li> <a href="https://github.com/hoya012/AAAI-2020-Paper-Statistics" target="_blank"> https://github.com/hoya012/AAAI-2020-Paper-Statistics </a></li>
-		<li> <a href="https://github.com/hoya012/NeurIPS-2019-Paper-Statistics" target="_blank"> https://github.com/hoya012/NeurIPS-2019-Paper-Statistics </a></li>
-		<li> <a href="https://github.com/hoya012/ICCV-2019-Paper-Statistics" target="_blank"> https://github.com/hoya012/ICCV-2019-Paper-Statistics </a></li>
-		<li> <a href="https://github.com/hoya012/CVPR-2019-Paper-Statistics" target="_blank"> https://github.com/hoya012/CVPR-2019-Paper-Statistics </a></li>
-		<li> <a href="https://github.com/hoya012/deep_learning_object_detection" target="_blank"> https://github.com/hoya012/deep_learning_object_detection </a></li>
-		<li> <a href="https://github.com/hoya012/awesome-anomaly-detection" target="_blank"> https://github.com/hoya012/awesome-anomaly-detection </a></li>
-		<li> <a href="https://github.com/hoya012/fast-style-transfer-tutorial-pytorch" target="_blank"> https://github.com/hoya012/fast-style-transfer-tutorial-pytorch </a></li>
-		<li> <a href="https://github.com/hoya012/shake-shake-tensorflow" target="_blank"> https://github.com/hoya012/shake-shake-tensorflow </a></li>
-		<li> <a href="https://github.com/hoya012/pytorch-densenet" target="_blank"> https://github.com/hoya012/pytorch-densenet </a></li>
-		<li> <a href="https://github.com/hoya012/pytorch-peleenet" target="_blank"> https://github.com/hoya012/pytorch-peleenet </a></li>
-		<li> <a href="https://github.com/hoya012/pytorch-Xception" target="_blank"> https://github.com/hoya012/pytorch-Xception </a></li>
-		<li> <a href="https://github.com/hoya012/pytorch-MobileNet" target="_blank"> https://github.com/hoya012/pytorch-MobileNet </a></li>
-		<li> <a href="https://github.com/hoya012/pytorch-partial-conv-based-padding" target="_blank"> https://github.com/hoya012/pytorch-partial-conv-based-padding </a></li>
+		<li> <a href="https://github.com/hoya012/NeurIPS-2020-Paper-Statistics" target="_blank"> <b>https://github.com/hoya012/NeurIPS-2020-Paper-Statistics</b> </a></li>
+		<li> <a href="https://github.com/hoya012/automatic-mixed-precision-tutorials-pytorch" target="_blank"> <b>https://github.com/hoya012/automatic-mixed-precision-tutorials-pytorch</b> </a></li>
+		<li> <a href="https://github.com/hoya012/semantic-segmentation-tutorial-pytorch" target="_blank"> <b>https://github.com/hoya012/semantic-segmentation-tutorial-pytorch</b> </a></li>
+		<li> <a href="https://github.com/hoya012/carrier-of-tricks-for-classification-pytorch" target="_blank"> <b>https://github.com/hoya012/carrier-of-tricks-for-classification-pytorch</b> </a></li>
+		<li> <a href="https://github.com/hoya012/CVPR-2020-Paper-Statistics" target="_blank"> <b>https://github.com/hoya012/CVPR-2020-Paper-Statistics</b> </a></li>
+		<li> <a href="https://github.com/hoya012/AAAI-2020-Paper-Statistics" target="_blank"> <b>https://github.com/hoya012/AAAI-2020-Paper-Statistics</b> </a></li>
+		<li> <a href="https://github.com/hoya012/NeurIPS-2019-Paper-Statistics" target="_blank"> <b>https://github.com/hoya012/NeurIPS-2019-Paper-Statistics</b> </a></li>
+		<li> <a href="https://github.com/hoya012/ICCV-2019-Paper-Statistics" target="_blank"> <b>https://github.com/hoya012/ICCV-2019-Paper-Statistics</b> </a></li>
+		<li> <a href="https://github.com/hoya012/CVPR-2019-Paper-Statistics" target="_blank"> <b>https://github.com/hoya012/CVPR-2019-Paper-Statistics</b> </a></li>
+		<li> <a href="https://github.com/hoya012/deep_learning_object_detection" target="_blank"> <b>https://github.com/hoya012/deep_learning_object_detection</b> </a></li>
+		<li> <a href="https://github.com/hoya012/awesome-anomaly-detection" target="_blank"> <b>https://github.com/hoya012/awesome-anomaly-detection</b> </a></li>
+		<li> <a href="https://github.com/hoya012/fast-style-transfer-tutorial-pytorch" target="_blank"> <b>https://github.com/hoya012/fast-style-transfer-tutorial-pytorch</b> </a></li>
+		<li> <a href="https://github.com/hoya012/shake-shake-tensorflow" target="_blank"> <b>https://github.com/hoya012/shake-shake-tensorflow</b> </a></li>
+		<li> <a href="https://github.com/hoya012/pytorch-densenet" target="_blank"> <b>https://github.com/hoya012/pytorch-densenet</b> </a></li>
+		<li> <a href="https://github.com/hoya012/pytorch-peleenet" target="_blank"> <b>https://github.com/hoya012/pytorch-peleenet</b> </a></li>
+		<li> <a href="https://github.com/hoya012/pytorch-Xception" target="_blank"> <b>https://github.com/hoya012/pytorch-Xception</b> </a></li>
+		<li> <a href="https://github.com/hoya012/pytorch-MobileNet" target="_blank"> <b>https://github.com/hoya012/pytorch-MobileNet</b> </a></li>
+		<li> <a href="https://github.com/hoya012/pytorch-partial-conv-based-padding" target="_blank"> <b>https://github.com/hoya012/pytorch-partial-conv-based-padding</b> </a></li>
 	<h1 class="pageTitle">Slides </h1>
-		<li> <a href="https://www.slideshare.net/HoseongLee6/cnn-architecture-a-to-z" target="_blank"> "CNN Architecture 톺아보기" </a></li>
-		<li> <a href="https://www.slideshare.net/HoseongLee6/carrier-oftricksforimageclassification-238528771" target="_blank"> "Carrier of Tricks for Image Classification" </a></li>
-		<li> <a href="https://www.slideshare.net/HoseongLee6/the-many-faces-of-robustness-a-critical-analysis-of-outofdistribution-generalization-paper-review" target="_blank"> "The Many Faces of Robustness: A Critical Analysis of Out-of-Distribution Generalization" Paper Review </a></li>
-		<li> <a href="https://www.slideshare.net/HoseongLee6/mixed-precision-training-review" target="_blank"> "Mixed Precision Training" Paper Review </a></li>
-		<li> <a href="https://www.slideshare.net/HoseongLee6/mvtec-ad-a-comprehensive-realworld-dataset-for-unsupervised-anomaly-detection" target="_blank"> "MVTec AD: A Comprehensive Real-World Dataset for Unsupervised Anomaly Detection" Paper Review </a></li>
-		<li> <a href="https://www.slideshare.net/HoseongLee6/yolov4-optimal-speed-and-accuracy-of-object-detection-review" target="_blank"> "YOLOv4: optimal speed and accuracy of object detection" Paper Review </a></li>
-		<li> <a href="https://www.slideshare.net/HoseongLee6/fixmatchsimplifying-semi-supervised-learning-with-consistency-and-confidence" target="_blank"> "FixMatch:simplifying semi supervised learning with consistency and confidence" Paper Review </a></li>
-		<li> <a href="https://www.slideshare.net/HoseongLee6/revisiting-self-supervised-visual-representation-learning-paper-review" target="_blank"> "Revisiting self supervised visual representation learning" Paper Review </a></li>
-		<li> <a href="https://www.slideshare.net/HoseongLee6/unsupervised-visual-representation-learning-overview-toward-selfsupervision-194443768" target="_blank"> "Unsupervised visual representation learning overview: Toward Self-Supervision" </a></li>
-		<li> <a href="https://www.slideshare.net/HoseongLee6/human-uncertainty-makes-classification-more-robust-iccv-2019-review" target="_blank"> "Human uncertainty makes classification more robust, ICCV 2019 Review" </a></li>
-		<li> <a href="https://www.slideshare.net/HoseongLee6/single-image-super-resolution-overview" target="_blank"> "Single Image Super Resolution Overview" </a></li>
-		<li> <a href="https://www.slideshare.net/HoseongLee6/2019-iclr-best-paper-review-147216667" target="_blank"> "2019 ICLR Best Paper "The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks" Review"</a></li>
-		<li> <a href="https://www.slideshare.net/HoseongLee6/2019-cvpr-paperoverview" target="_blank"> "2019 CVPR Paper Statistics & Paper Review"</a></li>
-		<li> <a href="https://www.slideshare.net/HoseongLee6/pelee-a-real-time-object-detection-system-on-mobile-devices-paper-review" target="_blank"> "Pelee: a real time object detection system on mobile devices, 2018 NeurIPS" Paper Review</a></li>
-		<li> <a href="https://www.slideshare.net/HoseongLee6/how-does-batch-normalization-help-optimization-paper-review" target="_blank"> "How does batch normalization help optimization, 2018 NeurIPS" Paper Review</a></li>
-		<li> <a href="https://www.slideshare.net/HoseongLee6/simple-does-it-weakly-supervised-instance-and-semantic-segmentation-paper-review" target="_blank"> "Simple Does It: weakly supervised instance and semantic segmentation, 2017 CVPR" Paper Review</a></li>
-		<li> <a href="https://www.slideshare.net/HoseongLee6/from-image-level-to-pixellevel-labeling-with-convolutional-networks-paper-review-129173293" target="_blank"> "From image level to pixel-level labeling with convolutional networks, 2015 CVPR" Paper Review</a></li>
-		<li> <a href="https://www.slideshare.net/HoseongLee6/dataset-and-metrics-for-predicting-local-visible-differences-paper-review" target="_blank"> "Dataset and metrics for predicting local visible differences, 2018 SIGGRAPH" Paper Review</a></li>
-		<li> <a href="https://www.slideshare.net/HoseongLee6/learning-from-noisy-largescale-datasets-with-minimal-supervision-paper-review" target="_blank"> "Learning From Noisy Large-Scale Datasets With Minimal Supervision, 2017 CVPR" Paper Review</a></li>
-		<li> <a href="https://www.slideshare.net/HoseongLee6/learning-transferable-architectures-for-scalable-image-recognition-paper-review" target="_blank"> "Learning transferable architectures for scalable image recognition, 2018 CVPR" Paper Review</a></li>
-		<li> <a href="https://www.slideshare.net/HoseongLee6/searching-for-activation-functions-paper-review" target="_blank"> "Searching for Activation Functions, 2018 ICLR" Paper Review</a></li>
-		<li> <a href="https://www.slideshare.net/HoseongLee6/google-vizier-a-service-for-blackbox-optimization-paper-review" target="_blank"> "Google Vizier: A Service for Black-Box Optimization, 2017 KDD" Paper Review</a></li>
+		<li> <a href="https://www.slideshare.net/HoseongLee6/cnn-architecture-a-to-z" target="_blank"> <b>"CNN Architecture 톺아보기"</b> </a></li>
+		<li> <a href="https://www.slideshare.net/HoseongLee6/carrier-oftricksforimageclassification-238528771" target="_blank"> <b>"Carrier of Tricks for Image Classification"</b> </a></li>
+		<li> <a href="https://www.slideshare.net/HoseongLee6/the-many-faces-of-robustness-a-critical-analysis-of-outofdistribution-generalization-paper-review" target="_blank"> <b>"The Many Faces of Robustness: A Critical Analysis of Out-of-Distribution Generalization" Paper Review</b> </a></li>
+		<li> <a href="https://www.slideshare.net/HoseongLee6/mixed-precision-training-review" target="_blank"> <b>"Mixed Precision Training" Paper Review</b> </a></li>
+		<li> <a href="https://www.slideshare.net/HoseongLee6/mvtec-ad-a-comprehensive-realworld-dataset-for-unsupervised-anomaly-detection" target="_blank"> <b>"MVTec AD: A Comprehensive Real-World Dataset for Unsupervised Anomaly Detection" Paper Review</b> </a></li>
+		<li> <a href="https://www.slideshare.net/HoseongLee6/yolov4-optimal-speed-and-accuracy-of-object-detection-review" target="_blank"> <b>"YOLOv4: optimal speed and accuracy of object detection" Paper Review</b> </a></li>
+		<li> <a href="https://www.slideshare.net/HoseongLee6/fixmatchsimplifying-semi-supervised-learning-with-consistency-and-confidence" target="_blank"> <b>"FixMatch:simplifying semi supervised learning with consistency and confidence" Paper Review</b> </a></li>
+		<li> <a href="https://www.slideshare.net/HoseongLee6/revisiting-self-supervised-visual-representation-learning-paper-review" target="_blank"> <b>"Revisiting self supervised visual representation learning" Paper Review</b> </a></li>
+		<li> <a href="https://www.slideshare.net/HoseongLee6/unsupervised-visual-representation-learning-overview-toward-selfsupervision-194443768" target="_blank"> <b>"Unsupervised visual representation learning overview: Toward Self-Supervision"</b> </a></li>
+		<li> <a href="https://www.slideshare.net/HoseongLee6/human-uncertainty-makes-classification-more-robust-iccv-2019-review" target="_blank"> <b>"Human uncertainty makes classification more robust, ICCV 2019 Review"</b> </a></li>
+		<li> <a href="https://www.slideshare.net/HoseongLee6/single-image-super-resolution-overview" target="_blank"> <b>"Single Image Super Resolution Overview"</b> </a></li>
+		<li> <a href="https://www.slideshare.net/HoseongLee6/2019-iclr-best-paper-review-147216667" target="_blank"> <b>"2019 ICLR Best Paper "The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks" Review"</b> </a></li>
+		<li> <a href="https://www.slideshare.net/HoseongLee6/2019-cvpr-paperoverview" target="_blank"> <b>"2019 CVPR Paper Statistics & Paper Review"</b> </a></li>
+		<li> <a href="https://www.slideshare.net/HoseongLee6/pelee-a-real-time-object-detection-system-on-mobile-devices-paper-review" target="_blank"> <b>"Pelee: a real time object detection system on mobile devices, 2018 NeurIPS" Paper Review</b> </a></li>
+		<li> <a href="https://www.slideshare.net/HoseongLee6/how-does-batch-normalization-help-optimization-paper-review" target="_blank"> <b>"How does batch normalization help optimization, 2018 NeurIPS" Paper Review</b> </a></li>
+		<li> <a href="https://www.slideshare.net/HoseongLee6/simple-does-it-weakly-supervised-instance-and-semantic-segmentation-paper-review" target="_blank"> <b>"Simple Does It: weakly supervised instance and semantic segmentation, 2017 CVPR" Paper Review</b> </a></li>
+		<li> <a href="https://www.slideshare.net/HoseongLee6/from-image-level-to-pixellevel-labeling-with-convolutional-networks-paper-review-129173293" target="_blank"> <b>"From image level to pixel-level labeling with convolutional networks, 2015 CVPR" Paper Review</b> </a></li>
+		<li> <a href="https://www.slideshare.net/HoseongLee6/dataset-and-metrics-for-predicting-local-visible-differences-paper-review" target="_blank"> <b>"Dataset and metrics for predicting local visible differences, 2018 SIGGRAPH" Paper Review</b> </a></li>
+		<li> <a href="https://www.slideshare.net/HoseongLee6/learning-from-noisy-largescale-datasets-with-minimal-supervision-paper-review" target="_blank"> <b>"Learning From Noisy Large-Scale Datasets With Minimal Supervision, 2017 CVPR" Paper Review</b> </a></li>
+		<li> <a href="https://www.slideshare.net/HoseongLee6/learning-transferable-architectures-for-scalable-image-recognition-paper-review" target="_blank"> <b>"Learning transferable architectures for scalable image recognition, 2018 CVPR" Paper Review</b> </a></li>
+		<li> <a href="https://www.slideshare.net/HoseongLee6/searching-for-activation-functions-paper-review" target="_blank"> <b>"Searching for Activation Functions, 2018 ICLR" Paper Review</b> </a></li>
+		<li> <a href="https://www.slideshare.net/HoseongLee6/google-vizier-a-service-for-blackbox-optimization-paper-review" target="_blank"> <b>"Google Vizier: A Service for Black-Box Optimization, 2017 KDD" Paper Review</b> </a></li>
 	<h1 class="pageTitle">Presentation </h1>
 		<li> <a href="https://festa.io/events/1159" target="_blank"> <b> 비전을 나누는 시간(전액 기부 웨비나) 연사, 2020.9.18 </b> </a> </li>
 		<li> <a href="https://festa.io/events/1158" target="_blank"> <b> [DevC Seongnam Launching] World of PyTorch - Invited Talk, 2020.9.17 </b> </a> </li>
