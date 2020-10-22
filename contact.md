@@ -88,6 +88,7 @@ title: Archives
 	<h1 class="pageTitle">  </h1>
 	<h1 class="pageTitle">  </h1>
 	<h1 class="pageTitle"> ETC. </h1>
+		<li><a href="https://hoya012.github.io/blog/Image-Classification-with-Stochastic-Weight-Averaging-Training-PyTorch-Tutorial/" target="_blank"> <b> Image Classification with Stochastic Weight Averaging PyTorch Tutorial </b></a>, 20/10/22 .</li>
 		<li><a href="https://hoya012.github.io/blog/SWA/" target="_blank"> <b> Averaging Weights Leads to Wider Optima and Better Generalization 리뷰 </b></a>, 20/10/14 .</li>
 		<li><a href="https://hoya012.github.io/blog/Image-Classification-with-Mixed-Precision-Training-PyTorch-Tutorial/" target="_blank"> <b> Image Classification with Automatic Mixed-Precision Training PyTorch Tutorial </b></a>, 20/08/25 .</li>
 		<li><a href="https://hoya012.github.io/blog/Mixed-Precision-Training/" target="_blank"> <b> Mixed-Precision Training of Deep Neural Networks </b></a>, 20/08/10 .</li>
