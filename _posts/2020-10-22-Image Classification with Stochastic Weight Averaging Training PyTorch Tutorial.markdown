@@ -124,6 +124,12 @@ swa_model = swa_model.cuda()
 
 주요 hyper-parameter는 언제부터 SWA를 시작할 지 결정하는 **args.swa_start** 와, SWA의 Learning Rate인 **args.swa_lr**  이며, 이 2가지 값을 적당히 조절해가며 실험을 해볼 예정입니다.
 
+SWA를 적용하여 실험하기 위한 커맨드 라인 명령어는 다음과 같습니다.
+
+```python
+python main.py --checkpoint_name swa --decay_type swa --swa_start 90 --swa_lr 5e-5;
+```
+
 ### 3. 실험 결과
 이제 Baseline Training과 SWA Training의 실험 결과를 설명 드리겠습니다.
 
