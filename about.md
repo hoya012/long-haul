@@ -55,6 +55,7 @@ title: About me
 		<li> <a href="https://www.slideshare.net/HoseongLee6/searching-for-activation-functions-paper-review" target="_blank"> <b>"Searching for Activation Functions, 2018 ICLR" Paper Review</b> </a></li>
 		<li> <a href="https://www.slideshare.net/HoseongLee6/google-vizier-a-service-for-blackbox-optimization-paper-review" target="_blank"> <b>"Google Vizier: A Service for Black-Box Optimization, 2017 KDD" Paper Review</b> </a></li>
 	<h1 class="pageTitle">Presentation </h1>
+		<li> <b> 서울과학기술대학교 전기정보공학세미나 특강(비대면), 2020.10.05 </b> </li>
 		<li> <a href="https://festa.io/events/1159" target="_blank"> <b> 비전을 나누는 시간(전액 기부 웨비나) 연사, 2020.9.18 </b> </a> </li>
 		<li> <a href="https://festa.io/events/1158" target="_blank"> <b> [DevC Seongnam Launching] World of PyTorch - Invited Talk, 2020.9.17 </b> </a> </li>
 		<li> <a href="https://youtu.be/VEG7qjSa3kY" target="_blank"> <b> PR-273: Mixed Precision Training </b> </a> </li>
