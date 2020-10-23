@@ -105,11 +105,16 @@ swa_scheduler = SWALR(optimizer, swa_lr=args.swa_lr)
 우선 **main.py** 에서 위의 PyTorch 공식 블로그 글의 예제와 같이 model을 AveragedModel로 묶어주고, SWALR scheduler를 선언해줍니다. 
 
 ```python
+for batch_idx, (inputs, labels) in enumerate(data_loader):
+  if not args.decay_type == 'swa':
+        self.scheduler.step()
+  else:
+      if epoch <= args.swa_start:
+          self.scheduler.step()
+
 if epoch > args.swa_start and args.decay_type == 'swa':
   self.swa_model.update_parameters(self.model)
   self.swa_scheduler.step()
-else:
-  self.scheduler.step()
 ```
 
 그 뒤, **learning/trainer.py** 에 있는 Data Loader를 enumerate하는 for loop안에 SWA를 추가해줍니다. 우선 현재의 epoch이 SWA를 언제부터 시작할 지 알려주는 **args.swa_start** 보다 커지고, decay type이 swa면 swa_model의 parameter와 swa_scheduler를 update해주면 됩니다. 거의 똑같이 구현을 할 수 있습니다. 
