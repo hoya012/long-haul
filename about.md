@@ -32,6 +32,7 @@ title: About me
 		<li> <a href="https://github.com/hoya012/pytorch-MobileNet" target="_blank"> <b>https://github.com/hoya012/pytorch-MobileNet</b> </a></li>
 		<li> <a href="https://github.com/hoya012/pytorch-partial-conv-based-padding" target="_blank"> <b>https://github.com/hoya012/pytorch-partial-conv-based-padding</b> </a></li>
 	<h1 class="pageTitle">Slides </h1>
+		<li> <a href="https://www2.slideshare.net/HoseongLee6/do-adversarially-robust-image-net-models-transfer-better" target="_blank"> <b>"Do Adversarially Robust ImageNet Models Transfer Better?" Paper Review</b> </a></li>
 		<li> <a href="https://www.slideshare.net/HoseongLee6/cnn-architecture-a-to-z" target="_blank"> <b>"CNN Architecture 톺아보기"</b> </a></li>
 		<li> <a href="https://www.slideshare.net/HoseongLee6/carrier-oftricksforimageclassification-238528771" target="_blank"> <b>"Carrier of Tricks for Image Classification"</b> </a></li>
 		<li> <a href="https://www.slideshare.net/HoseongLee6/the-many-faces-of-robustness-a-critical-analysis-of-outofdistribution-generalization-paper-review" target="_blank"> <b>"The Many Faces of Robustness: A Critical Analysis of Out-of-Distribution Generalization" Paper Review</b> </a></li>
@@ -55,6 +56,9 @@ title: About me
 		<li> <a href="https://www.slideshare.net/HoseongLee6/searching-for-activation-functions-paper-review" target="_blank"> <b>"Searching for Activation Functions, 2018 ICLR" Paper Review</b> </a></li>
 		<li> <a href="https://www.slideshare.net/HoseongLee6/google-vizier-a-service-for-blackbox-optimization-paper-review" target="_blank"> <b>"Google Vizier: A Service for Black-Box Optimization, 2017 KDD" Paper Review</b> </a></li>
 	<h1 class="pageTitle">Presentation </h1>
+		<li> <a href="https://youtu.be/x2L393xcL2M" target="_blank"> <b> PR-290: Do Adversarially Robust ImageNet Models Transfer Better? </b> </a> </li>
+		<li> <b> 서울대학교 머신러닝/딥러닝 학회 Deepest 초청 세미나, 2020.11.07 </b> </li>
+		<li> <b> 카카오브레인 초청 세미나 (비대면), 2020.11.03 </b> </li>
 		<li> <b> 서울과학기술대학교 전기정보공학세미나 특강(비대면), 2020.10.05 </b> </li>
 		<li> <a href="https://festa.io/events/1159" target="_blank"> <b> 비전을 나누는 시간(전액 기부 웨비나) 연사, 2020.9.18 </b> </a> </li>
 		<li> <a href="https://festa.io/events/1158" target="_blank"> <b> [DevC Seongnam Launching] World of PyTorch - Invited Talk, 2020.9.17 </b> </a> </li>
