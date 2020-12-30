@@ -102,6 +102,7 @@ title: Archives
 	<h1 class="pageTitle">  </h1>
 	<h1 class="pageTitle">  </h1>
 	<h1 class="pageTitle"> No Research..! </h1>
+		<li><a href="https://hoya012.github.io/blog/hoya012-2020-review/" target="_blank"> <b> Hoya012 Blog 2020년을 마치며! </b></a>, 20/12/30 .</li>
 		<li><a href="https://hoya012.github.io/blog/bartender_certificate/" target="_blank"> <b> 독학으로 조주기능사(바텐더) 자격증 따기! [합격 후기] </b></a>, 20/05/18 .</li>
 		<li><a href="https://hoya012.github.io/blog/hoya012-2019-review/" target="_blank"> <b> Research Blog 2019년을 마치며! </b></a>, 19/12/13 .</li>
 </div>
