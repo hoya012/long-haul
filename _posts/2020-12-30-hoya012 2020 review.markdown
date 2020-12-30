@@ -1,0 +1,76 @@
+---
+layout: post
+title:  Hoya012 Blog 2020년을 마치며!
+date:   2020-12-30
+description: 2020년을 마무리하며 그 동안 작성했던 글들에 대한 소회, 조회수 높았던 글 분석, 유입 키워드 분석 등 리뷰를 해보았습니다.
+comments: true
+---
+
+안녕하세요, 작년 12월 작성했던 <a href="https://hoya012.github.io/blog/hoya012-2019-review/" target="_blank"><b> 2019년 블로그 소회 </b></a> 글에 이어서 올해도 2020년을 마무리하며 1년간 제 블로그에 작성했던 글들에 대한 소회와 간단한 분석을 해보았습니다. 올 한해도 제 블로그를 찾아와주신 많은 분들 진심으로 감사드립니다.
+
+<blockquote> 2020년 작성한 블로그 글 24편! </blockquote>  
+우선 작년까지 총 33편의 글을 작성했었는데 올해 24편을 추가하고, 이 글까지 포함하면 총 58편의 글을 작성하게 되었네요! 올해 목표가 50편을 채우는 것이었는데 목표를 초과 달성해서 뿌듯합니다. 
+
+작년까지는 주로 Computer Vision 분야에 대한 이론을 다룬 논문 소개, 학회 미리보기 등의 Research에 집중한 글을 주로 작성해왔었는데, 올해 초 블로그의 성장과 다양성을 키워주기 위해 시야를 넓히게 되었습니다. 
+
+<figure>
+	<img src="{{ '/assets/img/2020_review/1.PNG' | prepend: site.baseurl }}" alt=""> 
+</figure>
+
+우선 가장 큰 변화는 Deep Learning 프로그래밍을 도와주는 주요 Library에 대한 소개, 주요 방법론을 구현하여 Tutorial 형태로 코드와 글을 같이 작성하는 등 Engineering 성격의 글도 작성을 하기 시작한 점입니다. 
+
+그리고 올해 가장 많은 시간을 쏟았던 “Deep Learning Classification Guidebook” 시리즈는 2018년 말부터 2019년 초까지 활발하게 연재했던 “Tutorials of Object Detection using Deep Learning” 와 같이 Classification의 기본을 공부하시는 분들에게 도움이 될 수 있도록 4편에 걸쳐서 주요 CNN architecture들을 소개드렸습니다. 이 CNN architecture 시리즈 덕분에 전액 기부 행사에서 연사로 참여하여 발표를 하기도 하였으며, 발표자료는 <a href="https://www.slideshare.net/HoseongLee6/cnn-architecture-a-to-z" target="_blank"><b> Slideshare </b></a>를 통해 공유한 바 있습니다.
+
+또한 제가 본업으로 다루고 있는 Anomaly Detection에 대한 소개도 2편에 걸쳐 소개를 드릴 수 있어서 기뻤습니다. 
+
+- <a href="https://hoya012.github.io/blog/anomaly-detection-overview-1/" target="_blank"><b> Anomaly Detection 개요： [1] 이상치 탐지 분야에 대한 소개 및 주요 문제와 핵심 용어, 산업 현장 적용 사례 정리 </b></a>
+- <a href="https://hoya012.github.io/blog/anomaly-detection-overview-2/" target="_blank"><b> Anomaly Detection 개요： [2] Out-of-distribution(OOD) Detection 문제 소개 및 핵심 논문 리뷰</b></a>
+
+마지막으로 올해 hoya012 blog에 research가 아닌 일상적인 주제를 담은 글도 차근차근 작성해보려고 계획을 세웠었는데 이 계획은 필자의 게으름으로 인해 단 1편 밖에 작성하지 못해서 유일한 반성거리인 것 같습니다. 올해 첫 삽을 뜬 글이 바로 <a href="https://hoya012.github.io/blog/bartender_certificate/" target="_blank"><b> 독학으로 조주기능사(바텐더) 자격증 따기! [합격 후기] </b></a> 글 입니다.
+
+<figure>
+	<img src="{{ '/assets/img/2020_review/2.PNG' | prepend: site.baseurl }}" alt=""> 
+</figure>
+
+바텐더 자격증에 대한 소개와, 도전하면서 겪었던 과정들을 글로 정리해봤는데, 평소에 논문을 읽고 정리해서 글을 작성하는 것보다 시간이 몇 배는 많이 들었습니다. 역시 사람은 익숙한 일을 할 때와 그렇지 않은 일을 할 때 능률이 너무 다른 것 같습니다. 허허허.. 집에서 손쉽게 칵테일을 만들어 마실 수 있는 홈텐딩 관련 글은 내년에는 꼭 작성하는게 목표랍니다! ㅋㅋㅋ
+
+<blockquote> 2020년의 성장 과정 </blockquote>  
+
+올해 제 블로그의 성장을 살펴보기 위해 작년과 마찬가지로 <a href="https://analytics.google.com/" target="_blank"><b> 구글 애널리틱스</b></a>를 활용했습니다. 
+
+<figure>
+	<img src="{{ '/assets/img/2020_review/3.PNG' | prepend: site.baseurl }}" alt=""> 
+</figure>
+
+작년과 비교하였을 때 사용자 수가 거의 3배로 늘었다는 점이 가장 고무적이며, 지난 3월 커뮤니티를 뜨겁게 달궜던 <a href="https://hoya012.github.io/blog/automl-zero-review/" target="_blank"><b> AutoML-Zero：Evolving Machine Learning Algorithms From Scratch Review </b></a> 글에서 일일 방문자수 신기록을 달성하는 쾌거를 이루었습니다. 그 뒤로 꾸준히 PyTorch Tutorial 글들을 자주 올려서 그런지 7월을 기점으로 꾸준히 주말을 제외하면 매일 500명 이상 찾아오는 흐름을 타게 되었습니다. 
+
+<figure>
+	<img src="{{ '/assets/img/2020_review/4.PNG' | prepend: site.baseurl }}" alt=""> 
+</figure>
+
+다음은 제 블로그 방문자 유입 트래픽에 대한 분석입니다. 작년까지는 제 글을 Facebook 그룹에 홍보를 해서 유입되는 **Social** 유입이 높은 비율을 차지했었는데, 올해는 제가 바라던 대로 사람들이 Google 등 검색 엔진을 통해 검색하여 유입되는 **Organic Search** 이 75%까지 올라왔습니다. 올해 찾아와주신 86,005분의 독자분들 모두 환영합니다!
+
+<blockquote> 조회수 Top 5 글 & 주요 유입 키워드 분석 </blockquote>  
+
+마지막으로 2020년 한 해동안 가장 인기를 끌었던 상위 5개의 글을 소개드리겠습니다. 게시글의 조회수는 Google Analytics [행동] – [사이트 콘텐츠] – [모든 페이지] 탭을 통해 확인할 수 있습니다.
+
+
+- 5위: <a href="https://hoya012.github.io/blog/SIngle-Image-Super-Resolution-Overview/" target="_blank"><b> “Single Image Super Resolution using Deep Learning Overview” </b></a> : 23,033회
+- 4위: <a href="https://hoya012.github.io/blog/yolov4/" target="_blank"><b> “YOLOv4：Optimal Speed and Accuracy of Object Detection Review” </b></a> : 24,634회
+- 3위: <a href="https://hoya012.github.io/blog/deeplearning-classification-guidebook-1/" target="_blank"><b> “Deep Learning Image Classification Guidebook [1] LeNet, AlexNet, ZFNet, VGG, GoogLeNet, ResNet” </b></a> : 25,073회
+- 2위: <a href="https://hoya012.github.io/blog/anomaly-detection-overview-1/" target="_blank"><b> “Anomaly Detection 개요： [1] 이상치 탐지 분야에 대한 소개 및 주요 문제와 핵심 용어, 산업 현장 적용 사례 정리” </b></a> : 26,225회
+- 1위: <a href="https://hoya012.github.io/blog/EfficientNet-review/" target="_blank"><b> “EfficientNet： Rethinking Model Scaling for Convolutional Neural Networks 리뷰” </b></a> : 30,348회
+
+역시나 한 분야에 개요를 다룬 주제들이 대체로 높은 조회수를 보였고, Computer Vision 쪽에서는 필수로 읽어야 하는 논문인 YOLO와 Efficientnet 도 큰 인기를 끌었습니다. 비슷한 이유로 6위는 굉장히 많은 시간을 들여서 작성한 “Self-Supervised Learning Overview” 글이 차지하였고, 7위는 EfficientDet 논문이 차지하였답니다. 전체 조회수는 총 587,681회로 작년까지 총 18만회 였던거에 비하면 엄청난 성장을 이뤘습니다. 내년에는 이만큼 성장을 이루기는 쉽지 않을 것 같네요!
+
+여담이지만 연구와 무관한 조주기능사 자격증 합격 후기 글도 전체 58편 중에 조회수는 19등으로 상위권에 속하고 있습니다. ㅋㅋㅋ
+
+<figure>
+	<img src="{{ '/assets/img/2020_review/5.PNG' | prepend: site.baseurl }}" alt=""> 
+</figure>
+
+마지막으로 Search Console을 통해 제 블로그에 유입된 검색어를 확인할 수 있습니다. EfficientNet, YOLOv4, EfficientDet, DenseNet, ResNet 등 Computer Vision 필독 논문들이 인기가 많았고, 연구 분야인 Anomaly Detection, Object Detection, Self-Supervised Learning, Super Resolution으로도 유입이 많이 된 점이 저는 굉장히 만족스럽게 생각합니다. 실제로 해당 키워드들을 구글에 검색해보면 첫 페이지에 제 블로그 글이 노출되고 있어서 신기하기도 하고 뿌듯하기도 하네요!
+
+<blockquote> 2020년을 마치며.. </blockquote>  
+자 이렇게 오늘은 간단하게 2020년 제 블로그에서 있었던 일들을 정리해보았는데요, 1년이 참 빠르다는 생각이 드네요. 내년에도 올해 작성했던 것처럼 여러가지 유익한 주제의 글들로 찾아뵐 예정이니 앞으로도 많은 관심 부탁드립니다! 2021년에도 모두 하시는 일 다 잘 풀리시고 행복하시길 기원하겠습니다. 감사합니다! 
+
