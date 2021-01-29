@@ -36,7 +36,7 @@ Unsupervised Anomaly Detection 데이터셋은 DAGM 2007과 NanoTWICE 데이터�
 	<figcaption> [Unsupervised Anomaly Detection Dataset] </figcaption>
 </figure>
 
-DAGM 데이터셋은 총 10가지 도메인의 데이터로 구성되어 있으며, 모델링을 통해 가상으로 결함을 합성하여 만든 데이터셋입니다. NanoTWICE 데이터셋은 nanofibrous material 데이터이며 40장의 정상 데이터와 5장의 결함 데이터로 구성이 되어있습니다. 굉장히 개수가 작죠?
+DAGM 데이터셋은 총 10가지 도메인의 데이터로 구성되어 있으며, 모델링을 통해 가상으로 결함을 합성하여 만든 데이터셋입니다. NanoTWICE 데이터셋은 nanofibrous material 데이터이며 5장의 정상 데이터와 40장의 결함 데이터로 구성이 되어있습니다. 굉장히 개수가 작죠?
 
 연구 용으로 사용하기엔 두 데이터셋 모두 부족한 점이 많으며, 두 데이터셋 모두 textured surface 검사에만 초점이 맞추어져 있다는 점도 한계입니다. 저자들은 이러한 점에 주목하여 Unsupervised Anomaly Detection을 위한 데이터셋이 필요함을 느꼈고, 직접 제작하게 되었다고 합니다.
 
