@@ -9,7 +9,7 @@ comments: true
 안녕하세요, 오늘은 자연어 처리(NLP)에서 압도적인 성능을 보여주며 주류로 자리잡은 Transformers 모델을 컴퓨터 비전에 적용하려는 시도들을 정리한 서베이 논문인 <a href="https://arxiv.org/abs/2101.01169" target="_blank"><b> “Transformers in Vision: A Survey” </b></a> 를 읽고 간단히 정리해볼 예정입니다. 논문의 분량이 많은 만큼 여러 편에 걸쳐서 소개드릴 예정이며, 1편에서는 Transformer에 대해 간단히 소개 드리고, Transformer를 Image Recognition에 적용한 대표 연구들을 소개드릴 예정입니다.
 
 <blockquote> What is a Transformer? </blockquote>  
-제가 Deep Learning 공부를 시작했던 2016년에만 해도 자연어 처리 분야에서는 RNN을 주로 사용하고, RNN의 long term dependency 문제를 해결하기 위해 고안된 LSTM 방법론이 있다! 정도만 공부하고 제 관심 분야가 아니라서 공부를 안했는데, 각종 커뮤니티에 Transformer, BERT, GPT 등 생소한 용어들이 자주 보이기 시작했습니다. 
+제가 Deep Learning에 입문했을 때만 해도 자연어 처리 분야에서는 RNN을 주로 사용하고, RNN의 long term dependency 문제를 해결하기 위해 고안된 LSTM 방법론이 있다! 정도만 공부하고 제 관심 분야가 아니라서 공부를 안했는데 각종 커뮤니티에 Transformer, BERT, GPT 등 생소한 용어들이 자주 보이기 시작했습니다. 
 
 그래서 간단히 공부를 해보니 <a href="https://arxiv.org/abs/1706.03762" target="_blank"><b> “Attention Is All You Need” </b></a> 논문에서 제안한 Transformer라는 모델이 자연어 처리의 다양한 분야에서 SOTA를 휩쓸고 있었고, 이를 잘 활용하기 위해 대용량의 Unlabeled 데이터셋을 활용하여 Self-Supervised Learning으로 학습을 시킨 뒤 Downstream task에 Fine-tuning을 시키는 BERT(Bidirectional Encoder Representations from Transformers), GPT(Generative Pre-trained Transformer) 등이 뒤따라서 출현했음을 알게 되었습니다. 
 
