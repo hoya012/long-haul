@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  Transformers in Vision: A Survey [1] Transformer 소개 & Transformers for Image Recognition
+title:  Transformers in Vision： A Survey [1] Transformer 소개 & Transformers for Image Recognition
 date:   2021-02-18
-description: “Transformers in Vision: A Survey” 논문을 읽고 주요 내용을 정리했습니다.
+description: “Transformers in Vision： A Survey” 논문을 읽고 주요 내용을 정리했습니다.
 comments: true
 ---
 
