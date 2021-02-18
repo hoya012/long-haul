@@ -30,18 +30,21 @@ Transformers의 성공 요소는 크게 **Self-Supervision** 과 **Self-Attentio
 </figure>
 
 위의 그림을 보시면 알 수 있듯이 매년 Top-tier 학회, arxiv에 Transformer 관련 연구들이 빠른 속도로 늘어나고 있고 작년(2020년)에는 거의 전년 대비 2배 이상의 논문이 제출이 되었습니다. 바야흐로 Transformer 시대가 열린 셈이죠. 근데 주목할만한 점은 Transformer가 자연어 처리 뿐만 아니라 강화 학습, 음성 인식, 컴퓨터 비전 등 다른 task에도 적용하기 위한 연구들이 하나 둘 시작되고 있다는 점입니다. 그래서 오늘은 컴퓨터 비전에 Transformer를 적용한 연구들을 간략히 정리해볼 예정입니다. 
+
 <blockquote> Transformers & Self-Attention in Vision </blockquote>  
+
 논문에서는 컴퓨터 비전에 Transformer을 적용시킨 연구들을 크게 10가지 task로 나눠서 정리를 해두었습니다. 
-Image Recognition (Classification)
-Object Detection
-Segmentation
-Image Generation
-Low-level Vision
-Multi-modal Tasks
-Video Understanding
-Low-shot Learning
-Clustering
-3D Analysis
+
+- Image Recognition (Classification)
+- Object Detection
+- Segmentation
+- Image Generation
+- Low-level Vision
+- Multi-modal Tasks
+- Video Understanding
+- Low-shot Learning
+- Clustering
+- 3D Analysis
 
 <figure>
 	<img src="{{ '/assets/img/Visual_Transformer/3.png' | prepend: site.baseurl }}" alt=""> 
