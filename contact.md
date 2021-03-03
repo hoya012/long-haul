@@ -52,6 +52,7 @@ title: Archives
 	<h1 class="pageTitle">  </h1>
 	<h1 class="pageTitle">  </h1>
 	<h1 class="pageTitle"> Anomaly Detection </h1>
+		<li><a href="https://hoya012.github.io/blog/OE-SDN/" target="_blank"> <b> Unsupervised Anomaly Detection Using Style Distillation 리뷰 </b></a>, 21/03/03 .</li>
 		<li><a href="https://hoya012.github.io/blog/MVTec-AD/" target="_blank"> <b> MVTec AD—A Comprehensive Real-World Dataset for Unsupervised Anomaly Detection 리뷰 </b></a>, 20/07/19 .</li>
 		<li><a href="https://hoya012.github.io/blog/anomaly-detection-overview-2/" target="_blank"> <b> Anomaly Detection 개요: [2] Out-of-distribution(OOD) Detection 문제 소개 및 핵심 논문 리뷰 </b></a>, 20/02/20 .</li>
 		<li><a href="https://hoya012.github.io/blog/anomaly-detection-overview-1/" target="_blank"> <b> Anomaly Detection 개요: [1] 이상치 탐지 분야에 대한 소개 및 주요 문제와 핵심 용어, 산업 현장 적용 사례 정리 </b></a>, 20/01/30 .</li>
