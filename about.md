@@ -32,6 +32,7 @@ title: About me
 		<li> <a href="https://github.com/hoya012/pytorch-MobileNet" target="_blank"> <b>https://github.com/hoya012/pytorch-MobileNet</b> </a></li>
 		<li> <a href="https://github.com/hoya012/pytorch-partial-conv-based-padding" target="_blank"> <b>https://github.com/hoya012/pytorch-partial-conv-based-padding</b> </a></li>
 	<h1 class="pageTitle">Slides </h1>
+		<li> <a href="https://www.slideshare.net/HoseongLee6/unsupervised-anomaly-detection-using-style-distillation" target="_blank"> <b>"Unsupervised anomaly detection using style distillation" Paper Review</b> </a></li>
 		<li> <a href="https://www2.slideshare.net/HoseongLee6/do-adversarially-robust-image-net-models-transfer-better" target="_blank"> <b>"Do Adversarially Robust ImageNet Models Transfer Better?" Paper Review</b> </a></li>
 		<li> <a href="https://www.slideshare.net/HoseongLee6/cnn-architecture-a-to-z" target="_blank"> <b>"CNN Architecture 톺아보기"</b> </a></li>
 		<li> <a href="https://www.slideshare.net/HoseongLee6/carrier-oftricksforimageclassification-238528771" target="_blank"> <b>"Carrier of Tricks for Image Classification"</b> </a></li>
