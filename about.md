@@ -72,11 +72,12 @@ title: About me
 		<li> <a href="https://youtu.be/eDDHsbMgOJQ" target="_blank"> <b> PR-208: Unsupervised Visual Representation Learning Overview:Toward Self-Supervision </b> </a> </li>
 		<li> <a href="https://www.onoffmix.com/event/205358" target="_blank"> <b> 제 9회 투빅스 빅데이터 컨퍼런스 - Invited Talk, 2020.1.11 </b> </a> </li>
 	<h1 class="pageTitle">Teaching Experience </h1>
+		<li> Image Classification & Object Detection Overview in CUBOX, 2021.1 ~ 2021.3 </li>
 		<li> Lecturer of <a href="https://www.fastcampus.co.kr/data_workshop_obj/" target="_blank"> <b>Object Detection Workshop</b>, </a> in FastCampus, 2018.10 ~ 2019.5 </li>
 		<li> TA of <b> Digital System Design and Experiments(디지털 시스템 설계 및 실습) </b>, in SNUECE(서울대학교 전기정보공학부), 2017.9 ~ 2017.12 </li>
 		<li> TA of <b> Digital System Design and Experiments(디지털 시스템 설계 및 실습) </b>,  in SNUECE(서울대학교 전기정보공학부), 2016.9 ~ 2016.12 </li>
 	<h1 class="pageTitle">Publications</h1>
-		<li> Taeoh Kim*, Hyeongmin Lee*, MyeongAh Cho*, <b>Ho Seong Lee</b>, Dong Heon Cho, Sangyoun Lee (*Equal Contribution), "Learning Temporally Invariant and Localizable Feature via Data Augmentation for Video Recognition," European Conference on Computer Vision Workshop (ECCVW 2020), July. 2020. </li>
+		<li> <a href="https://arxiv.org/abs/2008.05721" target="_blank"> Taeoh Kim*, Hyeongmin Lee*, MyeongAh Cho*, <b>Ho Seong Lee</b>, Dong Heon Cho, Sangyoun Lee (*Equal Contribution), "Learning Temporally Invariant and Localizable Feature via Data Augmentation for Video Recognition," European Conference on Computer Vision Workshop (ECCVW 2020), July. 2020. </li>
 		<li> Donghyeon Lee, <b>Ho Seong Lee</b>, Sangheon Lee, Kyujoong Lee, and Hyuk-Jae Lee, "Hardware Design of a Context-Preserving Filter-Reorganized CNN for Super-resolution," IEEE Journal on Emerging and Selected Topics in Circuits and Systems(JETCAS), Volume: 9, Issue: 4, Pages: 612-622, Dec. 2019. </li>
 		<li> Donghyeon Lee, Sangheon Lee, <b>Ho Seong Lee</b>, Kyujoong Lee, and Hyuk-Jae Lee, “Resolution-Preserving Generative Adversarial Networks for Image Enhancement," IEEE Access, Volume: 7, Pages: 110344-110357, Aug. 2019. </li>
 		<li> Donghyeon Lee, Sangheon Lee, <b>Ho Seong Lee</b>, Kyujoong Lee, and Hyuk-Jae Lee, “Context-Preserving Filter Reorganization for VDSR-Based Super-resolution," IEEE International Conference on Artificial Intelligence Circuits and Systems (AICAS), Mar. 2019. </li>
