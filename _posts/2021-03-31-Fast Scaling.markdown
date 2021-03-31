@@ -2,7 +2,7 @@
 layout: post
 title:  Fast and Accurate Model Scaling 리뷰
 date:   2021-03-31
-description: “Fast and Accurate Model Scaling” 논문을 읽고 주요 내용을 정리했습니다.
+description: CVPR 2021 “Fast and Accurate Model Scaling” 논문을 읽고 주요 내용을 정리했습니다.
 comments: true
 ---
 
