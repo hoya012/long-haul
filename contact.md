@@ -37,6 +37,7 @@ title: Archives
 	<h1 class="pageTitle">  </h1>
 	<h1 class="pageTitle">  </h1>
 	<h1 class="pageTitle"> Classification </h1>
+		<li><a href="https://hoya012.github.io/blog/Fast-Scaling/" target="_blank"> <b> Fast and Accurate Model Scaling 리뷰 </b></a>, 21/03/31 .</li>
 		<li><a href="https://hoya012.github.io/blog/Vision-Transformer-1/" target="_blank"> <b> Transformers in Vision: A Survey [1] Transformer 소개 & Transformers for Image Recognition </b></a>, 21/02/18 .</li>
 		<li><a href="https://hoya012.github.io/blog/Do-Adversarially-Robust-ImageNet-Models-Transfer-Better/" target="_blank"> <b> Do Adversarially Robust ImageNet Models Transfer Better? 리뷰 </b></a>, 20/12/07 .</li>
 		<li><a href="https://hoya012.github.io/blog/Self-training-with-Noisy-Student-improves-ImageNet-classification-Review/" target="_blank"> <b> Self-training with Noisy Student improves ImageNet classification Review </b></a>, 19/11/14 .</li>
