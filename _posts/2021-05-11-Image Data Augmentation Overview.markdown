@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Image Data Augmentation의 모든 것
+title: Image Data Augmentation 
 date:   2021-05-11
 description: Image Recognition 분야에서 주로 사용되는 Data Augmentation 기법들을 정리했습니다.
 comments: true
